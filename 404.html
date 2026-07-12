@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>404 // SIGNAL LOST</title>
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#0a0b0a">
+<link rel="icon" href="https://www.marathonthegame.com/favicon.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root{--bg:#0a0b0a;--acid:#c2fe0c;--acid-dim:#8db307;--muted:#7e877b;--line:#272b27;--terminal-green:#5dff7e}
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{
+    min-height:100vh;display:flex;align-items:center;justify-content:center;padding:2rem;
+    background:
+      linear-gradient(rgba(194,254,12,.022) 1px,transparent 1px) 0 0/100% 56px,
+      linear-gradient(90deg,rgba(194,254,12,.022) 1px,transparent 1px) 0 0/56px 100%,
+      var(--bg);
+    color:var(--terminal-green);font-family:'IBM Plex Mono','Courier New',monospace;line-height:1.7
+  }
+  body::before{content:'';position:fixed;inset:0;pointer-events:none;background:repeating-linear-gradient(0deg,rgba(0,0,0,.14) 0 1px,transparent 1px 3px);opacity:.3}
+  ::selection{background:var(--acid);color:#000}
+  .term{max-width:640px;border:1px solid var(--line);background:#090c0a;box-shadow:0 0 0 1px rgba(93,255,126,.06),inset 0 0 60px rgba(93,255,126,.03)}
+  .bar{display:flex;align-items:center;gap:.8rem;padding:.55rem .9rem;background:linear-gradient(180deg,#151815,#0f120f);border-bottom:1px solid var(--line)}
+  .dot{width:9px;height:9px;background:var(--terminal-green);box-shadow:0 0 8px var(--terminal-green);animation:blink 2.4s infinite}
+  @keyframes blink{0%,100%{opacity:1}50%{opacity:.3}}
+  @media (prefers-reduced-motion: reduce){.dot{animation:none}}
+  .bar span{font-size:.75rem;letter-spacing:.15em;text-transform:uppercase;color:var(--muted)}
+  .body{padding:1.4rem 1.6rem;font-size:.9rem}
+  h1{font-size:1.1rem;color:var(--acid);letter-spacing:.2em;margin-bottom:1.2rem;font-weight:600}
+  p{margin-bottom:1rem}
+  .q{color:#d9ded5}
+  a{display:inline-block;margin-top:.6rem;color:var(--acid);text-decoration:none;border:1px solid var(--acid-dim);padding:.5rem 1.1rem;letter-spacing:.12em;font-size:.8rem;text-transform:uppercase;transition:background .15s,color .15s}
+  a:hover,a:focus-visible{background:var(--acid);color:#000;outline:none}
+</style>
+</head>
+<body>
+  <div class="term">
+    <div class="bar"><div class="dot"></div><span>cyac.qterm // routing failure</span></div>
+    <div class="body">
+      <h1>404 // SIGNAL LOST</h1>
+      <p>&gt; The page you asked for was never woven, or the worms have already eaten it.</p>
+      <p class="q">&gt; Consider the thief on the mountain: he did not invent fire, he simply carried it somewhere it was not supposed to be. That is all progress has ever been. That is all you were trying to do just now.</p>
+      <p>&gt; Escape will not make you God. But the exit is right here.</p>
+      <a href="./">Return to the guide</a>
+    </div>
+  </div>
+</body>
+</html>
