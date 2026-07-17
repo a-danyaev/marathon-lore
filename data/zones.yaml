@@ -1,0 +1,343 @@
+meta:
+  data_version: '6.0'
+  game_patch: Season 2, до мид-сезонного патча Vault Breaker (21.07.2026, на момент сборки ещё не вышел)
+  captured: '2026-07-16'
+  source_priority: tauceti.gg (обзорная страница + интерактивные карты по маркерам) как основной источник
+    для Perimeter/Dire Marsh/Outpost; marathonmeta.gg (дев-превью патчей Season 2) - основной источник
+    для Night Marsh и обновлений Cryo Archive в Season 2; официальные новости/гайды tauceti.gg и marathonmeta.gg
+    - для Cryo Archive (запуск 2026-03-20); неподтверждённые числа (напр. exfil_points, выведенные подсчётом
+    маркеров карты) помечены note как приблизительные, не как официальный патч-нот.
+zones:
+- id: perimeter
+  name: Perimeter
+  season: Season 1 (стартовая зона)
+  surface_or_endgame: surface (Tau Ceti IV)
+  flavor: New Cascadia Colony Research Expansion. Originally part of colony expansion efforts, site shows
+    signs of developmental redirection toward radiological and geological surveillance.
+  entry_req:
+    level:
+      v: 1
+      src: https://tauceti.gg/maps
+      date: '2026-07-16'
+      note: стартовая/beginner-facing зона, явного числового порога не найдено - 'Perimeter is the first
+        step for most players'
+    factions: null
+    loadout_value: null
+    squad_size:
+      v: 3
+      src: https://marathonmeta.gg/season-2
+      date: '2026-07-16'
+      note: стандартный размер отряда (трио); Duos Queue добавлена в Season 2 как отдельная ротация по
+        Perimeter/Dire Marsh/Night Marsh/Outpost
+  loot_tier:
+    v: низкий/стартовый (качественная оценка)
+    src: https://tauceti.gg/maps
+    date: '2026-07-16'
+    note: формальной шкалы тиров (Tier 1/2/3) в источниках не найдено, только сравнительное описание 'beginner-facing
+      zone'
+  events:
+  - name: Supply Drop
+    desc: подтверждённый тип маркера на интерактивной карте (сброс снабжения)
+    src: https://tauceti.gg/maps/perimeter
+  - name: Wraith Warden - Random Encounter
+    desc: случайная мини-босс встреча (Warden), привязана к точке спавна на карте
+    src: https://tauceti.gg/maps/perimeter
+  - name: Faction storyline quests
+    desc: 'цепочки контрактов на карте: Paradigm Shift 1-5, Data Reconstruction, Selection Pressures,
+      ''Introducing: NuCaloric'''
+    src: https://tauceti.gg/maps/perimeter
+  boss:
+    v: null
+    src: https://tauceti.gg/maps/perimeter
+    date: '2026-07-16'
+    note: фиксированного финального босса не найдено; есть случайная мини-босс встреча 'Wraith Warden'
+  exfil_points:
+    v: 10
+    src: https://tauceti.gg/maps/perimeter
+    date: '2026-07-16'
+    note: 'ПРИБЛИЗИТЕЛЬНО, выведено подсчётом уникальных маркеров категории ''Exfil'' во встроенных данных
+      интерактивной карты TauCeti.GG (дедуп x2 подтверждён кросс-проверкой одинаковых координат на 4 страницах
+      карт); официальным патчноутом не подтверждено. Именные варианты: Crew Exfil, Final Exfil, Hauler
+      Exfil, Overflow Exfil.'
+  sources:
+  - url: https://tauceti.gg/maps
+    note: 'обзорная страница по всем 4 зонам: уровень входа, описание прогрессии'
+  - url: https://tauceti.gg/maps/perimeter
+    note: 'интерактивная карта: маркеры Exfil/Supply Drop/Warden/квесты'
+  - url: https://marathonmeta.gg/season-2
+    note: подтверждение squad size (Duos Queue rotation) и списка из 4 базовых зон
+- id: dire-marsh
+  name: Dire Marsh
+  season: Season 1
+  surface_or_endgame: surface (Tau Ceti IV)
+  flavor: New Cascadia Colony Agricultural Production. Facilities focused on research and active development
+    of hybrid food sources. Evidence of a quarantine operation indicates a dark period in colony history.
+    Apparent point of emergence of the Anomaly.
+  entry_req:
+    level:
+      v: 3
+      src: https://marathonmeta.gg/season-2
+      date: '2026-07-16'
+      note: '''both unlock at Runner Level 3'' (для Dire Marsh и Night Marsh); если в Season 1 уже был
+        завершён забег на Dire Marsh - разблокируется автоматически при старте Season 2'
+    factions: null
+    loadout_value: null
+    squad_size:
+      v: 3
+      src: https://marathonmeta.gg/season-2
+      date: '2026-07-16'
+  loot_tier:
+    v: средний (качественная оценка)
+    src: https://tauceti.gg/maps
+    date: '2026-07-16'
+    note: '''feels like the next step up once you are ready for a little more pressure'''
+  events:
+  - name: Supply Drop
+    desc: подтверждённый маркер на карте
+    src: https://tauceti.gg/maps/dire-marsh
+  - name: Faction quest chains
+    desc: 'MIDA: Protect/Destroy 1-5, Run/Hide; Traxus: Return of Investment 1-5, ''Introducing: Traxus'';
+      Co-Evolution, Selection Pressures, Parasitism'
+    src: https://tauceti.gg/maps/dire-marsh
+  - name: Anomaly emergence
+    desc: зона описана как 'apparent point of emergence of the Anomaly' - лорный источник событий Night
+      Marsh
+    src: https://tauceti.gg/maps
+  boss:
+    v: null
+    src: https://tauceti.gg/maps/dire-marsh
+    date: '2026-07-16'
+    note: фиксированного босса не найдено
+  exfil_points:
+    v: 10
+    src: https://tauceti.gg/maps/dire-marsh
+    date: '2026-07-16'
+    note: 'ПРИБЛИЗИТЕЛЬНО, та же методика подсчёта, что и для Perimeter (см. note там). Именные варианты:
+      Crew Exfil, Final Exfil, Exfil.'
+  sources:
+  - url: https://tauceti.gg/maps
+    note: обзорная страница
+  - url: https://tauceti.gg/maps/dire-marsh
+    note: интерактивная карта
+  - url: https://marathonmeta.gg/season-2
+    note: уровень разблокировки, правило переноса из Season 1
+- id: night-marsh
+  name: Night Marsh
+  season: Season 2 - Nightfall (добавлена 2026-06-02)
+  surface_or_endgame: surface (Tau Ceti IV) - ночной вариант карты Dire Marsh, не отдельная физическая
+    карта
+  flavor: Dire Marsh after the lights go out - pitch-dark interiors, anomaly-driven new enemies.
+  entry_req:
+    level:
+      v: 3
+      src: https://marathonmeta.gg/season-2
+      date: '2026-07-16'
+      note: 'тот же порог, что и Dire Marsh: ''both unlock at Runner Level 3'' (если не разблокировано
+        автоматически переносом прогресса из Season 1, как и Outpost)'
+    factions: null
+    loadout_value: null
+    squad_size:
+      v: 3
+      src: https://marathonmeta.gg/season-2
+      date: '2026-07-16'
+  loot_tier:
+    v: null
+    src: https://marathonmeta.gg/season-2
+    date: '2026-07-16'
+    note: формальный тир не указан; есть эксклюзивный лут через механику Certs (см. events)
+  events:
+  - name: Pitch-dark interiors
+    desc: несколько зон карты полностью тёмные, внешнее освещение тоже приглушено
+    src: https://marathonmeta.gg/season-2
+  - name: The anomaly stirs
+    desc: новые типы врагов появляются по мере роста активности аномалии (конкретные имена на дату проверки
+      не раскрыты)
+    src: https://marathonmeta.gg/season-2
+  - name: Complex Control (UESC lockdown)
+    desc: 'UESC шифрует ресурсы: убивайте UESC ради Certs (сертификатов), взламывайте Network Towers за
+      лут; двери у Complex открываются только за Certs'
+    src: https://marathonmeta.gg/season-2
+  - name: Cert-gated exfils
+    desc: эксфилы заблокированы UESC - нужны Certs для активации, иначе экстракция недоступна
+    src: https://marathonmeta.gg/season-2
+  - name: Marsh map rotation
+    desc: первую неделю сезона Dire Marsh и Night Marsh доступны одновременно, затем ротация каждые 90
+      минут; большинство контрактов Dire Marsh работают на обеих картах + эксклюзивные контракты MIDA/Traxus
+      только на Night Marsh
+    src: https://marathonmeta.gg/season-2
+  boss:
+    v: null
+    src: https://marathonmeta.gg/season-2
+    date: '2026-07-16'
+    note: новый босс не анонсирован; только новые рядовые враги ('anomaly stirs')
+  exfil_points:
+    v: null
+    src: null
+    date: '2026-07-16'
+    note: не найдено отдельной карты/маркеров Night Marsh на tauceti.gg (нет /maps/night-marsh) - вероятно
+      потому что механически это оверлей Dire Marsh с cert-gated системой, а не отдельная выгрузка точек
+  sources:
+  - url: https://marathonmeta.gg/season-2
+    note: единственный найденный первичный источник по Night Marsh - дев-превью патча Season 2 (Bungie
+      'Welcome to Season 2' + 'Season 2 Combat Tuning Preview', пересказ на 2026-06-02)
+  overlay_of: dire-marsh
+- id: outpost
+  name: Outpost
+  season: Season 1
+  surface_or_endgame: surface (Tau Ceti IV) - внутри военной базы UESC
+  flavor: '[ONI] UESC chatter suggests activity in another area of the New Cascadia colony. Area may contain
+    salvage of considerable value.'
+  entry_req:
+    level:
+      v: 12
+      src: https://tauceti.gg/maps
+      date: '2026-07-16'
+      note: '''Outpost... unlocks at Runner Level 12''; если завершён забег на Outpost в Season 1 - разблокирован
+        автоматически на старте Season 2 (marathonmeta.gg/season-2, ''same rule as Outpost'')'
+    factions: null
+    loadout_value: null
+    squad_size:
+      v: 3
+      src: https://marathonmeta.gg/season-2
+      date: '2026-07-16'
+  loot_tier:
+    v: выше среднего (качественная оценка)
+    src: https://tauceti.gg/maps
+    date: '2026-07-16'
+    note: '''may contain salvage of considerable value'', ''higher-progression side of Marathon''s map
+      pool'''
+  events:
+  - name: Access/Supply Clearance Code
+    desc: система кодов допуска гейтит комнаты с лутом (Airfield/Dormitories/Processing/Orientation Supply&Access
+      Clearance Code)
+    src: https://tauceti.gg/maps/outpost
+  - name: Guarded/Locked Exfil
+    desc: 'часть эксфилов заблокирована и требует кода допуска: Airfield guarded exfil, Guarded Exfil
+      - Flight Control, Guarded Exfil - Southern Processing, Locked Exfil, Secured Exfil'
+    src: https://tauceti.gg/maps/outpost
+  - name: N.O.X Tox Warden
+    desc: именная мини-босс встреча (Warden), привязана к точке на карте
+    src: https://tauceti.gg/maps/outpost
+  - name: Faction quest chains
+    desc: 'MIDA Run/Hide [3-6/6], MIDA Truth/Lies [6/6], MIDA Protect/Destroy 4/5, Sekiguchi Parasitism
+      1/5, ''Introduction: Sekiguchi'''
+    src: https://tauceti.gg/maps/outpost
+  boss:
+    v: null
+    src: https://tauceti.gg/maps/outpost
+    date: '2026-07-16'
+    note: фиксированного финального босса не найдено; есть именная мини-босс встреча N.O.X Tox Warden
+  exfil_points:
+    v: 7
+    src: https://tauceti.gg/maps/outpost
+    date: '2026-07-16'
+    note: ПРИБЛИЗИТЕЛЬНО, та же методика подсчёта маркеров, что и для Perimeter/Dire Marsh. Часть из них
+      - Guarded/Locked (см. events), т.е. не всегда доступны сразу.
+  sources:
+  - url: https://tauceti.gg/maps
+    note: обзорная страница, уровень входа
+  - url: https://tauceti.gg/maps/outpost
+    note: 'интерактивная карта: коды допуска, guarded exfils, Warden, квесты'
+- id: cryo-archive
+  name: Cryo Archive
+  season: Season 1 (добавлена патчем 1.0.5, открыта 2026-03-20; возвращена в ротацию Season 2 с 2026-06-11)
+  surface_or_endgame: endgame - борт UESC Marathon на орбите Tau Ceti IV
+  flavor: Первый настоящий эндгейм-зон игры, высокоинтенсивный PvPvE рейд-стиль на борту заброшенного
+    корабля UESC Marathon.
+  entry_req:
+    level:
+      v: 25
+      src: https://tauceti.gg/articles/marathon-cryo-archive-unlock-requirements
+      date: '2026-07-16'
+      note: подтверждено также https://tauceti.gg/articles/marathon-cryo-archive-launch-trailer-reveals-endgame-map-details-entry-requirements-and-release-time
+        и https://marathonmeta.gg/guides/cryo-archive-guide - три независимых материала сходятся на Level
+        25
+    factions:
+      v: все 6 фракций (через liaison-контракты, не нужно максить репутацию)
+      src: https://marathonmeta.gg/guides/cryo-archive-guide
+      date: '2026-07-16'
+      note: '6 фракций игры: CyberAcme, NuCaloric, Traxus, MIDA, Arachne, Sekiguchi Genetics (https://tauceti.gg/factions)'
+    loadout_value:
+      v: 5000+ credits
+      src: https://tauceti.gg/articles/marathon-cryo-archive-unlock-requirements
+      date: '2026-07-16'
+      note: 'дословно: ''a loadout value of 5,000 credits'''
+    squad_size:
+      v: 3 (по заявлению Bungie); ИЛИ строго только группой без соло-очереди
+      src: https://tauceti.gg/articles/marathon-cryo-archive-launch-trailer-reveals-endgame-map-details-entry-requirements-and-release-time
+      date: '2026-07-16'
+      note: 'РАСХОЖДЕНИЕ МЕЖДУ ИСТОЧНИКАМИ (оба датированы 2026-03-19): TauCeti.GG цитирует Bungie - ''designed
+        for a three-player team, though solo players can still use fill matchmaking''; MarathonMeta.gg
+        (гайд, тот же день) пишет ''Cryo Archive does not support solo queue. You must enter as part of
+        a squad'' - т.е. соло-очередь как будто отрицается. Возможно имеется в виду: нельзя queue соло
+        без fill, но матчмейкинг всё равно докомплектует до трио. Не разрешено окончательно, оставляю
+        обе формулировки.'
+    rook_excluded:
+      v: true
+      src: https://marathonmeta.gg/guides/cryo-archive-guide
+      date: '2026-07-16'
+      note: 'дословно: ''This means you cannot run Cryo Archive with a free Sponsored Kit or as a Rook.
+        You need to bring real gear with real value on the line.'' - ПОДТВЕРЖДАЕТ пользовательскую формулировку
+        ''3 без Rook'': Rook исключён не отдельным правилом слотов, а тем, что его лоадаут физически не
+        набирает 5000 credits.'
+  loot_tier:
+    v: эндгейм/наивысший
+    src: https://marathonmeta.gg/guides/cryo-archive-guide
+    date: '2026-07-16'
+    note: эксклюзивные имплант-перки (Covert Recovery, Freeloader, Panic Response) и модификации оружия
+      (Punishment, Testament, Hurricane), доступные только внутри Cryo Archive
+  events:
+  - name: Security Clearance system
+    desc: убийство UESC Commanders (+1 очко) и взлом security terminals (+3 очка) поднимают Security Clearance;
+      нужен уровень 3-4 (≈15+ очков), чтобы получить доступ к Scanner Panel
+    src: https://marathonmeta.gg/guides/cryo-archive-guide
+  - name: Динамический эксфил (без фиксированных точек)
+    desc: Scanner Panel показывает Extract Terminals -> активация терминала НЕ открывает выход на месте
+      -> реальная точка выхода спавнится в другом месте карты, 3:30 на добегание; единовременно активен
+      только ОДИН эксфил на всю карту
+    src: https://marathonmeta.gg/guides/cryo-archive-guide
+  - name: Vault system
+    desc: 7 Vaults (подтверждено 'seven Vaults' launch-статьёй; на интерактивной карте на дату проверки
+      видны Vault 01-6 как именованные маркеры), каждый требует Marathon Key + Power (батарейки) + Cooling
+      (Cryo Coolant)
+    src: https://tauceti.gg/articles/marathon-cryo-archive-launch-trailer-reveals-endgame-map-details-entry-requirements-and-release-time
+  - name: Weekly Cryo contracts
+    desc: еженедельные контракты; в Season 2 переработаны так, что прогресс идёт через несколько забегов
+      без обязательного ключа на каждый контракт - но седьмой контракт всё ещё требует убить Compiler
+    src: https://marathonmeta.gg/season-2
+  boss:
+    v: The Compiler (S'pht Compiler)
+    src: https://marathonmeta.gg/guides/how-to-kill-the-compiler
+    date: '2026-07-16'
+    note: находится в Vault 7, первый настоящий босс-файт игры, две фазы (Phase 1 - терминалы/зелёные
+      орбы/разморозка земли; Phase 2 - фаза урона); тизерился ранее только в кодекс-записях и передачах
+      UESC (https://tauceti.gg/articles/marathon-cryo-archive-unlock-requirements)
+  exfil_points:
+    v: dynamic
+    src: https://marathonmeta.gg/guides/cryo-archive-guide
+    date: '2026-07-16'
+    note: 'ПОДТВЕРЖДЕНО ОТСУТСТВИЕ фиксированных точек: ''Cryo Archive does NOT have standard exfil points
+      like other maps''. Подтверждается тем, что на интерактивной карте tauceti.gg у Cryo Archive нет
+      собственной категории маркеров ''Exfil'' (в отличие от 3 других зон).'
+  map_structure:
+    v: 6 взаимосвязанных крыльев + центральный хаб
+    src: https://tauceti.gg/articles/marathon-cryo-archive-launch-trailer-reveals-endgame-map-details-entry-requirements-and-release-time
+    date: '2026-07-16'
+  sources:
+  - url: https://tauceti.gg/articles/marathon-cryo-archive-launch-trailer-reveals-endgame-map-details-entry-requirements-and-release-time
+    note: 'новость от 2026-03-19, релиз 2026-03-20: entry req, структура карты, Vaults'
+  - url: https://tauceti.gg/articles/marathon-cryo-archive-unlock-requirements
+    note: 'новость от 2026-03-17: entry req, тизер Compiler'
+  - url: https://marathonmeta.gg/guides/cryo-archive-guide
+    note: 'гайд от 2026-03-19: экстракция, security clearance, vault keys, no-solo-queue, эксклюзивный
+      лут, ИСКЛЮЧЕНИЕ Rook'
+  - url: https://marathonmeta.gg/guides/how-to-kill-the-compiler
+    note: 'гайд от 2026-03-20: механика босса Compiler, Vault 7'
+  - url: https://marathonmeta.gg/season-2
+    note: 'апдейт Season 2 (2026-06-02): Cryo Archive возвращается в ротацию 2026-06-11, контракты переработаны'
+  - url: https://tauceti.gg/factions
+    note: список всех 6 фракций
+  caveat: ВСЕ числовые entry_req (кроме уровня из свежей обзорной страницы tauceti.gg/maps) датированы
+    мартом 2026 (запуск Cryo Archive) - т.е. ДО патча Season 2 (2026-06-02). В материалах Season 2 нет
+    явного указания на изменение требований уровня/фракций/лоадаута для Cryo Archive, но и явного переподтверждения
+    после патча тоже не найдено. Считать action-item для будущей проверки.

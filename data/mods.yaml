@@ -1,0 +1,1217 @@
+meta:
+  data_version: '6.0'
+  game_patch: Season 2, до мид-сезонного патча Vault Breaker (21.07.2026, на момент сборки ещё не вышел)
+  captured: '2026-07-16'
+  source_priority: mods.marathondb.gg/api/mods - основной источник по мод-каталогу (89 видимых is_hidden=0
+    записей публикуются в mods; is_hidden=1 записи из общего пула 222/221 в датасет не включены). Расхождения
+    счётчиков между marathondb.gg/marathondb.info/marathonmeta.gg/helpbot - не разрешаются выбором одного
+    числа, а фиксируются в counts_note как отдельные метрики разного охвата. runnerskins.marathondb.gg/api/skins
+    - основной источник по skins_overview; аномалии словаря rarity/source (напр. отсутствие enhanced среди
+    скинов, common у Rook) публикуются как есть, не сглаживаются под общую 5-ступенчатую шкалу.
+mods_system:
+  slots_per_weapon:
+    observed_range: 2-4 активных слотов на ствол (по 6 образцам)
+    observed_samples:
+      impact-har: 4
+      overrun-ar: 4
+      m77-assault-rifle: 3
+      v75-scar: 4
+      conquest-lmg: 4
+      longshot: 4
+      ares-rg: 2
+    slot_pool:
+    - optic
+    - chip
+    - grip
+    - magazine
+    - barrel
+    note: slot_count в собственном API marathondb.gg (mods.marathondb.gg/api/weapons/{slug}/slots) везде
+      возвращает 0 (фича недоделана) - реальные наборы слотов взяты из встроенного RSC-объекта weapon.activeModSlots
+      на tauceti.gg/db/weapons/{slug}. shield и generator - НЕ слоты ствола, а отдельные слоты способности
+      оружия (привязаны к конкретным пушкам с уникальной механикой, напр. энергощит/чардж).
+    src: https://tauceti.gg/db/weapons/{slug} (embedded RSC weapon record, activeModSlots field)
+    date: '2026-07-16'
+  categories:
+  - slot: barrel
+    count_total_gg_api: 38
+    count_visible_gg_api: 18
+    count_hidden_gg_api: 20
+    src: https://mods.marathondb.gg/api/mods (marathondb.gg)
+    date: '2026-07-16'
+  - slot: magazine
+    count_total_gg_api: 45
+    count_visible_gg_api: 25
+    count_hidden_gg_api: 20
+    src: https://mods.marathondb.gg/api/mods (marathondb.gg)
+    date: '2026-07-16'
+  - slot: optic
+    count_total_gg_api: 29
+    count_visible_gg_api: 16
+    count_hidden_gg_api: 13
+    src: https://mods.marathondb.gg/api/mods (marathondb.gg)
+    date: '2026-07-16'
+  - slot: grip
+    count_total_gg_api: 20
+    count_visible_gg_api: 7
+    count_hidden_gg_api: 13
+    src: https://mods.marathondb.gg/api/mods (marathondb.gg)
+    date: '2026-07-16'
+  - slot: chip
+    count_total_gg_api: 82
+    count_visible_gg_api: 69
+    count_hidden_gg_api: 13
+    src: https://mods.marathondb.gg/api/mods (marathondb.gg)
+    date: '2026-07-16'
+  - slot: shield
+    count_total_gg_api: 7
+    count_visible_gg_api: 4
+    count_hidden_gg_api: 3
+    src: https://mods.marathondb.gg/api/mods (marathondb.gg)
+    date: '2026-07-16'
+  - slot: generator
+    count_total_gg_api: 1
+    count_visible_gg_api: 0
+    count_hidden_gg_api: 1
+    src: https://mods.marathondb.gg/api/mods (marathondb.gg)
+    date: '2026-07-16'
+  rarities:
+  - standard
+  - enhanced
+  - deluxe
+  - superior
+  - prestige
+  rarities_src:
+  - src: https://mods.marathondb.gg/api/mods (marathondb.gg)
+    date: '2026-07-16'
+    note: 'поле rarity в данных: standard/enhanced/deluxe/superior/prestige, 5 ступеней'
+  - src: https://marathondb.info/mods (homepage counter + filter UI)
+    date: '2026-07-16'
+    note: 'UI-фильтр Rarity на /mods: Standard, Enhanced, Deluxe, Superior, Prestige - полностью совпадает'
+  rarity_distribution_gg_api:
+    standard: 37
+    enhanced: 73
+    deluxe: 42
+    superior: 44
+    prestige: 26
+  total_count:
+  - v: 222
+    src: https://mods.marathondb.gg/api/mods (marathondb.gg)
+    date: '2026-07-16'
+    note: count в JSON-ответе /api/mods, включая скрытые (is_hidden=1) и парные rarity-варианты одной
+      и той же модели
+  - v: 221
+    src: https://marathondb.gg/ (db-card counter)
+    date: '2026-07-16'
+    note: статичный счётчик db-card «Mods» на главной marathondb.gg (закэширован, на 1 меньше текущего
+      API)
+  - v: 139
+    src: https://mods.marathondb.gg/api/mods (marathondb.gg)
+    date: '2026-07-16'
+    note: 'производный подсчёт: только is_hidden=0 (видимые в UI) записи из тех же 222'
+  - v: 56
+    src: https://helpbot.marathondb.gg/api/stats (marathondb.gg)
+    date: '2026-07-16'
+    note: поле mods_count в /api/stats (helpbot.marathondb.gg) - НЕ совпадает ни с одним другим числом
+      на этом же сайте; вероятно, устаревшая/иная метрика (см. items_by_type.mod=15 в том же ответе -
+      тоже другое число)
+  - v: 58
+    src: https://marathondb.info/mods (homepage counter + filter UI)
+    date: '2026-07-16'
+    note: статичный счётчик «58 Weapon Mods» на главной marathondb.info
+  - v: 185
+    src: https://marathonmeta.gg/weapons (MODS tab counter)
+    date: '2026-07-16'
+    note: счётчик вкладки «MODS» на marathonmeta.gg/weapons (переключатель WEAPONS 31 / MODS 185); фактический
+      список модов за этой вкладкой не рендерится в статичном HTML (дозагружается по клику), содержимое
+      не проверено, проверен только сам счётчик
+mods:
+- id: 522
+  slug: adaptive-mag
+  name: Adaptive Mag
+  category: magazine
+  rarity: prestige
+  effect: +30 magazine_size (flat); -0.24s reload_speed
+  notable: false
+  verified: true
+  src: https://mods.marathondb.gg/api/mods/adaptive-mag (marathondb.gg)
+  date: '2026-07-16'
+- id: 157
+  slug: adrenal-feedback-rounds
+  name: Adrenal Feedback Rounds
+  category: magazine
+  rarity: prestige
+  effect: +18 magazine_size (flat)
+  notable: false
+  verified: true
+  src: https://mods.marathondb.gg/api/mods/adrenal-feedback-rounds (marathondb.gg)
+  date: '2026-07-16'
+- id: 518
+  slug: balanced-shield
+  name: Balanced Shield
+  category: shield
+  rarity: enhanced
+  effect: +0.20s equip_speed; -3.0% weight
+  notable: true
+  verified: false
+  src: https://mods.marathondb.gg/api/mods/balanced-shield (marathondb.gg)
+  date: '2026-07-16'
+- id: 492
+  slug: bits-per-second
+  name: Bits Per Second
+  category: chip
+  rarity: enhanced
+  effect: Rapid precision hits temporarily increase stability and reload speed by a moderate amount.
+  notable: false
+  verified: true
+  src: https://mods.marathondb.gg/api/mods/bits-per-second (marathondb.gg)
+  date: '2026-07-16'
+- id: 554
+  slug: blue-blood
+  name: Blue Blood
+  category: chip
+  rarity: superior
+  effect: Downing a hostile Runner restores health.
+  notable: false
+  verified: true
+  src: https://mods.marathondb.gg/api/mods/blue-blood (marathondb.gg)
+  date: '2026-07-16'
+- id: 137
+  slug: bounty-hunter
+  name: Bounty Hunter
+  category: chip
+  rarity: standard
+  effect: Eliminating UESC pays you a few credits.
+  notable: true
+  verified: true
+  src: https://mods.marathondb.gg/api/mods/bounty-hunter (marathondb.gg)
+  date: '2026-07-16'
+- id: 494
+  slug: bounty-hunter-deluxe
+  name: Bounty Hunter
+  category: chip
+  rarity: deluxe
+  effect: Eliminating UESC pays you a few credits.
+  notable: true
+  verified: false
+  src: https://mods.marathondb.gg/api/mods/bounty-hunter-deluxe (marathondb.gg)
+  date: '2026-07-16'
+- id: 493
+  slug: bounty-hunter-enhanced
+  name: Bounty Hunter
+  category: chip
+  rarity: enhanced
+  effect: Eliminating UESC pays you a small amount credits.
+  notable: true
+  verified: true
+  src: https://mods.marathondb.gg/api/mods/bounty-hunter-enhanced (marathondb.gg)
+  date: '2026-07-16'
+- id: 495
+  slug: bounty-hunter-superior
+  name: Bounty Hunter
+  category: chip
+  rarity: superior
+  effect: Eliminating UESC pays you a few credits.
+  notable: true
+  verified: false
+  src: https://mods.marathondb.gg/api/mods/bounty-hunter-superior (marathondb.gg)
+  date: '2026-07-16'
+- id: 92
+  slug: charge-coupled-optic
+  name: Charge-Coupled Optic
+  category: optic
+  rarity: prestige
+  effect: -0.20° ads_spread
+  notable: false
+  verified: true
+  src: https://mods.marathondb.gg/api/mods/charge-coupled-optic (marathondb.gg)
+  date: '2026-07-16'
+- id: 556
+  slug: circuit-shield
+  name: Circuit Shield
+  category: shield
+  rarity: prestige
+  effect: -10.0% recoil
+  notable: true
+  verified: true
+  src: https://mods.marathondb.gg/api/mods/circuit-shield (marathondb.gg)
+  date: '2026-07-16'
+- id: 134
+  slug: combat-grip-deluxe
+  name: Combat Grip
+  category: grip
+  rarity: deluxe
+  effect: -0.15s ads_speed; +0.14s equip_speed
+  notable: false
+  verified: true
+  src: https://mods.marathondb.gg/api/mods/combat-grip-deluxe (marathondb.gg)
+  date: '2026-07-16'
+- id: 535
+  slug: combat-mag-deluxe
+  name: Combat Mag
+  category: magazine
+  rarity: deluxe
+  effect: +24 magazine_size (flat); +7 range (flat); -0.40s reload_speed
+  notable: false
+  verified: false
+  src: https://mods.marathondb.gg/api/mods/combat-mag-deluxe (marathondb.gg)
+  date: '2026-07-16'
+- id: 536
+  slug: combat-mag-superior
+  name: Combat Mag
+  category: magazine
+  rarity: superior
+  effect: +6 magazine_size (flat); +20 range (flat); -0.65s reload_speed
+  notable: false
+  verified: false
+  src: https://mods.marathondb.gg/api/mods/combat-mag-superior (marathondb.gg)
+  date: '2026-07-16'
+- id: 154
+  slug: control-shield
+  name: Control Shield
+  category: shield
+  rarity: superior
+  effect: Greatly increases stability.
+  notable: true
+  verified: false
+  src: https://mods.marathondb.gg/api/mods/control-shield (marathondb.gg)
+  date: '2026-07-16'
+- id: 517
+  slug: control-shield-deluxe
+  name: Control Shield
+  category: shield
+  rarity: deluxe
+  effect: Increases stability.
+  notable: true
+  verified: false
+  src: https://mods.marathondb.gg/api/mods/control-shield-deluxe (marathondb.gg)
+  date: '2026-07-16'
+- id: 516
+  slug: control-shield-enhanced
+  name: Control Shield
+  category: shield
+  rarity: enhanced
+  effect: -10.0% recoil
+  notable: true
+  verified: false
+  src: https://mods.marathondb.gg/api/mods/control-shield-enhanced (marathondb.gg)
+  date: '2026-07-16'
+- id: 515
+  slug: control-shield-standard
+  name: Control Shield
+  category: shield
+  rarity: standard
+  effect: Minimally increases stability.
+  notable: true
+  verified: false
+  src: https://mods.marathondb.gg/api/mods/control-shield-standard (marathondb.gg)
+  date: '2026-07-16'
+- id: 120
+  slug: drum-mag
+  name: Drum Mag
+  category: magazine
+  rarity: deluxe
+  effect: +33 magazine_size (flat)
+  notable: false
+  verified: false
+  src: https://mods.marathondb.gg/api/mods/drum-mag (marathondb.gg)
+  date: '2026-07-16'
+- id: 139
+  slug: eyes-on-fire
+  name: Eyes on Fire
+  category: chip
+  rarity: standard
+  effect: Quickly after deactivation of a tactical or trait ability, eliminating a hostile grants a moderate
+    amount of tactical and trait ability energy.
+  notable: true
+  verified: true
+  src: https://mods.marathondb.gg/api/mods/eyes-on-fire (marathondb.gg)
+  date: '2026-07-16'
+- id: 196
+  slug: eyes-on-fire-enhanced
+  name: eyes on fire
+  category: chip
+  rarity: enhanced
+  effect: Quickly after deactivation of a tactical or trait ability, eliminating a hostile grants a moderate
+    amount of tactical and trait ability energy.
+  notable: false
+  verified: true
+  src: https://mods.marathondb.gg/api/mods/eyes-on-fire-enhanced (marathondb.gg)
+  date: '2026-07-16'
+- id: 467
+  slug: far-reach-optic-superior
+  name: Far Reach Optic
+  category: optic
+  rarity: superior
+  effect: +0.5 ads_zoom (multiplier); +11 range (flat)
+  notable: false
+  verified: true
+  src: https://mods.marathondb.gg/api/mods/far-reach-optic-superior (marathondb.gg)
+  date: '2026-07-16'
+- id: 539
+  slug: farshot-barrel-superior
+  name: Farshot Barrel
+  category: barrel
+  rarity: superior
+  effect: -0.20° ads_spread; +45 range (flat)
+  notable: true
+  verified: false
+  src: https://mods.marathondb.gg/api/mods/farshot-barrel-superior (marathondb.gg)
+  date: '2026-07-16'
+- id: 545
+  slug: feather-mag-deluxe
+  name: Feather Mag
+  category: magazine
+  rarity: deluxe
+  effect: +12 magazine_size (flat); -0.72s reload_speed
+  notable: false
+  verified: false
+  src: https://mods.marathondb.gg/api/mods/feather-mag-deluxe (marathondb.gg)
+  date: '2026-07-16'
+- id: 565
+  slug: flechette-drum
+  name: Flechette Drum
+  category: magazine
+  rarity: prestige
+  effect: +64 magazine_size (flat); -0.32s ready_speed
+  notable: true
+  verified: true
+  src: https://mods.marathondb.gg/api/mods/flechette-drum (marathondb.gg)
+  date: '2026-07-16'
+- id: 161
+  slug: flexhette-split-action
+  name: Flechette Split Action
+  category: barrel
+  rarity: prestige
+  effect: -0.05s equip_speed; -0.08° hipfire_spread; -39.2% recoil
+  notable: false
+  verified: true
+  src: https://mods.marathondb.gg/api/mods/flexhette-split-action (marathondb.gg)
+  date: '2026-07-16'
+- id: 519
+  slug: full-auto-selector
+  name: Full-Auto Selector
+  category: grip
+  rarity: prestige
+  effect: -1.25° hipfire_spread; +92 rpm (flat)
+  notable: true
+  verified: true
+  src: https://mods.marathondb.gg/api/mods/full-auto-selector (marathondb.gg)
+  date: '2026-07-16'
+- id: 464
+  slug: guarded-grip
+  name: Guarded Grip
+  category: grip
+  rarity: deluxe
+  effect: -0.20s equip_speed; -9.0% recoil
+  notable: false
+  verified: false
+  src: https://mods.marathondb.gg/api/mods/guarded-grip (marathondb.gg)
+  date: '2026-07-16'
+- id: 542
+  slug: hi-cap-mag-superior
+  name: Hi-cap Mag
+  category: magazine
+  rarity: superior
+  effect: +9 magazine_size (flat)
+  notable: false
+  verified: false
+  src: https://mods.marathondb.gg/api/mods/hi-cap-mag-superior (marathondb.gg)
+  date: '2026-07-16'
+- id: 485
+  slug: hi-speed-mag
+  name: Hi-Speed Mag
+  category: magazine
+  rarity: superior
+  effect: +3 magazine_size (flat); -0.52s reload_speed
+  notable: false
+  verified: true
+  src: https://mods.marathondb.gg/api/mods/hi-speed-mag (marathondb.gg)
+  date: '2026-07-16'
+- id: 543
+  slug: hi-zoom-optic
+  name: Hi-Zoom Optic
+  category: optic
+  rarity: superior
+  effect: -0.14° ads_spread; +1.6 ads_zoom (multiplier); +18 range (flat)
+  notable: true
+  verified: false
+  src: https://mods.marathondb.gg/api/mods/hi-zoom-optic (marathondb.gg)
+  date: '2026-07-16'
+- id: 121
+  slug: hollow-case-rounds-deluxe
+  name: Hollow-Case Rounds
+  category: magazine
+  rarity: deluxe
+  effect: +12 magazine_size (flat); +5 range (flat); -0.12s reload_speed
+  notable: false
+  verified: false
+  src: https://mods.marathondb.gg/api/mods/hollow-case-rounds-deluxe (marathondb.gg)
+  date: '2026-07-16'
+- id: 551
+  slug: impact-shockwave
+  name: Impact Shockwave
+  category: magazine
+  rarity: prestige
+  effect: +2 magazine_size (flat); +5 range (flat)
+  notable: false
+  verified: true
+  src: https://mods.marathondb.gg/api/mods/impact-shockwave (marathondb.gg)
+  date: '2026-07-16'
+- id: 532
+  slug: impulse-brake-deluxe
+  name: Impulse Brake
+  category: barrel
+  rarity: deluxe
+  effect: -0.14° ads_spread; +0.22° aim_assist
+  notable: false
+  verified: false
+  src: https://mods.marathondb.gg/api/mods/impulse-brake-deluxe (marathondb.gg)
+  date: '2026-07-16'
+- id: 555
+  slug: infinity-belt
+  name: Infinity Belt
+  category: magazine
+  rarity: prestige
+  effect: +90 magazine_size (flat); +1.55s reload_speed
+  notable: true
+  verified: true
+  src: https://mods.marathondb.gg/api/mods/infinity-belt (marathondb.gg)
+  date: '2026-07-16'
+- id: 513
+  slug: insurrection-deluxe
+  name: Insurrection
+  category: chip
+  rarity: deluxe
+  effect: The weapon deals moderately increased damage against UESC forces.
+  notable: false
+  verified: true
+  src: https://mods.marathondb.gg/api/mods/insurrection-deluxe (marathondb.gg)
+  date: '2026-07-16'
+- id: 194
+  slug: insurrection-enhanced
+  name: Insurrection
+  category: chip
+  rarity: enhanced
+  effect: The weapon deals moderately increased damage against UESC forces.
+  notable: false
+  verified: true
+  src: https://mods.marathondb.gg/api/mods/insurrection-enhanced (marathondb.gg)
+  date: '2026-07-16'
+- id: 457
+  slug: interval-mag
+  name: Interval Mag
+  category: magazine
+  rarity: prestige
+  effect: -0.14° ads_spread; +0.05° aim_assist; +18 magazine_size (flat); +2 range (flat); -0.50s reload_speed
+  notable: false
+  verified: true
+  src: https://mods.marathondb.gg/api/mods/interval-mag (marathondb.gg)
+  date: '2026-07-16'
+- id: 490
+  slug: ironhold-barrel-deluxe
+  name: Ironhold Barrel
+  category: barrel
+  rarity: deluxe
+  effect: -0.05s equip_speed; -68.4% recoil
+  notable: true
+  verified: false
+  src: https://mods.marathondb.gg/api/mods/ironhold-barrel-deluxe (marathondb.gg)
+  date: '2026-07-16'
+- id: 491
+  slug: ironhold-barrel-superior
+  name: Ironhold Barrel
+  category: barrel
+  rarity: superior
+  effect: -20.0% crouch_spread_bonus; -10.00s equip_speed; -42.0% recoil
+  notable: true
+  verified: true
+  src: https://mods.marathondb.gg/api/mods/ironhold-barrel-superior (marathondb.gg)
+  date: '2026-07-16'
+- id: 142
+  slug: keen-scout-chip
+  name: Keen Scout Chip
+  category: chip
+  rarity: enhanced
+  effect: Reconnaissance chip that improves detection range and enemy visibility.
+  notable: false
+  verified: false
+  src: https://mods.marathondb.gg/api/mods/keen-scout-chip (marathondb.gg)
+  date: '2026-07-16'
+- id: 499
+  slug: keyboard-warrior
+  name: Keyboard Warrior
+  category: chip
+  rarity: enhanced
+  effect: 'Eliminations grant stacks of bonus accuracy and range for a moderate duration.
+
+    Item slightly improves the reload speed of all weapons.'
+  notable: false
+  verified: true
+  src: https://mods.marathondb.gg/api/mods/keyboard-warrior (marathondb.gg)
+  date: '2026-07-16'
+- id: 454
+  slug: kingmaker-mag
+  name: Kingmaker Mag
+  category: magazine
+  rarity: prestige
+  effect: +11 ammo_reserves (flat); -1.30s reload_speed
+  notable: true
+  verified: true
+  src: https://mods.marathondb.gg/api/mods/kingmaker-mag (marathondb.gg)
+  date: '2026-07-16'
+- id: 143
+  slug: last-resort
+  name: Last Resort
+  category: chip
+  rarity: enhanced
+  effect: While you are Overheated, non-precision damage is increased by a moderate amount.
+  notable: false
+  verified: true
+  src: https://mods.marathondb.gg/api/mods/last-resort (marathondb.gg)
+  date: '2026-07-16'
+- id: 557
+  slug: lever-focus
+  name: Lever Focus
+  category: optic
+  rarity: prestige
+  effect: -0.13s ads_speed; +0.9 ads_zoom (multiplier); -1.27° hipfire_spread; -0.16s reload_speed
+  notable: false
+  verified: true
+  src: https://mods.marathondb.gg/api/mods/lever-focus (marathondb.gg)
+  date: '2026-07-16'
+- id: 163
+  slug: lockout-muzzle-brake
+  name: Lockout Muzzle Brake
+  category: barrel
+  rarity: prestige
+  effect: -1.80° hipfire_spread; -18 weight (flat)
+  notable: true
+  verified: true
+  src: https://mods.marathondb.gg/api/mods/lockout-muzzle-brake (marathondb.gg)
+  date: '2026-07-16'
+- id: 463
+  slug: long-range-barrel
+  name: Long-range Barrel
+  category: barrel
+  rarity: deluxe
+  effect: -0.63° hipfire_spread; +2 range (flat)
+  notable: false
+  verified: false
+  src: https://mods.marathondb.gg/api/mods/long-range-barrel (marathondb.gg)
+  date: '2026-07-16'
+- id: 87
+  slug: midsight-optic-deluxe
+  name: Midsight Optic
+  category: optic
+  rarity: deluxe
+  effect: -0.08° ads_spread; +0.4 ads_zoom (multiplier); -36.4% moving_inaccuracy
+  notable: true
+  verified: false
+  src: https://mods.marathondb.gg/api/mods/midsight-optic-deluxe (marathondb.gg)
+  date: '2026-07-16'
+- id: 455
+  slug: mips-slug-converter
+  name: Mips Slug Converter
+  category: barrel
+  rarity: prestige
+  effect: +0.50° aim_assist; +57 fire_rate (flat); +1 range (flat); -9.0% recoil
+  notable: false
+  verified: true
+  src: https://mods.marathondb.gg/api/mods/mips-slug-converter (marathondb.gg)
+  date: '2026-07-16'
+- id: 145
+  slug: motionsense-chip
+  name: Motionsense Chip
+  category: chip
+  rarity: enhanced
+  effect: Motion detection chip that enhances target tracking and awareness.
+  notable: false
+  verified: true
+  src: https://mods.marathondb.gg/api/mods/motionsense-chip (marathondb.gg)
+  date: '2026-07-16'
+- id: 159
+  slug: outland-suppressor
+  name: Outland Suppressor
+  category: barrel
+  rarity: prestige
+  effect: +20 range (flat); -20.0% recoil
+  notable: false
+  verified: true
+  src: https://mods.marathondb.gg/api/mods/outland-suppressor (marathondb.gg)
+  date: '2026-07-16'
+- id: 552
+  slug: overcharge-lens
+  name: Overcharge Lens
+  category: barrel
+  rarity: prestige
+  effect: +1.00° aim_assist; -0.16° hipfire_spread; +2 range (flat)
+  notable: true
+  verified: true
+  src: https://mods.marathondb.gg/api/mods/overcharge-lens (marathondb.gg)
+  date: '2026-07-16'
+- id: 129
+  slug: overclocked-delimiter
+  name: Overclocked Delimiter
+  category: magazine
+  rarity: prestige
+  effect: -0.74s reload_speed; -3.0% voltdrain
+  notable: true
+  verified: true
+  src: https://mods.marathondb.gg/api/mods/overclocked-delimiter (marathondb.gg)
+  date: '2026-07-16'
+- id: 553
+  slug: overclocked-shield
+  name: Overclocked Shield
+  category: shield
+  rarity: prestige
+  effect: -6.1% recoil; -4.5% weight
+  notable: true
+  verified: true
+  src: https://mods.marathondb.gg/api/mods/overclocked-shield (marathondb.gg)
+  date: '2026-07-16'
+- id: 482
+  slug: precision-barrel-enhanced
+  name: Precision Barrel
+  category: barrel
+  rarity: enhanced
+  effect: -0.14° ads_speed; +2 range (flat)
+  notable: false
+  verified: true
+  src: https://mods.marathondb.gg/api/mods/precision-barrel-enhanced (marathondb.gg)
+  date: '2026-07-16'
+- id: 523
+  slug: q-tap-regen-optic
+  name: Q-Tap Regen Optic
+  category: optic
+  rarity: prestige
+  effect: -0.70s ads_speed; +1.1 ads_zoom (multiplier); -3 damage (flat); +10 range (flat); -6.3% recoil
+  notable: true
+  verified: true
+  src: https://mods.marathondb.gg/api/mods/q-tap-regen-optic (marathondb.gg)
+  date: '2026-07-16'
+- id: 549
+  slug: rangefinder-optic-deluxe
+  name: Rangefinder Optic
+  category: optic
+  rarity: deluxe
+  effect: -0.14° ads_spread; +0.6 ads_zoom (multiplier); -9.1% moving_inaccuracy
+  notable: false
+  verified: false
+  src: https://mods.marathondb.gg/api/mods/rangefinder-optic-deluxe (marathondb.gg)
+  date: '2026-07-16'
+- id: 550
+  slug: rangefinder-optic-superior
+  name: Rangefinder Optic
+  category: optic
+  rarity: superior
+  effect: -0.20° ads_spread; +0.6 ads_zoom (multiplier); -13.6% moving_inaccuracy
+  notable: false
+  verified: false
+  src: https://mods.marathondb.gg/api/mods/rangefinder-optic-superior (marathondb.gg)
+  date: '2026-07-16'
+- id: 478
+  slug: reloader-mag-deluxe
+  name: Reloader Mag
+  category: magazine
+  rarity: deluxe
+  effect: +10 magazine_size (flat); -0.31s reload_speed
+  notable: false
+  verified: false
+  src: https://mods.marathondb.gg/api/mods/reloader-mag-deluxe (marathondb.gg)
+  date: '2026-07-16'
+- id: 158
+  slug: rodeo-mag
+  name: Rodeo Mag
+  category: magazine
+  rarity: prestige
+  effect: +60 fire_rate (flat); +49 magazine_size (flat); -13.2% recoil
+  notable: true
+  verified: true
+  src: https://mods.marathondb.gg/api/mods/rodeo-mag (marathondb.gg)
+  date: '2026-07-16'
+- id: 90
+  slug: shortwave-scout-optic
+  name: Shortwave Scout Optic
+  category: optic
+  rarity: deluxe
+  effect: -0.06° ads_spread; +0.1 ads_zoom (multiplier)
+  notable: false
+  verified: false
+  src: https://mods.marathondb.gg/api/mods/shortwave-scout-optic (marathondb.gg)
+  date: '2026-07-16'
+- id: 166
+  slug: slip-protocol
+  name: Slip Protocol
+  category: chip
+  rarity: superior
+  effect: While moving, this weapon's stability and accuracy increase by a massive amount.
+  notable: true
+  verified: true
+  src: https://mods.marathondb.gg/api/mods/slip-protocol (marathondb.gg)
+  date: '2026-07-16'
+- id: 461
+  slug: snapshot-grip-deluxe
+  name: Snapshot Grip
+  category: grip
+  rarity: deluxe
+  effect: -0.12s ads_speed
+  notable: false
+  verified: false
+  src: https://mods.marathondb.gg/api/mods/snapshot-grip-deluxe (marathondb.gg)
+  date: '2026-07-16'
+- id: 524
+  slug: sonar-shot
+  name: Sonar Shot
+  category: barrel
+  rarity: prestige
+  effect: +12 range (flat); -12.8% recoil
+  notable: false
+  verified: true
+  src: https://mods.marathondb.gg/api/mods/sonar-shot (marathondb.gg)
+  date: '2026-07-16'
+- id: 472
+  slug: speed-scout-grip-deluxe
+  name: Speed Scout Grip
+  category: grip
+  rarity: deluxe
+  effect: +0.12s ads_speed; -0.04° ads_spread
+  notable: false
+  verified: false
+  src: https://mods.marathondb.gg/api/mods/speed-scout-grip-deluxe (marathondb.gg)
+  date: '2026-07-16'
+- id: 124
+  slug: stabilizing-mag
+  name: Stabilizing Mag
+  category: magazine
+  rarity: deluxe
+  effect: +24 magazine_size (flat); -31.1% recoil
+  notable: false
+  verified: false
+  src: https://mods.marathondb.gg/api/mods/stabilizing-mag (marathondb.gg)
+  date: '2026-07-16'
+- id: 529
+  slug: stabilizing-mag-enhanced
+  name: Stabilizing Mag
+  category: magazine
+  rarity: enhanced
+  effect: +12 magazine_size (flat); -11.6% recoil
+  notable: false
+  verified: false
+  src: https://mods.marathondb.gg/api/mods/stabilizing-mag-enhanced (marathondb.gg)
+  date: '2026-07-16'
+- id: 527
+  slug: steady-barrel-deluxe
+  name: Steady Barrel
+  category: barrel
+  rarity: deluxe
+  effect: -0.09s equip_speed; -45.4% recoil
+  notable: false
+  verified: false
+  src: https://mods.marathondb.gg/api/mods/steady-barrel-deluxe (marathondb.gg)
+  date: '2026-07-16'
+- id: 526
+  slug: steady-barrel-enhanced
+  name: Steady Barrel
+  category: barrel
+  rarity: enhanced
+  effect: -9.3% recoil
+  notable: false
+  verified: false
+  src: https://mods.marathondb.gg/api/mods/steady-barrel-enhanced (marathondb.gg)
+  date: '2026-07-16'
+- id: 125
+  slug: steady-rounds
+  name: Steady Rounds
+  category: magazine
+  rarity: deluxe
+  effect: +15 magazine_size (flat); -12.5% recoil
+  notable: false
+  verified: false
+  src: https://mods.marathondb.gg/api/mods/steady-rounds (marathondb.gg)
+  date: '2026-07-16'
+- id: 475
+  slug: sturdy-brace-grip-deluxe
+  name: Sturdy brace grip
+  category: grip
+  rarity: deluxe
+  effect: -36.4% moving_inaccuracy; +34.2% recoil
+  notable: false
+  verified: false
+  src: https://mods.marathondb.gg/api/mods/sturdy-brace-grip-deluxe (marathondb.gg)
+  date: '2026-07-16'
+- id: 484
+  slug: suppression-dampener
+  name: Suppression Dampener
+  category: barrel
+  rarity: enhanced
+  effect: -0.02° ads_spread; -15.8% recoil
+  notable: false
+  verified: true
+  src: https://mods.marathondb.gg/api/mods/suppression-dampener (marathondb.gg)
+  date: '2026-07-16'
+- id: 88
+  slug: thermal-optic
+  name: Thermal Optic
+  category: optic
+  rarity: deluxe
+  effect: +0.04° ads_spread; +0.4 ads_zoom (multiplier)
+  notable: false
+  verified: false
+  src: https://mods.marathondb.gg/api/mods/thermal-optic (marathondb.gg)
+  date: '2026-07-16'
+- id: 459
+  slug: thermal-surge-battery
+  name: Thermal Surge Battery
+  category: magazine
+  rarity: prestige
+  effect: -0.52s reload_speed; -2.0% voltdrain
+  notable: false
+  verified: true
+  src: https://mods.marathondb.gg/api/mods/thermal-surge-battery (marathondb.gg)
+  date: '2026-07-16'
+- id: 148
+  slug: torch-bug
+  name: Torch Bug
+  category: chip
+  rarity: deluxe
+  effect: 'Note: Item slightly increases the reload speed of all weapons.'
+  notable: true
+  verified: true
+  src: https://mods.marathondb.gg/api/mods/torch-bug (marathondb.gg)
+  date: '2026-07-16'
+- id: 497
+  slug: torch-bug-enhanced
+  name: Torch Bug
+  category: chip
+  rarity: enhanced
+  effect: 'Eliminating a hostile causes them to explode.
+
+    Slightly improves weapon reload time on all weapons.'
+  notable: true
+  verified: true
+  src: https://mods.marathondb.gg/api/mods/torch-bug-enhanced (marathondb.gg)
+  date: '2026-07-16'
+- id: 498
+  slug: torch-bug-superior
+  name: Torch Bug
+  category: chip
+  rarity: superior
+  effect: Item slightly improves the reload time of all weapons.
+  notable: true
+  verified: true
+  src: https://mods.marathondb.gg/api/mods/torch-bug-superior (marathondb.gg)
+  date: '2026-07-16'
+- id: 169
+  slug: trigger-discipline
+  name: Trigger Discipline
+  category: chip
+  rarity: standard
+  effect: Grants a small amount of increased accuracy for the first few rounds of a trigger pull.
+  notable: true
+  verified: true
+  src: https://mods.marathondb.gg/api/mods/trigger-discipline (marathondb.gg)
+  date: '2026-07-16'
+- id: 188
+  slug: trigger-discipline-enhanced
+  name: Trigger Discipline
+  category: chip
+  rarity: enhanced
+  effect: Grants a moderate amount of increased accuracy for the first few rounds of a trigger pull.
+  notable: true
+  verified: true
+  src: https://mods.marathondb.gg/api/mods/trigger-discipline-enhanced (marathondb.gg)
+  date: '2026-07-16'
+- id: 520
+  slug: triple-barrel
+  name: Triple Barrel
+  category: barrel
+  rarity: prestige
+  effect: -4.5 damage (flat); +1.36° hipfire_spread; -22.5% weight
+  notable: true
+  verified: true
+  src: https://mods.marathondb.gg/api/mods/triple-barrel (marathondb.gg)
+  date: '2026-07-16'
+- id: 151
+  slug: turbo-generator
+  name: Turbo Generator
+  category: generator
+  rarity: enhanced
+  effect: Slightly increases ADS speed and charge time.
+  notable: true
+  verified: false
+  src: https://mods.marathondb.gg/api/mods/turbo-generator (marathondb.gg)
+  date: '2026-07-16'
+- id: 470
+  slug: vigilant-grip-superior
+  name: Vigilant Grip
+  category: grip
+  rarity: superior
+  effect: -0.39s equip_speed; -29.5% recoil
+  notable: false
+  verified: false
+  src: https://mods.marathondb.gg/api/mods/vigilant-grip-superior (marathondb.gg)
+  date: '2026-07-16'
+- id: 480
+  slug: vigilant-lens
+  name: Vigilant Lens
+  category: optic
+  rarity: deluxe
+  effect: -0.07s ads_speed; -0.26° ads_spread; +0.7 ads_zoom (multiplier)
+  notable: false
+  verified: true
+  src: https://mods.marathondb.gg/api/mods/vigilant-lens (marathondb.gg)
+  date: '2026-07-16'
+- id: 487
+  slug: vigilant-lens-enhanced
+  name: Vigilant Lens
+  category: optic
+  rarity: enhanced
+  effect: -0.05s ads_speed; -0.19° ads_spread; +0.5 ads_zoom (multiplier)
+  notable: false
+  verified: false
+  src: https://mods.marathondb.gg/api/mods/vigilant-lens-enhanced (marathondb.gg)
+  date: '2026-07-16'
+- id: 486
+  slug: vigilant-lens-standard
+  name: Vigilant Lens
+  category: optic
+  rarity: standard
+  effect: -0.03s ads_speed; -0.11° ads_spread; +0.3 ads_zoom (multiplier)
+  notable: false
+  verified: false
+  src: https://mods.marathondb.gg/api/mods/vigilant-lens-standard (marathondb.gg)
+  date: '2026-07-16'
+- id: 488
+  slug: vigilant-lens-superior
+  name: Vigilant Lens
+  category: optic
+  rarity: superior
+  effect: -0.09s ads_speed; -0.33° ads_spread; +0.9 ads_zoom (multiplier)
+  notable: true
+  verified: true
+  src: https://mods.marathondb.gg/api/mods/vigilant-lens-superior (marathondb.gg)
+  date: '2026-07-16'
+- id: 562
+  slug: vital-intel
+  name: Vital Intel
+  category: optic
+  rarity: prestige
+  effect: -0.07s ads_speed; -0.14s equip_speed
+  notable: false
+  verified: true
+  src: https://mods.marathondb.gg/api/mods/vital-intel (marathondb.gg)
+  date: '2026-07-16'
+- id: 98
+  slug: weighted-barrel-enhanced
+  name: Weighted Barrel
+  category: barrel
+  rarity: enhanced
+  effect: +0.10° aim_assist; -19.1% moving_inaccuracy
+  notable: false
+  verified: false
+  src: https://mods.marathondb.gg/api/mods/weighted-barrel-enhanced (marathondb.gg)
+  date: '2026-07-16'
+- id: 106
+  slug: weighted-barrel-superior
+  name: Weighted Barrel
+  category: barrel
+  rarity: superior
+  effect: +0.36° aim_assist; -10.5% moving_inaccuracy
+  notable: false
+  verified: true
+  src: https://mods.marathondb.gg/api/mods/weighted-barrel-superior (marathondb.gg)
+  date: '2026-07-16'
+skins_overview:
+  class_locked: true
+  class_locked_note: у каждого скина есть runner.slug/runner.name - скин жёстко привязан к одному классу
+    (Assassin/Destroyer/Recon/Rook/Sentinel/Thief/Triage/Vandal); косметика, чисто внешний вид, на характеристики
+    не влияет (не проверялось напрямую - таких заявлений по геймплей-эффекту в данных API нет, что само
+    по себе косвенно подтверждает «чистая косметика»)
+  rarities:
+  - standard
+  - enhanced
+  - deluxe
+  - superior
+  - prestige
+  rarities_src:
+  - src: https://marathondb.info/cosmetics/shells (filter UI)
+    date: '2026-07-16'
+    note: 'UI-фильтр Rarity на /cosmetics/shells: Standard, Enhanced, Deluxe, Superior, Prestige - 5 ступеней,
+      идентично системе модов'
+  - src: https://marathondb.info/cosmetics/weapons (filter UI)
+    date: '2026-07-16'
+    note: тот же список фильтров повторяется на /cosmetics/weapons (скины оружия) - система рангов общая
+      для всей косметики
+  - src: https://runnerskins.marathondb.gg/api/skins (marathondb.gg)
+    date: '2026-07-16'
+    note: 'РАСХОЖДЕНИЕ: в реальных данных runnerskins.marathondb.gg (93 скина) встречены только standard/deluxe/superior/prestige
+      + один аномальный common (rook-default, без изображения, source=unknown); значение enhanced НЕ встретилось
+      ни разу среди текущих 93 записей'
+  acquisition:
+  - v: Store
+    src: https://marathondb.info/cosmetics/shells (filter UI)
+    date: '2026-07-16'
+  - v: Premium Rewards Pass
+    src: https://marathondb.info/cosmetics/shells (filter UI)
+    date: '2026-07-16'
+  - v: Faction Reward
+    src: https://marathondb.info/cosmetics/shells (filter UI)
+    date: '2026-07-16'
+  - v: Free/Event
+    src: https://marathondb.info/cosmetics/shells (filter UI)
+    date: '2026-07-16'
+  - v: Deluxe Edition
+    src: https://marathondb.info/cosmetics/shells (filter UI)
+    date: '2026-07-16'
+  - v: Pre-Order Bonus
+    src: https://marathondb.info/cosmetics/shells (filter UI)
+    date: '2026-07-16'
+    note: в задании было «Pre-Order» - на сайте точная формулировка «Pre-Order Bonus»
+  acquisition_mismatch_note: 'marathondb.gg хранит источник скина в поле source с ДРУГИМ словарём значений:
+    codex (40 из 93 - самый крупный источник), store (29), unknown (9), default (6, это базовый вид класса
+    «из коробки»), battlepass (5), battlepass-premium (4). battlepass/battlepass-premium примерно соответствуют
+    «Premium Rewards Pass» с marathondb.info; store совпадает напрямую. codex НЕ имеет соответствия среди
+    6 категорий acquisition на marathondb.info - вероятно потому, что marathondb.info ведёт «Codex» (достижения/прогресс)
+    как ОТДЕЛЬНУЮ систему (342 записи на главной), а не как способ получения косметики.'
+  notable:
+  - name: Vox Nocturna
+    class: Assassin / Destroyer / Triage / Vandal (battlepass-premium) + Thief (battlepass)
+    rarity: prestige
+    source_type: Premium Rewards Pass (battlepass)
+    note: коллекция из 5 prestige-скинов, сезон «Nightfall», лимитированная
+    src: https://runnerskins.marathondb.gg/api/skins (marathondb.gg)
+    date: '2026-07-16'
+  - name: MIDNIGHT DECAY
+    class: Vandal / Destroyer / Assassin / Thief
+    rarity: prestige
+    source_type: Store
+    note: коллекция из 4 prestige-скинов, сезон «Season 1 - Launch», лимитированная; помечены skin_type=shell
+      (не skin)
+    src: https://runnerskins.marathondb.gg/api/skins (marathondb.gg)
+    date: '2026-07-16'
+  - name: KASHA YOKAI
+    class: Thief
+    rarity: prestige
+    source_type: Store
+    note: лимитированный
+    src: https://runnerskins.marathondb.gg/api/skins (marathondb.gg)
+    date: '2026-07-16'
+  - name: Arata Vectus
+    class: Assassin
+    rarity: prestige
+    source_type: Store
+    note: не лимитированный (постоянный товар в сторе)
+    src: https://runnerskins.marathondb.gg/api/skins (marathondb.gg)
+    date: '2026-07-16'
+  - name: White Rabbit
+    class: Recon
+    rarity: superior
+    source_type: Store
+    note: лимитированный; есть тёзка «White Rabbit» / «Lilac Rabbit» на Thief (superior, battlepass, сезон
+      Pre-Season) - несовпадение display_name/slug у сайта, вероятно ошибка данных
+    src: https://runnerskins.marathondb.gg/api/skins (marathondb.gg)
+    date: '2026-07-16'
+  - name: ARISTA ATRAX
+    class: Thief
+    rarity: deluxe
+    source_type: Codex (достижение)
+    note: лимитированный
+    src: https://runnerskins.marathondb.gg/api/skins (marathondb.gg)
+    date: '2026-07-16'
+  - name: Rook Default
+    class: Rook
+    rarity: common
+    source_type: default/unknown
+    note: единственная запись по классу Rook в базе, без изображения - класс слабо задокументирован на
+      дату сбора
+    src: https://runnerskins.marathondb.gg/api/skins (marathondb.gg)
+    date: '2026-07-16'
+  counts:
+    total_gg_api: 93
+    total_gg_api_with_image: 92
+    by_rarity_gg_api:
+      prestige: 11
+      deluxe: 61
+      superior: 14
+      common: 1
+      standard: 6
+    by_source_gg_api:
+      battlepass-premium: 4
+      battlepass: 5
+      codex: 40
+      store: 29
+      unknown: 9
+      default: 6
+    by_class_total:
+      Assassin: 15
+      Destroyer: 13
+      Thief: 17
+      Triage: 12
+      Vandal: 15
+      Sentinel: 8
+      Recon: 12
+      Rook: 1
+    by_class_by_source:
+      Assassin:
+        battlepass-premium: 1
+        codex: 5
+        store: 7
+        unknown: 1
+        default: 1
+      Destroyer:
+        battlepass-premium: 1
+        codex: 7
+        unknown: 1
+        store: 3
+        default: 1
+      Thief:
+        battlepass: 3
+        codex: 6
+        store: 6
+        unknown: 1
+        default: 1
+      Triage:
+        battlepass-premium: 1
+        codex: 7
+        store: 1
+        unknown: 2
+        default: 1
+      Vandal:
+        battlepass-premium: 1
+        codex: 3
+        store: 8
+        unknown: 1
+        battlepass: 1
+        default: 1
+      Sentinel:
+        codex: 7
+        store: 1
+      Recon:
+        store: 3
+        codex: 5
+        unknown: 2
+        default: 1
+        battlepass: 1
+      Rook:
+        unknown: 1
+    total_cosmetics_all_types_info:
+      v: 91
+      src: https://marathondb.info/ (homepage counters)
+      date: '2026-07-16'
+      note: «91 Cosmetics» на главной marathondb.info - это ВСЕ типы косметики разом (shell skins + weapon
+        skins + stickers + backgrounds), не только скины ранеров; напрямую с 93 (runnerskins.marathondb.gg)
+        не сравнимо - разный охват
+    runner_shell_count_mismatch:
+      marathondb_gg:
+        v: 8
+        src: https://marathondb.gg/runner-skins
+        date: '2026-07-16'
+        note: '8 классов встречены в данных runnerskins API: Assassin, Destroyer, Recon, Rook, Sentinel,
+          Thief, Triage, Vandal'
+      marathondb_info:
+        v: 7
+        src: https://marathondb.info/ (homepage counters)
+        date: '2026-07-16'
+        note: статичный счётчик «7 Runner Shells» на главной marathondb.info - на 1 меньше; вероятно Rook
+          (в данных marathondb.gg у Rook всего 1 запись, source=unknown, без изображения) ещё не заведён
+          на marathondb.info

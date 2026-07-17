@@ -1,0 +1,542 @@
+meta:
+  data_version: '6.0'
+  game_patch: Season 2, до мид-сезонного патча Vault Breaker (21.07.2026, на момент сборки ещё не вышел)
+  captured: '2026-07-16'
+  source_priority: 'Официальный Codex (лор, флейвор-тексты) - основной источник для lore_notes/lore_quotes;
+    статы/абилки/кулдауны - дисплей-слой marathondb.gg (кросс-проверка marathonmeta.gg где доступно);
+    неразрешимое расхождение между сайтами (напр. role_alt у Rook) не прячется, обе версии в датасете;
+    нулевые/плейсхолдер-значения источника не публикуются как факт - помечаются wip: true.'
+shells:
+- id: vandal
+  name: Vandal
+  series: Glitch
+  role: Combat Anarchist
+  tech: Enhanced Movement
+  tagline: Martian freedom fighter
+  stats:
+    health:
+      v: null
+      src: null
+      date: '2026-07-16'
+      note: raw HP/shield numbers не публикуются ни на одном из проверенных сайтов; похоже, базовые HP/shield
+        едины для всех шеллов, а различия задаются вторичными статами ниже (Destiny-подобная модель)
+    shield:
+      v: null
+      src: null
+      date: '2026-07-16'
+      note: см. health.note
+    secondary_relative_0_100:
+      heat_capacity: 25
+      agility: 30
+      loot_speed: 5
+      melee_damage: 5
+      prime_recovery: 10
+      tactical_recovery: 5
+      self_repair: 5
+      finisher_siphon: 10
+      revive_speed: 5
+      hardware: 10
+      firewall: 5
+      fall_resistance: 10
+      ping_duration: 5
+      src: https://marathondb.gg/runners/vandal/
+      date: '2026-07-16'
+      note: снэпшот датасета помечен сайтом как 'Server Slam / Season 1 - First Step', т.е. это балансировка
+        релиза, не обязательно текущая после Season 2 (2026-06-02)
+  abilities:
+  - name: Amplify
+    type: prime
+    desc: Overcharge your movement systems, reducing the heat generated from your movement abilities while
+      increasing your movement speed and weapon dexterity.
+    cooldown: 164s
+  - name: Disrupt Cannon
+    type: tactical
+    desc: Transform your arm into a cannon and fire a high-powered energy projectile that deals damage
+      and pushes targets away. Overcharge greatly increases size and damage of the blast.
+    cooldown: 64s
+  - name: Microjets
+    type: trait
+    desc: Activate while airborne to perform another jump at the cost of generating additional heat.
+    cooldown: null
+  - name: Power Slide
+    type: trait
+    desc: Grants a supercharged slide that generates additional heat.
+    cooldown: null
+  lore_notes: 'Серия Glitch родилась из инсуррекционистских операций MIDA на Марсе: кто-то угнал грузовик
+    стандартных шеллов, доработал их до Vandal и устроил дневную атаку на конвой UESC («A Dozen Lunatics
+    Bumrush UESC Mobile Armory»). Общий вокал-паттерн Glitch затруднял отслеживание конкретных Раннеров
+    правоохранителями UESC, а уличная эстетика серии стала молодёжным трендом на Марсе.'
+  lore_quotes:
+  - '"A Dozen Lunatics Bumrush UESC Mobile Armory" - MIDA recruitment went up 7500% the week after.'
+  sources:
+  - url: https://codex.cyberacme.systems/entry/exfil-vandal
+    note: 'официальный Codex, запись Exfil: Vandal (Runners'' Guide v.1.001.01.tciv)'
+  - url: https://marathondb.gg/runners/vandal/
+    note: статы/абилки/кулдауны
+- id: destroyer
+  name: Destroyer
+  series: Locus
+  role: Combat Specialist
+  tech: Offense / Defense
+  tagline: Ex-UESC special operations
+  stats:
+    health:
+      v: null
+      src: null
+      date: '2026-07-16'
+      note: см. Vandal.stats.health.note
+    shield:
+      v: null
+      src: null
+      date: '2026-07-16'
+      note: см. Vandal.stats.health.note
+    secondary_relative_0_100:
+      heat_capacity: 15
+      agility: 10
+      loot_speed: 5
+      melee_damage: 15
+      prime_recovery: 5
+      tactical_recovery: 10
+      self_repair: 15
+      finisher_siphon: 10
+      revive_speed: 10
+      hardware: 25
+      firewall: 20
+      fall_resistance: 5
+      ping_duration: 5
+      src: https://marathondb.gg/runners/destroyer/
+      date: '2026-07-16'
+  abilities:
+  - name: Search and Destroy
+    type: prime
+    desc: Activate your shoulder-mounted missile pods. Dealing sustained damage to targets launches homing
+      missiles, immobilizing and dealing damage upon impact.
+    cooldown: 286s
+  - name: Riot Barricade
+    type: tactical
+    desc: Toggle an energy barricade that blocks incoming damage, draining tactical ability energy over
+      time. Taking damage drains additional energy.
+    cooldown: 12s
+  - name: Thruster
+    type: trait
+    desc: Activate while airborne to fire boosters that thrust you in the direction you are moving.
+    cooldown: null
+  - name: Tactical Sprint
+    type: trait
+    desc: Double-press sprint to move faster at the cost of generating additional heat.
+    cooldown: null
+  lore_notes: Destroyer - продукт UESC Combat Science Labs, официально запрещён к военному применению
+    после принятия поправки Consequence of Violence в 2879 году, но корпорации продолжают использовать
+    его в охране. Серия Locus обучена на боевом опыте солдат UESC и даёт Раннеру спокойствие и уверенность
+    в бою вне зависимости от уровня угрозы.
+  lore_quotes:
+  - banned from official military use with the passage of the Consequence of Violence amendment in 2879
+  sources:
+  - url: https://codex.cyberacme.systems/entry/exfil-destroyer
+    note: 'официальный Codex, запись Exfil: Destroyer'
+  - url: https://marathondb.gg/runners/destroyer/
+    note: статы/абилки/кулдауны
+- id: assassin
+  name: Assassin
+  series: Void
+  role: Shadow Agent
+  tech: Invisibility Systems
+  tagline: Unknown
+  stats:
+    health:
+      v: null
+      src: null
+      date: '2026-07-16'
+      note: см. Vandal.stats.health.note
+    shield:
+      v: null
+      src: null
+      date: '2026-07-16'
+      note: см. Vandal.stats.health.note
+    secondary_relative_0_100:
+      heat_capacity: 10
+      agility: 20
+      loot_speed: 15
+      melee_damage: 10
+      prime_recovery: 10
+      tactical_recovery: 5
+      self_repair: 10
+      finisher_siphon: 10
+      revive_speed: 15
+      hardware: 10
+      firewall: 20
+      fall_resistance: 10
+      ping_duration: 10
+      src: https://marathondb.gg/runners/assassin/
+      date: '2026-07-16'
+  abilities:
+  - name: Smoke Screen
+    type: prime
+    desc: Throw a smoke disc that emits a line of smoke fields in front of you, disrupting the optics
+      of those who step inside.
+    cooldown: 163s
+  - name: Active Camo
+    type: tactical
+    desc: Activate your shell's camouflage systems, pulling a shroud of invisibility over yourself. Offensive
+      actions, taking damage, and using abilities/consumables briefly disrupt invisibility.
+    cooldown: 78s
+  - name: Shadow Dive
+    type: trait
+    desc: Activate while airborne to slam a smoke disc into the ground, deploying a smoke field.
+    cooldown: 57s
+  - name: Shroud
+    type: trait
+    desc: Your shell automatically activates its camouflage systems when entering any smoke field, making
+      you invisible; persists briefly after leaving the field.
+    cooldown: null
+  lore_notes: UESC официально не признаёт разработку скрытной технологии Assassin, но в среде Раннеров
+    известно, что она восходит к прототипам UESC Spec Ops. Серия Void считается первой личностной серией
+    Assassin - по легенде названа в честь безымянного Раннера, потерявшего рассудок при первых испытаниях
+    активного камуфляжа, слитого со слиянием нейронного переноса.
+  lore_quotes:
+  - '"The unseen blade strikes first."'
+  sources:
+  - url: https://codex.cyberacme.systems/entry/exfil-assassin
+    note: 'официальный Codex, запись Exfil: Assassin'
+  - url: https://marathondb.gg/runners/assassin/
+    note: статы/абилки/кулдауны
+- id: recon
+  name: Recon
+  series: Blackbird
+  role: Intel Specialist
+  tech: Threat Detection
+  tagline: Classified
+  stats:
+    health:
+      v: null
+      src: null
+      date: '2026-07-16'
+      note: см. Vandal.stats.health.note
+    shield:
+      v: null
+      src: null
+      date: '2026-07-16'
+      note: см. Vandal.stats.health.note
+    secondary_relative_0_100:
+      heat_capacity: 20
+      agility: 15
+      loot_speed: 10
+      melee_damage: 5
+      prime_recovery: 5
+      tactical_recovery: 10
+      self_repair: 5
+      finisher_siphon: 25
+      revive_speed: 10
+      hardware: 10
+      firewall: 15
+      fall_resistance: 5
+      ping_duration: 25
+      src: https://marathondb.gg/runners/recon/
+      date: '2026-07-16'
+  abilities:
+  - name: Echo Pulse
+    type: prime
+    desc: Activate your shell's advanced detection systems, releasing a series of sonar pulses that reveal
+      the location of nearby hostiles.
+    cooldown: 229s
+  - name: Tracker Drone
+    type: tactical
+    desc: Deploy a mechanized microbot that tracks down nearby hostiles and explodes, overheating any
+      targets caught in the blast.
+    cooldown: 74s
+  - name: Interrogation
+    type: trait
+    desc: When pinged by a hostile Runner, you automatically receive a warning on your shell's HUD. Performing
+      a finish on a runner pings their crew.
+    cooldown: null
+  - name: Stalker Protocol
+    type: trait
+    desc: After breaking a target's shields, they leave behind a lingering holographic trail for a short
+      time.
+    cooldown: null
+  lore_notes: Recon - ещё один трофей боевой инициативы UESC; официальное применение свернули, когда выяснилось,
+    что поток разведданных повреждает нейронную целостность носителя. Серия Blackbird создавалась для
+    поддержания устойчивости психики солдат в бою; Раннеры взломали скрытый протокол «command:follow»,
+    зашитый во все боевые личностные матрицы UESC Combat Science Labs.
+  lore_quotes:
+  - raising concerns over the legitimacy of a UESC deployed Runner's free thought
+  sources:
+  - url: https://codex.cyberacme.systems/entry/exfil-recon
+    note: 'официальный Codex, запись Exfil: Recon'
+  - url: https://marathondb.gg/runners/recon/
+    note: статы/абилки/кулдауны
+- id: thief
+  name: Thief
+  series: Icon
+  role: Covert Acquisitions
+  tech: Advanced Heist Mechanics
+  tagline: Hired corporate mercenary
+  stats:
+    health:
+      v: null
+      src: null
+      date: '2026-07-16'
+      note: см. Vandal.stats.health.note
+    shield:
+      v: null
+      src: null
+      date: '2026-07-16'
+      note: см. Vandal.stats.health.note
+    secondary_relative_0_100:
+      heat_capacity: 15
+      agility: 20
+      loot_speed: 25
+      melee_damage: 10
+      prime_recovery: 10
+      tactical_recovery: 5
+      self_repair: 5
+      finisher_siphon: 15
+      revive_speed: 5
+      hardware: 5
+      firewall: 15
+      fall_resistance: 20
+      ping_duration: 5
+      src: https://marathondb.gg/runners/thief/
+      date: '2026-07-16'
+  abilities:
+  - name: Pickpocket Drone
+    type: prime
+    desc: Deploy a remotely piloted flying drone with limited lifespan; fire a hooked tether that ejects
+      the highest-value item from target inventories, collects loose loot, and opens doors.
+    cooldown: null
+  - name: Grapple Device
+    type: tactical
+    desc: Launch a grapple device in your aim direction, propelling yourself toward it.
+    cooldown: null
+  - name: X-Ray Visor
+    type: trait
+    desc: Highlights hostiles and containers by the value of the most valuable item they're storing; prolonged
+      aim hacks a hostile's optics, disrupting their vision.
+    cooldown: null
+  - name: The Finer Things
+    type: trait
+    desc: Gain increased weapon handling and accelerated Grapple Device recharge rate based on the number
+      of items in your Backpack.
+    cooldown: null
+  lore_notes: По слухам, первый Thief-шелл был внутренней разработкой SEKGEN для рейда против корпорации-конкурента
+    - нанятый Раннер так и не вернул шелл, а спецификации утекли на чёрные рынки спустя месяцы. Серия
+    Icon полностью аф-маркетная, скопирована с лица и голоса бывшего ведущего Shell Science Director SEKGEN
+    д-ра Йоки Самуры, что даёт Thief узнаваемый публичный образ вместо анонимности.
+  lore_quotes:
+  - a life-like facial replica and vocalization pattern of SEKGEN's former lead Shell Science Director
+  sources:
+  - url: https://codex.cyberacme.systems/entry/exfil-thief
+    note: 'официальный Codex, запись Exfil: Thief'
+  - url: https://marathondb.gg/runners/thief/
+    note: статы/абилки/кулдауны
+- id: triage
+  name: Triage
+  series: Aux
+  role: Field Medic
+  tech: Damage Mitigation
+  tagline: Systems security engineer
+  stats:
+    health:
+      v: null
+      src: null
+      date: '2026-07-16'
+      note: см. Vandal.stats.health.note
+    shield:
+      v: null
+      src: null
+      date: '2026-07-16'
+      note: см. Vandal.stats.health.note
+    secondary_relative_0_100:
+      heat_capacity: 10
+      agility: 10
+      loot_speed: 10
+      melee_damage: 5
+      prime_recovery: 10
+      tactical_recovery: 5
+      self_repair: 25
+      finisher_siphon: 5
+      revive_speed: 20
+      hardware: 15
+      firewall: 15
+      fall_resistance: 5
+      ping_duration: 15
+      src: https://marathondb.gg/runners/triage/
+      date: '2026-07-16'
+  abilities:
+  - name: Reboot+
+    type: prime
+    desc: 'Ready your shell''s emergency defibrillator systems. Lock on to downed crew members or hostile
+      targets and fire your Reboot+ device: revives crew, EMPs hostiles.'
+    cooldown: 191s
+  - name: Med-Drone
+    type: tactical
+    desc: Deploy a floating medical drone that attaches to crew members, restores health or recharges
+      shields, and prevents them from bleeding out while downed.
+    cooldown: 82s
+  - name: Shareware.exe
+    type: trait
+    desc: Benefits from medical consumables are shared between crew members with Med-Drone attached to
+      them.
+    cooldown: 57s
+  - name: Battery Overcharge
+    type: trait
+    desc: Divert energy from cooling systems to boost weapon performance at the cost of extra heat; while
+      active, breaking a shield with a volt weapon EMPs the target.
+    cooldown: 999s
+  lore_notes: 'Triage - разработка корпорации TRAXUS для марсианских шахт: шелл-рабочие давали высокую
+    текучку из-за опасных условий, и Triage придумали, чтобы держать их в строю. Разработан совместно
+    с UESC и Sekiguchi Genetics ещё до официального дебюта - Раннеры заинтересовались им раньше рынка.
+    Личностная серия Aux изначально даёт спокойный «постельный» тон медика, но Раннеры дотюнили её агрессивность
+    для боевых условий. По данным marathonwiki (со ссылкой на игру), модели Triage массово применялись
+    в корпоративной холодной войне на Tau Ceti IV в 2893 году.'
+  lore_quotes:
+  - TRAXUS needed a means to keep their workers functioning despite high turnover due to the hazardous
+    conditions
+  - its calm voice print was tweaked to allow more aggression in combat scenarios
+  sources:
+  - url: https://codex.cyberacme.systems/entry/exfil-triage
+    note: 'официальный Codex, запись Exfil: Triage - основной источник лора, найден напрямую по URL /entry/exfil-triage'
+  - url: https://www.marathonwiki.com/Lore:Triage
+    note: 'доп. свод (дата 2893, стили скинов), сам ссылается на тот же Codex Exfil: Triage'
+  - url: https://marathondb.gg/runners/triage/
+    note: статы/абилки/кулдауны
+- id: sentinel
+  name: Sentinel
+  series: Rampart
+  role: Defensive Strategist
+  tech: Area Denial / Countermeasures
+  tagline: null
+  stats:
+    health:
+      v: null
+      src: null
+      date: '2026-07-16'
+      note: см. Vandal.stats.health.note; для Sentinel даже вторичные статы marathondb.gg ещё не заполнены
+        (страница появилась в Season 2)
+    shield:
+      v: null
+      src: null
+      date: '2026-07-16'
+      note: см. health.note
+    secondary_relative_0_100:
+      note: marathondb.gg/runners/sentinel/ не содержит блока 'Stats' (HEAT CAPACITY и т.п.) на момент
+        проверки - шелл добавлен в Season 2 (2026-06-02), датасет ещё не обновлён
+      src: https://marathondb.gg/runners/sentinel/
+      date: '2026-07-16'
+  abilities:
+  - name: Defender System
+    type: prime
+    desc: Deploy an automated laser platform that tracks and destroys incoming enemy grenades and missiles
+      mid-flight, while boosting weapon handling/reload for nearby crewmates. Limited number of projectiles.
+    cooldown: null
+  - name: Snare Mine
+    type: tactical
+    desc: Throw a proximity-triggered mine that detonates into several immobilising submunitions on contact.
+    cooldown: null
+  - name: Castle Doctrine
+    type: trait (passive)
+    desc: Ready/reload SMGs, pistols and shotguns faster based on nearby hostiles; taking splash damage
+      temporarily boosts Hardware, Firewall and Self-Repair Speed.
+    cooldown: null
+  - name: Prey Tracker
+    type: trait
+    desc: Short-range motion-tracking HUD that reveals nearby moving targets on radar (conical zone in
+      front of you).
+    cooldown: null
+  lore_notes: 'Первое зафиксированное появление Sentinel - осада Trenchway Holdout под Антарктидой: экипаж
+    учёных-радикалов в угнанных шеллах UESC три месяца держал оборону от Central Security Agency, которая
+    потеряла 27 агентов, прежде чем обрушить тоннели. После утечки тактик Trenchway 3 в среде Раннеров,
+    Sentinel стал стандартным инструментом для разведки и исследований. Личностная серия GADGE (Rampart)
+    официально признана в Sol нелегальной кражей личности - она скомпилирована из ворованных нейронных
+    моделей учёных-механиков Intelligent Design Labs (Стокгольм).'
+  lore_quotes:
+  - The CSA lost 27 agents before collapsing the tunnels and calling it a day
+  - is labeled as illegal, invasive identity theft in Sol
+  sources:
+  - url: https://codex.cyberacme.systems/entry/sentinel-exfil
+    note: официальный Codex, запись Sentinel Exfil (обратный порядок слов в слаге в отличие от других
+      7 шеллов) - основной источник лора
+  - url: https://www.marathonwiki.com/Lore:Sentinel
+    note: доп. подтверждение (дата 2893, факт первого показа Sentinel в анонс-трейлере)
+  - url: https://marathondb.gg/runners/sentinel/
+    note: роль/абилки; блок статов пуст
+  - url: https://marathonmeta.gg/season-2
+    note: независимое описание абилок из дев-превью патча Season 2 (2026-06-02) - совпадает с marathondb
+- id: rook
+  name: Rook
+  series: null
+  role: Opportunist
+  role_alt:
+    v: Scavenger
+    src: https://marathonmeta.gg/runners/rook
+    date: '2026-07-16'
+    note: marathondb.gg называет роль 'Opportunist', marathonmeta.gg - 'Scavenger'; расхождение в неймингах
+      между сайтами, не в самой игре
+  tech: '[limited] - не полноценный SHELL, а FRAME'
+  tagline: Lunar work release
+  stats:
+    health:
+      v: null
+      src: null
+      date: '2026-07-16'
+      note: см. Vandal.stats.health.note
+    shield:
+      v: null
+      src: null
+      date: '2026-07-16'
+      note: см. Vandal.stats.health.note
+    secondary_relative_0_100:
+      heat_capacity: null
+      agility: null
+      loot_speed: null
+      melee_damage: null
+      prime_recovery: null
+      tactical_recovery: null
+      self_repair: null
+      finisher_siphon: null
+      revive_speed: null
+      hardware: null
+      firewall: null
+      fall_resistance: null
+      ping_duration: null
+      src: https://marathondb.gg/runners/rook/
+      date: '2026-07-16'
+      note: 'ВСЕ значения = 0 на marathondb.gg, страница сама помечена ''Season 0 - Server Slam ... (This
+        is a test patch note! Work in progress)'' - датасет explicitly placeholder/недостоверный, не использовать
+        как реальные цифры. Нули не публикуются как реальные данные (wip: true) - источник сам помечает
+        блок как ''This is a test patch note! Work in progress''.'
+      wip: true
+  abilities:
+  - name: Recuperation
+    type: prime
+    desc: Activate your prototype frame's emergency repair system to slowly restore health. Interrupted
+      when you take damage.
+    cooldown: 180s
+  - name: Signal Mask
+    type: tactical
+    desc: Activate a temporary holodisplay mask to deceive UESC forces, making them unaware of your presence.
+      Disrupted when you sprint or take damage.
+    cooldown: 91s
+  gameplay_notes:
+  - 'Rook - бесплатный фрейм без стоимости лоадаута: другие игроки НЕ получают уведомление о вашем входе
+    в зону (marathonmeta.gg), что делает Rook нишевым инструментом скрытного соло-забега/повторного строительства.'
+  - 'Именно нулевая стоимость лоадаута Rook - причина, по которой Rook исключён из Cryo Archive (см. zones.cryo_archive.entry_req):
+    порог входа 5000 credits loadout value физически недостижим на фрейме без лута/брони.'
+  lore_notes: Rook - не биомата-шелл, а угнанный базовый робото-фрейм, который UESC и корпорации используют
+    для ручного труда; Раннеры доустанавливают на него ограниченный по времени нейросинхронизатор, позволяющий
+    занимать тело на короткий срок до нейродеградации. Rook лишён апгрейдов через Implants/Cores и никогда
+    не достигает полного функционала биокибернетических шеллов. По данным marathonwiki (ссылка на игру),
+    Rook-фреймы массово использовались во время корпоративной холодной войны на Tau Ceti IV в 2893 году
+    - теглайн 'Lunar work release' на marathondb.gg намекает на происхождение из лунного каторжного труда.
+  lore_quotes:
+  - A Rook frame is a scavenger's best friend
+  - Rook frames were utilized heavily during the corporate cold war
+  sources:
+  - url: https://codex.cyberacme.systems/entry/exfil-rook
+    note: 'официальный Codex, запись Exfil: Rook (''ROOK FRAME'', не ''SHELL'') - основной источник лора'
+  - url: https://www.marathonwiki.com/Lore:Rook
+    note: 'доп. подтверждение (дата 2893), ссылается на тот же Codex Exfil: Rook'
+  - url: https://marathondb.gg/runners/rook/
+    note: абилки/кулдауны; блок статов = плейсхолдер (0 везде)
+  - url: https://marathonmeta.gg/runners/rook
+    note: og:description с механикой 'без уведомления при входе в зону'

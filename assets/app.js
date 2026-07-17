@@ -2,7 +2,7 @@
   if(!(window.PAGE && window.PAGE.slug==='index')) return;
   var m=/^#(en|es|de|ru)-(s\d+|arms)$/.exec(window.location.hash||'');
   if(!m) return;
-  var LEGACY_PAGES={s2:'timeline',s3:'colony',s4:'runners',s5:'classes',arms:'arsenal',s6:'factions',s7:'rampancy',s8:'aliens',s9:'zones',s10:'seasons',s11:'trilogy',s12:'deep-cuts',s13:'canon'};
+  var LEGACY_PAGES={s2:'timeline',s3:'colony',s4:'runners',s5:'classes',arms:'arsenal',s6:'factions',s7:'rampancy',s8:'aliens',s9:'zones',s10:'seasons',s11:'trilogy',s12:'deep-cuts',s13:'resources',s14:'resources'};
   var slug=LEGACY_PAGES[m[2]];
   if(!slug) return;
   window.location.replace('pages/'+slug+'.html?lang='+m[1]+window.location.hash);

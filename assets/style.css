@@ -253,3 +253,102 @@ body.hide-spoilers .spoiler-m26::before{content:'SPOILER // priority missions - 
 .map-link-mini{display:inline-flex;padding:.35rem .6rem;margin:.3rem 0 0;gap:.45rem;font-size:.72rem}
 .map-link-mini svg.pic{font-size:1rem}
 .map-link-mini span{font-family:var(--mono);letter-spacing:.04em;text-transform:uppercase;color:var(--text)}
+
+
+/* phase2 v6 structure: subsection labels + weapon/shell/zone stat blocks + mods table */
+.wsub-label{font-family:var(--mono);font-size:.62rem;letter-spacing:.28em;text-transform:uppercase;color:var(--muted);border-left:2px solid var(--acid-dim);padding-left:.55rem;margin:1.15rem 0 .55rem}
+.statgrid{font-family:var(--mono);font-size:.8rem;margin:.5rem 0 .3rem;display:grid;grid-template-columns:1fr 1fr;gap:0 1.7rem}
+.statrow{display:flex;justify-content:space-between;gap:.6rem;padding:.24rem 0;border-bottom:1px dotted var(--line)}
+.statlabel{color:var(--muted)}
+.statval{color:var(--text);text-align:right}
+.prov{grid-column:1/-1;margin-top:.45rem;font-family:var(--mono);font-size:.6rem;color:var(--muted);opacity:.8}
+.modstable{border-collapse:collapse;font-family:var(--mono);font-size:.74rem;width:100%;margin:.45rem 0 .3rem}
+.modstable caption{text-align:left;color:var(--acid);font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;padding-bottom:.35rem}
+.modstable th,.modstable td{border-bottom:1px solid var(--line);padding:.32rem .55rem;text-align:left;vertical-align:top}
+.modstable th{color:var(--muted);font-weight:400;text-transform:uppercase;font-size:.6rem;letter-spacing:.1em}
+.modstable-more td{color:var(--muted);font-style:italic}
+.chip.rarity-standard{color:var(--muted);border-color:var(--line)}
+.chip.rarity-enhanced{color:var(--cyan);border-color:var(--cyan)}
+.chip.rarity-deluxe{color:var(--acid);border-color:var(--acid-dim)}
+.chip.rarity-superior{color:var(--violet-t);border-color:var(--violet)}
+.chip.rarity-prestige{color:var(--orange);border-color:var(--orange)}
+@media(max-width:640px){
+  .statgrid{grid-template-columns:1fr}
+}
+
+
+/* v6-fb-struct: collapsible weapon categories (arsenal) */
+.wcat{border:1px solid var(--line);background:#090c0a;margin:1.6rem 0;box-shadow:0 0 0 1px rgba(93,255,126,.05)}
+.wcat>summary{display:flex;align-items:center;gap:.7rem;list-style:none;cursor:pointer;padding:.55rem .9rem;background:linear-gradient(180deg,#151815,#0f120f);user-select:none;transition:color .15s,background .15s}
+.wcat>summary::-webkit-details-marker{display:none}
+.wcat>summary::after{content:'\25B8';margin-left:auto;color:var(--acid);font-size:.85rem}
+.wcat[open]>summary{border-bottom:1px solid var(--line)}
+.wcat[open]>summary::after{content:'\25BE'}
+.wcat>summary h3{margin:0;font-size:1.05rem}
+.wcat>summary:hover{background:rgba(194,254,12,.06)}
+.wcat>summary:hover h3,.wcat>summary:hover::after{color:#fff}
+.wcat>summary:focus-visible{outline:2px solid var(--acid);outline-offset:-2px}
+.wcat-n{font-family:var(--mono);font-size:.64rem;letter-spacing:.12em;color:var(--muted);border:1px solid var(--line);padding:.05rem .45rem}
+.wcat>.f-row{padding-left:.9rem;padding-right:.9rem}
+.wcat>.f-row:first-of-type{border-top:none}
+
+/* v6-fb-struct: shell-card statgrid overflow fix (classes) */
+.card .statgrid{grid-template-columns:1fr}
+.card .statrow{gap:1rem}
+.card .statlabel{overflow-wrap:anywhere}
+
+/* v6-fb-struct: MapGenie link rebuilt as a button (zones) */
+.map-btn{display:inline-flex;align-items:center;gap:.5rem;margin:.5rem 0 0;padding:.5rem .9rem;border:1px solid var(--acid);color:var(--acid);background:transparent;font-family:var(--mono);font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;transition:color .15s,background .15s}
+.map-btn svg.pic{font-size:1.05rem}
+.map-btn:hover{background:var(--acid);color:#000}
+.map-btn:focus-visible{outline:2px solid var(--acid);outline-offset:2px}
+
+/* v6-fb-struct: welcome sources + community patches (collapsible) */
+.meta-block{max-width:1100px;margin:1.6rem auto;border:1px solid var(--line);background:#070807}
+.meta-block>summary{display:flex;align-items:center;gap:.7rem;list-style:none;cursor:pointer;padding:1rem 8vw;font-family:var(--mono);font-size:.8rem;letter-spacing:.2em;text-transform:uppercase;color:var(--acid);user-select:none;transition:color .15s,background .15s}
+.meta-block>summary::-webkit-details-marker{display:none}
+.meta-block>summary::after{content:'\25B8';margin-left:auto;color:var(--acid)}
+.meta-block[open]>summary{border-bottom:1px solid var(--line)}
+.meta-block[open]>summary::after{content:'\25BE'}
+.meta-block>summary:hover{background:rgba(194,254,12,.06)}
+.meta-block>summary:focus-visible{outline:2px solid var(--acid);outline-offset:-2px}
+.meta-block section{padding-top:2rem;padding-bottom:2rem}
+
+/* v6.4: collapsible Stats block on shell cards (classes.html); summary models .wsub-label + .wcat caret */
+.stats-fold{margin:.55rem 0}
+.stats-fold>summary{display:flex;align-items:center;gap:.5rem;list-style:none;cursor:pointer;font-family:var(--mono);font-size:.62rem;letter-spacing:.28em;text-transform:uppercase;color:var(--muted);border-left:2px solid var(--acid-dim);padding-left:.55rem;user-select:none;transition:color .15s}
+.stats-fold>summary::-webkit-details-marker{display:none}
+.stats-fold>summary::after{content:'\25B8';margin-left:.4rem;color:var(--acid);font-size:.8rem}
+.stats-fold[open]>summary::after{content:'\25BE'}
+.stats-fold>summary:hover{color:#fff}
+.stats-fold>summary:focus-visible{outline:2px solid var(--acid);outline-offset:-2px}
+
+/* v6.4 visual audit: extract repeated inline styles + rampancy diagram frame + map-btn nesting fix */
+.diagram{width:100%;height:auto;display:block;padding:1rem 1rem 1.2rem;background:#0b0e0b}
+.card h4 span{color:var(--acid)}
+.f-slogan{color:var(--acid)}
+.src-note{font-size:.88rem;color:var(--muted)}
+.f-name .map-btn svg.pic{margin:0}
+.f-name .map-btn span{display:inline;margin:0;font-size:inherit;letter-spacing:inherit}
+
+/* v6.4 welcome portal */
+/* two-column intro grid + calm sticky navigator; nested inside <section>, so
+   no own padding/max-width (the section supplies both). wp- prefix = no clash. */
+.wp-grid{display:grid;grid-template-columns:1fr 300px;gap:2.4rem;align-items:start;margin:0}
+.wp-main{min-width:0}
+.wp-main .sec-label{margin-top:2.4rem}
+.wp-main .sec-label:first-child{margin-top:0}
+.wp-navpanel{position:sticky;top:calc(var(--switch-h) + 3.6rem);border:1px solid var(--line);background:#070807}
+.wp-navpanel-head{font-family:var(--mono);font-size:.72rem;letter-spacing:.3em;color:var(--orange);text-transform:uppercase;display:flex;align-items:center;gap:.7rem;padding:1rem 1.1rem .5rem}
+.wp-navpanel-head svg.pic{font-size:1.15rem;color:var(--acid)}
+.wp-navpanel-body{padding:.2rem .45rem .75rem}
+.wp-nline{display:flex;align-items:baseline;justify-content:space-between;gap:.9rem;padding:.5rem .65rem;text-decoration:none;transition:background .12s}
+.wp-nline .wp-nq{font-family:var(--display);font-size:.92rem;color:var(--text);line-height:1.35}
+.wp-nline .wp-nn{font-family:var(--mono);font-size:.8rem;font-weight:600;letter-spacing:.06em;color:var(--acid);flex:none}
+.wp-nline:hover{background:rgba(194,254,12,.07)}
+.wp-nline:hover .wp-nq{color:#fff}
+.wp-nline:focus-visible{outline:2px solid var(--acid);outline-offset:-2px}
+@media(max-width:860px){
+  .wp-grid{grid-template-columns:1fr;gap:1.6rem}
+  .wp-navpanel{position:static}
+}

@@ -1,0 +1,1858 @@
+meta:
+  data_version: '6.0'
+  game_patch: Season 2, до мид-сезонного патча Vault Breaker (21.07.2026, на момент сборки ещё не вышел)
+  captured: '2026-07-16'
+  source_priority: 'Приоритет для типа боеприпаса (и по аналогии - для любого спорного поля): 1) внутриигровое
+    описание ствола; 2) консенсус ПОДДЕРЖИВАЕМЫХ дисплей-полей >= 2 живых баз (у marathondb - визуальный
+    бейдж/type-строка/icon_url, а НЕ устаревший ammo_type slug; плюс tauceti, marathon-guide, dexerto);
+    3) выделенные ammo-индекс-страницы wzstats; 4) живой игрок (SlenderBeans) как тайбрейкер и как первичный
+    источник там, где базы структурно ничего не трекают (Prestige/Deluxe Cryo-уникумы); 5) понижены в
+    правах: замороженный ammo_type slug marathondb и устаревшие SSG stat-блоки - reference-only; 6) неразрешимое
+    расхождение >= 2 источников помечается disputed, primary + alt хранятся оба, меньшинство не прячется.'
+  counts_note: '38 стволов в черновике B (marathondb: 37 итемизированных страниц + 1 общая /weapons/melee/).
+    Финальные 39 = 38 - 1 (V95 Lookout удалён как пре-релизный стаб, вердикт арбитража №3) + 1 (Fist of
+    Phobos добавлен, вердикт №4) + 1 (V66 Shepherd добавлен/исправлен, смежная поправка к вердикту №3).'
+weapons:
+- id: ares-rg
+  name: Ares RG
+  category: railgun
+  category_src: marathondb
+  ammo: mips
+  ammo_src: wzstats ammo-index + in-game description (ballistic/kinetic railgun)
+  disputed: true
+  ammo_alt:
+  - v: heavy_rounds
+    src: marathon-guide, dexerto
+  - v: volt_cell
+    src: marathondb, tauceti (устаревший баговый ammo_type slug)
+  kinetic: true
+  kinetic_note: 'внутриигровое описание: heavy ballistic railgun, заряжаемый массивный снаряд - кинетическое,
+    не энергетическое оружие, несмотря на метку volt_cell в старом слое marathondb'
+  season: S2
+  season_src: marathondb
+  unique_of: null
+  vault:
+    v: null
+    src: null
+  stats:
+    damage:
+      v: 123
+      src: marathondb
+      date: 2026-07-16
+    rpm:
+      v: 60
+      src: marathondb
+      date: 2026-07-16
+    magazine:
+      v: null
+      src: marathondb
+      date: 2026-07-16
+      disputed: true
+      alt:
+      - v: 4
+        src: tauceti
+    reload:
+      v: 4.46
+      src: marathondb
+      date: 2026-07-16
+    range:
+      v: 55
+      src: marathondb
+      date: 2026-07-16
+    precision_mult:
+      v: 1.3
+      src: marathondb
+      date: 2026-07-16
+  sources:
+  - name: marathondb
+    url: https://marathondb.gg/weapons/
+  - name: tauceti
+    url: https://tauceti.gg/db
+- id: b33-volley-rifle
+  name: BR33 Volley Rifle
+  category: precision
+  category_src: marathondb
+  ammo: light
+  ammo_src: marathondb
+  disputed: false
+  season: S1
+  season_src: marathondb
+  unique_of: null
+  vault:
+    v: null
+    src: null
+  stats:
+    damage:
+      v: 14.8
+      src: marathondb
+      date: 2026-07-16
+    rpm:
+      v: 900
+      src: marathondb
+      date: 2026-07-16
+    magazine:
+      v: 27
+      src: marathondb
+      date: 2026-07-16
+    reload:
+      v: 3
+      src: marathondb
+      date: 2026-07-16
+    range:
+      v: 48
+      src: marathondb
+      date: 2026-07-16
+    precision_mult:
+      v: 1.4
+      src: marathondb
+      date: 2026-07-16
+    cost_credits:
+      v: 480
+      src: marathondb
+      date: 2026-07-16
+  sources:
+  - name: marathondb
+    url: https://marathondb.gg/weapons/
+- id: biotoxic-disinjector
+  name: Biotoxic Disinjector
+  category: hybrid
+  category_src: marathondb
+  ammo: hyphatic_gel
+  ammo_src: marathondb
+  disputed: false
+  season: S1
+  season_src: marathondb
+  unique_of: null
+  vault:
+    v: null
+    src: null
+  stats:
+    damage:
+      v: 13
+      src: marathondb
+      date: 2026-07-16
+    rpm:
+      v: 216
+      src: marathondb
+      date: 2026-07-16
+    magazine:
+      v: null
+      src: marathondb
+      date: 2026-07-16
+    reload:
+      v: 3.2
+      src: marathondb
+      date: 2026-07-16
+    range:
+      v: 33
+      src: marathondb
+      date: 2026-07-16
+    precision_mult:
+      v: 1.35
+      src: marathondb
+      date: 2026-07-16
+    cost_credits:
+      v: 7777
+      src: marathondb
+      date: 2026-07-16
+  sources:
+  - name: marathondb
+    url: https://marathondb.gg/weapons/
+- id: brrt-smg
+  name: BRRT SMG
+  category: smg
+  category_src: marathondb
+  ammo: light
+  ammo_src: marathondb
+  disputed: false
+  season: S1
+  season_src: marathondb
+  unique_of: null
+  vault:
+    v: null
+    src: null
+  stats:
+    damage:
+      v: 11
+      src: marathondb
+      date: 2026-07-16
+    rpm:
+      v: 1000
+      src: marathondb
+      date: 2026-07-16
+    magazine:
+      v: 35
+      src: marathondb
+      date: 2026-07-16
+    reload:
+      v: 3
+      src: marathondb
+      date: 2026-07-16
+    range:
+      v: 27
+      src: marathondb
+      date: 2026-07-16
+      disputed: true
+      alt:
+      - v: 16
+        src: tauceti
+    precision_mult:
+      v: 1.4
+      src: marathondb
+      date: 2026-07-16
+    cost_credits:
+      v: 1207
+      src: marathondb
+      date: 2026-07-16
+  sources:
+  - name: marathondb
+    url: https://marathondb.gg/weapons/
+  - name: tauceti
+    url: https://tauceti.gg/db
+- id: bully-smg
+  name: Bully SMG
+  category: smg
+  category_src: marathondb
+  ammo: heavy
+  ammo_src: marathondb
+  disputed: false
+  season: S1
+  season_src: marathondb
+  unique_of: null
+  vault:
+    v: null
+    src: null
+  stats:
+    damage:
+      v: 15
+      src: marathondb
+      date: 2026-07-16
+    rpm:
+      v: 540
+      src: marathondb
+      date: 2026-07-16
+    magazine:
+      v: 23
+      src: marathondb
+      date: 2026-07-16
+    reload:
+      v: 2.76
+      src: marathondb
+      date: 2026-07-16
+    range:
+      v: 18
+      src: marathondb
+      date: 2026-07-16
+    precision_mult:
+      v: 1.5
+      src: marathondb
+      date: 2026-07-16
+    cost_credits:
+      v: 423
+      src: marathondb
+      date: 2026-07-16
+  sources:
+  - name: marathondb
+    url: https://marathondb.gg/weapons/
+- id: ce-tactical-sidearm
+  name: CE Tactical Sidearm
+  category: pistol
+  category_src: marathondb
+  ammo: light
+  ammo_src: marathondb
+  disputed: false
+  season: S2
+  season_src: marathondb
+  unique_of: null
+  vault:
+    v: null
+    src: null
+  stats:
+    damage:
+      v: 20
+      src: marathondb
+      date: 2026-07-16
+    rpm:
+      v: 300
+      src: marathondb
+      date: 2026-07-16
+    magazine:
+      v: 18
+      src: marathondb
+      date: 2026-07-16
+    reload:
+      v: 1.8
+      src: marathondb
+      date: 2026-07-16
+    range:
+      v: 26
+      src: marathondb
+      date: 2026-07-16
+    precision_mult:
+      v: 1.8
+      src: marathondb
+      date: 2026-07-16
+    cost_credits:
+      v: 25
+      src: marathondb
+      date: 2026-07-16
+  sources:
+  - name: marathondb
+    url: https://marathondb.gg/weapons/
+- id: conquest-lmg
+  name: Conquest LMG
+  category: lmg
+  category_src: marathondb
+  ammo: light
+  ammo_src: marathondb
+  disputed: false
+  season: S2
+  season_src: marathondb
+  unique_of: null
+  vault:
+    v: null
+    src: null
+  stats:
+    damage:
+      v: 16
+      src: marathondb
+      date: 2026-07-16
+    rpm:
+      v: 540
+      src: marathondb
+      date: 2026-07-16
+    magazine:
+      v: 36
+      src: marathondb
+      date: 2026-07-16
+    reload:
+      v: 6.4
+      src: marathondb
+      date: 2026-07-16
+    range:
+      v: 60
+      src: marathondb
+      date: 2026-07-16
+    precision_mult:
+      v: 1.5
+      src: marathondb
+      date: 2026-07-16
+  sources:
+  - name: marathondb
+    url: https://marathondb.gg/weapons/
+- id: copperhead-rf
+  name: Copperhead RF
+  category: smg
+  category_src: marathondb
+  ammo: light
+  ammo_src: marathondb
+  disputed: false
+  season: S1
+  season_src: marathondb
+  unique_of: null
+  vault:
+    v: null
+    src: null
+  stats:
+    damage:
+      v: 12
+      src: marathondb
+      date: 2026-07-16
+    rpm:
+      v: 720
+      src: marathondb
+      date: 2026-07-16
+    magazine:
+      v: 20
+      src: marathondb
+      date: 2026-07-16
+    reload:
+      v: 2.37
+      src: marathondb
+      date: 2026-07-16
+    range:
+      v: 20
+      src: marathondb
+      date: 2026-07-16
+    precision_mult:
+      v: 1.4
+      src: marathondb
+      date: 2026-07-16
+  sources:
+  - name: marathondb
+    url: https://marathondb.gg/weapons/
+- id: d54-battle-pistol
+  name: D54 Battle Pistol
+  category: pistol
+  category_src: marathondb
+  ammo: light
+  ammo_src: marathondb
+  disputed: false
+  season: S2
+  season_src: marathondb
+  unique_of: null
+  vault:
+    v: null
+    src: null
+  stats:
+    damage:
+      v: 16
+      src: marathondb
+      date: 2026-07-16
+    rpm:
+      v: 1140
+      src: marathondb
+      date: 2026-07-16
+    magazine:
+      v: 21
+      src: marathondb
+      date: 2026-07-16
+    reload:
+      v: 2.69
+      src: marathondb
+      date: 2026-07-16
+    range:
+      v: 29
+      src: marathondb
+      date: 2026-07-16
+    precision_mult:
+      v: 1.5
+      src: marathondb
+      date: 2026-07-16
+  sources:
+  - name: marathondb
+    url: https://marathondb.gg/weapons/
+- id: demolition-hmg
+  name: Demolition HMG
+  category: lmg
+  category_src: marathondb
+  ammo: heavy
+  ammo_src: marathondb
+  disputed: false
+  season: S1
+  season_src: marathondb
+  unique_of: null
+  vault:
+    v: null
+    src: null
+  stats:
+    damage:
+      v: 31.5
+      src: marathondb
+      date: 2026-07-16
+    rpm:
+      v: 225
+      src: marathondb
+      date: 2026-07-16
+    magazine:
+      v: 20
+      src: marathondb
+      date: 2026-07-16
+    reload:
+      v: 5.46
+      src: marathondb
+      date: 2026-07-16
+    range:
+      v: 33
+      src: marathondb
+      date: 2026-07-16
+    precision_mult:
+      v: 1.5
+      src: marathondb
+      date: 2026-07-16
+  sources:
+  - name: marathondb
+    url: https://marathondb.gg/weapons/
+- id: hardline-pr
+  name: Hardline PR
+  category: precision
+  category_src: marathondb
+  ammo: light
+  ammo_src: 'marathondb (живой дисплей: бейдж/type-строка), marathon-guide, dexerto, fandom, mobalytics'
+  disputed: true
+  ammo_alt:
+  - v: heavy_rounds
+    src: marathondb (замороженный S1 ammo_type slug), tauceti, wzstats, gamerant
+  season: S1
+  season_src: marathondb
+  unique_of: null
+  vault:
+    v: null
+    src: null
+  stats:
+    damage:
+      v: 23
+      src: marathondb
+      date: 2026-07-16
+    rpm:
+      v: 275
+      src: marathondb
+      date: 2026-07-16
+    magazine:
+      v: 14
+      src: marathondb
+      date: 2026-07-16
+    reload:
+      v: 3.6
+      src: marathondb
+      date: 2026-07-16
+    range:
+      v: 74
+      src: marathondb
+      date: 2026-07-16
+    precision_mult:
+      v: 1.6
+      src: marathondb
+      date: 2026-07-16
+    cost_credits:
+      v: 223
+      src: marathondb
+      date: 2026-07-16
+  sources:
+  - name: marathondb
+    url: https://marathondb.gg/weapons/
+- id: impact-har
+  name: Impact HAR
+  category: ar
+  category_src: marathondb
+  ammo: heavy
+  ammo_src: marathondb
+  disputed: false
+  season: S1
+  season_src: marathondb
+  unique_of: null
+  vault:
+    v: null
+    src: null
+  stats:
+    damage:
+      v: 18
+      src: marathondb
+      date: 2026-07-16
+      disputed: true
+      alt:
+      - v: 24
+        src: tauceti
+    rpm:
+      v: 400
+      src: marathondb
+      date: 2026-07-16
+    magazine:
+      v: 18
+      src: marathondb
+      date: 2026-07-16
+    reload:
+      v: 2.79
+      src: marathondb
+      date: 2026-07-16
+      disputed: true
+      alt:
+      - v: 3.3
+        src: tauceti
+    range:
+      v: 60
+      src: marathondb
+      date: 2026-07-16
+    precision_mult:
+      v: 1.6
+      src: marathondb
+      date: 2026-07-16
+  sources:
+  - name: marathondb
+    url: https://marathondb.gg/weapons/
+  - name: tauceti
+    url: https://tauceti.gg/db
+- id: kkv-9sd
+  name: KKV-9SD
+  category: smg
+  category_src: marathondb
+  ammo: light
+  ammo_src: marathondb
+  disputed: false
+  season: S2
+  season_src: marathondb
+  unique_of: null
+  vault:
+    v: null
+    src: null
+  stats:
+    damage:
+      v: 8
+      src: marathondb
+      date: 2026-07-16
+    rpm:
+      v: 1200
+      src: marathondb
+      date: 2026-07-16
+    magazine:
+      v: 23
+      src: marathondb
+      date: 2026-07-16
+    reload:
+      v: 3.16
+      src: marathondb
+      date: 2026-07-16
+    range:
+      v: 17
+      src: marathondb
+      date: 2026-07-16
+    precision_mult:
+      v: 1.45
+      src: marathondb
+      date: 2026-07-16
+  sources:
+  - name: marathondb
+    url: https://marathondb.gg/weapons/
+- id: longshot
+  name: Longshot
+  category: sniper
+  category_src: marathondb
+  ammo: light
+  ammo_src: marathondb
+  disputed: true
+  ammo_alt:
+  - v: mips
+    src: tauceti
+  season: S1
+  season_src: marathondb
+  unique_of: null
+  vault:
+    v: null
+    src: null
+  stats:
+    damage:
+      v: 69.5
+      src: marathondb
+      date: 2026-07-16
+    rpm:
+      v: 120
+      src: marathondb
+      date: 2026-07-16
+    magazine:
+      v: 4
+      src: marathondb
+      date: 2026-07-16
+    reload:
+      v: 3.35
+      src: marathondb
+      date: 2026-07-16
+    range:
+      v: 175
+      src: marathondb
+      date: 2026-07-16
+    precision_mult:
+      v: 2.15
+      src: marathondb
+      date: 2026-07-16
+    cost_credits:
+      v: 1407
+      src: marathondb
+      date: 2026-07-16
+  sources:
+  - name: marathondb
+    url: https://marathondb.gg/weapons/
+- id: m77-assault-rifle
+  name: M77 Assault Rifle
+  category: ar
+  category_src: marathondb
+  ammo: light
+  ammo_src: marathondb
+  disputed: false
+  season: S1
+  season_src: marathondb
+  unique_of: null
+  vault:
+    v: null
+    src: null
+  stats:
+    damage:
+      v: 16
+      src: marathondb
+      date: 2026-07-16
+    rpm:
+      v: 450
+      src: marathondb
+      date: 2026-07-16
+    magazine:
+      v: 24
+      src: marathondb
+      date: 2026-07-16
+    reload:
+      v: 2.6
+      src: marathondb
+      date: 2026-07-16
+    range:
+      v: 46
+      src: marathondb
+      date: 2026-07-16
+    precision_mult:
+      v: 1.5
+      src: marathondb
+      date: 2026-07-16
+    cost_credits:
+      v: 1200
+      src: marathondb
+      date: 2026-07-16
+  sources:
+  - name: marathondb
+    url: https://marathondb.gg/weapons/
+- id: magnum-mc
+  name: Magnum MC
+  category: pistol
+  category_src: marathondb
+  ammo: heavy
+  ammo_src: marathondb
+  disputed: false
+  season: S1
+  season_src: marathondb
+  unique_of: null
+  vault:
+    v: null
+    src: null
+  stats:
+    damage:
+      v: 33
+      src: marathondb
+      date: 2026-07-16
+    rpm:
+      v: 150
+      src: marathondb
+      date: 2026-07-16
+      disputed: true
+      alt:
+      - v: 138
+        src: tauceti
+    magazine:
+      v: 12
+      src: marathondb
+      date: 2026-07-16
+    reload:
+      v: 1.9
+      src: marathondb
+      date: 2026-07-16
+    range:
+      v: 21
+      src: marathondb
+      date: 2026-07-16
+    precision_mult:
+      v: 2
+      src: marathondb
+      date: 2026-07-16
+    cost_credits:
+      v: 160
+      src: marathondb
+      date: 2026-07-16
+  sources:
+  - name: marathondb
+    url: https://marathondb.gg/weapons/
+  - name: tauceti
+    url: https://tauceti.gg/db
+- id: melee
+  name: Melee
+  category: melee
+  category_src: marathondb
+  ammo: null
+  ammo_src: null
+  disputed: false
+  season: S1
+  season_src: marathondb
+  unique_of: null
+  vault:
+    v: null
+    src: null
+  stats:
+    damage:
+      v: null
+      src: marathondb
+      date: 2026-07-16
+    rpm:
+      v: null
+      src: marathondb
+      date: 2026-07-16
+    magazine:
+      v: null
+      src: marathondb
+      date: 2026-07-16
+    reload:
+      v: null
+      src: marathondb
+      date: 2026-07-16
+    range:
+      v: null
+      src: marathondb
+      date: 2026-07-16
+    cost_credits:
+      v: 0
+      src: marathondb
+      date: 2026-07-16
+  sources:
+  - name: marathondb
+    url: https://marathondb.gg/weapons/
+- id: misriah-2442
+  name: Misriah 2442
+  category: shotgun
+  category_src: marathondb
+  ammo: mips
+  ammo_src: marathondb
+  disputed: false
+  season: S1
+  season_src: marathondb
+  unique_of: null
+  vault:
+    v: null
+    src: null
+  stats:
+    damage:
+      v: 11.7
+      src: marathondb
+      date: 2026-07-16
+    rpm:
+      v: 58
+      src: marathondb
+      date: 2026-07-16
+    magazine:
+      v: 4
+      src: marathondb
+      date: 2026-07-16
+    reload:
+      v: 0.8
+      src: marathondb
+      date: 2026-07-16
+    range:
+      v: 11
+      src: marathondb
+      date: 2026-07-16
+    precision_mult:
+      v: 1.3
+      src: marathondb
+      date: 2026-07-16
+  sources:
+  - name: marathondb
+    url: https://marathondb.gg/weapons/
+- id: outland
+  name: Outland
+  category: sniper
+  category_src: marathondb
+  ammo: mips
+  ammo_src: marathondb
+  disputed: false
+  season: S1
+  season_src: marathondb
+  unique_of: null
+  vault:
+    v: null
+    src: null
+  stats:
+    damage:
+      v: 74
+      src: marathondb
+      date: 2026-07-16
+    rpm:
+      v: 43
+      src: marathondb
+      date: 2026-07-16
+    magazine:
+      v: 4
+      src: marathondb
+      date: 2026-07-16
+    reload:
+      v: 4.1
+      src: marathondb
+      date: 2026-07-16
+    range:
+      v: 175
+      src: marathondb
+      date: 2026-07-16
+    precision_mult:
+      v: 2.2
+      src: marathondb
+      date: 2026-07-16
+  sources:
+  - name: marathondb
+    url: https://marathondb.gg/weapons/
+- id: overrun-ar
+  name: Overrun AR
+  category: ar
+  category_src: marathondb
+  ammo: light
+  ammo_src: marathondb
+  disputed: false
+  season: S2
+  season_src: marathondb
+  unique_of: null
+  vault:
+    v: null
+    src: null
+  stats:
+    damage:
+      v: 10.5
+      src: marathondb
+      date: 2026-07-16
+    rpm:
+      v: 720
+      src: marathondb
+      date: 2026-07-16
+    magazine:
+      v: 25
+      src: marathondb
+      date: 2026-07-16
+      disputed: true
+      alt:
+      - v: 20
+        src: tauceti
+    reload:
+      v: 2.37
+      src: marathondb
+      date: 2026-07-16
+    range:
+      v: 40
+      src: marathondb
+      date: 2026-07-16
+    precision_mult:
+      v: 1.4
+      src: marathondb
+      date: 2026-07-16
+    cost_credits:
+      v: 73
+      src: marathondb
+      date: 2026-07-16
+  sources:
+  - name: marathondb
+    url: https://marathondb.gg/weapons/
+  - name: tauceti
+    url: https://tauceti.gg/db
+- id: repeater-hpr
+  name: Repeater HPR
+  category: precision
+  category_src: marathondb
+  ammo: heavy
+  ammo_src: marathondb
+  disputed: false
+  season: S1
+  season_src: marathondb
+  unique_of: null
+  vault:
+    v: null
+    src: null
+  stats:
+    damage:
+      v: 38
+      src: marathondb
+      date: 2026-07-16
+      disputed: true
+      alt:
+      - v: null
+        src: tauceti
+    rpm:
+      v: 86
+      src: marathondb
+      date: 2026-07-16
+    magazine:
+      v: 9
+      src: marathondb
+      date: 2026-07-16
+    reload:
+      v: 0.74
+      src: marathondb
+      date: 2026-07-16
+      disputed: true
+      alt:
+      - v: 0.9
+        src: tauceti
+    range:
+      v: 37
+      src: marathondb
+      date: 2026-07-16
+    precision_mult:
+      v: 2.1
+      src: marathondb
+      date: 2026-07-16
+    cost_credits:
+      v: 480
+      src: marathondb
+      date: 2026-07-16
+  sources:
+  - name: marathondb
+    url: https://marathondb.gg/weapons/
+  - name: tauceti
+    url: https://tauceti.gg/db
+- id: retaliator-lmg
+  name: Retaliator LMG
+  category: lmg
+  category_src: marathondb
+  ammo: light
+  ammo_src: marathondb
+  disputed: false
+  season: S2
+  season_src: marathondb
+  unique_of: null
+  vault:
+    v: null
+    src: null
+  stats:
+    damage:
+      v: 11.8
+      src: marathondb
+      date: 2026-07-16
+    rpm:
+      v: 600
+      src: marathondb
+      date: 2026-07-16
+    magazine:
+      v: 44
+      src: marathondb
+      date: 2026-07-16
+    reload:
+      v: 6.03
+      src: marathondb
+      date: 2026-07-16
+    range:
+      v: 51
+      src: marathondb
+      date: 2026-07-16
+    precision_mult:
+      v: 1.4
+      src: marathondb
+      date: 2026-07-16
+    cost_credits:
+      v: 361
+      src: marathondb
+      date: 2026-07-16
+  sources:
+  - name: marathondb
+    url: https://marathondb.gg/weapons/
+- id: stryder-m1t
+  name: Stryder M1T
+  category: precision
+  category_src: marathondb
+  ammo: light
+  ammo_src: marathondb
+  disputed: false
+  season: S1
+  season_src: marathondb
+  unique_of: null
+  vault:
+    v: null
+    src: null
+  stats:
+    damage:
+      v: 31
+      src: marathondb
+      date: 2026-07-16
+      disputed: true
+      alt:
+      - v: 36
+        src: tauceti
+    rpm:
+      v: 200
+      src: marathondb
+      date: 2026-07-16
+      disputed: true
+      alt:
+      - v: 180
+        src: tauceti
+    magazine:
+      v: 12
+      src: marathondb
+      date: 2026-07-16
+    reload:
+      v: 3.42
+      src: marathondb
+      date: 2026-07-16
+    range:
+      v: 84
+      src: marathondb
+      date: 2026-07-16
+    precision_mult:
+      v: 1.5
+      src: marathondb
+      date: 2026-07-16
+  sources:
+  - name: marathondb
+    url: https://marathondb.gg/weapons/
+  - name: tauceti
+    url: https://tauceti.gg/db
+- id: twin-tap-hbr
+  name: Twin Tap HBR
+  category: precision
+  category_src: marathondb
+  ammo: heavy
+  ammo_src: marathondb
+  disputed: true
+  ammo_alt:
+  - v: light
+    src: tauceti
+  season: S2
+  season_src: marathondb
+  unique_of: null
+  vault:
+    v: null
+    src: null
+  stats:
+    damage:
+      v: 22
+      src: marathondb
+      date: 2026-07-16
+      disputed: true
+      alt:
+      - v: 13
+        src: tauceti
+    rpm:
+      v: 600
+      src: marathondb
+      date: 2026-07-16
+      disputed: true
+      alt:
+      - v: 420
+        src: tauceti
+    magazine:
+      v: 24
+      src: marathondb
+      date: 2026-07-16
+      disputed: true
+      alt:
+      - v: 20
+        src: tauceti
+    reload:
+      v: 2.37
+      src: marathondb
+      date: 2026-07-16
+    range:
+      v: 48
+      src: marathondb
+      date: 2026-07-16
+    precision_mult:
+      v: 1.3
+      src: marathondb
+      date: 2026-07-16
+  sources:
+  - name: marathondb
+    url: https://marathondb.gg/weapons/
+  - name: tauceti
+    url: https://tauceti.gg/db
+- id: v00-zeus-rg
+  name: V00 Zeus RG
+  category: railgun
+  category_src: marathondb
+  ammo: volt_cell
+  ammo_src: marathondb, tauceti, wzstats, dexerto
+  disputed: false
+  season: S1
+  season_src: marathondb
+  unique_of: null
+  vault:
+    v: null
+    src: null
+  stats:
+    damage:
+      v: 120
+      src: marathondb
+      date: 2026-07-16
+    rpm:
+      v: 90
+      src: marathondb
+      date: 2026-07-16
+    magazine:
+      v: null
+      src: marathondb
+      date: 2026-07-16
+    reload:
+      v: 3.5
+      src: marathondb
+      date: 2026-07-16
+    range:
+      v: 155
+      src: marathondb
+      date: 2026-07-16
+    precision_mult:
+      v: 1.5
+      src: marathondb
+      date: 2026-07-16
+    volt_drain:
+      v: 50
+      src: marathondb
+      date: 2026-07-16
+  sources:
+  - name: marathondb
+    url: https://marathondb.gg/weapons/
+- id: v11-punch
+  name: V11 Punch
+  category: pistol
+  category_src: marathondb
+  ammo: volt_battery
+  ammo_src: 'marathondb (дисплей-слой: бейдж/type-строка), tauceti, wzstats, dexerto'
+  disputed: false
+  season: S2
+  season_src: marathondb
+  unique_of: null
+  vault:
+    v: null
+    src: null
+  stats:
+    damage:
+      v: 25
+      src: marathondb
+      date: 2026-07-16
+      disputed: true
+      alt:
+      - v: 20
+        src: tauceti
+    rpm:
+      v: 258
+      src: marathondb
+      date: 2026-07-16
+      disputed: true
+      alt:
+      - v: 600
+        src: tauceti
+    magazine:
+      v: null
+      src: marathondb
+      date: 2026-07-16
+    reload:
+      v: 3.6
+      src: marathondb
+      date: 2026-07-16
+      disputed: true
+      alt:
+      - v: 3.4
+        src: tauceti
+    range:
+      v: 21
+      src: marathondb
+      date: 2026-07-16
+    precision_mult:
+      v: 1.5
+      src: marathondb
+      date: 2026-07-16
+    volt_drain:
+      v: 4.5
+      src: marathondb
+      date: 2026-07-16
+    cost_credits:
+      v: 25
+      src: marathondb
+      date: 2026-07-16
+  sources:
+  - name: marathondb
+    url: https://marathondb.gg/weapons/
+  - name: tauceti
+    url: https://tauceti.gg/db
+- id: v22-volt-thrower
+  name: V22 Volt Thrower
+  category: smg
+  category_src: marathondb
+  ammo: volt_battery
+  ammo_src: 'marathondb (дисплей-слой: бейдж/type-строка), tauceti, wzstats, dexerto'
+  disputed: false
+  season: S1
+  season_src: marathondb
+  unique_of: null
+  vault:
+    v: null
+    src: null
+  stats:
+    damage:
+      v: 18
+      src: marathondb
+      date: 2026-07-16
+    rpm:
+      v: 507
+      src: marathondb
+      date: 2026-07-16
+    magazine:
+      v: null
+      src: marathondb
+      date: 2026-07-16
+    reload:
+      v: 3.1
+      src: marathondb
+      date: 2026-07-16
+    range:
+      v: 21
+      src: marathondb
+      date: 2026-07-16
+    precision_mult:
+      v: 1
+      src: marathondb
+      date: 2026-07-16
+    volt_drain:
+      v: 1.6
+      src: marathondb
+      date: 2026-07-16
+    cost_credits:
+      v: 160
+      src: marathondb
+      date: 2026-07-16
+  sources:
+  - name: marathondb
+    url: https://marathondb.gg/weapons/
+- id: v66-lookout
+  name: V66 Lookout
+  category: precision
+  category_src: marathondb
+  ammo: volt_battery
+  ammo_src: 'marathondb (дисплей-слой: бейдж/type-строка), tauceti, wzstats, dexerto'
+  disputed: false
+  season: S1
+  season_src: marathondb
+  unique_of: null
+  vault:
+    v: null
+    src: null
+  stats:
+    damage:
+      v: 26
+      src: marathondb
+      date: 2026-07-16
+    rpm:
+      v: 180
+      src: marathondb
+      date: 2026-07-16
+    magazine:
+      v: null
+      src: marathondb
+      date: 2026-07-16
+      disputed: true
+      alt:
+      - v: 0
+        src: tauceti
+    reload:
+      v: 3.3
+      src: marathondb
+      date: 2026-07-16
+      disputed: true
+      alt:
+      - v: 3.76
+        src: tauceti
+    range:
+      v: 62
+      src: marathondb
+      date: 2026-07-16
+      disputed: true
+      alt:
+      - v: 88
+        src: tauceti
+    precision_mult:
+      v: 1.8
+      src: marathondb
+      date: 2026-07-16
+    volt_drain:
+      v: 3.4
+      src: marathondb
+      date: 2026-07-16
+  sources:
+  - name: marathondb
+    url: https://marathondb.gg/weapons/
+  - name: tauceti
+    url: https://tauceti.gg/db
+- id: v75-scar
+  name: V75 Scar
+  category: ar
+  category_src: marathondb
+  ammo: volt_battery
+  ammo_src: 'marathondb (дисплей-слой: бейдж/type-строка), tauceti, wzstats, dexerto'
+  disputed: false
+  season: S2
+  season_src: marathondb
+  unique_of: null
+  vault:
+    v: null
+    src: null
+  stats:
+    damage:
+      v: 14.5
+      src: marathondb
+      date: 2026-07-16
+      disputed: true
+      alt:
+      - v: 18
+        src: tauceti
+    rpm:
+      v: 120
+      src: marathondb
+      date: 2026-07-16
+    magazine:
+      v: null
+      src: marathondb
+      date: 2026-07-16
+      disputed: true
+      alt:
+      - v: 0
+        src: tauceti
+    reload:
+      v: 3.39
+      src: marathondb
+      date: 2026-07-16
+      disputed: true
+      alt:
+      - v: 4.1
+        src: tauceti
+    range:
+      v: 46
+      src: marathondb
+      date: 2026-07-16
+      disputed: true
+      alt:
+      - v: 60
+        src: tauceti
+    precision_mult:
+      v: 1.4
+      src: marathondb
+      date: 2026-07-16
+    volt_drain:
+      v: 2.5
+      src: marathondb
+      date: 2026-07-16
+    cost_credits:
+      v: 200
+      src: marathondb
+      date: 2026-07-16
+  sources:
+  - name: marathondb
+    url: https://marathondb.gg/weapons/
+  - name: tauceti
+    url: https://tauceti.gg/db
+- id: v85-circuit-breaker
+  name: V85 Circuit Breaker
+  category: shotgun
+  category_src: marathondb
+  ammo: volt_battery
+  ammo_src: 'marathondb (дисплей-слой: бейдж/type-строка), tauceti, wzstats, dexerto'
+  disputed: false
+  season: S1
+  season_src: marathondb
+  unique_of: null
+  vault:
+    v: null
+    src: null
+  stats:
+    damage:
+      v: 20.4
+      src: marathondb
+      date: 2026-07-16
+    rpm:
+      v: 127
+      src: marathondb
+      date: 2026-07-16
+    magazine:
+      v: null
+      src: marathondb
+      date: 2026-07-16
+    reload:
+      v: 0.8
+      src: marathondb
+      date: 2026-07-16
+    range:
+      v: 11
+      src: marathondb
+      date: 2026-07-16
+    precision_mult:
+      v: 1.3
+      src: marathondb
+      date: 2026-07-16
+  sources:
+  - name: marathondb
+    url: https://marathondb.gg/weapons/
+- id: v99-channel-rifle
+  name: V99 Channel Rifle
+  category: sniper
+  category_src: marathondb
+  ammo: volt_cell
+  ammo_src: marathondb, tauceti, wzstats, dexerto
+  disputed: false
+  season: S1
+  season_src: marathondb
+  unique_of: null
+  vault:
+    v: null
+    src: null
+  stats:
+    damage:
+      v: 67
+      src: marathondb
+      date: 2026-07-16
+    rpm:
+      v: 75
+      src: marathondb
+      date: 2026-07-16
+    magazine:
+      v: null
+      src: marathondb
+      date: 2026-07-16
+      disputed: true
+      alt:
+      - v: 33.4
+        src: tauceti
+    reload:
+      v: 4.68
+      src: marathondb
+      date: 2026-07-16
+    range:
+      v: 175
+      src: marathondb
+      date: 2026-07-16
+    precision_mult:
+      v: 2.5
+      src: marathondb
+      date: 2026-07-16
+    volt_drain:
+      v: 33.4
+      src: marathondb
+      date: 2026-07-16
+  sources:
+  - name: marathondb
+    url: https://marathondb.gg/weapons/
+  - name: tauceti
+    url: https://tauceti.gg/db
+- id: wstr-combat-shotgun
+  name: WSTR Combat Shotgun
+  category: shotgun
+  category_src: marathondb
+  ammo: mips
+  ammo_src: marathondb
+  disputed: false
+  season: S1
+  season_src: marathondb
+  unique_of: null
+  vault:
+    v: null
+    src: null
+  stats:
+    damage:
+      v: 15
+      src: marathondb
+      date: 2026-07-16
+    rpm:
+      v: 194
+      src: marathondb
+      date: 2026-07-16
+    magazine:
+      v: 2
+      src: marathondb
+      date: 2026-07-16
+    reload:
+      v: 2.64
+      src: marathondb
+      date: 2026-07-16
+    range:
+      v: 4
+      src: marathondb
+      date: 2026-07-16
+    precision_mult:
+      v: 1.15
+      src: marathondb
+      date: 2026-07-16
+    cost_credits:
+      v: 2400
+      src: marathondb
+      date: 2026-07-16
+  sources:
+  - name: marathondb
+    url: https://marathondb.gg/weapons/
+- id: drrvish
+  name: DRRVISH
+  category: smg
+  category_src: marathondb
+  ammo: light
+  ammo_src: marathondb
+  disputed: false
+  season: S1
+  season_src: marathondb
+  unique_of: brrt-smg
+  unique_of_src: marathondb
+  rarity: common
+  rarity_src: marathondb
+  vault:
+    v: 1
+    src: guide_v4
+    note: vault-привязка сохранена из предыдущей факт-базы гайда (v4); публичные базы (marathondb/tauceti)
+      не трекают vault-номер мод-заблокированных common-уникумов
+  stats:
+    damage:
+      v: 11
+      src: marathondb
+      date: 2026-07-16
+    rpm:
+      v: 1000
+      src: marathondb
+      date: 2026-07-16
+    magazine:
+      v: 48
+      src: marathondb
+      date: 2026-07-16
+      disputed: true
+      alt:
+      - v: 45
+        src: tauceti
+    reload:
+      v: 2.02
+      src: marathondb
+      date: 2026-07-16
+    range:
+      v: 26
+      src: marathondb
+      date: 2026-07-16
+      disputed: true
+      alt:
+      - v: 28
+        src: tauceti
+    precision_mult:
+      v: 1.4
+      src: marathondb
+      date: 2026-07-16
+    cost_credits:
+      v: 5563
+      src: marathondb
+      date: 2026-07-16
+  sources:
+  - name: marathondb
+    url: https://marathondb.gg/weapons/
+  - name: tauceti
+    url: https://tauceti.gg/db
+- id: salt-wages
+  name: Salt Wages
+  category: lmg
+  category_src: marathondb
+  ammo: light
+  ammo_src: marathondb
+  disputed: false
+  season: S1
+  season_src: marathondb
+  unique_of: conquest-lmg
+  unique_of_src: marathondb
+  rarity: common
+  rarity_src: marathondb
+  vault:
+    v: null
+    src: null
+  stats:
+    damage:
+      v: null
+      src: marathondb
+      date: 2026-07-16
+    rpm:
+      v: null
+      src: marathondb
+      date: 2026-07-16
+    magazine:
+      v: 126
+      src: marathondb
+      date: 2026-07-16
+    reload:
+      v: null
+      src: marathondb
+      date: 2026-07-16
+    range:
+      v: 120
+      src: marathondb
+      date: 2026-07-16
+    cost_credits:
+      v: 5664
+      src: marathondb
+      date: 2026-07-16
+  sources:
+  - name: marathondb
+    url: https://marathondb.gg/weapons/
+- id: m77-omnipositor
+  name: M77 Omnipositor
+  category: ar
+  category_src: marathondb
+  ammo: light
+  ammo_src: marathondb
+  disputed: false
+  season: S1
+  season_src: marathondb
+  unique_of: m77-assault-rifle
+  unique_of_src: marathondb
+  rarity: common
+  rarity_src: marathondb
+  vault:
+    v: 5
+    src: guide_v4
+    note: vault-привязка сохранена из предыдущей факт-базы гайда (v4); публичные базы (marathondb/tauceti)
+      не трекают vault-номер мод-заблокированных common-уникумов
+  stats:
+    damage:
+      v: null
+      src: marathondb
+      date: 2026-07-16
+    rpm:
+      v: null
+      src: marathondb
+      date: 2026-07-16
+    magazine:
+      v: 48
+      src: marathondb
+      date: 2026-07-16
+    reload:
+      v: null
+      src: marathondb
+      date: 2026-07-16
+    range:
+      v: 51
+      src: marathondb
+      date: 2026-07-16
+  sources:
+  - name: marathondb
+    url: https://marathondb.gg/weapons/
+- id: v85-free-tail
+  name: V85 Free-Tail
+  category: railgun
+  category_src: marathondb
+  ammo: volt_cell
+  ammo_src: marathondb
+  disputed: false
+  season: S1
+  season_src: marathondb
+  unique_of: v85-circuit-breaker
+  unique_of_src: marathondb
+  rarity: common
+  rarity_src: marathondb
+  vault:
+    v: 4
+    src: guide_v4
+    note: vault-привязка сохранена из предыдущей факт-базы гайда (v4); публичные базы (marathondb/tauceti)
+      не трекают vault-номер мод-заблокированных common-уникумов
+  stats:
+    damage:
+      v: null
+      src: marathondb
+      date: 2026-07-16
+    rpm:
+      v: null
+      src: marathondb
+      date: 2026-07-16
+    magazine:
+      v: null
+      src: marathondb
+      date: 2026-07-16
+    reload:
+      v: null
+      src: marathondb
+      date: 2026-07-16
+    range:
+      v: 15
+      src: marathondb
+      date: 2026-07-16
+    volt_drain:
+      v: 6.4
+      src: marathondb
+      date: 2026-07-16
+    cost_credits:
+      v: 10401
+      src: marathondb
+      date: 2026-07-16
+  sources:
+  - name: marathondb
+    url: https://marathondb.gg/weapons/
+- id: v99-watchtower
+  name: V99 Watchtower
+  category: railgun
+  category_src: marathondb
+  ammo: volt_cell
+  ammo_src: marathondb, tauceti, wzstats, dexerto
+  disputed: false
+  season: S1
+  season_src: marathondb
+  unique_of: v99-channel-rifle
+  unique_of_src: marathondb
+  rarity: common
+  rarity_src: marathondb
+  vault:
+    v: null
+    src: null
+  stats:
+    damage:
+      v: null
+      src: marathondb
+      date: 2026-07-16
+    rpm:
+      v: null
+      src: marathondb
+      date: 2026-07-16
+    magazine:
+      v: null
+      src: marathondb
+      date: 2026-07-16
+    reload:
+      v: null
+      src: marathondb
+      date: 2026-07-16
+    range:
+      v: 175
+      src: marathondb
+      date: 2026-07-16
+    volt_drain:
+      v: 14
+      src: marathondb
+      date: 2026-07-16
+  sources:
+  - name: marathondb
+    url: https://marathondb.gg/weapons/
+- id: fist-of-phobos
+  name: Fist of Phobos
+  category: precision
+  category_src: inherited from stryder-m1t (marathondb)
+  ammo: light
+  ammo_src: inherited from stryder-m1t; marathondb/tauceti не каталогизируют Prestige Cryo-уникумы напрямую
+  disputed: false
+  season: null
+  season_src: null
+  unique_of: stryder-m1t
+  unique_of_src: cyberneticpunks, marathonmeta, skycoach + живой игрок SlenderBeans (см. sources)
+  rarity: prestige
+  rarity_src: cyberneticpunks, marathonmeta, skycoach
+  vault:
+    v: 6
+    src: skycoach + живой игрок SlenderBeans
+    confidence: medium_high
+    note: номер Vault подтверждён источником среднего доверия (skycoach, buyout-сервис) и живым игроком;
+      профильные агрегаторы cyberneticpunks/marathonmeta дают только обобщённое 'Cryo Archive Locked Rooms'
+      без номера
+  effect: Greatly enhanced proximity sensor range (усиленный датчик близости)
+  flavor_quote: We dug two graves
+  stats: null
+  stats_note: базы данных (marathondb/tauceti) не каталогизируют статы Prestige/Deluxe Cryo-уникумов -
+    публиковать нечего, честно null
+  sources:
+  - name: cyberneticpunks
+    url: https://cyberneticpunks.com/uniques
+  - name: marathonmeta
+    url: https://marathonmeta.gg/unique-weapons
+  - name: skycoach
+    url: https://skycoach.gg/marathon-boost/products/fist-of-phobos-10407
+  - name: slenderbeans_player
+    url: null
+    note: живой игрок (Reddit), подтверждает существование и Vault 6
+- id: v66-shepherd
+  name: V66 Shepherd
+  category: precision
+  category_src: inherited from v66-lookout (marathondb)
+  ammo: volt_battery
+  ammo_src: inherited from v66-lookout после ammo-правки арбитража
+  disputed: false
+  season: null
+  season_src: null
+  unique_of: v66-lookout
+  unique_of_src: cyberneticpunks, marathonmeta
+  rarity: deluxe
+  rarity_src: cyberneticpunks, marathonmeta
+  vault:
+    v: null
+    src: null
+    note: НЕ выпадает из Vault/Cryo Archive - источник дропа Showcase Encounters (Perimeter / Dire Marsh)
+  source_encounter: showcase_encounters
+  source_zones:
+  - perimeter
+  - dire-marsh
+  corrected_from: 'прежняя факт-база ошибочно называла этот уникум ''Prestige-уникум V66 Lookout из Cryo
+    Archive'' - исправлено: Deluxe, источник Showcase Encounters, не Cryo Archive'
+  stats: null
+  stats_note: базы данных (marathondb/tauceti) не каталогизируют статы Deluxe Showcase-уникумов - публиковать
+    нечего, честно null
+  sources:
+  - name: cyberneticpunks
+    url: https://cyberneticpunks.com/uniques
+  - name: marathonmeta
+    url: https://marathonmeta.gg/unique-weapons
