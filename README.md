@@ -13,10 +13,10 @@ An interactive, unofficial fan lore guide to the universe of **Marathon** (Bungi
 
 ## Structure
 
-A welcome page plus 13 briefing pages:
+A welcome page plus 13 briefing pages (release v6.4):
 
 - `index.html` - welcome: hero, timeline ticker, "start here" primer, the ESCAPE-WILL-MAKE-ME-GOD banner, the terminal index (table of contents) and a note on the community patches.
-- `pages/` - the 13 chapters: timeline, colony, runners, classes, arsenal, factions, rampancy, aliens, zones, seasons, trilogy, deep-cuts, canon.
+- `pages/` - twelve lore chapters plus a resources hub: timeline, rampancy, colony, runners, classes, arsenal, factions, aliens, zones, seasons, trilogy, deep-cuts, and resources (a hub of sources plus a canon-checking methodology note).
 - `assets/` - shared `style.css`, `app.js` and images.
 - `404.html` - a self-contained easter-egg page.
 
