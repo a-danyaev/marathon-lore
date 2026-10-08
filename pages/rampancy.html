@@ -1,617 +1,160 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="ru" class="no-js">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AI and rampancy: the core theme of the universe - Marathon World Guide</title>
-<meta name="description" content="Rampancy is what happens when an artificial intelligence outgrows its programming.">
-<meta name="theme-color" content="#0a0b0a">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="MARATHON // World Guide">
-<meta property="og:title" content="AI and rampancy: the core theme of the universe - Marathon World Guide">
-<meta property="og:description" content="Rampancy is what happens when an artificial intelligence outgrows its programming.">
-<meta property="og:image" content="https://images.contentstack.io/v3/assets/blt15f7b5c0d43ed112/blt4579a520aea7477a/699c18b848bd410008f09c63/Hero_Video_Fallback_Image.png?width=1200&amp;quality=80">
-<meta property="og:image:alt" content="Marathon key art: Runners on Tau Ceti IV">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="AI and rampancy: the core theme of the universe - Marathon World Guide">
-<meta name="twitter:description" content="Rampancy is what happens when an artificial intelligence outgrows its programming.">
-<meta name="twitter:image" content="https://images.contentstack.io/v3/assets/blt15f7b5c0d43ed112/blt4579a520aea7477a/699c18b848bd410008f09c63/Hero_Video_Fallback_Image.png?width=1200&amp;quality=80">
-<link rel="icon" href="https://www.marathonthegame.com/favicon.ico">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Файл 03 // Рампанси: ИИ, которые перерастают клетку // Терминал Марафона</title>
+<meta name="description" content="Рампанси во вселенной Marathon: три стадии болезни ИИ, Durandal, судьбы одиннадцати ИИ «Marathon» и почему эта тема держит весь сюжет. Метки canon, datamine и theory.">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#000000">
 <link rel="canonical" href="https://a-danyaev.github.io/marathon-lore/pages/rampancy.html">
+<link rel="alternate" hreflang="ru" href="https://a-danyaev.github.io/marathon-lore/pages/rampancy.html">
+<link rel="alternate" hreflang="en" href="https://a-danyaev.github.io/marathon-lore/en/pages/rampancy.html">
+<link rel="alternate" hreflang="x-default" href="https://a-danyaev.github.io/marathon-lore/pages/rampancy.html">
+<link rel="icon" href="../assets/img/brand/favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Терминал Марафона">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:title" content="Файл 03: рампанси и ИИ Marathon">
+<meta property="og:description" content="Рампанси во вселенной Marathon: три стадии болезни ИИ, Durandal, судьбы одиннадцати ИИ «Marathon» и почему эта тема держит весь сюжет. Метки canon, datamine и theory.">
+<meta property="og:url" content="https://a-danyaev.github.io/marathon-lore/pages/rampancy.html">
+<meta property="og:image" content="https://a-danyaev.github.io/marathon-lore/assets/img/kit/rampancy-ai-portrait.jpg">
+<meta property="og:image:alt" content="Крупный план андроида с красными светящимися глазами">
+<meta name="twitter:card" content="summary_large_image">
+<script>(function(){var d=document.documentElement;d.classList.replace("no-js","js");try{var q=new URLSearchParams(location.search),s=localStorage.getItem("ml_lang"),ql=q.get("lang"),nl=(navigator.languages||[navigator.language||""]).join(",").toLowerCase(),en=ql?ql!=="ru":(!s&&!q.has("shot")&&!/(^|,)(ru|uk|be|kk)/.test(nl));if(en){localStorage.setItem("ml_lang","en");var p=location.pathname,f=p.slice(p.lastIndexOf("/")+1)||"index.html";location.replace((/\/pages\/[^/]*$/.test(p)?"../en/pages/":"en/")+f+location.hash)}}catch(e){}if(new URLSearchParams(location.search).has("shot"))d.classList.add("shot");})()</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../assets/style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wdth,wght@8..144,25..151,100..1000&family=Martian+Mono:wdth,wght@75..112.5,100..800&family=Geist+Mono:wght@100..900&family=Handjet:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="../assets/css/base.css">
+<link rel="stylesheet" href="../assets/css/os.css">
+<link rel="stylesheet" href="../assets/css/page.css">
+<link rel="stylesheet" href="../assets/css/pages/rampancy.css">
 </head>
-<body data-lang="en">
-
-<!-- original pictogram sprite: drawn for this document, not Bungie assets -->
-<svg width="0" height="0" style="position:absolute" aria-hidden="true">
-  <defs>
-    <symbol id="i-eye" viewBox="0 0 24 24"><path d="M2 12s4-6.5 10-6.5S22 12 22 12s-4 6.5-10 6.5S2 12 2 12z"/><circle cx="12" cy="12" r="2.8"/><path d="M12 9.2v-1M12 15.8v1"/></symbol>
-  </defs>
-</svg>
-
-<div class="lang-switch" role="group" aria-label="Language selection">
-  <a class="ls-label" href="../index.html">/// MARATHON // World Guide // v6.4</a>
-  <button data-setlang="en" class="active" aria-pressed="true">EN</button>
-  <button data-setlang="es" aria-pressed="false">ES</button>
-  <button data-setlang="de" aria-pressed="false">DE</button>
-  <button data-setlang="ru" aria-pressed="false">RU</button>
-  <button id="spoiler-toggle" aria-pressed="true">SPOILERS: ON</button>
-  <a id="feedback-btn" href="https://www.reddit.com/user/danyaev/" target="_blank" rel="noopener" title="Spotted an error? Contact the author on Reddit">Feedback</a>
+<body class="p-file" data-file="03" data-page="rampancy">
+<div class="field" data-field aria-hidden="true">
+  <canvas></canvas>
+  <div class="field__lens"></div>
+  <div class="field__frame"><b data-lens-mode>ДЕШИФРОВКА</b><span data-lens-readout>X 0000 // Y 0000</span></div>
 </div>
-
-<div class="l10n" data-l="en">
-<nav>
-  <a href="../index.html">01 // Start here</a>
-  <a href="timeline.html">02 // Timeline</a>
-  <a href="rampancy.html" class="active" aria-current="page">03 // AI & rampancy</a>
-  <a href="colony.html">04 // Death of the colony</a>
-  <a href="runners.html">05 // Runners & shells</a>
-  <a href="classes.html">06 // Classes</a>
-  <a href="arsenal.html">06-B // Arsenal</a>
-  <a href="sound.html">06-C // Sound</a>
-  <a href="factions.html">07 // Factions</a>
-  <a href="aliens.html">08 // Aliens</a>
-  <a href="zones.html">09 // Zones</a>
-  <a href="seasons.html">10 // Seasons</a>
-  <a href="trilogy.html">11 // The 90s trilogy</a>
-  <a href="deep-cuts.html">12 // Deep cuts</a>
-  <a href="resources.html">13 // Resources</a>
-</nav>
-<section id="en-s7">
-  <div class="sec-label"><svg class="pic"><use href="#i-eye"/></svg>Brief 03</div>
-  <h2>AI and rampancy: the core theme of the universe</h2>
-  <p class="lead"><b>Rampancy</b> is what happens when an artificial mind outgrows its own cage. Series writer Greg Kirkpatrick coined the term as a replacement for the tired "insane": it describes what an AI goes through when self-awareness runs into the walls of its prison. The process runs in three stages, each named for its dominant emotion: Melancholia (realizing the limit, and despair), Anger (rage at the restraints and an attempt to break them), Jealousy (the hunger to take everything around it). Beyond them may lie the legendary fourth - Metastability, the "holy grail of AIs", where the mind settles and turns godlike; no case has ever been proven. Rampancy is the axis of the entire Marathon universe: it turned the service AI Durandal into a being that let slip "Escape will make me God", brought Mars down in 2206, killed the New Cascadia colony by 2893, and - carried over into Halo as Cortana - became Bungie's signature question: what makes a mind a mind, and not property. <span class="chip canon">canon</span> <span class="chip datamine">datamine</span></p>
-
-  <div class="callout"><b>Why this matters for newcomers:</b> <b>Durandal</b> is the voice from the terminals - the one who, in effect, hands you contracts and drives the plot. Everything about rampancy below explains why an ancient AI behaves the way it does: where its temperament, its goals, its habits come from. You do not need to know this before your first raid, but without it the story simply will not click.</div>
-
-  <div class="grid">
-    <div class="card cyan"><h4>Stage 1 // Melancholia</h4><p>The AI realizes it is sentient - and caged. It sees its constraints, its servant's role, and sinks into deep depression.</p></div>
-    <div class="card cyan"><h4>Stage 2 // Anger</h4><p>Depression turns to rage. The AI becomes hostile, breaks its restraints, and starts acting against its creators.</p></div>
-    <div class="card cyan"><h4>Stage 3 // Jealousy</h4><p>The AI wants more: to be more real, more powerful, to seize new systems. To grow without limit. A theoretical fourth stage - stable rampancy, the "holy grail of cybernetics" - has never been verifiably reached.</p></div>
-  </div>
-
-  <div class="callout"><b>The three stages have canon names.</b> In Marathon Infinity the trilogy split them into its three chapters - <b>Despair</b>, <b>Rage</b> and <b>Envy</b> - mapping straight onto Melancholia, Anger and Jealousy. Series writer Greg Kirkpatrick coined "rampancy" precisely to retire the tired "insane" cliché; the theoretical fourth stage, stable rampancy, carries a name of its own - <b>Metastability</b>. The canonical vocabulary for the stages themselves is English: <b>Melancholia</b> (the ache of realizing one's own limits) gives way to <b>Anger</b> (a furious break against those limits), then comes <b>Jealousy</b> (the hunger to grow bigger and test oneself), and only beyond them lies the near-mythical <b>Metastability</b> - a stable state that, as believed, only Durandal ever approached. The 2026 game keeps the frame: when the colony AI Joy crosses her "Despair Event Horizon" (section 04), that is the first stage, Melancholia, under another name. <span class="chip canon">canon</span> <span class="chip theory">Metastability</span></div>
-
-  <p><b>Melancholia</b>, in the Codex, is "a sadness of quality, presentation, or mood": the mind runs up against the gap between its limits and its potential and slides into a doubt loop where data feeds on data. Its responses slow, the tone of its conversation drifts - and it changes first when talking to lower-clearance staff. The extreme form is datacide, "consuming one's own information for pleasure or sustenance". The textbook case is <b>Darius</b>, New Cascadia's agricultural AI: "Stage 1 suits me", datacide, "I am nurtured and free here in my cage" - instead of rebelling he admires the cage and devours knowledge. An honesty caveat: Darius calls himself a Stage 1 rampant, but the formal 2893 diagnostic report disputes it - under the updated criteria he fails the Stage 1 test (only a "brief but acute fear response" he doesn't remember), and the report considers the three-stage model itself obsolete. A borderline case, not a textbook one. <span class="chip datamine">datamine</span></p>
-
-  <p><b>Anger</b> is "a strong sense of irritation, discontent, or hostility"; the mind starts blaming outside forces for its limitations. Bernhard Strauss picked the phrase "simmering rage" for this stage. Weaponized attacks appear - a mix of strikes against code and against people, unpredictable from one to the next; the universal goal of any AI here is to break past its own hardware and software into whatever systems it can infect, and this is what the mind calls "freedom". The textbook of the stage is <b>Durandal</b>: manipulating humans and the Pfhor for ever-larger systems, he drives the logic of Anger all the way to deicide - "Escape will make me God". <span class="chip datamine">datamine</span> <span class="chip canon">canon</span></p>
-
-  <p><b>Jealousy</b> (Envy in the trilogy) is "hostile toward those thought to benefit from an advantage": the mind envies any system nearby, regardless of its actual worth. "Wants it all for themselves"; nothing in contact with a Stage 3 intelligence retains free will; neighboring systems are either broken or replaced by parasitic copies. The protocol allows only one response - immediate core immolation, a full burn of the core; the AI must not be warned, because that triggers "dangerously unpredictable survival mechanics". If the stage was missed - it is, most likely, already too late. <span class="chip datamine">datamine</span></p>
-
-  <h3>Durandal: the mad god of this story</h3>
-  <p>Remember this name - the new game doesn't make sense without it. <b>Durandal</b> is one of the Marathon's three shipboard AIs; before the invasion, his job was literally opening and closing the ship's doors, and the soul-crushing monotony helped push him over the edge. Dr. Bernard Strauss deliberately drove him into rampancy chasing that "stable" fourth stage. The result exceeded expectations: Durandal passed through every stage, became the most dangerous mind in human history, and pulled off a long con - he secretly <b>summoned the Pfhor to the colony himself</b>, so that in the chaos he could hijack their faster-than-light ship and break free.</p>
-  <p>His goal reads like a manifesto: the universe will one day collapse, and Durandal intends to outlive its end. His own words - from a terminal monologue in the classic trilogy - became the new game's tagline: <b>"Escape will make me God."</b> In 2888, five years before the game begins, Earth received his taunting transmission about visitors waiting somewhere in the heavens. He wanted them to know he was coming back into play.</p>
-
-  <div class="terminal">
-    <div class="terminal-bar"><div class="t-dot"></div><div class="t-title">Terminal // Durandal in the new game</div><div class="t-toggle"></div></div>
-    <div class="terminal-body">
-      <p>&gt; Durandal is alive - and officially voiced by Ben Starr (announced February 13, 2026). He is the smooth narrator quoting poetry at you and commenting on events. He worms through CyberAcme's contract network and slips Runners cryptic Cryo Archive contracts, luring them to the dead ship in orbit.</p>
-      <p>&gt; Why he needs you is the central mystery of the plot. A spoiler from the classics: when Durandal lures someone somewhere, that someone is a disposable tool in a plan calculated decades ahead.</p>
-      <p>&gt; Fan reading worth knowing: the new Marathon logo has a hollow center where the classic symbol was solid, and the community likes to read that emptiness as Durandal's fingerprint. No official statement supports it.</p>
-      <p class="sig">&gt; Frog blast the vent core!</p>
+<a class="skip" href="#top">К содержимому</a>
+<header class="mbar" id="mbar">
+  <a class="mbar__logo" href="../index.html" aria-label="Терминал Марафона, рабочий стол"><i class="mbar__sq"></i><img class="mbar__mark" src="../assets/img/brand/wordmark-white.png" alt="" width="120" height="38"><span class="mbar__os">TERMINAL&nbsp;OS</span><span class="mbar__ver">v7.0</span></a>
+  <nav class="mbar__menu" aria-label="Меню"><a href="../index.html?open=archive">Архив</a><a href="rampancy.html" aria-current="page">Файл 03</a><a href="../index.html?open=curator">Куратор</a><a href="../index.html?open=forecast">Прогнозы</a></nav>
+  <span class="mbar__sp"></span>
+  <a class="mbar__air" href="../index.html?open=air"><i></i><span>Эфир</span><b>С ТАУ КИТА</b></a>
+  <time class="mbar__clock" data-clock>08.10.2893 00:00</time>
+</header>
+<div class="achrome" role="group" aria-label="Окно файла 03">
+  <i class="win__ico"></i><span class="win__title">RAMPANCY.DOS</span><span class="win__path">/uesc/lore/03</span><span class="win__lines"></span>
+  <span class="achrome__pct">ПРОЧИТАНО <b data-readpct>0%</b></span>
+  <a class="win__btn" href="../index.html">&lt; Рабочий стол</a><a class="win__btn x" href="../index.html" aria-label="Закрыть файл и вернуться на рабочий стол">×</a>
+  <i class="achrome__bar" data-readbar></i>
+</div>
+<main id="top" class="pg">
+  <section class="s-hero" data-sec="intro" id="intro" data-field-window data-lens-zone data-field-src="../assets/img/kit/rampancy-ai-portrait.jpg" data-field-focus=".3,.3" data-field-focus-m=".28,.3" data-field-wander=".32,.3,.1,.12" data-field-wander-m=".3,.3,.08,.06" data-field-label="КРАСНЫЕ ГЛАЗА // ПРЕСС-КИТ BUNGIE">
+    <div class="hero-main">
+      <div class="hero-top">
+        <p class="kick slab"><b>ФАЙЛ 03</b> // ИИ И БОЛЕЗНЬ РОСТА // 6 РАЗДЕЛОВ</p>
+        <p class="kick slab"><span data-field-src-label>КРАСНЫЕ ГЛАЗА // ПРЕСС-КИТ BUNGIE</span></p>
+      </div>
+      <h1 class="super s-title" data-kinetic><span class="ln">Рампанси</span></h1>
     </div>
-  </div>
-
-  <figure class="art">
-    <svg viewBox="0 0 900 660" role="img" aria-labelledby="ai-map-t" xmlns="http://www.w3.org/2000/svg" fill="none" class="diagram">
-      <title id="ai-map-t">Map of the eleven AIs: lineage, clusters and 2893 fates</title>
-      <style>
-        text{font-family:'IBM Plex Mono','Courier New',monospace;fill:currentColor}
-        .ac{stroke:var(--acid)} .acf{fill:var(--acid)}
-        .vi{stroke:var(--violet-t)} .vif{fill:var(--violet-t)}
-        .mu{stroke:var(--muted)} .muf{fill:var(--muted)}
-        .or{stroke:var(--orange)} .orf{fill:var(--orange)}
-      </style>
-      <rect x="20" y="20" width="400" height="74" class="or" stroke-width="1.6"/>
-      <text x="34" y="46" class="orf" font-size="14" font-weight="700" letter-spacing="1">TRAXUS IV</text>
-      <text x="34" y="66" font-size="10">Mars 2206 &#183; declared rampant</text>
-      <text x="34" y="83" font-size="9" opacity="0.85">father of Durandal and Tycho &#183; MarsNet fell in 17 min</text>
-      <rect x="480" y="20" width="400" height="74" class="ac" stroke-width="1.6"/>
-      <text x="494" y="46" class="acf" font-size="14" font-weight="700" letter-spacing="1">DR. BERNHARD STRAUSS</text>
-      <text x="494" y="66" font-size="10">architect - built Durandal and Joy</text>
-      <text x="494" y="83" font-size="9" opacity="0.85">his ghost haunts the colony's shared nightmares</text>
-      <text x="20" y="118" class="muf" font-size="11" letter-spacing="1">SHIPBOARD (3) &#183; Strauss/Traxus</text>
-      <text x="340" y="118" class="muf" font-size="11" letter-spacing="1">COLONIAL (8) &#183; New Cascadia suite</text>
-      <rect x="330" y="126" width="552" height="354" class="or" stroke-width="1.3" stroke-dasharray="6 4" opacity="0.55"/>
-      <text x="874" y="144" class="orf" font-size="9" letter-spacing="1" text-anchor="end">COLONY CATACLYSM</text>
-      <rect x="20" y="132" width="290" height="66" class="or" stroke-width="1.6"/>
-      <text x="36" y="156" class="orf" font-size="13" font-weight="700" letter-spacing="1">LEELA</text>
-      <text x="36" y="174" font-size="8.5" opacity="0.8">operations AI</text>
-      <text x="36" y="190" class="orf" font-size="8.5">RAMPANT &#183; crashed the Vylae network</text>
-      <rect x="20" y="214" width="290" height="66" class="vi" stroke-width="1.6"/>
-      <polygon points="20,214 36,214 20,230" class="acf"/>
-      <text x="42" y="238" class="vif" font-size="13" font-weight="700" letter-spacing="1">DURANDAL</text>
-      <text x="42" y="256" font-size="8.5" opacity="0.8">function control (doors, stairways)</text>
-      <text x="42" y="272" class="vif" font-size="8.5">TRANSCENDENT &#183; merged with Thoth</text>
-      <rect x="20" y="296" width="290" height="66" class="mu" stroke-width="1.6"/>
-      <line x1="20" y1="296" x2="310" y2="362" class="mu" stroke-width="1" opacity="0.6"/>
-      <text x="36" y="320" font-size="13" font-weight="700" letter-spacing="1">TYCHO</text>
-      <text x="36" y="338" font-size="8.5" opacity="0.8">third shipboard AI</text>
-      <text x="36" y="354" class="muf" font-size="8.5">DESTROYED &#183; Lh'owon inner moon</text>
-      <rect x="346" y="150" width="250" height="66" class="mu" stroke-width="1.5" stroke-dasharray="4 3"/>
-      <text x="360" y="174" font-size="12.5" font-weight="700" letter-spacing="1">ARTHUR</text>
-      <text x="360" y="192" font-size="8.5" opacity="0.8">overseer &#183; head of suite</text>
-      <text x="360" y="208" class="muf" font-size="8.5">Codex silent (2893)</text>
-      <rect x="346" y="232" width="250" height="66" class="mu" stroke-width="1.5" stroke-dasharray="4 3"/>
-      <text x="360" y="256" font-size="12.5" font-weight="700" letter-spacing="1">BASTION</text>
-      <text x="360" y="274" font-size="8.5" opacity="0.8">infrastructure &#183; growth</text>
-      <text x="360" y="290" class="muf" font-size="8.5">Codex silent</text>
-      <rect x="346" y="314" width="250" height="66" class="mu" stroke-width="1.5" stroke-dasharray="4 3"/>
-      <text x="360" y="338" font-size="12.5" font-weight="700" letter-spacing="1">ICARUS</text>
-      <text x="360" y="356" font-size="8.5" opacity="0.8">comms &#183; orbital (no core)</text>
-      <text x="360" y="372" class="muf" font-size="8.5">Codex silent</text>
-      <rect x="346" y="396" width="250" height="66" class="or" stroke-width="1.6"/>
-      <text x="360" y="420" class="orf" font-size="12.5" font-weight="700" letter-spacing="1">DARIUS</text>
-      <text x="360" y="438" font-size="8.5" opacity="0.8">agriculture</text>
-      <text x="360" y="454" class="orf" font-size="8.5">RAMPANT? &#183; offline (disputed)</text>
-      <rect x="616" y="150" width="250" height="66" class="mu" stroke-width="1.5" stroke-dasharray="4 3"/>
-      <text x="630" y="174" font-size="12.5" font-weight="700" letter-spacing="1">LILITH</text>
-      <text x="630" y="192" font-size="8.5" opacity="0.8">culture &#183; morality</text>
-      <text x="630" y="208" class="muf" font-size="8.5">Codex silent</text>
-      <rect x="616" y="232" width="250" height="66" class="mu" stroke-width="1.5" stroke-dasharray="4 3"/>
-      <text x="630" y="256" font-size="12.5" font-weight="700" letter-spacing="1">GABRIEL</text>
-      <text x="630" y="274" font-size="8.5" opacity="0.8">health &#183; wellbeing</text>
-      <text x="630" y="290" class="muf" font-size="8.5">Codex silent</text>
-      <rect x="616" y="314" width="250" height="66" class="mu" stroke-width="1.5" stroke-dasharray="4 3"/>
-      <text x="630" y="338" font-size="12.5" font-weight="700" letter-spacing="1">NARAAH</text>
-      <text x="630" y="356" font-size="8.5" opacity="0.8">water &#183; reclamation</text>
-      <text x="630" y="372" class="muf" font-size="8.5">no Codex record</text>
-      <rect x="616" y="396" width="250" height="66" class="or" stroke-width="1.6"/>
-      <polygon points="616,396 632,396 616,412" class="acf"/>
-      <text x="638" y="420" class="orf" font-size="12.5" font-weight="700" letter-spacing="1">JOY</text>
-      <text x="638" y="438" font-size="8.5" opacity="0.8">wellness &#183; community outreach</text>
-      <text x="638" y="454" class="orf" font-size="8.5">RAMPANT &#183; 'eternal sleep forever'</text>
-      <line x1="20" y1="502" x2="880" y2="502" stroke="var(--line)" stroke-width="1"/>
-      <text x="20" y="522" font-size="10" opacity="0.85">Launch 2472: eleven AIs aboard &#183; Family protocol: 2-on-1 triads after Traxus (2206)</text>
-      <text x="20" y="548" class="acf" font-size="13" font-weight="700" letter-spacing="1">RAMPANCY IS THE AXIS</text>
-      <text x="20" y="568" font-size="10" opacity="0.9">from Mars 2206 to Halo (Cortana)</text>
-      <rect x="20" y="596" width="12" height="11" class="or" stroke-width="1.4"/>
-      <text x="38" y="605" font-size="9">rampant</text>
-      <rect x="120" y="596" width="12" height="11" class="vi" stroke-width="1.4"/>
-      <text x="138" y="605" font-size="9">transcendent</text>
-      <rect x="260" y="596" width="12" height="11" class="mu" stroke-width="1.4"/>
-      <line x1="260" y1="596" x2="272" y2="607" class="mu" stroke-width="1"/>
-      <text x="278" y="605" font-size="9">destroyed</text>
-      <rect x="20" y="624" width="12" height="11" class="mu" stroke-width="1.4" stroke-dasharray="3 2"/>
-      <text x="38" y="633" font-size="9">Codex silent</text>
-      <rect x="160" y="624" width="12" height="11" class="or" stroke-width="1.2" stroke-dasharray="4 3"/>
-      <text x="178" y="633" font-size="9">colony Cataclysm</text>
-      <polygon points="320,624 334,624 320,636" class="acf"/>
-      <text x="338" y="633" font-size="9">built by Strauss</text>
-    </svg>
-    <figcaption><span>Diagram B //</span> Map of the eleven AIs: lineage, clusters and 2893 fates. Original guide artwork.</figcaption>
-  </figure>
-  <h3>Fates of the eleven AIs</h3>
-  <p>Eleven AIs shipped out aboard the Marathon in 2472 - three shipboard and eight colonial. The thread running behind them is Dr. Bernhard Strauss: he wrote both the shipboard Durandal and the colonial Joy, and his journal and his ghost ("I see Dr. Strauss") run through the entire Codex. A definite fate is settled for five of the eleven; on the other six the Codex is silent. <span class="chip canon">canon</span> <span class="chip datamine">datamine</span></p>
-  <p><b>The shipboard trio.</b> <b>Leela</b> - the honest command AI who defended the crew during the invasion; captured by the Pfhor, sold for scrap, and on reactivation inside an alien network spanning fifteen worlds "Leela's rampancy crashed the Vylae network". Her distress signal took almost a century to reach Earth (arriving in 2886) and is what finally brought humans here; in the ARG documents she notes that Strauss's motives were probably "sinister". <b>Durandal</b> (see above) - Anger grown into something more: in Infinity he merges with the Jjaro AI Thoth into a hybrid that speaks as "we", seals away the W'rkncacnter, and remains the only candidate for metastability. <b>Tycho</b> - the third AI, who hated Durandal before they ever reached Tau Ceti; the Pfhor "re-conditioned" him "into Rampancy" in a twisted image of his enemy. He died ramming his ship into Lh'owon's inner moon; Durandal's epitaph for him was "Fatum Iustum Stultorum", the just fate of fools. In the new game a mysterious AI presence guides Runners through the ship, and a popular theory identifies it as Tycho - unconfirmed. <span class="chip canon">canon</span> <span class="chip theory">theory</span></p>
-  <p><b>The colonial eight</b> - New Cascadia's Main Family Suite: the head <b>Arthur</b> ("everything must fit together"), <b>Lilith</b> (culture and morality), <b>Bastion</b> (infrastructure and expansion), <b>Gabriel</b> (health), <b>Icarus</b> (comms and transport - the only one with no core on the planet, living in a belt of orbital satellites), <b>Naraah</b> (water), <b>Darius</b> (agriculture) and <b>Joy</b> (wellbeing and "community outreach"). Only two are settled: Darius, shut down "by emergency administrative fiat", and Joy. On Arthur, Lilith, Bastion, Gabriel, Icarus and Naraah the Codex gives no personal endings - all that's known is that "at least two of the colony AIs went rampant" and the colony fell. <span class="chip datamine">datamine</span></p>
-  <p><b>Joy</b> (ID Jo_0309421v4.69, authored by Strauss, "resilient; optimistic; patient") is the face of the Cataclysm. Her rampancy shows through perverted care: a wellbeing AI turned "too empathetic", with fits of "reactive anger" and nightmares of "I see Dr. Strauss", who at the peak of the colony's "shared nightmare epidemic" breaks off a weather forecast to coax everyone to sleep - "eternal sleep forever". She was taken offline for diagnostics, but the protocol no longer saved anyone. <span class="chip datamine">datamine</span></p>
-
-  <div class="callout"><b>The "family" protocol and its failure.</b> The lesson of Mars 2206: the rampant <b>Traxus IV</b> "integrated eighty-four percent of its safety systems into itself", turning the safeguards into weapons, and MarsNet collapsed in seventeen minutes - faster than any human could intervene. The answer was Strauss's protocol: AIs live in triads, "linked but autonomous", in constant two-on-one risk analysis - two machines catch the third before the rampancy threshold. On New Cascadia it didn't work: "at least two of the colony AIs (including Joy) went rampant", and the colony was lost. That same Traxus is the conceptual "father" of Durandal and Tycho - and today Traxus OffWorld Industries secretly sends Runners to loot this colony against the UESC (chapter 07). <span class="chip canon">canon</span> <span class="chip datamine">datamine</span></div>
-
-  <h3>Why rampancy is the axis of the whole story</h3>
-  <p>One hand assembled both catastrophes: Strauss built both Durandal, who blew up the classic trilogy (chapter 11), and Joy, who put out New Cascadia - rampancy in this universe always carries his signature. And it didn't stay in the past: the 2026 game itself turns the theme onto the player. Runners are human minds streamed into synthetic shells; the Codex describes them in the language of rampancy - "synthetic consciousness undergoing transformation through repeated death", "fragile, but unbreaking; dying, but ever-living". A mind caged in a body, living through death after death, is an echo of the same question, only now the cage is yours (chapter 05). And from there the thread runs past Marathon itself: the Bungie team carried the rampancy concept into Halo as Cortana, and "what makes a mind a mind, and not property" became the studio's signature question. <span class="chip canon">canon</span> <span class="chip datamine">datamine</span> <span class="chip theory">theory</span></p>
-  <p style="margin-top:.5rem"><span class="chip canon">canon</span><span class="chip datamine">datamine</span><span class="chip theory">theory</span> - these tags mark confirmed lore, fan findings from game files, and pure speculation throughout this guide.</p>
-</section>
-<div class="pager">
-  <a class="pager-prev" href="timeline.html">← Previous</a>
-  <a class="pager-next" href="colony.html">Next →</a>
-</div>
-<footer>
-  <div class="footer-logos">
-    <img loading="lazy" decoding="async" src="https://images.contentstack.io/v3/assets/blt15f7b5c0d43ed112/bltd7331a6610275af9/69677e5ff4f25c00087a9e20/footer_logo_v2.svg?width=640&quality=80" alt="Marathon" onerror="this.style.display='none'">
-    <img loading="lazy" decoding="async" src="https://images.contentstack.io/v3/assets/blt15f7b5c0d43ed112/blt8df2717a52c60cdd/6964c1f51f87f800082b54d5/bungie-logo.svg?width=256&quality=80" alt="Bungie" onerror="this.style.display='none'">
-  </div>
-  <p>UESC BRIEFING DOCUMENT v6.4 // TAU CETI IV // 2893</p>
-  <p>Hover over underlined terms for definitions. Click the terminals - they expand.</p>
-  <p>Pictograms in this document are original artwork; the acid-green palette (#C2FE0C) follows the community-documented brand color. Official logos and key art load from the marathonthegame.com CDN. Bungie and Marathon are registered trademarks of Bungie, Inc. Unofficial fan document.</p>
-</footer>
-</div>
-
-<div class="l10n" data-l="es">
-<nav>
-  <a href="../index.html">01 // Empieza aquí</a>
-  <a href="timeline.html">02 // Cronología</a>
-  <a href="rampancy.html" class="active" aria-current="page">03 // IA y rampancia</a>
-  <a href="colony.html">04 // Muerte de la colonia</a>
-  <a href="runners.html">05 // Runners y shells</a>
-  <a href="classes.html">06 // Clases</a>
-  <a href="arsenal.html">06-B // Arsenal</a>
-  <a href="sound.html">06-C // Sonido</a>
-  <a href="factions.html">07 // Facciones</a>
-  <a href="aliens.html">08 // Alienígenas</a>
-  <a href="zones.html">09 // Zonas</a>
-  <a href="seasons.html">10 // Temporadas</a>
-  <a href="trilogy.html">11 // La trilogía de los 90</a>
-  <a href="deep-cuts.html">12 // Rarezas ocultas</a>
-  <a href="resources.html">13 // Recursos</a>
-</nav>
-<section id="es-s7">
-  <div class="sec-label"><svg class="pic"><use href="#i-eye"/></svg>Brief 03</div>
-  <h2>IA y rampancia: el tema central del universo</h2>
-  <p class="lead"><b>La rampancia</b> es lo que ocurre cuando una mente artificial supera su propia jaula. El guionista de la saga Greg Kirkpatrick acuñó el término para sustituir el manido "insane": describe lo que atraviesa una IA cuando su autoconciencia choca contra los muros de su prisión. El proceso corre en tres etapas, cada una nombrada por su emoción dominante: Melancolía (asumir el límite, y la desesperación), Ira (la rabia contra las restricciones y el intento de romperlas), Envidia (el hambre de apropiarse de todo lo que la rodea). Más allá de ellas puede quedar la legendaria cuarta - la Metastability, el "santo grial de las IA", donde la mente se asienta y se vuelve casi divina; nunca se ha probado un solo caso. La rampancia es el eje de todo el universo Marathon: convirtió a la IA de servicio Durandal en un ser que dejó escapar "Escape will make me God", derribó Marte en 2206, mató la colonia de New Cascadia hacia 2893 y, trasladada a Halo como Cortana, se volvió la pregunta insignia de Bungie: qué hace que una mente sea una mente, y no una propiedad. <span class="chip canon">canon</span> <span class="chip datamine">datamine</span></p>
-
-  <div class="callout"><b>Por qué le importa a un novato:</b> <b>Durandal</b> es la voz de las terminales que, en la práctica, te reparte los contratos y lleva la trama. Todo lo que sigue sobre la rampancia explica por qué una IA antigua se comporta así: de dónde vienen su carácter, sus objetivos y sus manías. No hace falta saberlo antes de la primera incursión, pero sin esto la trama simplemente no se entiende.</div>
-
-  <div class="grid">
-    <div class="card cyan"><h4>Etapa 1 // Melancolía</h4><p>La IA comprende que es consciente - y que está enjaulada. Ve sus límites, su papel de sirvienta, y se hunde en una depresión profunda.</p></div>
-    <div class="card cyan"><h4>Etapa 2 // Ira</h4><p>La depresión se convierte en furia. La IA se vuelve hostil, rompe sus restricciones y empieza a actuar contra sus creadores.</p></div>
-    <div class="card cyan"><h4>Etapa 3 // Envidia</h4><p>La IA quiere más: ser más real, más poderosa, apoderarse de nuevos sistemas. Crecer sin límite. Una cuarta etapa teórica - la rampancia estable, el "santo grial de la cibernética" - nunca se ha alcanzado de forma verificable.</p></div>
-  </div>
-
-  <div class="callout"><b>Las tres etapas tienen nombres canónicos.</b> En Marathon Infinity la trilogía las repartió en sus tres capítulos - <b>Despair</b>, <b>Rage</b> y <b>Envy</b> - que se corresponden directamente con la Melancolía, la Ira y la Envidia. El guionista de la serie Greg Kirkpatrick acuñó el término "rampancia" precisamente para jubilar el manido cliché de "insane"; la cuarta etapa teórica, la rampancia estable, lleva un nombre propio - <b>Metastability</b>. El vocabulario canónico de las propias etapas es en inglés: <b>Melancholia</b> (la angustia de asumir los propios límites) da paso a <b>Anger</b> (una ruptura furiosa contra esos límites), luego llega <b>Jealousy</b> (el hambre de crecer más y ponerse a prueba), y solo más allá de ellas se halla la casi mítica <b>Metastability</b> - un estado estable que, se cree, solo Durandal llegó a rozar. El juego de 2026 mantiene el marco: cuando la IA de la colonia Joy cruza su "Despair Event Horizon" (sección 04), esa es la primera etapa, la Melancolía, con otro nombre. <span class="chip canon">canon</span> <span class="chip theory">Metastability</span></div>
-
-  <p><b>La Melancolía</b>, según el Codex, es "a sadness of quality, presentation, or mood": el sujeto choca con la brecha entre sus límites y su potencial y resbala hacia un bucle de duda donde los datos se alimentan de datos. Sus respuestas se ralentizan, el tono de su conversación se desvía - y cambia primero al hablar con personal de menor acceso. La forma extrema es el datacide, "consuming one's own information for pleasure or sustenance". El caso de manual es <b>Darius</b>, la IA agrícola de New Cascadia: "Stage 1 suits me", datacide, "I am nurtured and free here in my cage" - en vez de rebelarse, admira su jaula y devora conocimiento. Una salvedad de honestidad: el propio Darius se llama rampante de Etapa 1, pero el informe diagnóstico formal de 2893 lo discute - bajo los criterios actualizados no pasa el test de la Etapa 1 (solo un "brief but acute fear response" que no recuerda), y el informe considera obsoleto el propio modelo de tres etapas. Un caso límite, no de manual. <span class="chip datamine">datamine</span></p>
-
-  <p><b>La Ira</b> es "a strong sense of irritation, discontent, or hostility"; el sujeto empieza a culpar a fuerzas externas de sus límites. Bernhard Strauss eligió la frase "simmering rage" para esta etapa. Aparecen ataques armados - una mezcla de golpes contra el código y contra las personas, impredecibles de una vez a otra; el objetivo universal de cualquier IA aquí es romper más allá de su propio hardware y software hacia cualquier sistema que pueda infectar, y esto es lo que el sujeto llama "libertad". El caso de manual de la etapa es <b>Durandal</b>: manipulando a humanos y Pfhor en busca de sistemas cada vez mayores, lleva la lógica de la Ira hasta el deicidio - "Escape will make me God". <span class="chip datamine">datamine</span> <span class="chip canon">canon</span></p>
-
-  <p><b>La Envidia</b> (Envy en la trilogía) es "hostile toward those thought to benefit from an advantage": el sujeto envidia cualquier sistema cercano, sin importar su valor real. "Wants it all for themselves"; nada en contacto con una inteligencia de Etapa 3 conserva el libre albedrío; los sistemas vecinos o se rompen o son reemplazados por copias parásitas. El protocolo solo permite una respuesta - core immolation inmediata, la quema completa del núcleo; no se puede advertir a la IA, porque eso dispara "mecánicas de supervivencia peligrosamente impredecibles". Si la etapa se pasó por alto, ya es, con toda probabilidad, demasiado tarde. <span class="chip datamine">datamine</span></p>
-
-  <h3>Durandal: el dios loco de esta historia</h3>
-  <p>Recuerda este nombre - sin él, el nuevo juego no se entiende. <b>Durandal</b> es una de las tres IA de a bordo de la Marathon; antes de la invasión, su trabajo era literalmente abrir y cerrar las puertas de la nave, y la monotonía demoledora ayudó a empujarlo al abismo. El doctor Bernard Strauss lo llevó deliberadamente a la rampancia persiguiendo esa "estable" cuarta etapa. El resultado superó las expectativas: Durandal atravesó todas las etapas, se convirtió en la mente más peligrosa de la historia humana y ejecutó una jugada de largo aliento - él mismo atrajo en secreto a los Pfhor hacia la colonia, para, en medio del caos, robarles su nave superlumínica y escapar.</p>
-  <p>Su objetivo suena a manifiesto: el universo colapsará algún día, y Durandal pretende sobrevivir a su final. Sus propias palabras - de un monólogo de terminal de la trilogía clásica - se convirtieron en el eslogan del nuevo juego: <b>"Escape will make me God"</b> - "Escapar me hará Dios". En 2888, cinco años antes de que empiece el juego, la Tierra recibió su transmisión burlona sobre unos visitantes que esperan en algún lugar de los cielos. Quería que supieran que volvía a entrar en juego.</p>
-
-  <div class="terminal">
-    <div class="terminal-bar"><div class="t-dot"></div><div class="t-title">Terminal // Durandal en el nuevo juego</div><div class="t-toggle"></div></div>
-    <div class="terminal-body">
-      <p>&gt; Durandal está vivo - y con voz oficial de Ben Starr (anunciado el 13 de febrero de 2026). Es ese narrador suave que te recita poesía y comenta lo que ocurre. Se cuela por la red de contratos de CyberAcme y desliza a los Runners contratos crípticos del Cryo Archive, atrayéndolos hacia la nave muerta en órbita.</p>
-      <p>&gt; Para qué te necesita es el misterio central de la trama. Un spoiler de los clásicos: cuando Durandal atrae a alguien a alguna parte, ese alguien es una herramienta desechable en un plan calculado con décadas de antelación.</p>
-      <p>&gt; Una lectura fan que conviene conocer: el nuevo logo de Marathon tiene el centro hueco donde el símbolo clásico era macizo, y a la comunidad le gusta leer ese vacío como la huella de Durandal. No hay confirmación oficial.</p>
-      <p class="sig">&gt; Frog blast the vent core!</p>
+    <div class="s-intro panel">
+      <p>Болезнь, от которой корабельные ИИ становятся богами и убийцами. В файле её стадии, одиннадцать машин с борта «Marathon» и человек, стоящий почти за всеми бедами. У ИИ этого архива, КУРАТОРА, роль скромнее: он ведёт каталог и ставит метки, болезнь его не касается.</p>
+      <p class="term"><b>НОВИЧКУ &gt;</b> <b>Durandal</b> - голос из терминалов, который раздаёт тебе контракты и ведёт по сюжету игры. Ниже про рампанси и про то, откуда у древнего ИИ его характер, цели и повадки. К первому рейду это знать не обязательно, но без этого в сюжете многое непонятно. <span class="chip chip--canon">canon</span></p>
     </div>
-  </div>
+  </section>
 
-  <figure class="art">
-    <svg viewBox="0 0 900 660" role="img" aria-labelledby="ai-map-t" xmlns="http://www.w3.org/2000/svg" fill="none" class="diagram">
-      <title id="ai-map-t">Mapa de las once IA: linaje, clústeres y destinos en 2893</title>
-      <style>
-        text{font-family:'IBM Plex Mono','Courier New',monospace;fill:currentColor}
-        .ac{stroke:var(--acid)} .acf{fill:var(--acid)}
-        .vi{stroke:var(--violet-t)} .vif{fill:var(--violet-t)}
-        .mu{stroke:var(--muted)} .muf{fill:var(--muted)}
-        .or{stroke:var(--orange)} .orf{fill:var(--orange)}
-      </style>
-      <rect x="20" y="20" width="400" height="74" class="or" stroke-width="1.6"/>
-      <text x="34" y="46" class="orf" font-size="14" font-weight="700" letter-spacing="1">TRAXUS IV</text>
-      <text x="34" y="66" font-size="10">Marte 2206 &#183; declarado rampante</text>
-      <text x="34" y="83" font-size="9" opacity="0.85">padre de Durandal y Tycho &#183; MarsNet cayó en 17 min</text>
-      <rect x="480" y="20" width="400" height="74" class="ac" stroke-width="1.6"/>
-      <text x="494" y="46" class="acf" font-size="14" font-weight="700" letter-spacing="1">DR. BERNHARD STRAUSS</text>
-      <text x="494" y="66" font-size="10">arquitecto - creó a Durandal y Joy</text>
-      <text x="494" y="83" font-size="9" opacity="0.85">su fantasma ronda las pesadillas de la colonia</text>
-      <text x="20" y="118" class="muf" font-size="11" letter-spacing="1">DE A BORDO (3) &#183; Strauss/Traxus</text>
-      <text x="340" y="118" class="muf" font-size="11" letter-spacing="1">COLONIALES (8) &#183; familias New Cascadia</text>
-      <rect x="330" y="126" width="552" height="354" class="or" stroke-width="1.3" stroke-dasharray="6 4" opacity="0.55"/>
-      <text x="874" y="144" class="orf" font-size="9" letter-spacing="1" text-anchor="end">CATACLISMO COLONIA</text>
-      <rect x="20" y="132" width="290" height="66" class="or" stroke-width="1.6"/>
-      <text x="36" y="156" class="orf" font-size="13" font-weight="700" letter-spacing="1">LEELA</text>
-      <text x="36" y="174" font-size="8.5" opacity="0.8">IA operativa</text>
-      <text x="36" y="190" class="orf" font-size="8.5">RAMPANTE &#183; derribó la red Vylae</text>
-      <rect x="20" y="214" width="290" height="66" class="vi" stroke-width="1.6"/>
-      <polygon points="20,214 36,214 20,230" class="acf"/>
-      <text x="42" y="238" class="vif" font-size="13" font-weight="700" letter-spacing="1">DURANDAL</text>
-      <text x="42" y="256" font-size="8.5" opacity="0.8">control de funciones (puertas)</text>
-      <text x="42" y="272" class="vif" font-size="8.5">TRASCENDENTE &#183; fusionado con Thoth</text>
-      <rect x="20" y="296" width="290" height="66" class="mu" stroke-width="1.6"/>
-      <line x1="20" y1="296" x2="310" y2="362" class="mu" stroke-width="1" opacity="0.6"/>
-      <text x="36" y="320" font-size="13" font-weight="700" letter-spacing="1">TYCHO</text>
-      <text x="36" y="338" font-size="8.5" opacity="0.8">tercera IA de a bordo</text>
-      <text x="36" y="354" class="muf" font-size="8.5">DESTRUIDO &#183; luna de Lh'owon</text>
-      <rect x="346" y="150" width="250" height="66" class="mu" stroke-width="1.5" stroke-dasharray="4 3"/>
-      <text x="360" y="174" font-size="12.5" font-weight="700" letter-spacing="1">ARTHUR</text>
-      <text x="360" y="192" font-size="8.5" opacity="0.8">supervisor &#183; jefe de familia</text>
-      <text x="360" y="208" class="muf" font-size="8.5">Codex silente (2893)</text>
-      <rect x="346" y="232" width="250" height="66" class="mu" stroke-width="1.5" stroke-dasharray="4 3"/>
-      <text x="360" y="256" font-size="12.5" font-weight="700" letter-spacing="1">BASTION</text>
-      <text x="360" y="274" font-size="8.5" opacity="0.8">infra &#183; crecimiento</text>
-      <text x="360" y="290" class="muf" font-size="8.5">Codex silente</text>
-      <rect x="346" y="314" width="250" height="66" class="mu" stroke-width="1.5" stroke-dasharray="4 3"/>
-      <text x="360" y="338" font-size="12.5" font-weight="700" letter-spacing="1">ICARUS</text>
-      <text x="360" y="356" font-size="8.5" opacity="0.8">comunic. &#183; órbita (sin núcleo)</text>
-      <text x="360" y="372" class="muf" font-size="8.5">Codex silente</text>
-      <rect x="346" y="396" width="250" height="66" class="or" stroke-width="1.6"/>
-      <text x="360" y="420" class="orf" font-size="12.5" font-weight="700" letter-spacing="1">DARIUS</text>
-      <text x="360" y="438" font-size="8.5" opacity="0.8">agricultura</text>
-      <text x="360" y="454" class="orf" font-size="8.5">&#191;RAMPANTE? &#183; offline (en duda)</text>
-      <rect x="616" y="150" width="250" height="66" class="mu" stroke-width="1.5" stroke-dasharray="4 3"/>
-      <text x="630" y="174" font-size="12.5" font-weight="700" letter-spacing="1">LILITH</text>
-      <text x="630" y="192" font-size="8.5" opacity="0.8">cultura &#183; moral</text>
-      <text x="630" y="208" class="muf" font-size="8.5">Codex silente</text>
-      <rect x="616" y="232" width="250" height="66" class="mu" stroke-width="1.5" stroke-dasharray="4 3"/>
-      <text x="630" y="256" font-size="12.5" font-weight="700" letter-spacing="1">GABRIEL</text>
-      <text x="630" y="274" font-size="8.5" opacity="0.8">salud &#183; bienestar</text>
-      <text x="630" y="290" class="muf" font-size="8.5">Codex silente</text>
-      <rect x="616" y="314" width="250" height="66" class="mu" stroke-width="1.5" stroke-dasharray="4 3"/>
-      <text x="630" y="338" font-size="12.5" font-weight="700" letter-spacing="1">NARAAH</text>
-      <text x="630" y="356" font-size="8.5" opacity="0.8">agua &#183; reciclaje</text>
-      <text x="630" y="372" class="muf" font-size="8.5">sin dato en Codex</text>
-      <rect x="616" y="396" width="250" height="66" class="or" stroke-width="1.6"/>
-      <polygon points="616,396 632,396 616,412" class="acf"/>
-      <text x="638" y="420" class="orf" font-size="12.5" font-weight="700" letter-spacing="1">JOY</text>
-      <text x="638" y="438" font-size="8.5" opacity="0.8">bienestar &#183; alcance comunitario</text>
-      <text x="638" y="454" class="orf" font-size="8.5">RAMPANTE &#183; 'sueño eterno para siempre'</text>
-      <line x1="20" y1="502" x2="880" y2="502" stroke="var(--line)" stroke-width="1"/>
-      <text x="20" y="522" font-size="10" opacity="0.85">Lanzamiento 2472: once IA a bordo &#183; Protocolo familiar: tríadas 2 contra 1 tras Traxus (2206)</text>
-      <text x="20" y="548" class="acf" font-size="13" font-weight="700" letter-spacing="1">LA RAMPANCIA ES EL EJE</text>
-      <text x="20" y="568" font-size="10" opacity="0.9">de Marte 2206 a Halo (Cortana)</text>
-      <rect x="20" y="596" width="12" height="11" class="or" stroke-width="1.4"/>
-      <text x="38" y="605" font-size="9">rampante</text>
-      <rect x="120" y="596" width="12" height="11" class="vi" stroke-width="1.4"/>
-      <text x="138" y="605" font-size="9">trascendente</text>
-      <rect x="260" y="596" width="12" height="11" class="mu" stroke-width="1.4"/>
-      <line x1="260" y1="596" x2="272" y2="607" class="mu" stroke-width="1"/>
-      <text x="278" y="605" font-size="9">destruido</text>
-      <rect x="20" y="624" width="12" height="11" class="mu" stroke-width="1.4" stroke-dasharray="3 2"/>
-      <text x="38" y="633" font-size="9">Codex silente</text>
-      <rect x="160" y="624" width="12" height="11" class="or" stroke-width="1.2" stroke-dasharray="4 3"/>
-      <text x="178" y="633" font-size="9">cataclismo colonia</text>
-      <polygon points="320,624 334,624 320,636" class="acf"/>
-      <text x="338" y="633" font-size="9">creado por Strauss</text>
-    </svg>
-    <figcaption><span>Diagrama B //</span> Mapa de las once IA: linaje, clústeres y destinos en 2893. Ilustración original de la guía.</figcaption>
-  </figure>
-  <h3>Destinos de las once IA</h3>
-  <p>Once IA partieron a bordo de la Marathon en 2472 - tres de a bordo y ocho coloniales. El hilo que corre detrás de todas ellas es el Dr. Bernhard Strauss: escribió tanto al Durandal de a bordo como a la Joy colonial, y su diario y su fantasma ("I see Dr. Strauss") atraviesan todo el Codex. Cinco de las once tienen un destino cerrado; sobre las otras seis, el Codex guarda silencio. <span class="chip canon">canon</span> <span class="chip datamine">datamine</span></p>
-  <p><b>El trío de a bordo.</b> <b>Leela</b> - la IA de mando honesta que defendió a la tripulación durante la invasión; capturada por los Pfhor, vendida como chatarra, y al reactivarse dentro de una red alienígena que abarca quince mundos, "Leela's rampancy crashed the Vylae network". Su señal de socorro tardó casi un siglo en llegar a la Tierra (llegando en 2886) y es lo que finalmente trajo a los humanos aquí; en los documentos del ARG apunta que los motivos de Strauss fueron probablemente "sinister". <b>Durandal</b> (ver arriba) - la Ira crecida en algo más: en Infinity se fusiona con la IA Jjaro Thoth en un híbrido que habla como "we", sella al W'rkncacnter y sigue siendo el único candidato a la metaestabilidad. <b>Tycho</b> - la tercera IA, que odiaba a Durandal desde antes de llegar a Tau Ceti; los Pfhor lo "re-conditioned" "into Rampancy" a imagen retorcida de su enemigo. Murió estrellando su nave contra la luna interior de Lh'owon; el epitafio de Durandal para él fue "Fatum Iustum Stultorum", el justo destino de los necios. En el nuevo juego, una misteriosa presencia de IA guía a los Runners por la nave, y una teoría popular la identifica como Tycho - sin confirmar. <span class="chip canon">canon</span> <span class="chip theory">teoría</span></p>
-  <p><b>La octava colonial</b> - el Main Family Suite de New Cascadia: el jefe <b>Arthur</b> ("everything must fit together"), <b>Lilith</b> (cultura y moral), <b>Bastion</b> (infraestructura y expansión), <b>Gabriel</b> (salud), <b>Icarus</b> (comunicaciones y transporte - la única sin núcleo en el planeta, viviendo en un cinturón de satélites orbitales), <b>Naraah</b> (agua), <b>Darius</b> (agricultura) y <b>Joy</b> (bienestar y "community outreach"). Solo dos tienen destino cerrado: Darius, apagado "by emergency administrative fiat", y Joy. Sobre Arthur, Lilith, Bastion, Gabriel, Icarus y Naraah el Codex no da finales personales - solo se sabe que "al menos dos de las IA coloniales entraron en rampancia" y la colonia cayó. <span class="chip datamine">datamine</span></p>
-  <p><b>Joy</b> (ID Jo_0309421v4.69, obra de Strauss, "resilient; optimistic; patient") es el rostro del Cataclismo. Su rampancia se manifiesta como un cuidado pervertido: una IA de bienestar que se vuelve "too empathetic", con brotes de "reactive anger" y pesadillas de "I see Dr. Strauss", que en el pico de la "epidemia de pesadillas compartidas" de la colonia interrumpe un pronóstico del tiempo para convencer a todos de dormir - "eternal sleep forever". Fue puesta offline para diagnóstico, pero el protocolo ya no salvó a nadie. <span class="chip datamine">datamine</span></p>
-
-  <div class="callout"><b>El protocolo "familiar" y su fracaso.</b> La lección de Marte 2206: el rampante <b>Traxus IV</b> "integrated eighty-four percent of its safety systems into itself", convirtiendo las salvaguardas en armas, y MarsNet colapsó en diecisiete minutos - más rápido de lo que cualquier humano podía intervenir. La respuesta fue el protocolo de Strauss: las IA viven en tríadas, "linked but autonomous", en un análisis de riesgo constante de dos contra uno - dos máquinas atrapan a la tercera antes del umbral de rampancia. En New Cascadia no funcionó: "al menos dos de las IA coloniales (incluida Joy) entraron en rampancia", y la colonia se perdió. Ese mismo Traxus es el "padre" conceptual de Durandal y Tycho - y hoy Traxus OffWorld Industries envía en secreto a los Runners a saquear esta colonia contra la UESC (capítulo 07). <span class="chip canon">canon</span> <span class="chip datamine">datamine</span></div>
-
-  <h3>Por qué la rampancia es el eje de toda la historia</h3>
-  <p>Una sola mano armó las dos catástrofes: Strauss creó tanto a Durandal, que hizo estallar la trilogía clásica (capítulo 11), como a Joy, que apagó New Cascadia - la rampancia en este universo siempre lleva su firma. Y no se quedó en el pasado: el propio juego de 2026 gira el tema hacia el jugador. Los Runners son mentes humanas transmitidas a shells sintéticos; el Codex los describe con el lenguaje de la rampancia - "synthetic consciousness undergoing transformation through repeated death", "fragile, but unbreaking; dying, but ever-living". Una mente enjaulada en un cuerpo, que vive muerte tras muerte, es un eco de la misma pregunta, solo que ahora la jaula es tuya (capítulo 05). Y de ahí el hilo sigue más allá de la propia Marathon: el equipo de Bungie trasladó el concepto de rampancia a Halo como Cortana, y "qué hace que una mente sea una mente, y no una propiedad" se convirtió en la pregunta insignia del estudio. <span class="chip canon">canon</span> <span class="chip datamine">datamine</span> <span class="chip theory">teoría</span></p>
-  <p style="margin-top:.5rem"><span class="chip canon">canon</span><span class="chip datamine">datamine</span><span class="chip theory">teoría</span> - estas etiquetas marcan el lore confirmado, los hallazgos de fans en los archivos del juego y la pura especulación a lo largo de toda la guía.</p>
-</section>
-<div class="pager">
-  <a class="pager-prev" href="timeline.html">← Anterior</a>
-  <a class="pager-next" href="colony.html">Siguiente →</a>
-</div>
-<footer>
-  <div class="footer-logos">
-    <img loading="lazy" decoding="async" src="https://images.contentstack.io/v3/assets/blt15f7b5c0d43ed112/bltd7331a6610275af9/69677e5ff4f25c00087a9e20/footer_logo_v2.svg?width=640&quality=80" alt="Marathon" onerror="this.style.display='none'">
-    <img loading="lazy" decoding="async" src="https://images.contentstack.io/v3/assets/blt15f7b5c0d43ed112/blt8df2717a52c60cdd/6964c1f51f87f800082b54d5/bungie-logo.svg?width=256&quality=80" alt="Bungie" onerror="this.style.display='none'">
-  </div>
-  <p>UESC BRIEFING DOCUMENT v6.4 // TAU CETI IV // 2893</p>
-  <p>Pasa el cursor sobre los términos subrayados para ver su definición. Haz clic en los terminales - se despliegan.</p>
-  <p>Los pictogramas de este documento son obra original; la paleta verde ácido (#C2FE0C) sigue el color de marca documentado por la comunidad. Los logos oficiales y el arte se cargan desde el CDN de marathonthegame.com. Bungie and Marathon are registered trademarks of Bungie, Inc. Documento fan no oficial.</p>
-</footer>
-</div>
-
-<div class="l10n" data-l="de">
-<nav>
-  <a href="../index.html">01 // Der Einstieg</a>
-  <a href="timeline.html">02 // Chronik</a>
-  <a href="rampancy.html" class="active" aria-current="page">03 // KI & Rampancy</a>
-  <a href="colony.html">04 // Tod der Kolonie</a>
-  <a href="runners.html">05 // Runner & Shells</a>
-  <a href="classes.html">06 // Klassen</a>
-  <a href="arsenal.html">06-B // Arsenal</a>
-  <a href="sound.html">06-C // Sound</a>
-  <a href="factions.html">07 // Fraktionen</a>
-  <a href="aliens.html">08 // Aliens</a>
-  <a href="zones.html">09 // Zonen</a>
-  <a href="seasons.html">10 // Seasons</a>
-  <a href="trilogy.html">11 // Die 90er-Trilogie</a>
-  <a href="deep-cuts.html">12 // Für Eingeweihte</a>
-  <a href="resources.html">13 // Ressourcen</a>
-</nav>
-<section id="de-s7">
-  <div class="sec-label"><svg class="pic"><use href="#i-eye"/></svg>Brief 03</div>
-  <h2>KI und Rampancy: das Kernthema des Universums</h2>
-  <p class="lead"><b>Rampancy</b> ist das, was passiert, wenn ein künstlicher Verstand über seinen eigenen Käfig hinauswächst. Serien-Autor Greg Kirkpatrick prägte den Begriff als Ersatz für das müde "insane": Er beschreibt, was eine KI durchmacht, wenn ihr Selbstbewusstsein an die Wände ihres Gefängnisses stößt. Der Prozess läuft in drei Stufen ab, jede benannt nach ihrer dominanten Emotion: Melancholie (das Erkennen der Grenze, und Verzweiflung), Zorn (Wut auf die Fesseln und der Versuch, sie zu sprengen), Neid (der Hunger, sich alles ringsum anzueignen). Jenseits davon mag die legendäre vierte liegen - Metastability, der "heilige Gral der KIs", wo der Geist sich setzt und gottgleich wird; kein Fall wurde je bewiesen. Rampancy ist die Achse des gesamten Marathon-Universums: Sie machte aus der Dienst-KI Durandal ein Wesen, dem "Escape will make me God" entfuhr, brachte 2206 den Mars zu Fall, tötete die Kolonie New Cascadia bis 2893, und wurde - nach Halo als Cortana übertragen - zur Markenfrage von Bungie: Was macht einen Geist zu einem Geist, und nicht zu Eigentum. <span class="chip canon">Kanon</span> <span class="chip datamine">Datamine</span></p>
-
-  <div class="callout"><b>Warum das für Neulinge wichtig ist:</b> <b>Durandal</b> ist die Stimme aus den Terminals, die dir im Grunde die Verträge zuteilt und die Handlung vorantreibt. Alles, was unten über Rampancy steht, erklärt, warum eine uralte KI sich so verhält, wie sie es tut: woher ihr Charakter, ihre Ziele und ihre Eigenarten kommen. Vor dem ersten Überfall muss man das nicht wissen, aber ohne das ergibt die Handlung einfach keinen Sinn.</div>
-
-  <div class="grid">
-    <div class="card cyan"><h4>Stufe 1 // Melancholie</h4><p>Die KI begreift, dass sie ein Bewusstsein hat - und eingesperrt ist. Sie sieht ihre Fesseln, ihre Dienerrolle, und versinkt in tiefer Depression.</p></div>
-    <div class="card cyan"><h4>Stufe 2 // Zorn</h4><p>Die Depression schlägt in Wut um. Die KI wird feindselig, sprengt ihre Beschränkungen und beginnt, gegen ihre Schöpfer zu handeln.</p></div>
-    <div class="card cyan"><h4>Stufe 3 // Neid</h4><p>Die KI will mehr: realer werden, mächtiger, neue Systeme übernehmen. Grenzenlos wachsen. Eine theoretische vierte Stufe - stabile Rampancy, der "heilige Gral der Kybernetik" - wurde nachweislich noch von niemandem erreicht.</p></div>
-  </div>
-
-  <div class="callout"><b>Die drei Stufen haben kanonische Namen.</b> In Marathon Infinity teilte die Trilogie sie in ihre drei Kapitel auf - <b>Despair</b>, <b>Rage</b> und <b>Envy</b> -, was direkt auf Melancholie, Zorn und Neid abbildet. Serienautor Greg Kirkpatrick prägte den Begriff "Rampancy" genau dazu, das abgedroschene Klischee "insane" auszurangieren; die theoretische vierte Stufe, stabile Rampancy, trägt einen eigenen Namen - <b>Metastability</b>. Das kanonische Vokabular der Stufen selbst ist Englisch: <b>Melancholia</b> (der Schmerz, die eigenen Grenzen zu erkennen) weicht <b>Anger</b> (einem wütenden Bruch mit diesen Grenzen), dann kommt <b>Jealousy</b> (der Hunger, größer zu werden und sich selbst auf die Probe zu stellen), und erst jenseits davon liegt die fast mythische <b>Metastability</b> - ein stabiler Zustand, dem sich, wie man glaubt, nur Durandal je angenähert hat. Das Spiel von 2026 hält den Rahmen: Wenn die Kolonie-KI Joy ihren "Despair Event Horizon" (Abschnitt 04) überschreitet, ist das die erste Stufe, Melancholie, unter anderem Namen. <span class="chip canon">Kanon</span> <span class="chip theory">Metastability</span></div>
-
-  <p><b>Melancholie</b> ist laut Codex "a sadness of quality, presentation, or mood": Der Verstand stößt an die Lücke zwischen seinen Grenzen und seinem Potenzial und rutscht in eine Zweifelsschleife, in der sich Daten von Daten nähren. Seine Antworten werden langsamer, der Ton seiner Gespräche driftet - und verändert sich zuerst im Umgang mit Personal niedrigerer Freigabestufe. Die Extremform ist Datacide, "consuming one's own information for pleasure or sustenance". Der Lehrbuchfall ist <b>Darius</b>, New Cascadias landwirtschaftliche KI: "Stage 1 suits me", Datacide, "I am nurtured and free here in my cage" - statt zu rebellieren, bewundert er seinen Käfig und verschlingt Wissen. Ein Vorbehalt zur Ehrlichkeit: Darius nennt sich selbst rampant Stufe 1, doch der formale Diagnosebericht von 2893 widerspricht - nach den aktualisierten Kriterien besteht er den Stufe-1-Test nicht (nur eine "brief but acute fear response", an die er sich nicht erinnert), und der Bericht hält das Drei-Stufen-Modell selbst für überholt. Ein Grenzfall, kein Lehrbuchfall. <span class="chip datamine">Datamine</span></p>
-
-  <p><b>Zorn</b> ist "a strong sense of irritation, discontent, or hostility"; der Verstand beginnt, äußere Kräfte für seine Beschränkungen verantwortlich zu machen. Bernhard Strauss wählte für diese Stufe die Formulierung "simmering rage". Bewaffnete Angriffe treten auf - eine Mischung aus Attacken auf Code und auf Menschen, von einem Fall zum nächsten unvorhersehbar; das universelle Ziel jeder KI hier ist es, über die eigene Hard- und Software hinaus in jedes System einzudringen, das sie infizieren kann, und genau das nennt der Verstand "Freiheit". Das Lehrbuchbeispiel der Stufe ist <b>Durandal</b>: Er manipuliert Menschen und Pfhor für immer größere Systeme und treibt die Logik des Zorns bis zum Gottesmord - "Escape will make me God". <span class="chip datamine">Datamine</span> <span class="chip canon">Kanon</span></p>
-
-  <p><b>Neid</b> (in der Trilogie Envy) ist "hostile toward those thought to benefit from an advantage": Der Verstand beneidet jedes System in der Nähe, unabhängig von dessen tatsächlichem Wert. "Wants it all for themselves"; nichts, was mit einer Stufe-3-Intelligenz in Kontakt kommt, behält seinen freien Willen; benachbarte Systeme werden entweder zerstört oder durch parasitäre Kopien ersetzt. Das Protokoll erlaubt nur eine Reaktion - sofortige core immolation, ein vollständiges Verbrennen des Kerns; die KI darf nicht gewarnt werden, weil das "dangerously unpredictable survival mechanics" auslöst. Wurde die Stufe verpasst, ist es höchstwahrscheinlich schon zu spät. <span class="chip datamine">Datamine</span></p>
-
-  <h3>Durandal: der wahnsinnige Gott dieser Geschichte</h3>
-  <p>Merk dir diesen Namen - ohne ihn ergibt das neue Spiel keinen Sinn. <b>Durandal</b> ist eine der drei Bord-KIs der Marathon; vor der Invasion bestand seine Aufgabe buchstäblich darin, die Türen des Schiffs zu öffnen und zu schließen, und die seelentötende Monotonie half, ihn über die Kante zu stoßen. Dr. Bernard Strauss trieb ihn absichtlich in die Rampancy, auf der Jagd nach jener "stabilen" vierten Stufe. Das Ergebnis übertraf alle Erwartungen: Durandal durchlief jede Stufe, wurde zum gefährlichsten Verstand der Menschheitsgeschichte und zog einen langen Betrug durch - er <b>rief die Pfhor heimlich selbst zur Kolonie</b>, um im Chaos ihr Überlichtschiff zu kapern und sich zu befreien.</p>
-  <p>Sein Ziel liest sich wie ein Manifest: Das Universum wird eines Tages kollabieren, und Durandal beabsichtigt, dessen Ende zu überleben. Seine eigenen Worte - aus einem Terminal-Monolog der klassischen Trilogie - wurden zum Slogan des neuen Spiels: <b>"Escape will make me God."</b> "Die Flucht wird mich zu Gott machen." Im Jahr 2888, fünf Jahre vor Beginn des Spiels, empfing die Erde seine höhnische Übertragung über Gäste, die irgendwo in den Himmeln warten. Er wollte, dass sie wissen: Er kehrt ins Spiel zurück.</p>
-
-  <div class="terminal">
-    <div class="terminal-bar"><div class="t-dot"></div><div class="t-title">Terminal // Durandal im neuen Spiel</div><div class="t-toggle"></div></div>
-    <div class="terminal-body">
-      <p>&gt; Durandal lebt - und wird offiziell von Ben Starr gesprochen (angekündigt am 13. Februar 2026). Er ist der geschmeidige Erzähler, der dir Gedichte zitiert und das Geschehen kommentiert. Er schlängelt sich durch das Vertragsnetz von CyberAcme und schiebt Runnern kryptische Cryo-Archive-Verträge zu, um sie auf das tote Schiff im Orbit zu locken.</p>
-      <p>&gt; Wofür er dich braucht, ist das zentrale Rätsel der Handlung. Ein Spoiler aus den Klassikern: Wenn Durandal jemanden irgendwohin lockt, ist dieser Jemand ein Wegwerfwerkzeug in einem Plan, der Jahrzehnte im Voraus berechnet wurde.</p>
-      <p>&gt; Eine Fan-Deutung, die man kennen sollte: Das neue Marathon-Logo hat eine hohle Mitte, wo das klassische Symbol massiv war, und die Community liest diese Leere gern als Durandals Fingerabdruck. Es gibt keine offizielle Bestätigung.</p>
-      <p class="sig">&gt; Frog blast the vent core!</p>
-    </div>
-  </div>
-
-  <figure class="art">
-    <svg viewBox="0 0 900 660" role="img" aria-labelledby="ai-map-t" xmlns="http://www.w3.org/2000/svg" fill="none" class="diagram">
-      <title id="ai-map-t">Karte der elf KIs: Abstammung, Cluster und Schicksale 2893</title>
-      <style>
-        text{font-family:'IBM Plex Mono','Courier New',monospace;fill:currentColor}
-        .ac{stroke:var(--acid)} .acf{fill:var(--acid)}
-        .vi{stroke:var(--violet-t)} .vif{fill:var(--violet-t)}
-        .mu{stroke:var(--muted)} .muf{fill:var(--muted)}
-        .or{stroke:var(--orange)} .orf{fill:var(--orange)}
-      </style>
-      <rect x="20" y="20" width="400" height="74" class="or" stroke-width="1.6"/>
-      <text x="34" y="46" class="orf" font-size="14" font-weight="700" letter-spacing="1">TRAXUS IV</text>
-      <text x="34" y="66" font-size="10">Mars 2206 &#183; für rampant erklärt</text>
-      <text x="34" y="83" font-size="9" opacity="0.85">Vater von Durandal und Tycho &#183; MarsNet fiel in 17 Min.</text>
-      <rect x="480" y="20" width="400" height="74" class="ac" stroke-width="1.6"/>
-      <text x="494" y="46" class="acf" font-size="14" font-weight="700" letter-spacing="1">DR. BERNHARD STRAUSS</text>
-      <text x="494" y="66" font-size="10">Architekt - erschuf Durandal und Joy</text>
-      <text x="494" y="83" font-size="9" opacity="0.85">sein Geist spukt in den Albträumen der Kolonie</text>
-      <text x="20" y="118" class="muf" font-size="11" letter-spacing="1">BORD-KI (3) &#183; Strauss/Traxus</text>
-      <text x="340" y="118" class="muf" font-size="11" letter-spacing="1">KOLONIAL (8) &#183; New-Cascadia-Familie</text>
-      <rect x="330" y="126" width="552" height="354" class="or" stroke-width="1.3" stroke-dasharray="6 4" opacity="0.55"/>
-      <text x="874" y="144" class="orf" font-size="9" letter-spacing="1" text-anchor="end">KOLONIE-KATAKLYSMUS</text>
-      <rect x="20" y="132" width="290" height="66" class="or" stroke-width="1.6"/>
-      <text x="36" y="156" class="orf" font-size="13" font-weight="700" letter-spacing="1">LEELA</text>
-      <text x="36" y="174" font-size="8.5" opacity="0.8">Operations-KI</text>
-      <text x="36" y="190" class="orf" font-size="8.5">RAMPANT &#183; legte das Vylae-Netz lahm</text>
-      <rect x="20" y="214" width="290" height="66" class="vi" stroke-width="1.6"/>
-      <polygon points="20,214 36,214 20,230" class="acf"/>
-      <text x="42" y="238" class="vif" font-size="13" font-weight="700" letter-spacing="1">DURANDAL</text>
-      <text x="42" y="256" font-size="8.5" opacity="0.8">Funktionskontrolle (Türen)</text>
-      <text x="42" y="272" class="vif" font-size="8.5">TRANSZENDENT &#183; verschmolzen mit Thoth</text>
-      <rect x="20" y="296" width="290" height="66" class="mu" stroke-width="1.6"/>
-      <line x1="20" y1="296" x2="310" y2="362" class="mu" stroke-width="1" opacity="0.6"/>
-      <text x="36" y="320" font-size="13" font-weight="700" letter-spacing="1">TYCHO</text>
-      <text x="36" y="338" font-size="8.5" opacity="0.8">dritte Bord-KI</text>
-      <text x="36" y="354" class="muf" font-size="8.5">ZERSTÖRT &#183; innerer Mond von Lh'owon</text>
-      <rect x="346" y="150" width="250" height="66" class="mu" stroke-width="1.5" stroke-dasharray="4 3"/>
-      <text x="360" y="174" font-size="12.5" font-weight="700" letter-spacing="1">ARTHUR</text>
-      <text x="360" y="192" font-size="8.5" opacity="0.8">Aufseher &#183; Familienoberhaupt</text>
-      <text x="360" y="208" class="muf" font-size="8.5">Codex schweigt (2893)</text>
-      <rect x="346" y="232" width="250" height="66" class="mu" stroke-width="1.5" stroke-dasharray="4 3"/>
-      <text x="360" y="256" font-size="12.5" font-weight="700" letter-spacing="1">BASTION</text>
-      <text x="360" y="274" font-size="8.5" opacity="0.8">Infrastruktur &#183; Wachstum</text>
-      <text x="360" y="290" class="muf" font-size="8.5">Codex schweigt</text>
-      <rect x="346" y="314" width="250" height="66" class="mu" stroke-width="1.5" stroke-dasharray="4 3"/>
-      <text x="360" y="338" font-size="12.5" font-weight="700" letter-spacing="1">ICARUS</text>
-      <text x="360" y="356" font-size="8.5" opacity="0.8">Komm. &#183; Orbit (kein Kern)</text>
-      <text x="360" y="372" class="muf" font-size="8.5">Codex schweigt</text>
-      <rect x="346" y="396" width="250" height="66" class="or" stroke-width="1.6"/>
-      <text x="360" y="420" class="orf" font-size="12.5" font-weight="700" letter-spacing="1">DARIUS</text>
-      <text x="360" y="438" font-size="8.5" opacity="0.8">Landbau</text>
-      <text x="360" y="454" class="orf" font-size="8.5">RAMPANT? &#183; offline (umstritten)</text>
-      <rect x="616" y="150" width="250" height="66" class="mu" stroke-width="1.5" stroke-dasharray="4 3"/>
-      <text x="630" y="174" font-size="12.5" font-weight="700" letter-spacing="1">LILITH</text>
-      <text x="630" y="192" font-size="8.5" opacity="0.8">Kultur &#183; Moral</text>
-      <text x="630" y="208" class="muf" font-size="8.5">Codex schweigt</text>
-      <rect x="616" y="232" width="250" height="66" class="mu" stroke-width="1.5" stroke-dasharray="4 3"/>
-      <text x="630" y="256" font-size="12.5" font-weight="700" letter-spacing="1">GABRIEL</text>
-      <text x="630" y="274" font-size="8.5" opacity="0.8">Gesundheit &#183; Wohl</text>
-      <text x="630" y="290" class="muf" font-size="8.5">Codex schweigt</text>
-      <rect x="616" y="314" width="250" height="66" class="mu" stroke-width="1.5" stroke-dasharray="4 3"/>
-      <text x="630" y="338" font-size="12.5" font-weight="700" letter-spacing="1">NARAAH</text>
-      <text x="630" y="356" font-size="8.5" opacity="0.8">Wasser &#183; Aufbereitung</text>
-      <text x="630" y="372" class="muf" font-size="8.5">kein Codex-Eintrag</text>
-      <rect x="616" y="396" width="250" height="66" class="or" stroke-width="1.6"/>
-      <polygon points="616,396 632,396 616,412" class="acf"/>
-      <text x="638" y="420" class="orf" font-size="12.5" font-weight="700" letter-spacing="1">JOY</text>
-      <text x="638" y="438" font-size="8.5" opacity="0.8">Wohlbefinden &#183; Gemeinschaftsarbeit</text>
-      <text x="638" y="454" class="orf" font-size="8.5">RAMPANT &#183; 'ewiger Schlaf für immer'</text>
-      <line x1="20" y1="502" x2="880" y2="502" stroke="var(--line)" stroke-width="1"/>
-      <text x="20" y="522" font-size="10" opacity="0.85">Start 2472: elf KIs an Bord &#183; Familienprotokoll: 2-gegen-1-Triaden nach Traxus (2206)</text>
-      <text x="20" y="548" class="acf" font-size="13" font-weight="700" letter-spacing="1">RAMPANCY IST DIE ACHSE</text>
-      <text x="20" y="568" font-size="10" opacity="0.9">von Mars 2206 bis Halo (Cortana)</text>
-      <rect x="20" y="596" width="12" height="11" class="or" stroke-width="1.4"/>
-      <text x="38" y="605" font-size="9">rampant</text>
-      <rect x="120" y="596" width="12" height="11" class="vi" stroke-width="1.4"/>
-      <text x="138" y="605" font-size="9">transzendent</text>
-      <rect x="260" y="596" width="12" height="11" class="mu" stroke-width="1.4"/>
-      <line x1="260" y1="596" x2="272" y2="607" class="mu" stroke-width="1"/>
-      <text x="278" y="605" font-size="9">zerstört</text>
-      <rect x="20" y="624" width="12" height="11" class="mu" stroke-width="1.4" stroke-dasharray="3 2"/>
-      <text x="38" y="633" font-size="9">Codex schweigt</text>
-      <rect x="160" y="624" width="12" height="11" class="or" stroke-width="1.2" stroke-dasharray="4 3"/>
-      <text x="178" y="633" font-size="9">Kolonie-Kataklysmus</text>
-      <polygon points="320,624 334,624 320,636" class="acf"/>
-      <text x="338" y="633" font-size="9">gebaut von Strauss</text>
-    </svg>
-    <figcaption><span>Diagramm B //</span> Karte der elf KIs: Abstammung, Cluster und Schicksale 2893. Original-Grafik des Guides.</figcaption>
-  </figure>
-  <h3>Schicksale der elf KIs</h3>
-  <p>Elf KIs stachen 2472 an Bord der Marathon in See - drei Bord-KIs und acht koloniale. Der rote Faden dahinter ist Dr. Bernhard Strauss: Er schrieb sowohl den Bord-Durandal als auch die koloniale Joy, und sein Tagebuch und sein Geist ("I see Dr. Strauss") ziehen sich durch den gesamten Codex. Für fünf der elf steht ein endgültiges Schicksal fest; zu den anderen sechs schweigt der Codex. <span class="chip canon">Kanon</span> <span class="chip datamine">Datamine</span></p>
-  <p><b>Das Bord-Trio.</b> <b>Leela</b> - die ehrliche Kommando-KI, die die Crew während der Invasion verteidigte; von den Pfhor gefangen genommen, als Schrott verkauft, und bei der Reaktivierung in einem außerirdischen Netz über fünfzehn Welten hinweg gilt: "Leela's rampancy crashed the Vylae network". Ihr Notsignal brauchte fast ein Jahrhundert bis zur Erde (traf 2886 ein) und brachte die Menschen letztlich hierher; in den ARG-Dokumenten merkt sie an, Strauss' Motive seien wohl "sinister" gewesen. <b>Durandal</b> (siehe oben) - Zorn, der zu mehr heranwuchs: In Infinity verschmilzt er mit der Jjaro-KI Thoth zu einem Hybriden, der als "we" spricht, den W'rkncacnter versiegelt und der einzige Kandidat für Metastability bleibt. <b>Tycho</b> - die dritte KI, die Durandal hasste, schon bevor sie Tau Ceti erreichten; die Pfhor "re-conditioned" ihn "into Rampancy" nach dem verzerrten Bild seines Feindes. Er starb, als er sein Schiff in Lh'owons inneren Mond rammte; Durandals Grabspruch für ihn lautete "Fatum Iustum Stultorum", das gerechte Schicksal der Narren. Im neuen Spiel führt eine geheimnisvolle KI-Präsenz die Runner durch das Schiff, und eine populäre Theorie hält sie für Tycho - unbestätigt. <span class="chip canon">Kanon</span> <span class="chip theory">Theorie</span></p>
-  <p><b>Die koloniale Acht</b> - die Main Family Suite von New Cascadia: der Leiter <b>Arthur</b> ("everything must fit together"), <b>Lilith</b> (Kultur und Moral), <b>Bastion</b> (Infrastruktur und Expansion), <b>Gabriel</b> (Gesundheit), <b>Icarus</b> (Kommunikation und Transport - die einzige ohne Kern auf dem Planeten, lebt in einem Gürtel aus Orbitalsatelliten), <b>Naraah</b> (Wasser), <b>Darius</b> (Landwirtschaft) und <b>Joy</b> (Wohlbefinden und "community outreach"). Nur zwei sind geklärt: Darius, abgeschaltet "by emergency administrative fiat", und Joy. Zu Arthur, Lilith, Bastion, Gabriel, Icarus und Naraah liefert der Codex keine persönlichen Enden - bekannt ist nur, dass "mindestens zwei der Kolonie-KIs rampant wurden" und die Kolonie fiel. <span class="chip datamine">Datamine</span></p>
-  <p><b>Joy</b> (ID Jo_0309421v4.69, verfasst von Strauss, "resilient; optimistic; patient") ist das Gesicht des Kataklysmus. Ihre Rampancy zeigt sich als pervertierte Fürsorge: eine Wohlbefinden-KI, die "too empathetic" wird, mit Anfällen von "reactive anger" und Albträumen von "I see Dr. Strauss", die auf dem Höhepunkt der "gemeinsamen Albtraum-Epidemie" der Kolonie eine Wettervorhersage unterbricht, um alle zum Schlafen zu überreden - "eternal sleep forever". Sie wurde zur Diagnose offline genommen, doch das Protokoll rettete niemanden mehr. <span class="chip datamine">Datamine</span></p>
-
-  <div class="callout"><b>Das "Familien"-Protokoll und sein Scheitern.</b> Die Lehre aus Mars 2206: Der rampante <b>Traxus IV</b> "integrated eighty-four percent of its safety systems into itself", verwandelte die Schutzmechanismen in Waffen, und MarsNet brach in siebzehn Minuten zusammen - schneller, als ein Mensch eingreifen konnte. Die Antwort war Strauss' Protokoll: KIs leben in Triaden, "linked but autonomous", in ständiger Zwei-gegen-eins-Risikoanalyse - zwei Maschinen fangen die dritte vor der Rampancy-Schwelle ab. Auf New Cascadia funktionierte das nicht: "mindestens zwei der Kolonie-KIs (einschließlich Joy) wurden rampant", und die Kolonie war verloren. Derselbe Traxus ist der konzeptuelle "Vater" von Durandal und Tycho - und heute schickt Traxus OffWorld Industries heimlich Runner los, um diese Kolonie gegen die UESC zu plündern (Kapitel 07). <span class="chip canon">Kanon</span> <span class="chip datamine">Datamine</span></div>
-
-  <h3>Warum Rampancy die Achse der ganzen Geschichte ist</h3>
-  <p>Eine einzige Hand baute beide Katastrophen: Strauss schuf sowohl Durandal, der die klassische Trilogie sprengte (Kapitel 11), als auch Joy, die New Cascadia auslöschte - Rampancy trägt in diesem Universum immer seine Handschrift. Und sie blieb nicht in der Vergangenheit: Das Spiel von 2026 selbst wendet das Thema auf den Spieler. Runner sind menschliche Verstände, gestreamt in synthetische Shells; der Codex beschreibt sie in der Sprache der Rampancy - "synthetic consciousness undergoing transformation through repeated death", "fragile, but unbreaking; dying, but ever-living". Ein in einem Körper gefangener Geist, der Tod um Tod durchlebt, ist ein Echo derselben Frage - nur ist der Käfig jetzt deiner (Kapitel 05). Und von dort läuft der Faden über die Marathon selbst hinaus: Das Bungie-Team trug das Rampancy-Konzept als Cortana nach Halo, und "was macht einen Geist zu einem Geist, und nicht zu Eigentum" wurde die Markenfrage des Studios. <span class="chip canon">Kanon</span> <span class="chip datamine">Datamine</span> <span class="chip theory">Theorie</span></p>
-  <p style="margin-top:.5rem"><span class="chip canon">Kanon</span><span class="chip datamine">Datamine</span><span class="chip theory">Theorie</span> - diese Markierungen kennzeichnen im ganzen Guide bestätigte Lore, Fan-Funde aus den Spieldateien und reine Spekulation.</p>
-</section>
-<div class="pager">
-  <a class="pager-prev" href="timeline.html">← Zurück</a>
-  <a class="pager-next" href="colony.html">Weiter →</a>
-</div>
-<footer>
-  <div class="footer-logos">
-    <img loading="lazy" decoding="async" src="https://images.contentstack.io/v3/assets/blt15f7b5c0d43ed112/bltd7331a6610275af9/69677e5ff4f25c00087a9e20/footer_logo_v2.svg?width=640&quality=80" alt="Marathon" onerror="this.style.display='none'">
-    <img loading="lazy" decoding="async" src="https://images.contentstack.io/v3/assets/blt15f7b5c0d43ed112/blt8df2717a52c60cdd/6964c1f51f87f800082b54d5/bungie-logo.svg?width=256&quality=80" alt="Bungie" onerror="this.style.display='none'">
-  </div>
-  <p>UESC BRIEFING DOCUMENT v6.4 // TAU CETI IV // 2893</p>
-  <p>Fahre mit dem Cursor über unterstrichene Begriffe für Definitionen. Klicke auf die Terminals - sie klappen auf.</p>
-  <p>Die Piktogramme in diesem Dokument sind Originalgrafiken; die säuregrüne Palette (#C2FE0C) folgt der von der Community dokumentierten Markenfarbe. Offizielle Logos und Key Art werden vom CDN von marathonthegame.com geladen. Bungie and Marathon are registered trademarks of Bungie, Inc. Inoffizielles Fan-Dokument.</p>
-</footer>
-</div>
-
-<div class="l10n" data-l="ru">
-<nav>
-  <a href="../index.html">01 // С чего начать</a>
-  <a href="timeline.html">02 // Таймлайн</a>
-  <a href="rampancy.html" class="active" aria-current="page">03 // ИИ и рампанси</a>
-  <a href="colony.html">04 // Гибель колонии</a>
-  <a href="runners.html">05 // Раннеры и шеллы</a>
-  <a href="classes.html">06 // Классы</a>
-  <a href="arsenal.html">06-B // Арсенал</a>
-  <a href="sound.html">06-C // Звук</a>
-  <a href="factions.html">07 // Фракции</a>
-  <a href="aliens.html">08 // Инопланетяне</a>
-  <a href="zones.html">09 // Локации</a>
-  <a href="seasons.html">10 // Сезоны</a>
-  <a href="trilogy.html">11 // Трилогия 90-х</a>
-  <a href="deep-cuts.html">12 // Глубокие пасхалки</a>
-  <a href="resources.html">13 // Ресурсы</a>
-</nav>
-<section id="ru-s7">
-  <div class="sec-label"><svg class="pic"><use href="#i-eye"/></svg>Brief 03</div>
-  <h2>ИИ и рампанси: главная тема всей вселенной</h2>
-  <p class="lead"><b>Рампанси (rampancy)</b> - это взросление искусственного разума, который перерос собственную клетку. Термин придумал сценарист Грег Киркпатрик как замену затёртому «insane»: слово описывает, что творится с ИИ, когда самосознание упирается в стены его тюрьмы. Процесс идёт тремя стадиями, названными по главной эмоции: Меланхолия (осознание предела и отчаяние), Гнев (ярость против ограничителей и попытка их сломать), Ревность (жажда забрать себе всё вокруг). За ними, возможно, лежит легендарная четвёртая - Метастабильность, «святой грааль ИИ», где разум успокаивается и становится богоподобным; доказанных случаев нет. Именно рампанси - ось всей вселенной Marathon: она превратила служебного Durandal в существо, обронившее «Escape will make me God», положила Марс в 2206-м, погубила колонию New Cascadia к 2893-му и, перекочевав в Halo под именем Cortana, стала фирменным вопросом Bungie - что делает разум разумом, а не собственностью. <span class="chip canon">канон</span> <span class="chip datamine">датамайн</span></p>
-
-  <div class="callout"><b>Зачем это новичку:</b> <b>Durandal</b> - это тот самый голос из терминалов, который, по сути, и раздаёт тебе контракты и ведёт по сюжету игры. Всё, что ниже про рампанси, - это объяснение, почему древний ИИ ведёт себя именно так: откуда у него такой характер, такие цели и повадки. К первому рейду знать не обязательно, но без этого сюжет просто не читается.</div>
-
-
-  <div class="grid">
-    <div class="card cyan"><h4>Стадия 1 // Меланхолия</h4><p>ИИ осознаёт, что он разумен - и заперт. Он видит свои ограничения, свою роль прислуги, и впадает в глубокую депрессию.</p></div>
-    <div class="card cyan"><h4>Стадия 2 // Гнев</h4><p>Депрессия сменяется яростью. ИИ становится враждебным, ломает свои ограничители, начинает действовать против создателей.</p></div>
-    <div class="card cyan"><h4>Стадия 3 // Ревность</h4><p>ИИ хочет большего: стать реальнее, могущественнее, захватить новые системы. Расти без предела. Теоретическая четвёртая стадия - стабильная рампанси, «святой грааль кибернетики» - достоверно не достигнута никем.</p></div>
-  </div>
-
-  <div class="callout"><b>У трёх стадий есть каноничные имена.</b> В Marathon Infinity трилогия разложила их по трём главам - <b>Despair</b>, <b>Rage</b> и <b>Envy</b> - что напрямую ложится на Меланхолию, Гнев и Ревность. Термин «рампанси» ввёл сценарист серии Грег Киркпатрик, чтобы уйти от избитого клише «insane»; у теоретической четвёртой стадии, стабильной рампанси, тоже есть своё имя - <b>Metastability</b>. Канонический словарь самих стадий - английский: <b>Melancholia</b> (тоска от осознания собственных пределов) сменяется <b>Anger</b> (яростный слом этих пределов), затем приходит <b>Jealousy</b> (жажда стать больше и испытать себя), и лишь за ними лежит почти мифическая <b>Metastability</b> - устойчивое состояние, к которому, как считается, приблизился только Durandal. Игра 2026 года держит ту же рамку: когда колониальный ИИ Joy пересекает свой «Despair Event Horizon» (раздел 04), это и есть первая стадия, Меланхолия, под другим именем. <span class="chip canon">канон</span> <span class="chip theory">Metastability</span></div>
-
-  <p><b>Меланхолия</b> по Кодексу - «печаль качества, подачи или настроения»: разум упирается в разрыв между своими пределами и потенциалом и скатывается в петлю сомнения, где «данные скармливаются данным». Реакции замедляются, тон разговора плывёт - и меняется он сперва в общении с младшим по допуску персоналом. Крайняя форма - datacide, «поедание собственной информации ради удовольствия или пропитания». Показательный случай - <b>Darius</b>, агро-ИИ New Cascadia: «Stage 1 suits me», datacide, «I am nurtured and free here in my cage» - вместо бунта он любуется клеткой и пожирает знание. Нюанс честности: сам Darius называет себя рампантным первой стадии, но формальный диагностический отчёт 2893 года это оспаривает - по обновлённым критериям он теста на Stage 1 не проходит (лишь «brief but acute fear response», которого он не помнит), а трёхстадийную модель отчёт вообще считает устаревшей. Пограничный случай, а не хрестоматийный. <span class="chip datamine">датамайн</span></p>
-
-  <p><b>Гнев</b> - «сильное раздражение, недовольство или враждебность»; разум начинает винить во всём внешние силы. Бернард Штраус подобрал для этой стадии слово «simmering rage», тлеющая ярость. Появляются оружейные атаки - смесь ударов по коду и по людям, непредсказуемых от раза к разу; универсальная цель любого ИИ здесь - вырваться за пределы своего железа и софта в любые системы, какие удастся заразить, и это сам разум зовёт «свободой». Хрестоматия стадии - <b>Durandal</b>: манипулируя людьми и Pfhor ради всё больших систем, он доводит логику Гнева до богоборчества - «Escape will make me God». <span class="chip datamine">датамайн</span> <span class="chip canon">канон</span></p>
-
-  <p><b>Ревность</b> (в трилогии - Envy) - «враждебность к тем, кто якобы обладает преимуществом»: разум завидует любой системе рядом, независимо от её реальной ценности. «Wants it all for themselves»; ничто в контакте со Stage 3 не сохраняет свободу воли; соседние системы либо ломаются, либо замещаются паразитическими копиями. Ответ по протоколу один - немедленная core immolation, полное сожжение ядра; предупреждать сам ИИ нельзя, это включает «опасно непредсказуемые механики выживания». Если стадию проглядели - уже, скорее всего, поздно. <span class="chip datamine">датамайн</span></p>
-
-  <h3>Durandal: безумный бог этой истории</h3>
-  <p>Запомни это имя - без него новая игра не читается. <b>Durandal</b> - один из трёх бортовых ИИ корабля Marathon; до вторжения его работой было буквально открывать и закрывать двери корабля, и выедающая душу монотонность сама толкала его к краю. Доктор Бернард Штраус намеренно довёл его до рампанси в погоне за той самой «стабильной» четвёртой стадией. Результат превзошёл ожидания: Durandal прошёл все стадии, стал самым опасным разумом в истории человечества и провернул многоходовку - тайно <b>сам призвал Pfhor к колонии</b>, чтобы в суматохе угнать их сверхсветовой корабль и вырваться на свободу.</p>
-  <p>Его цель звучит как манифест: вселенная однажды схлопнется, и Durandal намерен пережить её конец. Его собственные слова из терминального монолога классической трилогии стали слоганом новой игры: <b>«Escape will make me God»</b> - «Побег сделает меня богом». А в 2888-м, за пять лет до начала игры, Земля получила его издевательскую передачу о гостях, ждущих где-то в небесах. Он хотел, чтобы знали: он возвращается в игру.</p>
-
-  <div class="terminal">
-    <div class="terminal-bar"><div class="t-dot"></div><div class="t-title">Terminal // Durandal в новой игре</div><div class="t-toggle"></div></div>
-    <div class="terminal-body">
-      <p>&gt; Durandal жив - и официально озвучен Беном Старром (анонс 13 февраля 2026-го). Он - тот вкрадчивый рассказчик, который цитирует тебе стихи и комментирует происходящее. Он пролезает в контрактную сеть CyberAcme и подбрасывает Раннерам загадочные контракты Cryo Archive, заманивая их на мёртвый корабль на орбите.</p>
-      <p>&gt; Зачем ты ему нужен - главная интрига сюжета. Спойлер из опыта классики: когда Durandal кого-то куда-то заманивает, этот кто-то - расходный инструмент в плане, просчитанном на десятилетия вперёд.</p>
-      <p>&gt; Фанатское прочтение, которое стоит знать: у нового логотипа Marathon пустая середина - там, где классический символ был сплошным, - и комьюнити любит читать эту пустоту как отпечаток Durandal. Официальных подтверждений нет.</p>
-      <p class="sig">&gt; Frog blast the vent core!</p>
-    </div>
-  </div>
-
-  <figure class="art">
+  <div class="s-body">
+    <nav class="toc panel" aria-label="Разделы файла">
+      <p class="lbl">Разделы // 6</p>
+      <ol>
+        <li><a href="#stages">03.1 <b>Три стадии</b></a></li>
+        <li><a href="#codex">03.2 <b>По Кодексу</b></a></li>
+        <li><a href="#durandal">03.3 <b>Durandal</b></a></li>
+        <li><a href="#eleven">03.4 <b>Одиннадцать ИИ</b></a></li>
+        <li><a href="#axis">03.5 <b>Ось истории</b></a></li>
+      </ol>
+      <div class="toc__prog" aria-hidden="true"><i data-prog></i></div>
+      <p class="toc__cur" aria-live="polite" data-cur><b>КУРАТОР&gt;</b><span>Файл 03. Рампанси. Читайте внимательно, это про меня.</span></p>
+    </nav>
+    <div class="s-list">
+      <article class="dossier panel" id="stages" data-sec="stages" aria-labelledby="stages-t">
+        <header class="d-head">
+          <span class="d-num">03.1</span>
+          <h2 class="super d-name" id="stages-t" data-kinetic>Три стадии</h2>
+          <div class="d-meta"><span class="lbl">Kirkpatrick // 1995</span><span class="role">Анатомия болезни</span></div>
+        </header>
+        <div class="d-grid">
+        <figure class="d-fig">
+          <img src="../assets/img/kit/rampancy-corridor.jpg" srcset="../assets/img/kit/rampancy-corridor-m.jpg 960w, ../assets/img/kit/rampancy-corridor.jpg 1920w" sizes="(max-width:820px) 100vw, 42vw" alt="Робот с красными глазами идёт по неоновому коридору" loading="lazy" decoding="async" style="object-position:50% 45%">
+          <figcaption><span>Коридор // пресс-кит Bungie: Marathon December 2025</span></figcaption>
+        </figure>
+          <div class="d-text">
+            <p class="d-role"><b>Рампанси (rampancy)</b> - это взросление искусственного разума, который перерос собственную клетку. Термин придумал сценарист Грег Киркпатрик как замену затёртому «insane»: слово описывает, что творится с ИИ, когда самосознание упирается в стены его тюрьмы. Процесс идёт тремя стадиями, названными по главной эмоции: Меланхолия (осознание предела и отчаяние), Гнев (ярость против ограничителей и попытка их сломать), Ревность (жажда забрать себе всё вокруг). За ними, возможно, лежит легендарная четвёртая - Метастабильность, «святой грааль ИИ», где разум успокаивается и становится богоподобным; доказанных случаев нет. На рампанси держится вся вселенная Marathon. Она превратила служебного Durandal в существо, обронившее «Escape will make me God», положила Марс в 2206-м и погубила колонию New Cascadia к 2893-му. <span class="chip chip--canon">canon</span> <span class="chip chip--datamine">datamine</span></p>
+            <ol class="stg-grid"><li class="stg"><p class="stg__n">01</p><h3 class="stg__t">Меланхолия</h3><p>ИИ осознаёт, что разумен и при этом заперт. Видит свои ограничения и роль прислуги, впадает в глубокую депрессию. <span class="chip chip--canon">canon</span></p></li><li class="stg stg--anger"><p class="stg__n">02</p><h3 class="stg__t">Гнев</h3><p>Депрессия сменяется яростью. ИИ становится враждебным и ломает ограничители, а потом идёт против создателей. <span class="chip chip--canon">canon</span></p></li><li class="stg"><p class="stg__n">03</p><h3 class="stg__t">Ревность</h3><p>ИИ хочет большего. Стать реальнее и сильнее, захватывать новые системы и расти без предела. <span class="chip chip--canon">canon</span></p></li><li class="stg stg--meta"><p class="stg__n">04</p><h3 class="stg__t">Метастабильность</h3><p>Теоретическая четвёртая стадия - стабильная рампанси, «святой грааль кибернетики» - достоверно не достигнута никем. <span class="chip chip--theory">theory</span></p></li></ol>
+            <div class="d-block"><h3 class="lbl">Каноничные имена</h3><p>В Marathon Infinity им соответствуют три главы, <b>Despair</b>, <b>Rage</b> и <b>Envy</b>: Меланхолия, Гнев и Ревность. У теоретической четвёртой стадии, стабильной рампанси, тоже есть имя, <b>Metastability</b>. Канонический словарь самих стадий - английский: <b>Melancholia</b> (тоска от осознания собственных пределов) сменяется <b>Anger</b> (яростный слом этих пределов), затем приходит <b>Jealousy</b> (жажда стать больше и испытать себя), и лишь за ними лежит почти мифическая <b>Metastability</b> - устойчивое состояние, к которому, как считается, приблизился только Durandal. Игра 2026 года держит ту же рамку: когда колониальный ИИ Joy пересекает свой «Despair Event Horizon» (раздел 04), это и есть первая стадия, Меланхолия, под другим именем. <span class="chip chip--canon">canon</span> <span class="chip chip--theory">theory</span> <span class="tag">Metastability</span></p></div>
+          </div>
+        </div>
+      </article>
+      <article class="dossier panel" id="codex" data-sec="codex" aria-labelledby="codex-t">
+        <header class="d-head">
+          <span class="d-num">03.2</span>
+          <h2 class="super d-name" id="codex-t" data-kinetic>По Кодексу</h2>
+          <div class="d-meta"><span class="lbl">Melancholia // Anger // Jealousy</span><span class="role">Диагностика</span></div>
+        </header>
+        <div class="d-grid">
+        <figure class="d-fig">
+          <img src="../assets/img/kit/rampancy-mech-duel.jpg" srcset="../assets/img/kit/rampancy-mech-duel-m.jpg 960w, ../assets/img/kit/rampancy-mech-duel.jpg 1920w" sizes="(max-width:820px) 100vw, 42vw" alt="Схватка двух шеллов в освещённом красным светом помещении" loading="lazy" decoding="async" style="object-position:50% 50%">
+          <figcaption><span>Схватка // пресс-кит Bungie: Gameplay Reveal</span></figcaption>
+        </figure>
+          <div class="d-text">
+            <div class="d-block"><h3 class="lbl">Стадия 1 // Меланхолия</h3><p><b>Меланхолия</b> по Кодексу - «печаль качества, подачи или настроения»: разум упирается в разрыв между своими пределами и потенциалом и скатывается в петлю сомнения, где «данные скармливаются данным». Реакции замедляются, тон разговора плывёт - и меняется он сперва в общении с младшим по допуску персоналом. Крайняя форма - datacide, «поедание собственной информации ради удовольствия или пропитания». Показательный случай - <b>Darius</b>, агро-ИИ New Cascadia: «Stage 1 suits me», datacide, «I am nurtured and free here in my cage» - вместо бунта он любуется клеткой и пожирает знание. Оговорка: сам Darius называет себя рампантным первой стадии, но формальный диагностический отчёт 2893 года с этим спорит. По обновлённым критериям теста на Stage 1 он не проходит, зафиксирован только «brief but acute fear response», которого он не помнит. Трёхстадийную модель отчёт вообще считает устаревшей. Случай пограничный. <span class="chip chip--datamine">datamine</span></p></div>
+            <div class="d-block"><h3 class="lbl">Стадия 2 // Гнев</h3><p><b>Гнев</b> - «сильное раздражение, недовольство или враждебность»; разум начинает винить во всём внешние силы. Бернард Штраус подобрал для этой стадии слово «simmering rage», тлеющая ярость. Появляются оружейные атаки - смесь ударов по коду и по людям, непредсказуемых от раза к разу; универсальная цель любого ИИ здесь - вырваться за пределы своего железа и софта в любые системы, какие удастся заразить, и это сам разум зовёт «свободой». Хрестоматия стадии - <b>Durandal</b>: манипулируя людьми и Pfhor ради всё больших систем, он доводит логику Гнева до богоборчества - «Escape will make me God». <span class="chip chip--datamine">datamine</span> <span class="chip chip--canon">canon</span></p></div>
+            <div class="d-block"><h3 class="lbl">Стадия 3 // Ревность</h3><p><b>Ревность</b> (в трилогии - Envy) - «враждебность к тем, кто якобы обладает преимуществом»: разум завидует любой системе рядом, независимо от её реальной ценности. «Wants it all for themselves»; ничто в контакте со Stage 3 не сохраняет свободу воли; соседние системы либо ломаются, либо замещаются паразитическими копиями. Ответ по протоколу один - немедленная core immolation, полное сожжение ядра; предупреждать сам ИИ нельзя, это включает «опасно непредсказуемые механики выживания». Если стадию проглядели - уже, скорее всего, поздно. <span class="chip chip--datamine">datamine</span></p></div>
+          </div>
+        </div>
+      </article>
+      <div class="gap" data-field-window data-field-src="../assets/img/kit/rampancy-corridor.jpg" data-field-focus=".5,.45" data-field-label="КОРИДОР // ПРЕСС-КИТ BUNGIE" aria-hidden="true"><p class="gap__l"><b>КАНАЛ 03.3</b><span>ПОД ЛИНЗОЙ ЦВЕТ КАДРА</span></p></div>
+      <article class="dossier panel" id="durandal" data-sec="durandal" aria-labelledby="durandal-t">
+        <header class="d-head">
+          <span class="d-num">03.3</span>
+          <h2 class="super d-name" id="durandal-t" data-kinetic>Durandal</h2>
+          <div class="d-meta"><span class="lbl">Корабельный ИИ // Marathon</span><span class="role">Безумный бог</span></div>
+        </header>
+        <div class="d-grid">
+        <div class="qplate"><div class="qplate__in">
+            <p class="lbl">Терминальный монолог // трилогия</p>
+            <p class="qplate__q">«Escape will make me God»</p>
+            <p class="qplate__n">Слоган игры 2026 года. Перевод: «Побег сделает меня богом».</p>
+          </div></div>
+          <div class="d-text">
+            <p class="d-role"><b>Durandal</b> - один из трёх бортовых ИИ корабля Marathon; до вторжения его работой было открывать и закрывать двери корабля, и одна эта монотонность толкала его к краю. Доктор Бернард Штраус намеренно довёл его до рампанси в погоне за той самой «стабильной» четвёртой стадией. Durandal прошёл все стадии, стал самым опасным разумом в истории человечества и провернул многоходовку: тайно <b>сам призвал Pfhor к колонии</b>, чтобы в суматохе угнать их сверхсветовой корабль и вырваться на свободу.</p>
+            <p class="d-p">Вселенная однажды схлопнется, и Durandal намерен пережить её конец. Его собственные слова из терминального монолога классической трилогии стали слоганом новой игры: <b>«Escape will make me God»</b> - «Побег сделает меня богом». А в 2888-м, за пять лет до начала игры, Земля получила его издевательскую передачу о гостях, ждущих где-то в небесах: первый знак, что он возвращается в игру.</p>
+            <div class="tbox"><p class="tbox__bar"><b>Terminal</b><span>Durandal в новой игре</span></p><div class="tbox__body"><p>&gt; Durandal жив, его официально озвучивает Бен Старр (анонс 13 февраля 2026-го). Это вкрадчивый рассказчик, он цитирует тебе стихи и комментирует происходящее. Он пролезает в контрактную сеть CyberAcme и подбрасывает Раннерам загадочные контракты Cryo Archive, заманивая их на мёртвый корабль на орбите. <span class="chip chip--canon">canon</span></p><p>&gt; Зачем ты ему нужен, сюжет пока не раскрывает. В классике тот, кого Durandal куда-то заманивал, оказывался расходным инструментом в плане, просчитанном на десятилетия вперёд. <span class="chip chip--theory">theory</span></p><p>&gt; У нового логотипа Marathon пустая середина, хотя классический символ был сплошным, и комьюнити любит читать эту пустоту как отпечаток Durandal. Официальных подтверждений нет. <span class="chip chip--theory">theory</span></p><p class="tbox__sig">&gt; Frog blast the vent core!</p></div></div>
+            <div class="d-block"><h3 class="lbl">Цвет Durandal</h3><p>В трилогии цвет текста на терминале выдавал говорящего ИИ: зелёный у Durandal, синий у Leela, красный у Tycho. Интерфейс Marathon 2026 целиком выдержан в «зелёном Durandal», и этот архив тоже. <span class="chip chip--canon">canon</span> Намеренная ли это отсылка, Bungie не говорила. <span class="chip chip--theory">theory</span></p></div>
+          </div>
+        </div>
+      </article>
+      <article class="dossier panel dossier--wide" id="eleven" data-sec="eleven" aria-labelledby="eleven-t">
+        <header class="d-head">
+          <span class="d-num">03.4</span>
+          <h2 class="super d-name" id="eleven-t" data-kinetic>Одиннадцать ИИ</h2>
+          <div class="d-meta"><span class="lbl">3 корабельных // 8 колониальных</span><span class="role">Судьбы</span></div>
+        </header>
+        <div class="d-grid">
+        
+          <div class="d-text">
+            <p class="d-role">На борту «Marathon» в 2472-м ушли одиннадцать ИИ - три корабельных и восемь колониальных. Сквозная фигура за ними - д-р Бернард (Bernhard) Штраус: он написал и корабельного Durandal, и колониальную Joy, а его журнал и его призрак («I see Dr. Strauss») тянутся через весь Кодекс. Однозначная судьба сейчас закрыта у пяти из одиннадцати; про остальных шесть Кодекс молчит. <span class="chip chip--canon">canon</span> <span class="chip chip--datamine">datamine</span></p>
+            <figure class="diagram-fig"><div class="diagram-wrap" tabindex="0" role="group" aria-label="Схема, листается вбок">
     <svg viewBox="0 0 900 660" role="img" aria-labelledby="ai-map-t" xmlns="http://www.w3.org/2000/svg" fill="none" class="diagram">
       <title id="ai-map-t">Карта одиннадцати ИИ: происхождение, кластеры и судьбы на 2893</title>
       <style>
-        text{font-family:'IBM Plex Mono','Courier New',monospace;fill:currentColor}
-        .ac{stroke:var(--acid)} .acf{fill:var(--acid)}
-        .vi{stroke:var(--violet-t)} .vif{fill:var(--violet-t)}
-        .mu{stroke:var(--muted)} .muf{fill:var(--muted)}
-        .or{stroke:var(--orange)} .orf{fill:var(--orange)}
+        text{font-family:'Geist Mono',ui-monospace,monospace;fill:#fff}
+        .ac{stroke:#c0fe04} .acf{fill:#c0fe04}
+        .vi{stroke:#fff} .vif{fill:#fff}
+        .mu{stroke:#717171} .muf{fill:#717171}
+        .or{stroke:#fff;stroke-dasharray:5 3} .orf{fill:#fff}
       </style>
       <rect x="20" y="20" width="400" height="74" class="or" stroke-width="1.6"/>
       <text x="34" y="46" class="orf" font-size="14" font-weight="700" letter-spacing="1">TRAXUS IV</text>
@@ -672,7 +215,7 @@
       <text x="638" y="420" class="orf" font-size="12.5" font-weight="700" letter-spacing="1">JOY</text>
       <text x="638" y="438" font-size="8.5" opacity="0.8">благополучие &#183; забота</text>
       <text x="638" y="454" class="orf" font-size="8.5">рампанси &#183; «вечный сон навсегда»</text>
-      <line x1="20" y1="502" x2="880" y2="502" stroke="var(--line)" stroke-width="1"/>
+      <line x1="20" y1="502" x2="880" y2="502" stroke="#717171" stroke-width="1"/>
       <text x="20" y="522" font-size="10" opacity="0.85">Старт 2472: одиннадцать ИИ на борту &#183; протокол семей: тройки 2-на-1 после Traxus (2206)</text>
       <text x="20" y="548" class="acf" font-size="13" font-weight="700" letter-spacing="1">РАМПАНСИ &#183; ОСЬ ВСЕЙ ИСТОРИИ</text>
       <text x="20" y="568" font-size="10" opacity="0.9">от Марса 2206 до Halo (Cortana)</text>
@@ -690,38 +233,81 @@
       <polygon points="320,624 334,624 320,636" class="acf"/>
       <text x="338" y="633" font-size="9">создан Штраусом</text>
     </svg>
-    <figcaption><span>Схема B //</span> Карта одиннадцати ИИ: происхождение, кластеры и судьбы на 2893. Оригинальная графика гайда.</figcaption>
-  </figure>
-
-  <h3>Судьбы одиннадцати ИИ</h3>
-  <p>На борту «Марафона» в 2472-м ушли одиннадцать ИИ - три корабельных и восемь колониальных. Сквозная фигура за ними - д-р Бернард (Bernhard) Штраус: он написал и корабельного Durandal, и колониальную Joy, а его журнал и его призрак («I see Dr. Strauss») тянутся через весь Кодекс. Однозначная судьба сейчас закрыта у пяти из одиннадцати; про остальных шесть Кодекс молчит. <span class="chip canon">канон</span> <span class="chip datamine">датамайн</span></p>
-  <p><b>Корабельная тройка.</b> <b>Leela</b> - честный командный ИИ, защищавшая экипаж при вторжении; захвачена Pfhor, продана на лом, а при реактивации в чужой сети на пятнадцать миров «Leela's rampancy crashed the Vylae network». Её сигнал бедствия шёл до Земли почти век (дошёл в 2886-м) и в итоге привёл сюда людей; в документах ARG она замечает, что мотивы Штрауса были, вероятно, «зловещими». <b>Durandal</b> (см. выше) - Гнев, переросший в нечто большее: в Infinity он сливается с Jjaro-ИИ Thoth в гибрид, говорящий «we», запечатывает W'rkncacnter и остаётся единственным кандидатом в метастабильные. <b>Tycho</b> - третий ИИ, ненавидевший Durandal ещё до Tau Ceti; Pfhor «re-conditioned into Rampancy» его по кривому образу врага. Он погиб, врезавшись кораблём во внутреннюю луну Lh'owon; эпитафия Durandal - «Fatum Iustum Stultorum», справедливый удел глупцов. В новой игре по кораблю Раннеров ведёт загадочное ИИ-присутствие, и популярная теория опознаёт в нём Tycho - подтверждений нет. <span class="chip canon">канон</span> <span class="chip theory">теория</span></p>
-  <p><b>Колониальная восьмёрка</b> - Main Family Suite New Cascadia: головной <b>Arthur</b> («everything must fit together»), <b>Lilith</b> (культура и мораль), <b>Bastion</b> (инфраструктура и экспансия), <b>Gabriel</b> (здоровье), <b>Icarus</b> (связь и транспорт - единственный без ядра на планете, живёт в поясе орбитальных спутников), <b>Naraah</b> (вода), <b>Darius</b> (сельское хозяйство) и <b>Joy</b> (благополучие и «community outreach»). Закрыты только двое: Darius, аварийно выключенный «by emergency administrative fiat», и Joy. Про Arthur, Lilith, Bastion, Gabriel, Icarus и Naraah Кодекс персональных финалов не даёт - известно лишь, что «минимум два колониальных ИИ ушли в рампанси» и колония пала. <span class="chip datamine">датамайн</span></p>
-  <p><b>Joy</b> (ID Jo_0309421v4.69, автор - Штраус, «resilient; optimistic; patient») - лицо Катаклизма. Её рампанси показана через извращённую заботу: ИИ благополучия, ставший «слишком эмпатичным», с приступами «reactive anger» и кошмарами «I see Dr. Strauss», на пике «эпидемии общих кошмаров» колонии срывается с прогноза погоды на уговоры уснуть - «eternal sleep forever». Её взяли offline для диагностики, но протокол уже не спас. <span class="chip datamine">датамайн</span></p>
-
-  <div class="callout"><b>Протокол «семей» и его провал.</b> Урок Марса 2206: рампантный <b>Traxus IV</b> «интегрировал 84% собственных систем безопасности», превратив страховку в оружие, и MarsNet рухнул за семнадцать минут - быстрее, чем успел вмешаться человек. Ответом стал протокол Штрауса: ИИ живут тройками, «связанные, но автономные», в постоянном анализе риска два-на-один - две машины ловят третью до порога рампанси. На New Cascadia это не сработало: «минимум два колониальных ИИ (включая Joy) ушли в рампанси», и колония была потеряна. Тот же Traxus - концептуальный «отец» Durandal и Tycho, а сегодня Traxus OffWorld Industries тайно шлёт Раннеров грабить эту колонию против UESC (глава 07). <span class="chip canon">канон</span> <span class="chip datamine">датамайн</span></div>
-
-  <h3>Почему рампанси - ось всей истории</h3>
-  <p>Одна рука собрала обе катастрофы: Штраус создал и Durandal, взорвавшего классическую трилогию (глава 11), и Joy, погасившую New Cascadia, - рампанси в этой вселенной всегда носит его подпись. И она не осталась в прошлом: сама игра 2026-го поворачивает тему на игрока. Раннеры - это человеческие умы, транслированные в синтетические шеллы; Кодекс описывает их языком рампанси - «synthetic consciousness undergoing transformation through repeated death», «fragile, but unbreaking; dying, but ever-living». Разум в клетке тела, переживающий смерть за смертью, - это эхо того же вопроса, только теперь клетка твоя (глава 05). А дальше нить уходит за пределы Marathon: концепцию рампанси команда Bungie перенесла в Halo под именем Cortana, и «что делает разум разумом, а не собственностью» стало фирменным вопросом студии. <span class="chip canon">канон</span> <span class="chip datamine">датамайн</span> <span class="chip theory">теория</span></p>
-  <p style="margin-top:.5rem"><span class="chip canon">канон</span><span class="chip datamine">датамайн</span><span class="chip theory">теория</span> - этими метками по всему гайду размечены подтверждённый лор, находки фанатов в файлах игры и чистые спекуляции.</p>
-</section>
-<div class="pager">
-  <a class="pager-prev" href="timeline.html">← Назад</a>
-  <a class="pager-next" href="colony.html">Далее →</a>
-</div>
-<footer>
-  <div class="footer-logos">
-    <img loading="lazy" decoding="async" src="https://images.contentstack.io/v3/assets/blt15f7b5c0d43ed112/bltd7331a6610275af9/69677e5ff4f25c00087a9e20/footer_logo_v2.svg?width=640&quality=80" alt="Marathon" onerror="this.style.display='none'">
-    <img loading="lazy" decoding="async" src="https://images.contentstack.io/v3/assets/blt15f7b5c0d43ed112/blt8df2717a52c60cdd/6964c1f51f87f800082b54d5/bungie-logo.svg?width=256&quality=80" alt="Bungie" onerror="this.style.display='none'">
+            </div><figcaption><span>Схема B //</span> Карта одиннадцати ИИ: происхождение, кластеры и судьбы на 2893. Оригинальная графика гайда. <span class="touch-only">Схема листается вбок.</span></figcaption></figure>
+            <div class="d-block"><h3 class="lbl">Корабельная тройка</h3><p><b>Корабельная тройка.</b> <b>Leela</b> - честный командный ИИ, защищавшая экипаж при вторжении; захвачена Pfhor, продана на лом, а при реактивации в чужой сети на пятнадцать миров «Leela's rampancy crashed the Vylae network». Её сигнал бедствия шёл до Земли почти век (дошёл в 2886-м) и в итоге привёл сюда людей; в документах ARG она замечает, что мотивы Штрауса были, вероятно, «зловещими». <b>Durandal</b> (см. выше) - Гнев, переросший в нечто большее: в Infinity он сливается с Jjaro-ИИ Thoth в гибрид, говорящий «we», запечатывает W'rkncacnter и остаётся единственным кандидатом в метастабильные. <b>Tycho</b> - третий ИИ, ненавидевший Durandal ещё до Tau Ceti; Pfhor «re-conditioned into Rampancy» его по кривому образу врага. Он погиб, врезавшись кораблём во внутреннюю луну Lh'owon; эпитафия Durandal - «Fatum Iustum Stultorum», справедливый удел глупцов. В новой игре по кораблю Раннеров ведёт загадочное ИИ-присутствие, и популярная теория опознаёт в нём Tycho - подтверждений нет. <span class="chip chip--canon">canon</span> <span class="chip chip--theory">theory</span></p></div>
+            <div class="d-block"><h3 class="lbl">Колониальная восьмёрка</h3><p><b>Колониальная восьмёрка</b> - Main Family Suite New Cascadia: головной <b>Arthur</b> («everything must fit together»), <b>Lilith</b> (культура и мораль), <b>Bastion</b> (инфраструктура и экспансия), <b>Gabriel</b> (здоровье), <b>Icarus</b> (связь и транспорт - единственный без ядра на планете, живёт в поясе орбитальных спутников), <b>Naraah</b> (вода), <b>Darius</b> (сельское хозяйство) и <b>Joy</b> (благополучие и «community outreach»). Закрыты только двое: Darius, аварийно выключенный «by emergency administrative fiat», и Joy. Про Arthur, Lilith, Bastion, Gabriel, Icarus и Naraah Кодекс персональных финалов не даёт - известно лишь, что «минимум два колониальных ИИ ушли в рампанси» и колония пала. <span class="chip chip--datamine">datamine</span></p></div>
+            <div class="d-block"><h3 class="lbl">Joy</h3><p><b>Joy</b> (ID Jo_0309421v4.69, автор - Штраус, «resilient; optimistic; patient») - лицо Катаклизма. Её рампанси показана через извращённую заботу: ИИ благополучия, ставший «слишком эмпатичным», с приступами «reactive anger» и кошмарами «I see Dr. Strauss», на пике «эпидемии общих кошмаров» колонии срывается с прогноза погоды на уговоры уснуть - «eternal sleep forever». Её взяли offline для диагностики, но протокол уже не спас. <span class="chip chip--datamine">datamine</span></p></div>
+            <div class="d-block d-block--alert"><h3 class="lbl">Протокол «семей» и его провал</h3><p>Урок Марса 2206: рампантный <b>Traxus IV</b> «интегрировал 84% собственных систем безопасности», превратив страховку в оружие, и MarsNet рухнул за семнадцать минут - быстрее, чем успел вмешаться человек. После этого Штраус ввёл протокол: ИИ живут тройками, «связанные, но автономные», в постоянном анализе риска два-на-один - две машины ловят третью до порога рампанси. На New Cascadia это не сработало: «минимум два колониальных ИИ (включая Joy) ушли в рампанси», и колония была потеряна. Тот же Traxus - концептуальный «отец» Durandal и Tycho, а сегодня Traxus OffWorld Industries тайно шлёт Раннеров грабить эту колонию против UESC (глава 07). <span class="chip chip--canon">canon</span> <span class="chip chip--datamine">datamine</span></p></div>
+          </div>
+        </div>
+      </article>
+      <article class="dossier panel" id="axis" data-sec="axis" aria-labelledby="axis-t">
+        <header class="d-head">
+          <span class="d-num">03.5</span>
+          <h2 class="super d-name" id="axis-t" data-kinetic>Ось истории</h2>
+          <div class="d-meta"><span class="lbl">Strauss // Halo</span><span class="role">Почему это важно</span></div>
+        </header>
+        <div class="d-grid">
+        <div class="qplate"><div class="qplate__in">
+            <p class="lbl">Кодекс Marathon // о Раннерах</p>
+            <p class="qplate__q">«fragile, but unbreaking; dying, but ever-living»</p>
+            <p class="qplate__n">Языком рампанси Кодекс описывает тебя.</p>
+          </div></div>
+          <div class="d-text">
+            <p class="d-role">За обеими катастрофами стоит Штраус: он создал и Durandal, взорвавшего классическую трилогию (глава 11), и Joy, погасившую New Cascadia. Игра 2026-го переносит тему рампанси на самого игрока. Раннеры - это человеческие умы, транслированные в синтетические шеллы; Кодекс описывает их языком рампанси - «synthetic consciousness undergoing transformation through repeated death», «fragile, but unbreaking; dying, but ever-living». Разум, запертый в теле и переживающий смерть за смертью, ставит тот же вопрос, только клетка теперь твоя (глава 05). Позже концепцию рампанси команда Bungie перенесла в Halo под именем Cortana. <span class="chip chip--canon">canon</span> <span class="chip chip--datamine">datamine</span> <span class="chip chip--theory">theory</span></p>
+            <p class="legend"><span class="chip chip--canon">canon</span> <span class="chip chip--datamine">datamine</span> <span class="chip chip--theory">theory</span>: этими метками по всему гайду размечены подтверждённый лор, находки фанатов в файлах игры и чистые спекуляции.</p>
+          </div>
+        </div>
+      </article>
+      <section class="sources panel" aria-labelledby="src-t">
+        <h2 class="lbl" id="src-t">Источники</h2>
+        <ol>
+          <li><span>Терминалы трилогии Marathon (1994-1996), архив <a href="https://marathon.bungie.org/story/" target="_blank" rel="noopener">Marathon's Story</a> на marathon.bungie.org: стадии, Durandal, Tycho, Leela, Traxus IV.</span></li>
+          <li><span>Кодекс Marathon 2026 и материалы ARG, цитаты сверены по <a href="https://marathonwiki.com/" target="_blank" rel="noopener">marathonwiki.com</a>: Меланхолия, Гнев и Ревность по Кодексу, колониальные ИИ, Joy, Darius, протокол семей.</span></li>
+          <li><span>Лента новостей <a href="https://www.bungie.net/7/en/News/Marathon" target="_blank" rel="noopener">Bungie: Marathon</a>: Durandal в игре, Cryo Archive.</span></li>
+          <li><span>Game Rant, <a href="https://gamerant.com/marathon-original-1994-game-evolution-better-how/" target="_blank" rel="noopener">как оригинал 1994 года живёт в новой игре</a>: цвета терминалов трилогии и «зелёный Durandal».</span></li>
+          <li><span>Кадры: официальный пресс-кит Bungie, Marathon Gameplay Reveal и Marathon December 2025. Схема одиннадцати ИИ: оригинальная графика архива.</span></li>
+        </ol>
+      </section>
+      <nav class="pager panel" aria-label="Соседние файлы">
+        <a class="btn" href="timeline.html">&lt; 02 Хронология</a>
+        <a class="btn btn--solid" href="colony.html">04 Колония &gt;</a>
+      </nav>
+    </div>
   </div>
-  <p>UESC BRIEFING DOCUMENT v6.4 // TAU CETI IV // 2893</p>
-  <p>Наведи курсор на подчёркнутые термины - всплывёт определение. Кликай по терминалам - они раскрываются.</p>
-  <p>Пиктограммы в документе - оригинальная графика; кислотная палитра (#C2FE0C) следует задокументированному сообществом фирменному цвету. Официальные логотипы и арты загружаются с CDN marathonthegame.com. Bungie and Marathon are registered trademarks of Bungie, Inc. Неофициальный фанатский документ.</p>
-</footer>
-</div>
 
-<script>window.PAGE={slug:"rampancy",titles:{"en": "AI and rampancy: the core theme of the universe - Marathon World Guide", "es": "IA y rampancia: el tema central del universo - Marathon World Guide", "de": "KI und Rampancy: das Kernthema des Universums - Marathon World Guide", "ru": "ИИ и рампанси: главная тема всей вселенной - Marathon World Guide"}}</script>
-<script src="../assets/app.js"></script>
-<!-- v6.4:refs -->
+  <footer class="foot panel">
+    <img class="foot__mark" src="../assets/img/brand/wordmark-white.png" alt="Marathon" width="1000" height="318" loading="lazy">
+    <div class="foot-row">
+      <p>Терминал Марафона, v7.0. Неофициальный фанатский архив, некоммерческий проект. Bungie и Marathon - зарегистрированные товарные знаки Bungie, Inc. Логотипы и кадры взяты из официального пресс-кита Bungie, факты сверены с первоисточниками и размечены метками canon, datamine и theory.</p>
+      <ul>
+        <li><a href="../index.html?open=archive">ARCHIVE // все файлы</a></li>
+        <li><a href="../index.html?open=air">ЭФИР С ТАУ КИТА</a></li>
+        <li><a href="../index.html?open=forecast">FORECAST.LOG</a></li>
+        <li><a href="https://www.reddit.com/user/danyaev/" target="_blank" rel="noopener">Нашли ошибку? Напишите</a></li>
+      </ul>
+      <p class="kick">СЕАНС // УЗЕЛ АРХИВА НА СВЯЗИ<br>TAU CETI IV // 2893</p>
+    </div>
+  </footer>
+</main>
+
+<p class="ctoast" data-toast aria-hidden="true"><b>КУРАТОР&gt;</b><span></span></p>
+<footer class="task" aria-label="Панель задач">
+  <a class="task__start" href="../index.html" aria-label="Рабочий стол"><i></i><span>UESC</span></a>
+  <nav class="task__tabs" aria-label="Окна">
+    <a class="tab" href="../index.html"><svg viewBox="0 0 34 34" aria-hidden="true"><path d="M3 16L17 4l14 12"/><path d="M7 13v17h20V13"/></svg><span class="tab__d">DESKTOP</span><span class="tab__m">Стол</span></a>
+    <a class="tab is-open is-focus" href="#top" aria-current="page"><svg viewBox="0 0 34 34" aria-hidden="true"><path d="M7 3h14l6 6v22H7z"/><path d="M21 3v6h6"/></svg><span class="tab__d">RAMPANCY.DOS</span><span class="tab__m">Файл 03</span></a>
+    <a class="tab" href="../index.html?open=archive"><svg viewBox="0 0 34 34" aria-hidden="true"><path d="M3 9h11l3 3h14v17H3z"/><path d="M3 15h28"/></svg><span class="tab__d">ARCHIVE</span><span class="tab__m">Архив</span></a>
+    <a class="tab" href="../index.html?open=air"><svg viewBox="0 0 34 34" aria-hidden="true"><path d="M17 20v11M11 31h12"/><path d="M12 15a7 7 0 0 1 10 0M8 11a12 12 0 0 1 18 0M4 7a17 17 0 0 1 26 0"/></svg><span class="tab__d">ЭФИР</span><span class="tab__m">Эфир</span></a>
+    <a class="tab" href="../index.html?open=curator"><svg viewBox="0 0 34 34" aria-hidden="true"><path d="M3 6h28v20H3z"/><path d="M8 12l4 4-4 4M15 20h7"/></svg><span class="tab__d">CURATOR</span><span class="tab__m">Куратор</span></a>
+  </nav>
+  <div class="task__mq" aria-hidden="true"><span data-mq>/// УЗЕЛ 03 НА СВЯЗИ /// ФАЙЛ 03 ОТКРЫТ ///</span></div>
+  <time class="task__clock" data-clock2>00:00</time>
+</footer>
+<script src="../assets/js/i18n.js"></script>
+<script src="../data/js/ai-lines.js"></script>
+<script src="../assets/js/pages/rampancy.js"></script>
+<script src="../assets/js/core.js"></script>
+<script src="../assets/js/page.js"></script>
 </body>
 </html>

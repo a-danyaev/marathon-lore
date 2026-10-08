@@ -1,0 +1,64 @@
+# @why ИИ архива КУРАТОР: один ровный голос без стадий; реплики для рабочего стола, глав и разделов. Источник для data/js/ai-lines.js (v5/build_data.py). Каждая реплика оригинальная, не длиннее 15 слов; RU-пул на верхнем уровне, EN-пул под ключом en (data/js/en/ai-lines.js), живой английский, не подстрочник.
+meta:
+  data_version: '7.0'
+  lang: ru
+  placeholders: '{shell} - выбранный шелл Раннера; {n} - прочитано файлов; {total} - всего файлов в архиве.'
+voice:
+  home:
+  - Терминал готов. Архив смонтирован, пятнадцать файлов.
+  - Метки canon, datamine и theory расставлены по всем файлам.
+  - Если вы здесь впервые, откройте хронологию.
+  - Эфир с Тау Кита на связи. Свежие апдейты наверху.
+  - Отсчёт до Symbiosis идёт в соседнем окне.
+  - У каждого прогноза есть дата записи, сверим потом.
+  chapter:
+  - Файл открыт. Метки достоверности на месте.
+  - Читайте по порядку или прыгайте по оглавлению.
+  - Поле за текстом собрано из кадров пресс-кита Bungie.
+  - Источники собраны в конце файла.
+  - Прочитанные файлы я отмечаю в окне архива.
+  - Если нашли ошибку, архив примет поправку.
+  unknown: Команда не распознана. Введите help.
+  status: 'Диагностика: контуры стабильны, прочитано {n} из {total}.'
+sections:
+  classes:
+    intro: Файл 06, модели шеллов и что умеет каждая.
+    vandal: 'Vandal: скорость, фланг, Disrupt.'
+    destroyer: 'Destroyer держит урон за барьером и отвечает ракетными залпами.'
+    assassin: 'Assassin: дым, невидимость, Shadow Dive.'
+    recon: 'Recon: разведка и дрон. Echo Pulse ослаблен 06.10.'
+    thief: 'Thief: крюк и визор, а карманы чистит дрон.'
+    triage: 'Triage: медик, Reboot+, Med-Drone.'
+    sentinel: 'Sentinel: оборона, Defender System, мины.'
+    rook: 'Rook: соло, случайный лут, Signal Mask.'
+    bishop: 'Bishop: анонсирован, выход 08.12.'
+en:
+  voice:
+    home:
+    - Terminal ready. Archive mounted, fifteen files.
+    - Every file carries canon, datamine and theory tags.
+    - If this is your first visit, open the timeline.
+    - On air from Tau Ceti. Fresh updates at the top.
+    - The Symbiosis countdown runs in the next window.
+    - Each forecast has the date it was logged. We check later.
+    chapter:
+    - File open. Reliability tags in place.
+    - Read in order or jump through the contents.
+    - The field behind the text is built from Bungie press kit frames.
+    - Sources are collected at the end of the file.
+    - I mark the files you have read in the archive window.
+    - If you find a mistake, the archive takes corrections.
+    unknown: Command not recognised. Type help.
+    status: 'Diagnostics: circuits stable, {n} of {total} read.'
+  sections:
+    classes:
+      intro: File 06, shell models and what each one does.
+      vandal: 'Vandal: speed, flanking, Disrupt.'
+      destroyer: Destroyer soaks damage behind a barrier and answers with rocket salvos.
+      assassin: 'Assassin: smoke, invisibility, Shadow Dive.'
+      recon: 'Recon: scouting and a drone. Echo Pulse weakened on 6 October.'
+      thief: 'Thief: grapple and visor, while the drone picks pockets.'
+      triage: 'Triage: medic, Reboot+, Med-Drone.'
+      sentinel: 'Sentinel: defence, Defender System, mines.'
+      rook: 'Rook: solo, random loot, Signal Mask.'
+      bishop: 'Bishop: announced, out on 8 December.'

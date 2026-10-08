@@ -1,0 +1,219 @@
+meta:
+  data_version: '7.0'
+  captured: '2026-10-08'
+  lang: ru
+  research: v5/research/v7-update-2026-10.md
+  fields: 'id - стабильный ключ; date - ISO (для будущих - плановая дата); status - done | planned;
+    kind - season | patch | event | balance | lore | studio | roadmap; affects - теги shell:/weapon:/zone:/mode:/system:/faction:;
+    weight - 1 мелочь, 2 заметно, 3 меняет игру; chip - canon | datamine | theory; src - первичный URL;
+    ends - ISO, последний день окна (событие идёт с date по ends включительно, окно ЭФИР показывает его в «Сейчас в игре»);
+    link - внутренняя страница сайта от корня (pages/x.html#id); approx - true, если дата ориентировочная.'
+entries:
+- id: launch
+  date: '2026-03-05'
+  status: done
+  kind: season
+  affects: [zone:perimeter, zone:dire-marsh, zone:outpost]
+  weight: 3
+  chip: canon
+  title: Релиз и Season 1
+  title_en: Launch and Season 1
+  text: Marathon вышел на PC, PS5 и Xbox. В Steam пик 88 337 одновременно.
+  text_en: Marathon launched on PC, PS5 and Xbox. Steam peaked at 88,337 concurrent players.
+  src: https://www.techtimes.com/articles/321081/20260720/marathon-drops-third-game-director-two-years-player-count-nears-zero.htm
+- id: cryo-archive
+  date: '2026-03-20'
+  status: done
+  kind: patch
+  patch: 1.0.5
+  affects: [zone:cryo-archive, shell:rook]
+  weight: 3
+  chip: canon
+  title: Открыт Cryo Archive
+  title_en: Cryo Archive opens
+  text: Эндгейм-зона на борту UESC Marathon. Сообщество открыло её через ARG с терминалами в стиле трилогии и голосом Durandal. Тем же патчем Rook стал доступен с нулевого уровня.
+  text_en: The endgame zone aboard UESC Marathon. The community unlocked it through an ARG with trilogy-style terminals and the voice of Durandal. The same patch made Rook available from level zero.
+  src: https://hiya.wiki/wiki/marathon/cryo-archive
+- id: season-2
+  date: '2026-06-02'
+  status: done
+  kind: season
+  affects: [shell:sentinel, zone:night-marsh, system:cradle, weapon:kkv-9sd, weapon:d54]
+  weight: 3
+  chip: canon
+  title: Season 2 «Nightfall»
+  title_en: Season 2 "Nightfall"
+  text: Шелл Sentinel, зона Night Marsh, прогрессия Cradle, новые стволы KKV-9SD и D54 Battle Pistol, Ranked.
+  text_en: The Sentinel shell, the Night Marsh zone, Cradle progression, two new guns (KKV-9SD and the D54 Battle Pistol) and Ranked.
+  src: https://cyberneticpunks.com/marathon/intel
+- id: director-change
+  date: '2026-07-17'
+  status: done
+  kind: studio
+  affects: []
+  weight: 1
+  chip: canon
+  title: Смена гейм-директора
+  title_en: New game director
+  text: Joe Ziegler ушёл из Bungie. Игру ведут Del Chafe III (game director) и Julia Nardin (creative director).
+  text_en: Joe Ziegler left Bungie. The game is now run by Del Chafe III (game director) and Julia Nardin (creative director).
+  src: https://www.ign.com/articles/marathon-game-director-joseph-ziegler-is-leaving-bungie
+- id: vault-breaker
+  date: '2026-07-21'
+  status: done
+  kind: event
+  patch: 1.1.5
+  affects: [zone:cryo-archive, mode:vault-breaker, system:cradle]
+  weight: 3
+  chip: canon
+  title: Vault Breaker и Cradle Evolution
+  title_en: Vault Breaker and Cradle Evolution
+  text: Первый экспериментальный PvE-режим, взлом цепочки хранилищ в Cryo Archive соло, дуо или трио. С 70+ уровня Cradle теперь можно сбросить по желанию и получить бонусы.
+  text_en: 'The first experimental PvE mode: break into a chain of vaults in the Cryo Archive solo, as a duo or as a trio. From Cradle level 70+ you can now reset Cradle at will and get bonuses for it.'
+  src: https://www.bungie.net/7/en/News/Marathon
+- id: volt-thrower-cut
+  date: '2026-07-24'
+  status: done
+  kind: balance
+  affects: [weapon:v22-volt-thrower]
+  weight: 2
+  chip: canon
+  title: Нерф V22 Volt Thrower
+  title_en: V22 Volt Thrower nerf
+  text: Урон 18 -> 12.6.
+  text_en: Damage 18 -> 12.6.
+  src: https://www.bungie.net/7/en/News/Article/marathon_update_1_1_5_2
+- id: patch-1152
+  date: '2026-08-04'
+  status: done
+  kind: balance
+  patch: 1.1.5.2
+  affects: [weapon:v22-volt-thrower, weapon:kkv-9sd, mode:vault-breaker, system:sponsored-kits]
+  weight: 2
+  chip: canon
+  title: Volt Thrower частично вернули, KKV-9SD стал ёмче
+  title_en: Volt Thrower partly restored, KKV-9SD holds more
+  text: Volt Thrower 12.6 -> 14.4, снаряды теряют до 30% наведения за 1.2 с. KKV-9SD - базовый магазин 23 -> 28. Бесплатные Sponsored Kits усилены. Vault Breaker продлён до 18 августа.
+  text_en: Volt Thrower 12.6 -> 14.4, projectiles lose up to 30% of their tracking over 1.2 s. KKV-9SD base magazine 23 -> 28. Free Sponsored Kits buffed. Vault Breaker extended to 18 August.
+  src: https://www.bungie.net/7/en/News/Article/marathon_update_1_1_5_2
+- id: ordnance-heist
+  date: '2026-08-18'
+  status: done
+  kind: event
+  patch: 1.1.5.4
+  affects: [mode:ordnance-heist, weapon:firestorm, weapon:v85-circuit-breaker, zone:perimeter, zone:dire-marsh, zone:night-marsh, zone:outpost, faction:mida, faction:traxus]
+  weight: 3
+  chip: canon
+  title: Ordnance Heist и Firestorm
+  title_en: Ordnance Heist and Firestorm
+  text: Охота за Firestorm, первым силовым оружием игры, растянута на несколько забегов. Шаблон ключа берут в Perimeter, задачу выполняют на Dire Marsh или Night Marsh, три ключа открывают шкаф UESC. Тем же патчем ослаблен V85 Circuit Breaker. Событие шло до 1 сентября.
+  text_en: The hunt for Firestorm, the game's first power weapon, stretches over several runs. You pick up a key template in Perimeter, complete the task on Dire Marsh or Night Marsh, and three keys open a UESC locker. The same patch weakened the V85 Circuit Breaker. The event ran until 1 September.
+  src: https://www.runner-terminal.com/articles/marathon-ordnance-heist-guide
+- id: patch-1155
+  date: '2026-08-25'
+  status: done
+  kind: patch
+  patch: 1.1.5.5
+  affects: [mode:ordnance-heist, weapon:firestorm]
+  weight: 1
+  chip: canon
+  title: Heist щедрее
+  title_en: A more generous Heist
+  text: За шаблон теперь три ключа вместо одного, лут шкафа Firestorm лучше.
+  text_en: A template now gives three keys instead of one, and the Firestorm locker drops better loot.
+  src: https://steamraw.com/app/3065800/marathon/
+- id: patch-119
+  date: '2026-09-01'
+  status: done
+  kind: patch
+  patch: 1.1.9
+  affects: [faction:cyberacme, shell:rook, system:economy]
+  weight: 2
+  chip: canon
+  title: Арморий C.A.R.R.I и Rook
+  title_en: C.A.R.R.I armory and Rook
+  text: CyberAcme продаёт Superior Shield Implant и Superior Backpack, цены в Commendations снижены. Правки инвентаря Rook.
+  text_en: CyberAcme now sells the Superior Shield Implant and the Superior Backpack, and Commendations prices are lower. Rook inventory changes.
+  src: https://patchbot.io/games/marathon
+- id: roadmap
+  date: '2026-09-24'
+  status: done
+  kind: roadmap
+  affects: []
+  weight: 3
+  chip: canon
+  title: «Будущее Marathon»
+  title_en: '"The Future of Marathon"'
+  text: Bungie признала, что игра не дошла до стольких игроков, как хотелось, и отказалась от трёхмесячных сезонов. Анонсированный Season 3 на 22 сентября не вышел в этом виде.
+  text_en: Bungie admitted the game had not reached as many players as it wanted and dropped three-month seasons. Season 3, announced for 22 September, did not ship in that form.
+  src: https://www.polygon.com/bungie-marathon-symbiosis-changes-pve-new-modes/
+- id: nightfall-refresh
+  date: '2026-10-06'
+  ends: '2026-12-08'
+  link: pages/seasons.html#refresh
+  status: done
+  kind: season
+  patch: 1.1.9.2
+  affects: [system:cradle, system:economy, system:factions, shell:recon, weapon:repeater-hpr, weapon:hardline-pr, weapon:drrvsh, weapon:magnum-mc, mode:solo, faction:nucaloric]
+  weight: 3
+  chip: canon
+  title: Nightfall Refresh - всё с нуля
+  title_en: 'Nightfall Refresh: back to zero'
+  text: Сброс уровней, Cradle, фракций, хранилища и доступа к зонам (LUX, SILK и косметика остались). По лору ONI объявил конец фискального сезона и забрал всё в счёт долга. Бесплатный NuCaloric Reward Pass, спонсорские очереди по выходным, соло-UESC бьют на 20% слабее, Echo Pulse у Recon и ряд стволов ослаблены.
+  text_en: Levels, Cradle, factions, the vault and zone access were reset (LUX, SILK and cosmetics stayed). In the lore, ONI declared the fiscal season over and took everything as payment on the debt. A free NuCaloric Reward Pass, sponsored queues on weekends, solo UESC enemies hit 20% softer, and Recon's Echo Pulse and a number of guns were weakened.
+  src: https://mp1st.com/title-updates-and-patches/marathon-version-1-1-9-2-deployed-on-october-6-via-update-1-033
+- id: sponsored-perimeter
+  date: '2026-10-08'
+  ends: '2026-10-12'
+  link: pages/zones.html#perimeter
+  status: done
+  kind: event
+  affects: [zone:perimeter, mode:sponsored, system:economy]
+  weight: 2
+  chip: canon
+  title: Sponsored Perimeter
+  title_en: Sponsored Perimeter
+  text: Первая спонсорская очередь Nightfall Refresh. Такие очереди идут каждые выходные с четверга по понедельник.
+  text_en: The first sponsored queue of Nightfall Refresh. These queues run every weekend, Thursday to Monday.
+  src: https://www.bungie.net/7/en/News/Article/marathon_update_1_1_9_2
+- id: vault-breaker-return
+  date: '2026-10-20'
+  ends: '2026-11-09'
+  link: pages/seasons.html#vault-breaker
+  status: planned
+  kind: event
+  affects: [mode:vault-breaker, zone:cryo-archive]
+  weight: 2
+  chip: canon
+  title: Vault Breaker возвращается
+  title_en: Vault Breaker returns
+  text: С 20 октября по 9 ноября. Запасы в армориях урезаны.
+  text_en: From 20 October to 9 November. Armory stock is cut.
+  src: https://www.bungie.net/7/en/News/Article/marathon_update_1_1_9_2
+- id: symbiosis
+  date: '2026-12-08'
+  link: pages/seasons.html#symbiosis
+  status: planned
+  kind: season
+  affects: [shell:bishop, zone:perimeter, mode:pve, mode:tdm, system:onboarding]
+  weight: 3
+  chip: canon
+  title: Symbiosis
+  title_en: Symbiosis
+  text: Постоянный PvE без охоты других Раннеров, экспериментальный Team Deathmatch, расширенный Perimeter с боссом Tick Queen, социальное пространство CyAc с тиром, новый шелл Bishop - «робот-самурай» для молниеносных атак в ближнем бою.
+  text_en: 'Permanent PvE with no hunting of other Runners, an experimental Team Deathmatch, an expanded Perimeter with the Tick Queen boss, the CyAc social space with a shooting range, and a new shell: Bishop, a robot samurai built for lightning-fast melee attacks.'
+  src: https://www.polygon.com/bungie-marathon-symbiosis-changes-pve-new-modes/
+- id: march-2027
+  date: '2027-03-01'
+  approx: true
+  link: pages/seasons.html#march-2027
+  status: planned
+  kind: roadmap
+  affects: [system:cradle, mode:pve, zone:new]
+  weight: 3
+  chip: canon
+  title: Большая эволюция (март 2027)
+  title_en: The big evolution (March 2027)
+  text: Связанные PvE, PvP и PvEvP, переделанный Cradle, квесты и сюжет, новые инопланетные противники и новая зона. Точная дата и название не объявлены.
+  text_en: Connected PvE, PvP and PvEvP, a reworked Cradle, quests and story, new alien enemies and a new zone. The exact date and name have not been announced.
+  src: https://cq-esports.com/news/bungie-outlines-marathon-overhaul-after-six-months-of-player-losses

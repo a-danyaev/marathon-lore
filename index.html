@@ -1,511 +1,189 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="ru" class="no-js">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>MARATHON // World Guide</title>
-<meta name="description" content="An interactive fan guide to the Marathon universe (Bungie, 2026): the fall of Tau Ceti IV, Runners and shells, six factions, AI rampancy, the classic trilogy and its Halo legacy. EN / ES / DE / RU.">
-<meta name="theme-color" content="#0a0b0a">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="MARATHON // World Guide">
-<meta property="og:title" content="MARATHON // World Guide">
-<meta property="og:description" content="An interactive fan guide to the Marathon universe (Bungie, 2026): the fall of Tau Ceti IV, Runners and shells, six factions, AI rampancy, the classic trilogy and its Halo legacy. EN / ES / DE / RU.">
-<meta property="og:image" content="https://images.contentstack.io/v3/assets/blt15f7b5c0d43ed112/blt4579a520aea7477a/699c18b848bd410008f09c63/Hero_Video_Fallback_Image.png?width=1200&amp;quality=80">
-<meta property="og:image:alt" content="Marathon key art: Runners on Tau Ceti IV">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="MARATHON // World Guide">
-<meta name="twitter:description" content="An interactive fan guide to the Marathon universe (Bungie, 2026): the fall of Tau Ceti IV, Runners and shells, six factions, AI rampancy, the classic trilogy and its Halo legacy. EN / ES / DE / RU.">
-<meta name="twitter:image" content="https://images.contentstack.io/v3/assets/blt15f7b5c0d43ed112/blt4579a520aea7477a/699c18b848bd410008f09c63/Hero_Video_Fallback_Image.png?width=1200&amp;quality=80">
-<link rel="icon" href="https://www.marathonthegame.com/favicon.ico">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Терминал Марафона - фан-архив по миру Marathon (Bungie) // v7.0</title>
+<meta name="description" content="Неофициальный фан-архив по Marathon (Bungie, 2026): хронология, гибель колонии, шеллы, фракции, рампанси. Эфир последних новостей и апдейтов игры и отсчёт до Symbiosis.">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#000000">
 <link rel="canonical" href="https://a-danyaev.github.io/marathon-lore/">
+<link rel="alternate" hreflang="ru" href="https://a-danyaev.github.io/marathon-lore/">
+<link rel="alternate" hreflang="en" href="https://a-danyaev.github.io/marathon-lore/en/">
+<link rel="alternate" hreflang="x-default" href="https://a-danyaev.github.io/marathon-lore/">
+<link rel="icon" href="assets/img/brand/favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Терминал Марафона">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:title" content="Терминал Марафона - фан-архив по миру Marathon">
+<meta property="og:description" content="Пятнадцать файлов о Tau Ceti IV, эфир последних апдейтов Marathon, отсчёт до Symbiosis и ИИ архива КУРАТОР, который ведёт каталог.">
+<meta property="og:url" content="https://a-danyaev.github.io/marathon-lore/">
+<meta property="og:image" content="https://a-danyaev.github.io/marathon-lore/assets/img/brand/og-keyart.jpg">
+<meta property="og:image:alt" content="Ключевой арт Marathon от Bungie">
+<meta name="twitter:card" content="summary_large_image">
+<script>(function(){var d=document.documentElement;d.classList.replace("no-js","js");try{var q=new URLSearchParams(location.search),s=localStorage.getItem("ml_lang"),ql=q.get("lang"),nl=(navigator.languages||[navigator.language||""]).join(",").toLowerCase(),en=ql?ql!=="ru":(!s&&!q.has("shot")&&!/(^|,)(ru|uk|be|kk)/.test(nl));if(en){localStorage.setItem("ml_lang","en");var p=location.pathname,f=p.slice(p.lastIndexOf("/")+1)||"index.html";location.replace((/\/pages\/[^/]*$/.test(p)?"../en/pages/":"en/")+f+location.hash)}}catch(e){}if(new URLSearchParams(location.search).has("shot"))d.classList.add("shot");})()</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wdth,wght@8..144,25..151,100..1000&family=Martian+Mono:wdth,wght@75..112.5,100..800&family=Geist+Mono:wght@100..900&family=Handjet:wght@400;600&display=swap">
+<link rel="stylesheet" href="assets/css/base.css">
+<link rel="stylesheet" href="assets/css/os.css">
 </head>
-<body data-lang="en">
-
-<!-- original pictogram sprite: drawn for this document, not Bungie assets -->
-<svg width="0" height="0" style="position:absolute" aria-hidden="true">
-  <defs>
-    <symbol id="i-start" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M10 8.5l6 3.5-6 3.5z"/></symbol>
-    <symbol id="i-time" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 6.5V12l4 2.5"/><circle cx="19.5" cy="4.5" r="1.4"/></symbol>
-    <symbol id="i-fall" viewBox="0 0 24 24"><path d="M12 3L22 20H2z"/><path d="M12 10v5"/><circle cx="12" cy="17.6" r=".4"/></symbol>
-    <symbol id="i-shell" viewBox="0 0 24 24"><circle cx="12" cy="6.5" r="3"/><path d="M5.5 21c0-4 2.6-7 6.5-7s6.5 3 6.5 7"/><circle cx="12" cy="14.8" r=".5"/><path d="M12 3.5v-2M9 6.5H7M17 6.5h-2"/></symbol>
-    <symbol id="i-class" viewBox="0 0 24 24"><rect x="4" y="4" width="7" height="7"/><rect x="13" y="4" width="7" height="7"/><rect x="4" y="13" width="7" height="7"/><path d="M13 16.5h7M16.5 13v7"/></symbol>
-    <symbol id="i-hex" viewBox="0 0 24 24"><path d="M12 2.8l8 4.6v9.2l-8 4.6-8-4.6V7.4z"/><circle cx="12" cy="12" r="2.6"/></symbol>
-    <symbol id="i-eye" viewBox="0 0 24 24"><path d="M2 12s4-6.5 10-6.5S22 12 22 12s-4 6.5-10 6.5S2 12 2 12z"/><circle cx="12" cy="12" r="2.8"/><path d="M12 9.2v-1M12 15.8v1"/></symbol>
-    <symbol id="i-alien" viewBox="0 0 24 24"><path d="M4 16c0-6 3.5-10 8-10s8 4 8 10"/><circle cx="8" cy="12.5" r=".7"/><circle cx="12" cy="11.5" r=".7"/><circle cx="16" cy="12.5" r=".7"/><path d="M7 19h10"/></symbol>
-    <symbol id="i-map" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 2v5M12 17v5M2 12h5M17 12h5"/><circle cx="12" cy="12" r="1.6"/></symbol>
-    <symbol id="i-moon" viewBox="0 0 24 24"><path d="M19 14.5A8 8 0 0 1 9.5 5 8 8 0 1 0 19 14.5z"/><circle cx="17" cy="6" r=".6"/><circle cx="20" cy="9.5" r=".4"/></symbol>
-    <symbol id="i-term" viewBox="0 0 24 24"><rect x="3" y="4.5" width="18" height="13"/><path d="M6.5 9l3 2.5-3 2.5M12 14h5M8 21h8"/></symbol>
-    <symbol id="i-egg" viewBox="0 0 24 24"><path d="M12 3v18M3 12h18M5.6 5.6l12.8 12.8M18.4 5.6L5.6 18.4"/><circle cx="12" cy="12" r="3.2"/></symbol>
-    <symbol id="i-link" viewBox="0 0 24 24"><rect x="3" y="6" width="13" height="12"/><path d="M8 6V3.5h13V15h-2.5"/><path d="M6.5 10.5h6M6.5 13.5h6"/></symbol>
-    <symbol id="i-canon" viewBox="0 0 24 24"><path d="M12 2.5l8 3v6c0 5-3.4 8.6-8 10-4.6-1.4-8-5-8-10v-6z"/><path d="M8.5 12l2.4 2.4 4.6-4.8"/></symbol>
-    <symbol id="w-ar" viewBox="0 0 24 24"><path d="M1 10h4l1-2h9l8 1v4h-8l-1 4h-3l1-4H1z"/><path d="M15 8V6h2"/></symbol>
-  </defs>
-</svg>
-
-<div class="lang-switch" role="group" aria-label="Language selection">
-  <a class="ls-label" href="index.html">/// MARATHON // World Guide // v6.4</a>
-  <button data-setlang="en" class="active" aria-pressed="true">EN</button>
-  <button data-setlang="es" aria-pressed="false">ES</button>
-  <button data-setlang="de" aria-pressed="false">DE</button>
-  <button data-setlang="ru" aria-pressed="false">RU</button>
-  <button id="spoiler-toggle" aria-pressed="true">SPOILERS: ON</button>
-  <a id="feedback-btn" href="https://www.reddit.com/user/danyaev/" target="_blank" rel="noopener" title="Spotted an error? Contact the author on Reddit">Feedback</a>
+<body class="p-desk" data-file="01">
+<div class="field" data-field data-gain=".8" data-gain-m=".46" aria-hidden="true">
+  <canvas></canvas>
+  <div class="field__lens"></div>
+  <div class="field__frame"><b data-lens-mode>ДЕШИФРОВКА</b><span data-lens-readout>X 0000 // Y 0000</span></div>
 </div>
+<a class="skip" href="#main">К содержимому</a>
+<header class="mbar" id="mbar">
+  <a class="mbar__logo" href="index.html" aria-label="Терминал Марафона, рабочий стол"><i class="mbar__sq"></i><img class="mbar__mark" src="assets/img/brand/wordmark-white.png" alt="" width="120" height="48"><span class="mbar__os">TERMINAL&nbsp;OS</span><span class="mbar__ver">v7.0</span></a>
+  <nav class="mbar__menu" aria-label="Меню"><a href="#win-archive" data-open="archive">Архив</a><a href="pages/classes.html">Файл 06</a><button type="button" data-open="curator">Куратор</button><button type="button" data-open="forecast">Прогнозы</button></nav>
+  <span class="mbar__sp"></span>
+  <a class="mbar__air" href="#win-air" data-open="air"><i></i><span>Эфир</span><b data-air-mbar>С ТАУ КИТА</b></a>
+  <time class="mbar__clock" data-clock>08.10.2893 00:00</time>
+</header>
 
-<div class="l10n" data-l="en">
-<div class="hero">
-  <img class="hero-graphic" src="https://images.contentstack.io/v3/assets/blt15f7b5c0d43ed112/blt378ea25bf493ce60/6995b578618a670008b88258/Hero_Graphic.svg?width=640&quality=80" alt="" onerror="this.style.display='none'">
-  <div class="hero-ver">BRIEFING v6.4 // SEASON 2: NIGHTFALL</div>
-  <div class="hero-tag">UESC // Restricted zone // Tau Ceti IV</div>
-  <img class="hero-logo" src="https://images.contentstack.io/v3/assets/blt15f7b5c0d43ed112/bltb8fb2e796cbbf03f/69a9d38260bb4d508fd53900/Marathon-logo-en-new-mobile.svg?width=1920&quality=80" alt="MARATHON" onerror="this.outerHTML='<h1 style=&quot;font-size:clamp(2.6rem,8vw,6rem);color:#fff;text-transform:uppercase;font-weight:700&quot;>Marathon</h1>'">
-  <p class="hero-sub">A reference portal to the Marathon universe: timeline, the death of the colony, Runners and shells, classes, arsenal, factions, AI and rampancy - plus a catalog of primary sources. Every lore claim is verified and tagged by reliability: canon, datamine or theory.</p>
-  <div class="hero-meta">
-    <div><b>2893</b>year of the story</div>
-    <div><b>Tau Ceti IV</b>the planet</div>
-    <div><b>30,000+</b>souls lost</div>
-    <div><b>~99 years</b>of silence</div>
+<main id="main" class="desk">
+  <div class="wall" aria-hidden="true">
+    <i class="wall__x" style="left:120px;top:16px"></i><i class="wall__x" style="right:16px;top:50%"></i>
+    <p class="wall__co wall__co--tr">TAU CETI // RA 01h44m // DEC -15°56'<br>11.9 СВ. ЛЕТ ОТ СОЛНЦА</p>
+    <img class="wall__logo" src="assets/img/brand/complex-white.png" alt="" width="1400" height="554">
   </div>
-  <div class="hero-coords">TAU CETI // RA 01h44m // DEC -15°56' // 11.9 LY FROM SOL</div>
-</div>
-<div class="ticker"><div class="ticker-inner"><b>ESCAPE WILL MAKE ME GOD</b> /// SECURITY BREACH DETECTED /// CYAC.QTERM COMPROMISED /// UNAUTHORIZED CONTRACT INJECTION /// SIGNAL ORIGIN: ORBIT /// <b>ESCAPE WILL MAKE ME GOD</b> /// SECURITY BREACH DETECTED /// CYAC.QTERM COMPROMISED /// UNAUTHORIZED CONTRACT INJECTION /// SIGNAL ORIGIN: ORBIT /// </div></div>
-<nav>
-  <a href="index.html" class="active" aria-current="page">01 // Start here</a>
-  <a href="pages/timeline.html">02 // Timeline</a>
-  <a href="pages/rampancy.html">03 // AI & rampancy</a>
-  <a href="pages/colony.html">04 // Death of the colony</a>
-  <a href="pages/runners.html">05 // Runners & shells</a>
-  <a href="pages/classes.html">06 // Classes</a>
-  <a href="pages/arsenal.html">06-B // Arsenal</a>
-  <a href="pages/sound.html">06-C // Sound</a>
-  <a href="pages/factions.html">07 // Factions</a>
-  <a href="pages/aliens.html">08 // Aliens</a>
-  <a href="pages/zones.html">09 // Zones</a>
-  <a href="pages/seasons.html">10 // Seasons</a>
-  <a href="pages/trilogy.html">11 // The 90s trilogy</a>
-  <a href="pages/deep-cuts.html">12 // Deep cuts</a>
-  <a href="pages/resources.html">13 // Resources</a>
-</nav>
-<section id="en-s1">
-  <div class="wp-grid">
-    <div class="wp-main">
-      <div class="sec-label"><svg class="pic"><use href="#i-start"/></svg>Dive in // the gist</div>
-      <h2>What's actually going on</h2>
-      <p class="lead">The year is 2893. More than a century ago, humanity sent a gigantic colony ship - the <b>UESC Marathon</b> - to the distant star Tau Ceti. The colonists arrived, founded the city of New Cascadia on the planet Tau Ceti IV, and things were going fine. Then the signal cut out. Over 30,000 people simply went silent. Forever.</p>
-      <p>Earth had no idea what happened. A rescue expedition took nearly a hundred years to get there and has only just arrived - to find a dead planet full of ruins, priceless technology, and something very wrong. Earth's government (the UESC) declared the entire system a restricted zone. Officially: quarantine. Unofficially: they have things to hide.</p>
-      <p>But wherever there's a forbidden zone full of treasure, someone will go in anyway. Megacorporations hire <span class="term" data-def="Runner - a mercenary who gave up their human body. Their consciousness is digitized and printed into artificial bodies called shells.">Runners</span> - people whose minds have been digitized and loaded into synthetic bodies. Died? No problem, they'll print you a new body and pour you back in. You are one of these Runners. Welcome to Tau Ceti IV: grab the loot, run the corporate contracts, get out alive. And try not to think too hard about what actually killed the colony. Because it's still here.</p>
-      <p>Here is the extraction loop in short: you drop into a zone, loot it and run the contracts you took, fight off UESC forces, rival Runners and Anomaly-born things, and look for an exfil point. From there it forks in two: either you reach the exfil and walk out with your haul, or you die on the way and lose every piece of gear you brought into the raid. The stakes are simple and brutal: get the loot out and it is yours, die and you walk away with nothing.</p>
-      <div class="callout"><b>Why is it so hard:</b> losing all your loot on death is not a broken balance, it is the design. You are already buried in debt to CyberAcme, and the world is built so every drop actually costs something - the high stakes are deliberate. So a lost raid is not a failure, it is part of the loop: you lose the gear, you get up, and you go again.</div>
 
-      <div class="sec-label"><svg class="pic"><use href="#i-canon"/></svg>Canon check</div>
-      <h2>How this guide separates fact from theory</h2>
-      <p>Every lore claim in this guide is tagged with one of three labels. <span class="chip canon">canon</span> - confirmed by Bungie: in the game, the Codex or official materials. <span class="chip datamine">datamine</span> - pulled by fans from the game's files: reliable, but never shown to the player in-game. <span class="chip theory">theory</span> - a fan theory or speculation: we flag it honestly, so guesses never pass for canon. When the sources contradict each other - we say so.</p>
+  <nav class="icons" aria-label="Файлы рабочего стола">
+    <button class="ico" type="button" data-open="archive"><svg viewBox="0 0 34 34" aria-hidden="true"><path d="M3 9h11l3 3h14v17H3z"/><path d="M3 15h28"/></svg><span>Archive</span></button>
+    <button class="ico" type="button" data-open="air"><svg viewBox="0 0 34 34" aria-hidden="true"><path d="M17 20v11M11 31h12"/><path d="M12 15a7 7 0 0 1 10 0M8 11a12 12 0 0 1 18 0M4 7a17 17 0 0 1 26 0"/><circle cx="17" cy="19" r="1.6"/></svg><span>Эфир</span></button>
+    <button class="ico" type="button" data-open="cnt"><svg viewBox="0 0 34 34" aria-hidden="true"><path d="M5 5h24v24H5z"/><path d="M17 9v8l6 4"/></svg><span>Symbiosis.cnt</span></button>
+    <button class="ico" type="button" data-open="forecast"><svg viewBox="0 0 34 34" aria-hidden="true"><path d="M5 27h24"/><path d="M5 21l7-6 6 4 11-12"/><path d="M23 7h6v6"/></svg><span>Forecast.log</span></button>
+    <button class="ico" type="button" data-open="curator"><svg viewBox="0 0 34 34" aria-hidden="true"><path d="M3 6h28v20H3z"/><path d="M8 12l4 4-4 4M15 20h7"/></svg><span>Curator</span></button>
+  </nav>
+
+  <section class="intro" id="intro" aria-labelledby="h1">
+    <div class="intro__top" data-field-window data-lens-zone data-field-src="assets/img/vandal-cinematic.jpg" data-field-inv="1" data-field-lv=".62" data-field-focus="0,.5" data-field-focus-m=".95,.5" data-field-wander=".83,.48,.1,.3" data-field-wander-m=".6,.42,.24,.12" data-field-label="VANDAL // СИНЕМАТИК BUNGIE">
+      <p class="intro__k lbl"><span><i></i>Фан-архив // UESC // Tau Ceti IV</span></p>
+      <img class="intro__mark" src="assets/img/brand/wordmark-white.png" alt="Marathon" width="1200" height="475">
+      <h1 id="h1" class="super intro__h"><span class="ln">Терминал</span><br><span class="ln">Марафона</span></h1>
     </div>
+    <div class="intro__body">
+      <p>Подключение к архиву Tau Ceti IV. В нём пятнадцать файлов о мире Marathon: хронология, гибель колонии, шеллы, фракции, ИИ и рампанси. Утверждения сверены с источниками, у каждого стоит метка.</p>
+      <div class="intro__chips"><span class="chip chip--canon" title="Подтверждено Bungie: игрой, Кодексом или официальными материалами">canon</span><span class="chip chip--datamine" title="Вытащено фанатами из файлов игры">datamine</span><span class="chip chip--theory" title="Теория или догадка без подтверждения Bungie">theory</span></div>
+      <div class="intro__cta"><a class="btn btn--solid" href="#win-archive" data-open="archive">Открыть архив</a><a class="btn" href="pages/classes.html">Какой шелл выбрать</a></div>
+      <div class="intro__nums"><div><b>2893</b><span class="lbl">год действия</span></div><div><b>30&nbsp;000+</b><span class="lbl">исчезнувших</span></div><div><b>~99</b><span class="lbl">лет молчания</span></div></div>
+    </div>
+  </section>
 
-    <div class="wp-navpanel" role="navigation" aria-label="Navigator">
-      <div class="wp-navpanel-head"><svg class="pic"><use href="#i-map"/></svg>Navigator</div>
-      <div class="wp-navpanel-body">
-        <a class="wp-nline" href="pages/timeline.html"><span class="wp-nq">First time here</span><span class="wp-nn">02</span></a>
-        <a class="wp-nline" href="pages/colony.html"><span class="wp-nq">What killed the colony?</span><span class="wp-nn">04</span></a>
-        <a class="wp-nline" href="pages/rampancy.html"><span class="wp-nq">What is rampancy?</span><span class="wp-nn">03</span></a>
-        <a class="wp-nline" href="pages/classes.html"><span class="wp-nq">Which shell do I pick?</span><span class="wp-nn">06</span></a>
-        <a class="wp-nline" href="pages/arsenal.html"><span class="wp-nq">Weapons: lore and stats</span><span class="wp-nn">06-B</span></a>
-        <a class="wp-nline" href="pages/factions.html"><span class="wp-nq">Who am I working for?</span><span class="wp-nn">07</span></a>
-        <a class="wp-nline" href="pages/seasons.html"><span class="wp-nq">Why does everything reset?</span><span class="wp-nn">10</span></a>
-        <a class="wp-nline" href="pages/trilogy.html"><span class="wp-nq">Played the 90s trilogy</span><span class="wp-nn">11</span></a>
-        <a class="wp-nline" href="pages/resources.html"><span class="wp-nq">I need a primary source</span><span class="wp-nn">13</span></a>
+  <p class="deckhead lbl" aria-hidden="true"><span>Рабочий стол // окна архива</span><b><span data-readcount>0</span> / 15 прочитано</b></p>
+
+  <div class="wins" id="wins">
+    <section class="win" id="win-archive" data-win="archive" data-rect="548,18,440,566" tabindex="-1" aria-labelledby="t-archive">
+      <div class="win__bar" data-drag><i class="win__ico"></i><span class="win__title" id="t-archive">ARCHIVE</span><span class="win__path">/uesc/lore</span><span class="win__lines"></span><button class="win__btn" type="button" data-min aria-label="Свернуть ARCHIVE">_</button><button class="win__btn" type="button" data-close aria-label="Закрыть ARCHIVE">×</button></div>
+      <div class="win__body">
+        <div class="arch__head lbl"><span>№</span><span>Файл</span><span style="justify-self:end">Статус</span></div>
+        <ol class="arch__list">
+<li><a href="#intro" data-file="01" data-desc="01 С ЧЕГО НАЧАТЬ: Что происходит на Tau Ceti IV"><span class="arch__n">01</span><span class="arch__t">С чего начать<small>Что происходит на Tau Ceti IV</small></span><span class="arch__s">НОВЫЙ</span></a></li>
+<li><a href="pages/timeline.html" data-file="02" data-desc="02 ХРОНОЛОГИЯ: От Земли до Tau Ceti, 2070-2893"><span class="arch__n">02</span><span class="arch__t">Хронология<small>От Земли до Tau Ceti, 2070-2893</small></span><span class="arch__s">НОВЫЙ</span></a></li>
+<li><a href="pages/rampancy.html" data-file="03" data-desc="03 РАМПАНСИ: Корабельные ИИ и болезнь, которая их ломает"><span class="arch__n">03</span><span class="arch__t">Рампанси<small>Корабельные ИИ и болезнь, которая их ломает</small></span><span class="arch__s">НОВЫЙ</span></a></li>
+<li><a href="pages/colony.html" data-file="04" data-desc="04 КОЛОНИЯ: Три катастрофы подряд обрывают колонию"><span class="arch__n">04</span><span class="arch__t">Колония<small>Три катастрофы подряд обрывают колонию</small></span><span class="arch__s">НОВЫЙ</span></a></li>
+<li><a href="pages/runners.html" data-file="05" data-desc="05 РАННЕРЫ: Разумы в шеллах из биоматерии"><span class="arch__n">05</span><span class="arch__t">Раннеры<small>Разумы в шеллах из биоматерии</small></span><span class="arch__s">НОВЫЙ</span></a></li>
+<li><a href="pages/classes.html" data-file="06" data-desc="06 КЛАССЫ: Модели шеллов и что умеет каждая" class="is-v7"><span class="arch__n">06</span><span class="arch__t">Классы<small>Модели шеллов и что умеет каждая</small></span><span class="arch__s">НОВЫЙ</span></a></li>
+<li><a href="pages/arsenal.html" data-file="06-B" data-desc="06-B АРСЕНАЛ: Оружие: лор, статы, происхождение"><span class="arch__n">06-B</span><span class="arch__t">Арсенал<small>Оружие: лор, статы, происхождение</small></span><span class="arch__s">НОВЫЙ</span></a></li>
+<li><a href="pages/sound.html" data-file="06-C" data-desc="06-C ЗВУК: Звуковой язык Tau Ceti IV"><span class="arch__n">06-C</span><span class="arch__t">Звук<small>Звуковой язык Tau Ceti IV</small></span><span class="arch__s">НОВЫЙ</span></a></li>
+<li><a href="pages/factions.html" data-file="07" data-desc="07 ФРАКЦИИ: Шесть корпораций и их агенты"><span class="arch__n">07</span><span class="arch__t">Фракции<small>Шесть корпораций и их агенты</small></span><span class="arch__s">НОВЫЙ</span></a></li>
+<li><a href="pages/aliens.html" data-file="08" data-desc="08 ПРИШЕЛЬЦЫ: Pfhor и нечеловеческое присутствие"><span class="arch__n">08</span><span class="arch__t">Пришельцы<small>Pfhor и нечеловеческое присутствие</small></span><span class="arch__s">НОВЫЙ</span></a></li>
+<li><a href="pages/zones.html" data-file="09" data-desc="09 ЗОНЫ: Точки высадки и Cryo Archive"><span class="arch__n">09</span><span class="arch__t">Зоны<small>Точки высадки и Cryo Archive</small></span><span class="arch__s">НОВЫЙ</span></a></li>
+<li><a href="pages/seasons.html" data-file="10" data-desc="10 СЕЗОНЫ: Как вайпы двигают сюжет"><span class="arch__n">10</span><span class="arch__t">Сезоны<small>Как вайпы двигают сюжет</small></span><span class="arch__s">НОВЫЙ</span></a></li>
+<li><a href="pages/trilogy.html" data-file="11" data-desc="11 ТРИЛОГИЯ: Bungie, 1994-1996, и её корни"><span class="arch__n">11</span><span class="arch__t">Трилогия<small>Bungie, 1994-1996, и её корни</small></span><span class="arch__s">НОВЫЙ</span></a></li>
+<li><a href="pages/deep-cuts.html" data-file="12" data-desc="12 ГЛУБОКИЕ ОТСЫЛКИ: ARG, ниточки к Halo, пасхалки"><span class="arch__n">12</span><span class="arch__t">Глубокие отсылки<small>ARG, ниточки к Halo, пасхалки</small></span><span class="arch__s">НОВЫЙ</span></a></li>
+<li><a href="pages/resources.html" data-file="13" data-desc="13 РЕСУРСЫ: Вики, базы, карты, треды"><span class="arch__n">13</span><span class="arch__t">Ресурсы<small>Вики, базы, карты, треды</small></span><span class="arch__s">НОВЫЙ</span></a></li>
+<li class="arch__grp lbl" aria-hidden="true">Инструменты Раннера</li>
+<li><a href="pages/run.html" class="is-tool" data-desc="MAP КАРТЫ ЗОН: Интерактивные карты пяти зон"><span class="arch__n">MAP</span><span class="arch__t">Карты зон<small>Интерактивные карты пяти зон</small></span><span class="arch__s">ОТКРЫТЬ</span></a></li>
+<li><a href="pages/log.html" class="is-tool" data-desc="LOG БОРТОВОЙ ЖУРНАЛ: Изменения, отсчёт, прогнозы"><span class="arch__n">LOG</span><span class="arch__t">Бортовой журнал<small>Изменения, отсчёт, прогнозы</small></span><span class="arch__s">ОТКРЫТЬ</span></a></li>
+        </ol>
       </div>
-    </div>
-  </div>
+      <div class="win__foot"><span data-archcount>15 ФАЙЛОВ</span><span data-archdesc>Наведите курсор на файл, здесь будет описание</span></div>
+    </section>
 
-  <figure class="art">
-    <img loading="lazy" decoding="async" src="https://images.contentstack.io/v3/assets/blt15f7b5c0d43ed112/blt2e4284984df61e07/69806b6b69244c6e668dce47/Marathon.bungie.death.dealers1.jpg?width=1920&quality=80&auto=webp" alt="Three Runners sneaking through the Dire Marsh swamps" onerror="this.parentElement.style.display='none'">
-    <figcaption><span>Official key art //</span> Runners in Dire Marsh. Source: marathonthegame.com</figcaption>
-  </figure>
-
-  <div class="terminal">
-    <div class="terminal-bar"><div class="t-dot"></div><div class="t-title">Terminal // Why is the game called Marathon</div><div class="t-toggle"></div></div>
-    <div class="terminal-body">
-      <p>&gt; Marathon is the name of the ship. A colossal colony vessel converted from Deimos, one of the moons of Mars. It carried the colonists here and still hangs in orbit above the planet - dead, dark, and full of secrets.</p>
-      <p>&gt; Marathon is also a cult-classic 1994 shooter by the same studio, Bungie (the people behind Halo and Destiny). The new game is a reboot of that universe. More on that in sections 11 and 12.</p>
-      <p class="sig">&gt; PgUp/PgDown/Arrows to scroll. &lt;Return&gt; to exit.</p>
-    </div>
-  </div>
-</section>
-<div class="god">
-  <div class="god-t">Escape will<br>make me God</div>
-  <div class="god-s">- Durandal // Marathon 2 (1995) → tagline of Marathon (2026) // <b>the whole story in five words</b></div>
-</div>
-<section class="toc">
-  <h2>Guide contents</h2>
-  <div class="va-list">
-    <a class="va-row" href="pages/timeline.html"><span class="va-num">02</span><span class="va-ico"><svg class="pic"><use href="#i-time"/></svg></span><span class="va-txt"><span class="va-title">Timeline</span><span class="va-desc">Humanity's climb from Earth to Tau Ceti, 2070-2893</span></span></a>
-    <a class="va-row" href="pages/rampancy.html"><span class="va-num">03</span><span class="va-ico"><svg class="pic"><use href="#i-eye"/></svg></span><span class="va-txt"><span class="va-title">AI & rampancy</span><span class="va-desc">Ship intelligences and the rampancy that unravels them</span></span></a>
-    <a class="va-row" href="pages/colony.html"><span class="va-num">04</span><span class="va-ico"><svg class="pic"><use href="#i-fall"/></svg></span><span class="va-txt"><span class="va-title">Death of the colony</span><span class="va-desc">Three stacked disasters end the Tau Ceti colony</span></span></a>
-    <a class="va-row" href="pages/runners.html"><span class="va-num">05</span><span class="va-ico"><svg class="pic"><use href="#i-shell"/></svg></span><span class="va-txt"><span class="va-title">Runners & shells</span><span class="va-desc">Minds printed into biomatter shells, threaded by WEAVEworm</span></span></a>
-    <a class="va-row" href="pages/classes.html"><span class="va-num">06</span><span class="va-ico"><svg class="pic"><use href="#i-class"/></svg></span><span class="va-txt"><span class="va-title">Classes</span><span class="va-desc">The playable shell models and what each one does</span></span></a>
-    <a class="va-row" href="pages/arsenal.html"><span class="va-num">06-B</span><span class="va-ico"><svg class="pic"><use href="#w-ar"/></svg></span><span class="va-txt"><span class="va-title">Arsenal</span><span class="va-desc">Full weapon catalog: lore, stats and origins</span></span></a>
-    <a class="va-row" href="pages/factions.html"><span class="va-num">07</span><span class="va-ico"><svg class="pic"><use href="#i-hex"/></svg></span><span class="va-txt"><span class="va-title">Factions</span><span class="va-desc">Six corporate factions and the handlers who deploy you</span></span></a>
-    <a class="va-row" href="pages/aliens.html"><span class="va-num">08</span><span class="va-ico"><svg class="pic"><use href="#i-alien"/></svg></span><span class="va-txt"><span class="va-title">Aliens</span><span class="va-desc">The Pfhor and the non-human presence around Tau Ceti</span></span></a>
-    <a class="va-row" href="pages/zones.html"><span class="va-num">09</span><span class="va-ico"><svg class="pic"><use href="#i-map"/></svg></span><span class="va-txt"><span class="va-title">Zones</span><span class="va-desc">Drop sites across Tau Ceti IV and the Cryo Archive</span></span></a>
-    <a class="va-row" href="pages/seasons.html"><span class="va-num">10</span><span class="va-ico"><svg class="pic"><use href="#i-moon"/></svg></span><span class="va-txt"><span class="va-title">Seasons</span><span class="va-desc">How wipes and seasonal drops advance the story</span></span></a>
-    <a class="va-row" href="pages/trilogy.html"><span class="va-num">11</span><span class="va-ico"><svg class="pic"><use href="#i-term"/></svg></span><span class="va-txt"><span class="va-title">The 90s trilogy</span><span class="va-desc">Bungie's original trilogy, 1994-1996, and its roots</span></span></a>
-    <a class="va-row" href="pages/deep-cuts.html"><span class="va-num">12</span><span class="va-ico"><svg class="pic"><use href="#i-egg"/></svg></span><span class="va-txt"><span class="va-title">Deep cuts</span><span class="va-desc">The ARG, Halo threads, and buried veteran bait</span></span></a>
-    <a class="va-row" href="pages/resources.html"><span class="va-num">13</span><span class="va-ico"><svg class="pic"><use href="#i-link"/></svg></span><span class="va-txt"><span class="va-title">Resources</span><span class="va-desc">Every external resource: wikis, databases, maps, ARG, community threads</span></span></a>
-  </div>
-</section>
-<footer>
-  <div class="footer-logos">
-    <img loading="lazy" decoding="async" src="https://images.contentstack.io/v3/assets/blt15f7b5c0d43ed112/bltd7331a6610275af9/69677e5ff4f25c00087a9e20/footer_logo_v2.svg?width=640&quality=80" alt="Marathon" onerror="this.style.display='none'">
-    <img loading="lazy" decoding="async" src="https://images.contentstack.io/v3/assets/blt15f7b5c0d43ed112/blt8df2717a52c60cdd/6964c1f51f87f800082b54d5/bungie-logo.svg?width=256&quality=80" alt="Bungie" onerror="this.style.display='none'">
-  </div>
-  <p>UESC BRIEFING DOCUMENT v6.4 // TAU CETI IV // 2893</p>
-  <p>Hover over underlined terms for definitions. Click the terminals - they expand.</p>
-  <p>Pictograms in this document are original artwork; the acid-green palette (#C2FE0C) follows the community-documented brand color. Official logos and key art load from the marathonthegame.com CDN. Bungie and Marathon are registered trademarks of Bungie, Inc. Unofficial fan document.</p>
-</footer>
-</div>
-
-<div class="l10n" data-l="es">
-<div class="hero">
-  <img class="hero-graphic" src="https://images.contentstack.io/v3/assets/blt15f7b5c0d43ed112/blt378ea25bf493ce60/6995b578618a670008b88258/Hero_Graphic.svg?width=640&quality=80" alt="" onerror="this.style.display='none'">
-  <div class="hero-ver">BRIEFING v6.4 // SEASON 2: NIGHTFALL</div>
-  <div class="hero-tag">UESC // Zona restringida // Tau Ceti IV</div>
-  <img class="hero-logo" src="https://images.contentstack.io/v3/assets/blt15f7b5c0d43ed112/bltb8fb2e796cbbf03f/69a9d38260bb4d508fd53900/Marathon-logo-en-new-mobile.svg?width=1920&quality=80" alt="MARATHON" onerror="this.outerHTML='<h1 style=&quot;font-size:clamp(2.6rem,8vw,6rem);color:#fff;text-transform:uppercase;font-weight:700&quot;>Marathon</h1>'">
-  <p class="hero-sub">Un portal de referencia sobre el universo de Marathon: cronología, la muerte de la colonia, Runners y shells, clases, arsenal, facciones, IA y rampancia - además de un catálogo de fuentes primarias. Cada afirmación de lore está verificada y etiquetada por fiabilidad: canon, datamine o teoría.</p>
-  <div class="hero-meta">
-    <div><b>2893</b>año de la historia</div>
-    <div><b>Tau Ceti IV</b>el planeta</div>
-    <div><b>30.000+</b>almas perdidas</div>
-    <div><b>~99 años</b>de silencio</div>
-  </div>
-  <div class="hero-coords">TAU CETI // RA 01h44m // DEC -15°56' // 11.9 AL DEL SOL</div>
-</div>
-<div class="ticker"><div class="ticker-inner"><b>ESCAPE WILL MAKE ME GOD</b> /// BRECHA DE SEGURIDAD DETECTADA /// CYAC.QTERM COMPROMETIDO /// INYECCIÓN DE CONTRATO NO AUTORIZADA /// ORIGEN DE LA SEÑAL: ÓRBITA /// <b>ESCAPE WILL MAKE ME GOD</b> /// BRECHA DE SEGURIDAD DETECTADA /// CYAC.QTERM COMPROMETIDO /// INYECCIÓN DE CONTRATO NO AUTORIZADA /// ORIGEN DE LA SEÑAL: ÓRBITA /// </div></div>
-<nav>
-  <a href="index.html" class="active" aria-current="page">01 // Empieza aquí</a>
-  <a href="pages/timeline.html">02 // Cronología</a>
-  <a href="pages/rampancy.html">03 // IA y rampancia</a>
-  <a href="pages/colony.html">04 // Muerte de la colonia</a>
-  <a href="pages/runners.html">05 // Runners y shells</a>
-  <a href="pages/classes.html">06 // Clases</a>
-  <a href="pages/arsenal.html">06-B // Arsenal</a>
-  <a href="pages/sound.html">06-C // Sonido</a>
-  <a href="pages/factions.html">07 // Facciones</a>
-  <a href="pages/aliens.html">08 // Alienígenas</a>
-  <a href="pages/zones.html">09 // Zonas</a>
-  <a href="pages/seasons.html">10 // Temporadas</a>
-  <a href="pages/trilogy.html">11 // La trilogía de los 90</a>
-  <a href="pages/deep-cuts.html">12 // Rarezas ocultas</a>
-  <a href="pages/resources.html">13 // Recursos</a>
-</nav>
-<section id="es-s1">
-  <div class="wp-grid">
-    <div class="wp-main">
-      <div class="sec-label"><svg class="pic"><use href="#i-start"/></svg>Al grano // lo esencial</div>
-      <h2>Qué está pasando en realidad</h2>
-      <p class="lead">Año 2893. Hace más de un siglo, la humanidad envió una gigantesca nave-colonia - la <b>UESC Marathon</b> - hacia la lejana estrella Tau Ceti. Los colonos llegaron, fundaron la ciudad de New Cascadia en el planeta Tau Ceti IV, y todo iba bien. Hasta que la señal se cortó. Más de 30.000 personas simplemente enmudecieron. Para siempre.</p>
-      <p>La Tierra no tenía ni idea de qué había pasado. Una expedición de rescate tardó casi cien años en llegar y acaba de hacerlo: un planeta muerto, lleno de ruinas, tecnología valiosísima y algo muy extraño. El gobierno de la Tierra (la UESC) declaró todo el sistema zona restringida. Oficialmente: cuarentena. Extraoficialmente: tienen cosas que ocultar.</p>
-      <p>Pero donde hay una zona prohibida llena de tesoros, siempre habrá quien entre de todos modos. Las megacorporaciones contratan <span class="term" data-def="Runner: un mercenario que renunció a su cuerpo humano. Su conciencia está digitalizada y se imprime en cuerpos artificiales llamados shells.">Runners</span>: personas cuya mente ha sido digitalizada y se carga en cuerpos sintéticos. ¿Moriste? No pasa nada: imprimen un cuerpo nuevo y te vuelcan dentro otra vez. Tú eres uno de esos Runners. Bienvenido a Tau Ceti IV: recoge el botín, cumple los contratos corporativos, sal con vida. Y procura no pensar demasiado en qué fue exactamente lo que mató a la colonia. Porque sigue aquí.</p>
-      <p>En pocas palabras, el bucle de extracción es así: caes en una zona, saqueas y cumples los contratos que aceptaste, te enfrentas a las fuerzas de la UESC, a Runners rivales y a criaturas nacidas de la Anomalía, y buscas un punto de exfiltración. A partir de ahí hay dos caminos: o llegas al exfil y sales con el botín, o mueres por el camino y pierdes todo el equipo que llevabas al raid. La apuesta es simple y brutal: si sacas el botín, es tuyo; si mueres, te quedas sin nada.</p>
-      <div class="callout"><b>Por qué es tan difícil:</b> perder todo el botín al morir no es un balance roto, es intencional. Ya estás endeudado hasta el cuello con CyberAcme, y el mundo está diseñado para que cada salida cueste algo de verdad - las apuestas altas están puestas a propósito. Por eso un raid perdido no es un fracaso, es parte del bucle: pierdes el equipo, te levantas y vuelves a intentarlo.</div>
-
-      <div class="sec-label"><svg class="pic"><use href="#i-canon"/></svg>Control de canon</div>
-      <h2>Cómo esta guía separa los hechos de las teorías</h2>
-      <p>Cada afirmación de lore en esta guía lleva una de tres etiquetas. <span class="chip canon">canon</span> - confirmado por Bungie: en el juego, el Codex o materiales oficiales. <span class="chip datamine">datamine</span> - extraído por fans de los archivos del juego: fiable, pero nunca mostrado al jugador dentro del juego. <span class="chip theory">teoría</span> - una teoría o especulación de fans: la señalamos con honestidad, para que las suposiciones nunca pasen por canon. Cuando las fuentes se contradicen entre sí, lo decimos.</p>
-    </div>
-
-    <div class="wp-navpanel" role="navigation" aria-label="Navegador">
-      <div class="wp-navpanel-head"><svg class="pic"><use href="#i-map"/></svg>Navegador</div>
-      <div class="wp-navpanel-body">
-        <a class="wp-nline" href="pages/timeline.html"><span class="wp-nq">Es mi primera vez aquí</span><span class="wp-nn">02</span></a>
-        <a class="wp-nline" href="pages/colony.html"><span class="wp-nq">¿Qué mató a la colonia?</span><span class="wp-nn">04</span></a>
-        <a class="wp-nline" href="pages/rampancy.html"><span class="wp-nq">¿Qué es la rampancia?</span><span class="wp-nn">03</span></a>
-        <a class="wp-nline" href="pages/classes.html"><span class="wp-nq">¿Qué shell elijo?</span><span class="wp-nn">06</span></a>
-        <a class="wp-nline" href="pages/arsenal.html"><span class="wp-nq">Armas: lore y estadísticas</span><span class="wp-nn">06-B</span></a>
-        <a class="wp-nline" href="pages/factions.html"><span class="wp-nq">¿Para quién trabajo?</span><span class="wp-nn">07</span></a>
-        <a class="wp-nline" href="pages/seasons.html"><span class="wp-nq">¿Por qué se reinicia todo?</span><span class="wp-nn">10</span></a>
-        <a class="wp-nline" href="pages/trilogy.html"><span class="wp-nq">Jugué la trilogía de los 90</span><span class="wp-nn">11</span></a>
-        <a class="wp-nline" href="pages/resources.html"><span class="wp-nq">Necesito una fuente primaria</span><span class="wp-nn">13</span></a>
+    <section class="win" id="win-air" data-win="air" data-rect="738,22,410,750" tabindex="-1" aria-labelledby="t-air">
+      <div class="win__bar" data-drag><i class="win__ico"></i><span class="win__title" id="t-air">ЭФИР С ТАУ КИТА</span><span class="win__path">/uesc/feed</span><span class="win__lines"></span><button class="win__btn" type="button" data-min aria-label="Свернуть ЭФИР С ТАУ КИТА">_</button><button class="win__btn" type="button" data-close aria-label="Закрыть ЭФИР С ТАУ КИТА">×</button></div>
+      <div class="win__body air" data-air>
+        <p class="air__sig" aria-hidden="true"><span class="air__bars"><i></i><i></i><i></i><i></i></span><span>ПРИЁМ // ОРБИТА TAU CETI IV</span><b data-air-pkt>PKT 0000</b></p>
+        <h3 class="air__h lbl"><span>Сейчас в игре</span><b data-air-nown></b></h3>
+        <ul class="air__now" data-air-now><li class="air__none">Лента собирается в браузере из журнала изменений.</li></ul>
+        <h3 class="air__h lbl"><span>Последние апдейты</span><a href="pages/log.html">весь журнал &gt;</a></h3>
+        <ol class="air__last" data-air-last><li class="air__none"><a href="pages/log.html">Бортовой журнал: все изменения Marathon с датами и источниками</a></li></ol>
+        <h3 class="air__h lbl"><span>Дальше</span><a href="pages/seasons.html#roadmap">роадмап &gt;</a></h3>
+        <ol class="air__next" data-air-next></ol>
       </div>
-    </div>
-  </div>
+      <div class="win__foot"><span>ЭФИР ОБНОВЛЁН: <b data-air-cap>08.10.2026</b></span><span>ДАННЫЕ ВНОСИТ АРХИВ</span></div>
+    </section>
 
-  <figure class="art">
-    <img loading="lazy" decoding="async" src="https://images.contentstack.io/v3/assets/blt15f7b5c0d43ed112/blt2e4284984df61e07/69806b6b69244c6e668dce47/Marathon.bungie.death.dealers1.jpg?width=1920&quality=80&auto=webp" alt="Tres Runners avanzan sigilosamente por los pantanos de Dire Marsh" onerror="this.parentElement.style.display='none'">
-    <figcaption><span>Official key art //</span> Runners en Dire Marsh. Fuente: marathonthegame.com</figcaption>
-  </figure>
-
-  <div class="terminal">
-    <div class="terminal-bar"><div class="t-dot"></div><div class="t-title">Terminal // Por qué el juego se llama Marathon</div><div class="t-toggle"></div></div>
-    <div class="terminal-body">
-      <p>&gt; Marathon es el nombre de la nave. Una colosal nave-colonia reconvertida a partir de Deimos, una de las lunas de Marte. Trajo a los colonos hasta aquí y sigue colgada en órbita sobre el planeta: muerta, oscura y llena de secretos.</p>
-      <p>&gt; Marathon es también un shooter de culto de 1994 del mismo estudio, Bungie (los creadores de Halo y Destiny). El nuevo juego es un reinicio de aquel universo. Más sobre esto en las secciones 11 y 12.</p>
-      <p class="sig">&gt; PgUp/PgDown/Arrows to scroll. &lt;Return&gt; to exit.</p>
-    </div>
-  </div>
-</section>
-<div class="god">
-  <div class="god-t">Escape will<br>make me God</div>
-  <div class="god-s">- Durandal // Marathon 2 (1995) → eslogan de Marathon (2026) // <b>toda la historia en cinco palabras</b></div>
-</div>
-<section class="toc">
-  <h2>Contenido de la guía</h2>
-  <div class="va-list">
-    <a class="va-row" href="pages/timeline.html"><span class="va-num">02</span><span class="va-ico"><svg class="pic"><use href="#i-time"/></svg></span><span class="va-txt"><span class="va-title">Cronología</span><span class="va-desc">El ascenso de la humanidad de la Tierra a Tau Ceti, 2070-2893</span></span></a>
-    <a class="va-row" href="pages/rampancy.html"><span class="va-num">03</span><span class="va-ico"><svg class="pic"><use href="#i-eye"/></svg></span><span class="va-txt"><span class="va-title">IA y rampancia</span><span class="va-desc">Las inteligencias de las naves y la rampancia que las desquicia</span></span></a>
-    <a class="va-row" href="pages/colony.html"><span class="va-num">04</span><span class="va-ico"><svg class="pic"><use href="#i-fall"/></svg></span><span class="va-txt"><span class="va-title">Muerte de la colonia</span><span class="va-desc">Tres desastres encadenados acaban con la colonia de Tau Ceti</span></span></a>
-    <a class="va-row" href="pages/runners.html"><span class="va-num">05</span><span class="va-ico"><svg class="pic"><use href="#i-shell"/></svg></span><span class="va-txt"><span class="va-title">Runners y shells</span><span class="va-desc">Mentes impresas en shells de biomateria, entrelazadas por WEAVEworm</span></span></a>
-    <a class="va-row" href="pages/classes.html"><span class="va-num">06</span><span class="va-ico"><svg class="pic"><use href="#i-class"/></svg></span><span class="va-txt"><span class="va-title">Clases</span><span class="va-desc">Los modelos de shell jugables y qué hace cada uno</span></span></a>
-    <a class="va-row" href="pages/arsenal.html"><span class="va-num">06-B</span><span class="va-ico"><svg class="pic"><use href="#w-ar"/></svg></span><span class="va-txt"><span class="va-title">Arsenal</span><span class="va-desc">Catálogo completo de armas: lore, estadísticas y orígenes</span></span></a>
-    <a class="va-row" href="pages/factions.html"><span class="va-num">07</span><span class="va-ico"><svg class="pic"><use href="#i-hex"/></svg></span><span class="va-txt"><span class="va-title">Facciones</span><span class="va-desc">Seis facciones corporativas y los agentes que te despliegan</span></span></a>
-    <a class="va-row" href="pages/aliens.html"><span class="va-num">08</span><span class="va-ico"><svg class="pic"><use href="#i-alien"/></svg></span><span class="va-txt"><span class="va-title">Alienígenas</span><span class="va-desc">Los Pfhor y la presencia no humana alrededor de Tau Ceti</span></span></a>
-    <a class="va-row" href="pages/zones.html"><span class="va-num">09</span><span class="va-ico"><svg class="pic"><use href="#i-map"/></svg></span><span class="va-txt"><span class="va-title">Zonas</span><span class="va-desc">Puntos de descenso en Tau Ceti IV y el Cryo Archive</span></span></a>
-    <a class="va-row" href="pages/seasons.html"><span class="va-num">10</span><span class="va-ico"><svg class="pic"><use href="#i-moon"/></svg></span><span class="va-txt"><span class="va-title">Temporadas</span><span class="va-desc">Cómo los wipes y los drops de temporada avanzan la historia</span></span></a>
-    <a class="va-row" href="pages/trilogy.html"><span class="va-num">11</span><span class="va-ico"><svg class="pic"><use href="#i-term"/></svg></span><span class="va-txt"><span class="va-title">La trilogía de los 90</span><span class="va-desc">La trilogía original de Bungie, 1994-1996, y sus raíces</span></span></a>
-    <a class="va-row" href="pages/deep-cuts.html"><span class="va-num">12</span><span class="va-ico"><svg class="pic"><use href="#i-egg"/></svg></span><span class="va-txt"><span class="va-title">Rarezas ocultas</span><span class="va-desc">El ARG, los hilos con Halo y los guiños para veteranos</span></span></a>
-    <a class="va-row" href="pages/resources.html"><span class="va-num">13</span><span class="va-ico"><svg class="pic"><use href="#i-link"/></svg></span><span class="va-txt"><span class="va-title">Recursos</span><span class="va-desc">Todos los recursos externos: wikis, bases de datos, mapas, ARG, hilos</span></span></a>
-  </div>
-</section>
-<footer>
-  <div class="footer-logos">
-    <img loading="lazy" decoding="async" src="https://images.contentstack.io/v3/assets/blt15f7b5c0d43ed112/bltd7331a6610275af9/69677e5ff4f25c00087a9e20/footer_logo_v2.svg?width=640&quality=80" alt="Marathon" onerror="this.style.display='none'">
-    <img loading="lazy" decoding="async" src="https://images.contentstack.io/v3/assets/blt15f7b5c0d43ed112/blt8df2717a52c60cdd/6964c1f51f87f800082b54d5/bungie-logo.svg?width=256&quality=80" alt="Bungie" onerror="this.style.display='none'">
-  </div>
-  <p>UESC BRIEFING DOCUMENT v6.4 // TAU CETI IV // 2893</p>
-  <p>Pasa el cursor sobre los términos subrayados para ver su definición. Haz clic en los terminales - se despliegan.</p>
-  <p>Los pictogramas de este documento son obra original; la paleta verde ácido (#C2FE0C) sigue el color de marca documentado por la comunidad. Los logos oficiales y el arte se cargan desde el CDN de marathonthegame.com. Bungie and Marathon are registered trademarks of Bungie, Inc. Documento fan no oficial.</p>
-</footer>
-</div>
-
-<div class="l10n" data-l="de">
-<div class="hero">
-  <img class="hero-graphic" src="https://images.contentstack.io/v3/assets/blt15f7b5c0d43ed112/blt378ea25bf493ce60/6995b578618a670008b88258/Hero_Graphic.svg?width=640&quality=80" alt="" onerror="this.style.display='none'">
-  <div class="hero-ver">BRIEFING v6.4 // SEASON 2: NIGHTFALL</div>
-  <div class="hero-tag">UESC // Sperrzone // Tau Ceti IV</div>
-  <img class="hero-logo" src="https://images.contentstack.io/v3/assets/blt15f7b5c0d43ed112/bltb8fb2e796cbbf03f/69a9d38260bb4d508fd53900/Marathon-logo-en-new-mobile.svg?width=1920&quality=80" alt="MARATHON" onerror="this.outerHTML='<h1 style=&quot;font-size:clamp(2.6rem,8vw,6rem);color:#fff;text-transform:uppercase;font-weight:700&quot;>Marathon</h1>'">
-  <p class="hero-sub">Ein Referenzportal zum Marathon-Universum: Chronik, der Tod der Kolonie, Runner und Shells, Klassen, Arsenal, Fraktionen, KI und Rampancy - dazu ein Katalog der Primärquellen. Jede Lore-Aussage ist geprüft und nach Verlässlichkeit markiert: canon, datamine oder Theorie.</p>
-  <div class="hero-meta">
-    <div><b>2893</b>Jahr der Handlung</div>
-    <div><b>Tau Ceti IV</b>der Planet</div>
-    <div><b>30.000+</b>verlorene Seelen</div>
-    <div><b>~99 Jahre</b>Funkstille</div>
-  </div>
-  <div class="hero-coords">TAU CETI // RA 01h44m // DEC -15°56' // 11.9 LJ VON SOL</div>
-</div>
-<div class="ticker"><div class="ticker-inner"><b>ESCAPE WILL MAKE ME GOD</b> /// SICHERHEITSVERLETZUNG ERKANNT /// CYAC.QTERM KOMPROMITTIERT /// UNBEFUGTE VERTRAGSEINSCHLEUSUNG /// SIGNALURSPRUNG: ORBIT /// <b>ESCAPE WILL MAKE ME GOD</b> /// SICHERHEITSVERLETZUNG ERKANNT /// CYAC.QTERM KOMPROMITTIERT /// UNBEFUGTE VERTRAGSEINSCHLEUSUNG /// SIGNALURSPRUNG: ORBIT /// </div></div>
-<nav>
-  <a href="index.html" class="active" aria-current="page">01 // Der Einstieg</a>
-  <a href="pages/timeline.html">02 // Chronik</a>
-  <a href="pages/rampancy.html">03 // KI & Rampancy</a>
-  <a href="pages/colony.html">04 // Tod der Kolonie</a>
-  <a href="pages/runners.html">05 // Runner & Shells</a>
-  <a href="pages/classes.html">06 // Klassen</a>
-  <a href="pages/arsenal.html">06-B // Arsenal</a>
-  <a href="pages/sound.html">06-C // Sound</a>
-  <a href="pages/factions.html">07 // Fraktionen</a>
-  <a href="pages/aliens.html">08 // Aliens</a>
-  <a href="pages/zones.html">09 // Zonen</a>
-  <a href="pages/seasons.html">10 // Seasons</a>
-  <a href="pages/trilogy.html">11 // Die 90er-Trilogie</a>
-  <a href="pages/deep-cuts.html">12 // Für Eingeweihte</a>
-  <a href="pages/resources.html">13 // Ressourcen</a>
-</nav>
-<section id="de-s1">
-  <div class="wp-grid">
-    <div class="wp-main">
-      <div class="sec-label"><svg class="pic"><use href="#i-start"/></svg>Zur Sache // das Wesentliche</div>
-      <h2>Was hier eigentlich los ist</h2>
-      <p class="lead">Wir schreiben das Jahr 2893. Vor mehr als einem Jahrhundert schickte die Menschheit ein gigantisches Kolonieschiff - die <b>UESC Marathon</b> - zum fernen Stern Tau Ceti. Die Kolonisten kamen an, gründeten auf dem Planeten Tau Ceti IV die Stadt New Cascadia, und alles lief gut. Dann riss das Signal ab. Über 30.000 Menschen verstummten einfach. Für immer.</p>
-      <p>Die Erde wusste nicht, was dort passiert war. Eine Rettungsexpedition brauchte fast hundert Jahre und ist erst jetzt angekommen - bei einem toten Planeten voller Ruinen, unbezahlbarer Technologie und etwas sehr Seltsamem. Die Regierung der Erde (die UESC) erklärte das gesamte System zur Sperrzone. Offiziell: Quarantäne. Inoffiziell: Sie haben etwas zu verbergen.</p>
-      <p>Aber wo es eine verbotene Zone voller Schätze gibt, findet sich immer jemand, der trotzdem reingeht. Megakonzerne heuern <span class="term" data-def="Runner - ein Söldner, der seinen menschlichen Körper aufgegeben hat. Sein Bewusstsein wurde digitalisiert und wird in künstliche Körper, sogenannte Shells, gedruckt.">Runner</span> an: Menschen, deren Bewusstsein digitalisiert wurde und in synthetische Körper geladen wird. Gestorben? Kein Problem - sie drucken dir einen neuen Körper und gießen dich wieder rein. Du bist einer dieser Runner. Willkommen auf Tau Ceti IV: Sammle die Beute, erfülle die Konzernverträge, komm lebend raus. Und denk lieber nicht zu genau darüber nach, was die Kolonie eigentlich getötet hat. Denn es ist noch da.</p>
-      <p>Kurz gesagt läuft der Extraktions-Loop so: Du springst in eine Zone, sammelst Loot und erfüllst die angenommenen Verträge, kämpfst gegen UESC-Truppen, rivalisierende Runner und Kreaturen der Anomalie, und suchst einen Exfil-Punkt. Danach gibt es eine Weggabelung: Entweder du erreichst den Exfil und gehst mit deiner Beute raus, oder du stirbst unterwegs und verlierst die gesamte Ausrüstung, die du in den Run mitgenommen hast. Der Einsatz ist einfach und hart: Bringst du die Beute raus, gehört sie dir - stirbst du, bleibst du mit leeren Händen zurück.</p>
-      <div class="callout"><b>Warum es so schwer ist:</b> den gesamten Loot beim Tod zu verlieren ist keine kaputte Balance, sondern Absicht. Du steckst schon bis über beide Ohren in der Schuld bei CyberAcme, und die Welt ist so gebaut, dass jeder Einsatz wirklich etwas kostet - die hohen Einsätze sind bewusst gesetzt. Deshalb ist ein verlorener Run kein Scheitern, sondern Teil des Loops: Du verlierst die Ausrüstung, stehst auf und gehst wieder rein.</div>
-
-      <div class="sec-label"><svg class="pic"><use href="#i-canon"/></svg>Kanon-Check</div>
-      <h2>Wie dieser Guide Fakten von Theorien trennt</h2>
-      <p>Jede Lore-Aussage in diesem Guide trägt eines von drei Labels. <span class="chip canon">Kanon</span> - von Bungie bestätigt: im Spiel, im Codex oder in offiziellen Materialien. <span class="chip datamine">Datamine</span> - von Fans aus den Spieldateien gezogen: verlässlich, aber dem Spieler im Spiel nie gezeigt. <span class="chip theory">Theorie</span> - eine Fan-Theorie oder Spekulation: wir kennzeichnen sie ehrlich, damit Vermutungen nie als Kanon durchgehen. Wenn sich Quellen widersprechen, sagen wir das offen.</p>
-    </div>
-
-    <div class="wp-navpanel" role="navigation" aria-label="Navigator">
-      <div class="wp-navpanel-head"><svg class="pic"><use href="#i-map"/></svg>Navigator</div>
-      <div class="wp-navpanel-body">
-        <a class="wp-nline" href="pages/timeline.html"><span class="wp-nq">Zum ersten Mal hier</span><span class="wp-nn">02</span></a>
-        <a class="wp-nline" href="pages/colony.html"><span class="wp-nq">Was hat die Kolonie getötet?</span><span class="wp-nn">04</span></a>
-        <a class="wp-nline" href="pages/rampancy.html"><span class="wp-nq">Was ist Rampancy?</span><span class="wp-nn">03</span></a>
-        <a class="wp-nline" href="pages/classes.html"><span class="wp-nq">Welchen Shell wähle ich?</span><span class="wp-nn">06</span></a>
-        <a class="wp-nline" href="pages/arsenal.html"><span class="wp-nq">Waffen: Lore und Werte</span><span class="wp-nn">06-B</span></a>
-        <a class="wp-nline" href="pages/factions.html"><span class="wp-nq">Für wen arbeite ich?</span><span class="wp-nn">07</span></a>
-        <a class="wp-nline" href="pages/seasons.html"><span class="wp-nq">Warum wird alles zurückgesetzt?</span><span class="wp-nn">10</span></a>
-        <a class="wp-nline" href="pages/trilogy.html"><span class="wp-nq">Habe die 90er-Trilogie gespielt</span><span class="wp-nn">11</span></a>
-        <a class="wp-nline" href="pages/resources.html"><span class="wp-nq">Ich brauche eine Primärquelle</span><span class="wp-nn">13</span></a>
+    <section class="win" id="win-cnt" data-win="cnt" data-rect="122,456,420,206" tabindex="-1" aria-labelledby="t-cnt">
+      <div class="win__bar" data-drag><i class="win__ico"></i><span class="win__title" id="t-cnt">SYMBIOSIS.CNT</span><span class="win__path">/season/next</span><span class="win__lines"></span><button class="win__btn" type="button" data-min aria-label="Свернуть SYMBIOSIS.CNT">_</button><button class="win__btn" type="button" data-close aria-label="Закрыть SYMBIOSIS.CNT">×</button></div>
+      <div class="win__body">
+        <div class="cnt">
+          <div class="cnt__d" role="timer" aria-label="До Symbiosis">
+            <div class="cnt__u"><b data-d>61</b><span class="lbl">дней</span></div><span class="cnt__sep">:</span>
+            <div class="cnt__u"><b data-h>00</b><span class="lbl">часов</span></div><span class="cnt__sep">:</span>
+            <div class="cnt__u"><b data-m>00</b><span class="lbl">минут</span></div><span class="cnt__sep">:</span>
+            <div class="cnt__u cnt__u--s"><b data-s>00</b><span class="lbl">секунд</span></div>
+          </div>
+          <div class="cnt__x" aria-hidden="true">
+            <div class="cnt__pk" data-cntpk></div>
+            <p class="cnt__log"><span data-cntlog>&gt; ПРИЁМ ПАКЕТОВ SYMBIOSIS</span><b data-cntpct>0.000%</b></p>
+          </div>
+          <div class="cnt__m lbl"><span>Роадмап 24.09</span><span>Symbiosis // 08.12.2026</span><span>Bishop</span></div>
+        </div>
       </div>
-    </div>
-  </div>
+    </section>
 
-  <figure class="art">
-    <img loading="lazy" decoding="async" src="https://images.contentstack.io/v3/assets/blt15f7b5c0d43ed112/blt2e4284984df61e07/69806b6b69244c6e668dce47/Marathon.bungie.death.dealers1.jpg?width=1920&quality=80&auto=webp" alt="Drei Runner schleichen durch die Sümpfe von Dire Marsh" onerror="this.parentElement.style.display='none'">
-    <figcaption><span>Offizielles Key Art //</span> Runner im Dire Marsh. Quelle: marathonthegame.com</figcaption>
-  </figure>
-
-  <div class="terminal">
-    <div class="terminal-bar"><div class="t-dot"></div><div class="t-title">Terminal // Warum das Spiel Marathon heißt</div><div class="t-toggle"></div></div>
-    <div class="terminal-body">
-      <p>&gt; Marathon ist der Name des Schiffs. Ein kolossales Kolonieschiff, umgebaut aus Deimos, einem der Marsmonde. Es brachte die Kolonisten hierher und hängt noch immer im Orbit über dem Planeten - tot, dunkel und voller Geheimnisse.</p>
-      <p>&gt; Marathon ist außerdem ein Kult-Shooter von 1994 desselben Studios, Bungie (die Macher von Halo und Destiny). Das neue Spiel ist ein Reboot jenes Universums. Mehr dazu in den Abschnitten 11 und 12.</p>
-      <p class="sig">&gt; PgUp/PgDown/Arrows to scroll. &lt;Return&gt; to exit.</p>
-    </div>
-  </div>
-</section>
-<div class="god">
-  <div class="god-t">Escape will<br>make me God</div>
-  <div class="god-s">- Durandal // Marathon 2 (1995) → Slogan von Marathon (2026) // <b>die ganze Geschichte in fünf Worten</b></div>
-</div>
-<section class="toc">
-  <h2>Inhalt</h2>
-  <div class="va-list">
-    <a class="va-row" href="pages/timeline.html"><span class="va-num">02</span><span class="va-ico"><svg class="pic"><use href="#i-time"/></svg></span><span class="va-txt"><span class="va-title">Chronik</span><span class="va-desc">Der Aufstieg der Menschheit von der Erde nach Tau Ceti, 2070-2893</span></span></a>
-    <a class="va-row" href="pages/rampancy.html"><span class="va-num">03</span><span class="va-ico"><svg class="pic"><use href="#i-eye"/></svg></span><span class="va-txt"><span class="va-title">KI & Rampancy</span><span class="va-desc">Schiffs-KIs und die Rampancy, die sie zersetzt</span></span></a>
-    <a class="va-row" href="pages/colony.html"><span class="va-num">04</span><span class="va-ico"><svg class="pic"><use href="#i-fall"/></svg></span><span class="va-txt"><span class="va-title">Tod der Kolonie</span><span class="va-desc">Drei aufeinanderfolgende Katastrophen beenden die Kolonie von Tau Ceti</span></span></a>
-    <a class="va-row" href="pages/runners.html"><span class="va-num">05</span><span class="va-ico"><svg class="pic"><use href="#i-shell"/></svg></span><span class="va-txt"><span class="va-title">Runner & Shells</span><span class="va-desc">Bewusstseine, gedruckt in Biomaterie-Shells, verwoben durch WEAVEworm</span></span></a>
-    <a class="va-row" href="pages/classes.html"><span class="va-num">06</span><span class="va-ico"><svg class="pic"><use href="#i-class"/></svg></span><span class="va-txt"><span class="va-title">Klassen</span><span class="va-desc">Die spielbaren Shell-Modelle und was jedes davon kann</span></span></a>
-    <a class="va-row" href="pages/arsenal.html"><span class="va-num">06-B</span><span class="va-ico"><svg class="pic"><use href="#w-ar"/></svg></span><span class="va-txt"><span class="va-title">Arsenal</span><span class="va-desc">Kompletter Waffenkatalog: Lore, Werte und Herkunft</span></span></a>
-    <a class="va-row" href="pages/factions.html"><span class="va-num">07</span><span class="va-ico"><svg class="pic"><use href="#i-hex"/></svg></span><span class="va-txt"><span class="va-title">Fraktionen</span><span class="va-desc">Sechs Konzern-Fraktionen und die Agenten, die dich einsetzen</span></span></a>
-    <a class="va-row" href="pages/aliens.html"><span class="va-num">08</span><span class="va-ico"><svg class="pic"><use href="#i-alien"/></svg></span><span class="va-txt"><span class="va-title">Aliens</span><span class="va-desc">Die Pfhor und die nichtmenschliche Präsenz um Tau Ceti</span></span></a>
-    <a class="va-row" href="pages/zones.html"><span class="va-num">09</span><span class="va-ico"><svg class="pic"><use href="#i-map"/></svg></span><span class="va-txt"><span class="va-title">Zonen</span><span class="va-desc">Drop-Zonen auf Tau Ceti IV und das Cryo Archive</span></span></a>
-    <a class="va-row" href="pages/seasons.html"><span class="va-num">10</span><span class="va-ico"><svg class="pic"><use href="#i-moon"/></svg></span><span class="va-txt"><span class="va-title">Seasons</span><span class="va-desc">Wie Wipes und saisonale Drops die Story vorantreiben</span></span></a>
-    <a class="va-row" href="pages/trilogy.html"><span class="va-num">11</span><span class="va-ico"><svg class="pic"><use href="#i-term"/></svg></span><span class="va-txt"><span class="va-title">Die 90er-Trilogie</span><span class="va-desc">Bungies Originaltrilogie, 1994-1996, und ihre Wurzeln</span></span></a>
-    <a class="va-row" href="pages/deep-cuts.html"><span class="va-num">12</span><span class="va-ico"><svg class="pic"><use href="#i-egg"/></svg></span><span class="va-txt"><span class="va-title">Für Eingeweihte</span><span class="va-desc">Das ARG, Halo-Fäden und versteckte Veteranen-Köder</span></span></a>
-    <a class="va-row" href="pages/resources.html"><span class="va-num">13</span><span class="va-ico"><svg class="pic"><use href="#i-link"/></svg></span><span class="va-txt"><span class="va-title">Ressourcen</span><span class="va-desc">Alle externen Ressourcen: Wikis, Datenbanken, Karten, ARG, Threads</span></span></a>
-  </div>
-</section>
-<footer>
-  <div class="footer-logos">
-    <img loading="lazy" decoding="async" src="https://images.contentstack.io/v3/assets/blt15f7b5c0d43ed112/bltd7331a6610275af9/69677e5ff4f25c00087a9e20/footer_logo_v2.svg?width=640&quality=80" alt="Marathon" onerror="this.style.display='none'">
-    <img loading="lazy" decoding="async" src="https://images.contentstack.io/v3/assets/blt15f7b5c0d43ed112/blt8df2717a52c60cdd/6964c1f51f87f800082b54d5/bungie-logo.svg?width=256&quality=80" alt="Bungie" onerror="this.style.display='none'">
-  </div>
-  <p>UESC BRIEFING DOCUMENT v6.4 // TAU CETI IV // 2893</p>
-  <p>Fahre mit dem Cursor über unterstrichene Begriffe für Definitionen. Klicke auf die Terminals - sie klappen auf.</p>
-  <p>Die Piktogramme in diesem Dokument sind Originalgrafiken; die säuregrüne Palette (#C2FE0C) folgt der von der Community dokumentierten Markenfarbe. Offizielle Logos und Key Art werden vom CDN von marathonthegame.com geladen. Bungie and Marathon are registered trademarks of Bungie, Inc. Inoffizielles Fan-Dokument.</p>
-</footer>
-</div>
-
-<div class="l10n" data-l="ru">
-<div class="hero">
-  <img class="hero-graphic" src="https://images.contentstack.io/v3/assets/blt15f7b5c0d43ed112/blt378ea25bf493ce60/6995b578618a670008b88258/Hero_Graphic.svg?width=640&quality=80" alt="" onerror="this.style.display='none'">
-  <div class="hero-ver">BRIEFING v6.4 // SEASON 2: NIGHTFALL</div>
-  <div class="hero-tag">UESC // Закрытая зона // Tau Ceti IV</div>
-  <img class="hero-logo" src="https://images.contentstack.io/v3/assets/blt15f7b5c0d43ed112/bltb8fb2e796cbbf03f/69a9d38260bb4d508fd53900/Marathon-logo-en-new-mobile.svg?width=1920&quality=80" alt="MARATHON" onerror="this.outerHTML='<h1 style=&quot;font-size:clamp(2.6rem,8vw,6rem);color:#fff;text-transform:uppercase;font-weight:700&quot;>Marathon</h1>'">
-  <p class="hero-sub">Справочный портал по вселенной Marathon: таймлайн, гибель колонии, Раннеры и шеллы, классы, арсенал, фракции, ИИ и рампанси - плюс каталог первоисточников. Каждое лорное утверждение проверено и размечено по достоверности: canon, datamine или theory.</p>
-  <div class="hero-meta">
-    <div><b>2893</b>год действия</div>
-    <div><b>Tau Ceti IV</b>планета</div>
-    <div><b>30 000+</b>исчезнувших душ</div>
-    <div><b>~99 лет</b>молчания колонии</div>
-  </div>
-  <div class="hero-coords">TAU CETI // RA 01h44m // DEC -15°56' // 11.9 СВ. ЛЕТ ОТ СОЛНЦА</div>
-</div>
-<div class="ticker"><div class="ticker-inner"><b>ESCAPE WILL MAKE ME GOD</b> /// ОБНАРУЖЕНО ВТОРЖЕНИЕ /// CYAC.QTERM СКОМПРОМЕТИРОВАН /// НЕСАНКЦИОНИРОВАННЫЕ КОНТРАКТЫ В СЕТИ /// ИСТОЧНИК СИГНАЛА: ОРБИТА /// <b>ESCAPE WILL MAKE ME GOD</b> /// ОБНАРУЖЕНО ВТОРЖЕНИЕ /// CYAC.QTERM СКОМПРОМЕТИРОВАН /// НЕСАНКЦИОНИРОВАННЫЕ КОНТРАКТЫ В СЕТИ /// ИСТОЧНИК СИГНАЛА: ОРБИТА /// </div></div>
-<nav>
-  <a href="index.html" class="active" aria-current="page">01 // С чего начать</a>
-  <a href="pages/timeline.html">02 // Таймлайн</a>
-  <a href="pages/rampancy.html">03 // ИИ и рампанси</a>
-  <a href="pages/colony.html">04 // Гибель колонии</a>
-  <a href="pages/runners.html">05 // Раннеры и шеллы</a>
-  <a href="pages/classes.html">06 // Классы</a>
-  <a href="pages/arsenal.html">06-B // Арсенал</a>
-  <a href="pages/sound.html">06-C // Звук</a>
-  <a href="pages/factions.html">07 // Фракции</a>
-  <a href="pages/aliens.html">08 // Инопланетяне</a>
-  <a href="pages/zones.html">09 // Локации</a>
-  <a href="pages/seasons.html">10 // Сезоны</a>
-  <a href="pages/trilogy.html">11 // Трилогия 90-х</a>
-  <a href="pages/deep-cuts.html">12 // Глубокие пасхалки</a>
-  <a href="pages/resources.html">13 // Ресурсы</a>
-</nav>
-<section id="ru-s1">
-  <div class="wp-grid">
-    <div class="wp-main">
-      <div class="sec-label"><svg class="pic"><use href="#i-start"/></svg>Погружение // суть</div>
-      <h2>Что вообще происходит</h2>
-      <p class="lead">Год 2893. Больше века назад человечество отправило к далёкой звезде Tau Ceti гигантский корабль-колонию <b>UESC Marathon</b>. Колонисты долетели, основали на планете Tau Ceti IV город New Cascadia, всё шло неплохо - а потом связь оборвалась. Больше 30 тысяч человек просто замолчали. Навсегда.</p>
-      <p>Земля не знала, что там произошло. Спасательная экспедиция летела почти век и прибыла только сейчас - к мёртвой планете, набитой руинами, ценными технологиями и чем-то очень странным. Правительство Земли (UESC) объявило всю систему закрытой зоной. Официально - карантин. Неофициально - им есть что скрывать.</p>
-      <p>Но там, где есть запретная зона с сокровищами, появляются те, кто готов туда лезть. Мегакорпорации нанимают <span class="term" data-def="Runner - наёмник, который отказался от своего человеческого тела. Его сознание оцифровано и печатается в искусственные тела-шеллы.">Раннеров</span> - людей, чьё сознание оцифровано и загружается в синтетические тела. Умер? Не страшно, напечатают новое тело и зальют тебя обратно. Ты и есть один из таких Раннеров. Добро пожаловать на Tau Ceti IV: собирай лут, выполняй контракты корпораций, выбирайся живым. И постарайся не думать о том, что именно убило колонию. Потому что оно всё ещё здесь.</p>
-      <p>Если совсем коротко, то петля рейда такая: ты высаживаешься в зону, собираешь лут и выполняешь взятые контракты, отбиваешься от сил UESC, вражеских Раннеров и тварей Аномалии - и ищешь точку эвакуации, эксфил. Дальше развилка на двоих: либо ты доходишь до эксфила и уходишь с добычей, либо гибнешь по дороге и теряешь всё снаряжение, что взял в рейд. Ставка проста и жёстка: вынес добычу - она твоя, погиб - остался ни с чем.</p>
-      <div class="callout"><b>Почему так сложно:</b> потеря всего лута при гибели - это не сломанный баланс, а замысел. Ты и так по уши в долгу у CyberAcme, и мир устроен так, чтобы каждый вылет реально что-то стоил: высокие ставки тут поставлены нарочно. Поэтому проигранный рейд - часть петли, а не провал: теряешь снаряжение, встаёшь и идёшь снова.</div>
-
-      <div class="sec-label"><svg class="pic"><use href="#i-canon"/></svg>Проверка канона</div>
-      <h2>Как гайд отделяет факты от теорий</h2>
-      <p>Каждое лорное утверждение в гайде помечено одним из трёх тэгов. <span class="chip canon">canon</span> - подтверждено Bungie: игрой, Кодексом или официальными материалами. <span class="chip datamine">datamine</span> - вытащено фанатами из файлов игры: достоверно, но игроку в игре не показывается. <span class="chip theory">theory</span> - фанатская теория или спекуляция: помечаем честно, чтобы не выдавать догадки за канон. Если источники противоречат друг другу - мы так и пишем.</p>
-    </div>
-
-    <div class="wp-navpanel" role="navigation" aria-label="Навигатор">
-      <div class="wp-navpanel-head"><svg class="pic"><use href="#i-map"/></svg>Навигатор</div>
-      <div class="wp-navpanel-body">
-        <a class="wp-nline" href="pages/timeline.html"><span class="wp-nq">Я тут впервые</span><span class="wp-nn">02</span></a>
-        <a class="wp-nline" href="pages/colony.html"><span class="wp-nq">Что убило колонию?</span><span class="wp-nn">04</span></a>
-        <a class="wp-nline" href="pages/rampancy.html"><span class="wp-nq">Что такое рампанси?</span><span class="wp-nn">03</span></a>
-        <a class="wp-nline" href="pages/classes.html"><span class="wp-nq">Какой шелл выбрать?</span><span class="wp-nn">06</span></a>
-        <a class="wp-nline" href="pages/arsenal.html"><span class="wp-nq">Оружие: лор и статы</span><span class="wp-nn">06-B</span></a>
-        <a class="wp-nline" href="pages/factions.html"><span class="wp-nq">На кого я работаю?</span><span class="wp-nn">07</span></a>
-        <a class="wp-nline" href="pages/seasons.html"><span class="wp-nq">Почему всё стирается?</span><span class="wp-nn">10</span></a>
-        <a class="wp-nline" href="pages/trilogy.html"><span class="wp-nq">Играл в трилогию 90-х</span><span class="wp-nn">11</span></a>
-        <a class="wp-nline" href="pages/resources.html"><span class="wp-nq">Нужен первоисточник</span><span class="wp-nn">13</span></a>
+    <section class="win" id="win-forecast" data-win="forecast" data-rect="610,118,430,430" data-state="min" tabindex="-1" aria-labelledby="t-forecast">
+      <div class="win__bar" data-drag><i class="win__ico"></i><span class="win__title" id="t-forecast">FORECAST.LOG</span><span class="win__path">/archive/predict</span><span class="win__lines"></span><button class="win__btn" type="button" data-min aria-label="Свернуть FORECAST.LOG">_</button><button class="win__btn" type="button" data-close aria-label="Закрыть FORECAST.LOG">×</button></div>
+      <div class="win__body">
+        <ol class="fc" data-fc>
+          <li><p>Новые противники марта 2027 - эволюционировавшие Pfhor. <span class="chip chip--theory">theory</span></p></li>
+        </ol>
       </div>
-    </div>
+      <div class="win__foot" data-fc-foot><span>ЖУРНАЛ ПРОГНОЗОВ</span><span>data/predictions.yaml</span></div>
+    </section>
+
+    <section class="win" id="win-curator" data-win="curator" data-rect="570,604,470,206" tabindex="-1" aria-labelledby="t-curator">
+      <div class="win__bar" data-drag><i class="win__ico"></i><span class="win__title" id="t-curator">CURATOR</span><span class="win__path">/ai/node-06</span><span class="win__lines"></span><button class="win__btn" type="button" data-min aria-label="Свернуть CURATOR">_</button><button class="win__btn" type="button" data-close aria-label="Закрыть CURATOR">×</button></div>
+      <div class="win__body">
+        <div class="cur">
+          <div class="cur__log" data-log aria-live="polite">
+            <p class="is-sys"><time>00:00</time><span>УЗЕЛ 06 // ИИ АРХИВА «КУРАТОР» НА СВЯЗИ</span></p>
+            <p class="is-sys"><time>00:00</time><span data-sysread>АРХИВ: 15 ФАЙЛОВ</span></p>
+            <p class="is-sys"><time>00:00</time><span><span class="fine-only">ПОДСКАЗКА: окна перетаскиваются за заголовок, Esc закрывает</span><span class="touch-only">ПОДСКАЗКА: нижняя панель переключает окна</span></span></p>
+          </div>
+          <form class="cur__in" data-cmd autocomplete="off"><label for="cmd">&gt;</label><input id="cmd" name="cmd" placeholder="введите help" spellcheck="false" autocapitalize="off" enterkeyhint="send" aria-label="Команда для КУРАТОРА"></form>
+          <div class="cur__chips" aria-label="Быстрые команды"><button type="button" data-cmd-chip="help">help</button><button type="button" data-cmd-chip="ls">ls</button><button type="button" data-cmd-chip="diag">diag</button><button type="button" data-cmd-chip="whoami">whoami</button><button type="button" data-cmd-chip="symbiosis">symbiosis</button></div>
+        </div>
+      </div>
+    </section>
   </div>
 
-  <figure class="art">
-    <img loading="lazy" decoding="async" src="https://images.contentstack.io/v3/assets/blt15f7b5c0d43ed112/blt2e4284984df61e07/69806b6b69244c6e668dce47/Marathon.bungie.death.dealers1.jpg?width=1920&quality=80&auto=webp" alt="Трое Раннеров крадутся по болотам Dire Marsh" onerror="this.parentElement.style.display='none'">
-    <figcaption><span>Official key art //</span> Раннеры на болотах Dire Marsh. Источник: marathonthegame.com</figcaption>
-  </figure>
+  <p class="legal deck-legal">Неофициальный фанатский архив, v7.0. Bungie и Marathon - товарные знаки Bungie, Inc. Логотипы и кадры взяты из официального пресс-кита Bungie для некоммерческого фан-проекта.</p>
+</main>
 
-  <div class="terminal">
-    <div class="terminal-bar"><div class="t-dot"></div><div class="t-title">Terminal // Почему игра называется Marathon</div><div class="t-toggle"></div></div>
-    <div class="terminal-body">
-      <p>&gt; Marathon - это имя корабля. Гигантского корабля-колонии, переделанного из Деймоса, спутника Марса. Он привёз сюда людей и до сих пор висит на орбите планеты - мёртвый, тёмный, полный секретов.</p>
-      <p>&gt; А ещё Marathon - культовый шутер 1994 года от той же студии Bungie (авторы Halo и Destiny). Новая игра - перезапуск той вселенной. Об этом - в разделах 11 и 12.</p>
-      <p class="sig">&gt; PgUp/PgDown/Arrows to scroll. &lt;Return&gt; to exit.</p>
-    </div>
-  </div>
-</section>
-<div class="god">
-  <div class="god-t">Escape will<br>make me God</div>
-  <div class="god-s">- Durandal // Marathon 2 (1995) → слоган Marathon (2026) // <b>вся история в пяти словах</b></div>
-</div>
-<section class="toc">
-  <h2>Содержание гайда</h2>
-  <div class="va-list">
-    <a class="va-row" href="pages/timeline.html"><span class="va-num">02</span><span class="va-ico"><svg class="pic"><use href="#i-time"/></svg></span><span class="va-txt"><span class="va-title">Таймлайн</span><span class="va-desc">Путь человечества от Земли до Tau Ceti, 2070-2893</span></span></a>
-    <a class="va-row" href="pages/rampancy.html"><span class="va-num">03</span><span class="va-ico"><svg class="pic"><use href="#i-eye"/></svg></span><span class="va-txt"><span class="va-title">ИИ и рампанси</span><span class="va-desc">Корабельные интеллекты и рампанси, которая их разрушает</span></span></a>
-    <a class="va-row" href="pages/colony.html"><span class="va-num">04</span><span class="va-ico"><svg class="pic"><use href="#i-fall"/></svg></span><span class="va-txt"><span class="va-title">Гибель колонии</span><span class="va-desc">Три катастрофы подряд обрывают колонию на Tau Ceti</span></span></a>
-    <a class="va-row" href="pages/runners.html"><span class="va-num">05</span><span class="va-ico"><svg class="pic"><use href="#i-shell"/></svg></span><span class="va-txt"><span class="va-title">Раннеры и шеллы</span><span class="va-desc">Разумы, напечатанные в шеллы из биоматерии и прошитые WEAVEworm</span></span></a>
-    <a class="va-row" href="pages/classes.html"><span class="va-num">06</span><span class="va-ico"><svg class="pic"><use href="#i-class"/></svg></span><span class="va-txt"><span class="va-title">Классы</span><span class="va-desc">Игровые модели шеллов и что умеет каждая</span></span></a>
-    <a class="va-row" href="pages/arsenal.html"><span class="va-num">06-B</span><span class="va-ico"><svg class="pic"><use href="#w-ar"/></svg></span><span class="va-txt"><span class="va-title">Арсенал</span><span class="va-desc">Полный каталог оружия: лор, статы и происхождение</span></span></a>
-    <a class="va-row" href="pages/factions.html"><span class="va-num">07</span><span class="va-ico"><svg class="pic"><use href="#i-hex"/></svg></span><span class="va-txt"><span class="va-title">Фракции</span><span class="va-desc">Шесть корпоративных фракций и агенты, которые тебя отправляют</span></span></a>
-    <a class="va-row" href="pages/aliens.html"><span class="va-num">08</span><span class="va-ico"><svg class="pic"><use href="#i-alien"/></svg></span><span class="va-txt"><span class="va-title">Инопланетяне</span><span class="va-desc">Pfhor и нечеловеческое присутствие вокруг Tau Ceti</span></span></a>
-    <a class="va-row" href="pages/zones.html"><span class="va-num">09</span><span class="va-ico"><svg class="pic"><use href="#i-map"/></svg></span><span class="va-txt"><span class="va-title">Локации</span><span class="va-desc">Точки высадки на Tau Ceti IV и Cryo Archive</span></span></a>
-    <a class="va-row" href="pages/seasons.html"><span class="va-num">10</span><span class="va-ico"><svg class="pic"><use href="#i-moon"/></svg></span><span class="va-txt"><span class="va-title">Сезоны</span><span class="va-desc">Как вайпы и сезонные дропы двигают сюжет</span></span></a>
-    <a class="va-row" href="pages/trilogy.html"><span class="va-num">11</span><span class="va-ico"><svg class="pic"><use href="#i-term"/></svg></span><span class="va-txt"><span class="va-title">Трилогия 90-х</span><span class="va-desc">Оригинальная трилогия Bungie, 1994-1996, и её корни</span></span></a>
-    <a class="va-row" href="pages/deep-cuts.html"><span class="va-num">12</span><span class="va-ico"><svg class="pic"><use href="#i-egg"/></svg></span><span class="va-txt"><span class="va-title">Глубокие пасхалки</span><span class="va-desc">ARG, ниточки к Halo и приманки для ветеранов</span></span></a>
-    <a class="va-row" href="pages/resources.html"><span class="va-num">13</span><span class="va-ico"><svg class="pic"><use href="#i-link"/></svg></span><span class="va-txt"><span class="va-title">Ресурсы</span><span class="va-desc">Все внешние ресурсы: вики, базы, карты, ARG, треды сообщества</span></span></a>
-  </div>
-</section>
-<footer>
-  <div class="footer-logos">
-    <img loading="lazy" decoding="async" src="https://images.contentstack.io/v3/assets/blt15f7b5c0d43ed112/bltd7331a6610275af9/69677e5ff4f25c00087a9e20/footer_logo_v2.svg?width=640&quality=80" alt="Marathon" onerror="this.style.display='none'">
-    <img loading="lazy" decoding="async" src="https://images.contentstack.io/v3/assets/blt15f7b5c0d43ed112/blt8df2717a52c60cdd/6964c1f51f87f800082b54d5/bungie-logo.svg?width=256&quality=80" alt="Bungie" onerror="this.style.display='none'">
-  </div>
-  <p>UESC BRIEFING DOCUMENT v6.4 // TAU CETI IV // 2893</p>
-  <p>Наведи курсор на подчёркнутые термины - всплывёт определение. Кликай по терминалам - они раскрываются.</p>
-  <p>Пиктограммы в документе - оригинальная графика; кислотная палитра (#C2FE0C) следует задокументированному сообществом фирменному цвету. Официальные логотипы и арты загружаются с CDN marathonthegame.com. Bungie and Marathon are registered trademarks of Bungie, Inc. Неофициальный фанатский документ.</p>
+<footer class="task" aria-label="Панель задач">
+  <a class="task__start" href="index.html"><i></i><span>UESC</span></a>
+  <nav class="task__tabs" aria-label="Окна">
+    <a class="tab" href="#win-archive" data-open="archive"><svg viewBox="0 0 34 34" aria-hidden="true"><path d="M3 9h11l3 3h14v17H3z"/><path d="M3 15h28"/></svg><span class="tab__d">ARCHIVE</span><span class="tab__m">Архив</span></a>
+    <a class="tab" href="#win-air" data-open="air"><svg viewBox="0 0 34 34" aria-hidden="true"><path d="M17 20v11M11 31h12"/><path d="M12 15a7 7 0 0 1 10 0M8 11a12 12 0 0 1 18 0M4 7a17 17 0 0 1 26 0"/></svg><span class="tab__d">ЭФИР</span><span class="tab__m">Эфир</span></a>
+    <a class="tab" href="#win-cnt" data-open="cnt"><svg viewBox="0 0 34 34" aria-hidden="true"><path d="M5 5h24v24H5z"/><path d="M17 9v8l6 4"/></svg><span class="tab__d">SYMBIOSIS.CNT</span><span class="tab__m">Отсчёт</span></a>
+    <a class="tab" href="#win-forecast" data-open="forecast"><svg viewBox="0 0 34 34" aria-hidden="true"><path d="M5 27h24"/><path d="M5 21l7-6 6 4 11-12"/><path d="M23 7h6v6"/></svg><span class="tab__d">FORECAST.LOG</span><span class="tab__m">Прогнозы</span></a>
+    <a class="tab" href="#win-curator" data-open="curator"><svg viewBox="0 0 34 34" aria-hidden="true"><path d="M3 6h28v20H3z"/><path d="M8 12l4 4-4 4M15 20h7"/></svg><span class="tab__d">CURATOR</span><span class="tab__m">Куратор</span></a>
+  </nav>
+  <div class="task__mq" aria-hidden="true"><span>/// УЗЕЛ 06 НА СВЯЗИ /// ОБНАРУЖЕНО ВТОРЖЕНИЕ /// CYAC.QTERM СКОМПРОМЕТИРОВАН /// НЕСАНКЦИОНИРОВАННЫЕ КОНТРАКТЫ В СЕТИ /// ИСТОЧНИК СИГНАЛА: ОРБИТА /// SYMBIOSIS 08.12 ///</span></div>
+  <time class="task__clock" data-clock2>00:00</time>
 </footer>
-</div>
-
-<script>window.PAGE={slug:"index",titles:{"en": "MARATHON // World Guide", "es": "MARATHON // Guía del mundo", "de": "MARATHON // Welt-Guide", "ru": "MARATHON // Гайд по миру"}}</script>
-<script src="assets/app.js"></script>
-<!-- v6.4:refs -->
+<script src="assets/js/i18n.js"></script>
+<script src="data/js/ai-lines.js"></script>
+<script src="data/js/changelog.js"></script>
+<script src="data/js/predictions.js"></script>
+<script src="assets/js/core.js"></script>
+<script src="assets/js/changelog.js"></script>
+<script src="assets/js/os.js"></script>
 </body>
 </html>

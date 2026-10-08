@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="ru" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Карты зон // интерактивные карты // Терминал Марафона</title>
+<meta name="description" content="Интерактивные карты зон Marathon: Perimeter, Dire Marsh, Night Marsh, Outpost и Cryo Archive. Карты MapGenie на весь экран, с телефона тоже.">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#000000">
+<link rel="canonical" href="https://a-danyaev.github.io/marathon-lore/pages/run.html">
+<link rel="alternate" hreflang="ru" href="https://a-danyaev.github.io/marathon-lore/pages/run.html">
+<link rel="alternate" hreflang="en" href="https://a-danyaev.github.io/marathon-lore/en/pages/run.html">
+<link rel="alternate" hreflang="x-default" href="https://a-danyaev.github.io/marathon-lore/pages/run.html">
+<link rel="icon" href="../assets/img/brand/favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Терминал Марафона">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:title" content="Карты зон Marathon">
+<meta property="og:description" content="Интерактивные карты пяти зон Marathon на одном экране.">
+<meta property="og:url" content="https://a-danyaev.github.io/marathon-lore/pages/run.html">
+<meta property="og:image" content="https://a-danyaev.github.io/marathon-lore/assets/img/brand/og-keyart.jpg">
+<meta property="og:image:alt" content="Ключевой арт Marathon от Bungie">
+<meta name="twitter:card" content="summary_large_image">
+<script>(function(){var d=document.documentElement;d.classList.replace("no-js","js");try{var q=new URLSearchParams(location.search),s=localStorage.getItem("ml_lang"),ql=q.get("lang"),nl=(navigator.languages||[navigator.language||""]).join(",").toLowerCase(),en=ql?ql!=="ru":(!s&&!q.has("shot")&&!/(^|,)(ru|uk|be|kk)/.test(nl));if(en){localStorage.setItem("ml_lang","en");var p=location.pathname,f=p.slice(p.lastIndexOf("/")+1)||"index.html";location.replace((/\/pages\/[^/]*$/.test(p)?"../en/pages/":"en/")+f+location.hash)}}catch(e){}if(new URLSearchParams(location.search).has("shot"))d.classList.add("shot");})()</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wdth,wght@8..144,25..151,100..1000&family=Martian+Mono:wdth,wght@75..112.5,100..800&family=Geist+Mono:wght@100..900&family=Handjet:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="../assets/css/base.css">
+<link rel="stylesheet" href="../assets/css/os.css">
+<link rel="stylesheet" href="../assets/css/page.css">
+<link rel="stylesheet" href="../assets/css/pages/run.css">
+</head>
+<body class="p-file p-run" data-file="RUN" data-page="run">
+<a class="skip" href="#map">К карте</a>
+<header class="mbar" id="mbar">
+  <a class="mbar__logo" href="../index.html" aria-label="Терминал Марафона, рабочий стол"><i class="mbar__sq"></i><img class="mbar__mark" src="../assets/img/brand/wordmark-white.png" alt="" width="120" height="38"><span class="mbar__os">TERMINAL&nbsp;OS</span><span class="mbar__ver">v7.0</span></a>
+  <nav class="mbar__menu" aria-label="Меню"><a href="../index.html?open=archive">Архив</a><a href="#top" aria-current="page">Карты зон</a><a href="../index.html?open=curator">Куратор</a><a href="../index.html?open=forecast">Прогнозы</a></nav>
+  <span class="mbar__sp"></span>
+  <a class="mbar__air" href="../index.html?open=air"><i></i><span>Эфир</span><b>С ТАУ КИТА</b></a>
+  <time class="mbar__clock" data-clock>08.10.2893 00:00</time>
+</header>
+<div class="achrome" role="group" aria-label="Окно карт зон">
+  <i class="win__ico"></i><span class="win__title">MAPS.EXE</span><span class="win__path">/uesc/ops/maps</span><span class="win__lines"></span>
+  <span class="achrome__pct">ЗОНА <b data-run-zname>-</b></span>
+  <a class="win__btn" href="../index.html">&lt; Рабочий стол</a><a class="win__btn x" href="../index.html" aria-label="Закрыть карты и вернуться на рабочий стол">×</a>
+  <i class="achrome__bar" data-readbar></i>
+</div>
+<main id="top" class="pg maps">
+  <section class="mp-head panel" data-sec="intro" id="intro" aria-labelledby="mp-t">
+    <h1 class="mp-h1" id="mp-t">Карты зон</h1>
+    <nav class="mp-tabs" role="tablist" aria-label="Зона" data-mp-tabs>
+      <a class="mp-tab" role="tab" id="tab-perimeter" href="?zone=perimeter#map" data-zone="perimeter" aria-controls="map" aria-selected="true">Perimeter</a>
+      <a class="mp-tab" role="tab" id="tab-dire-marsh" href="?zone=dire-marsh#map" data-zone="dire-marsh" aria-controls="map" aria-selected="false">Dire Marsh</a>
+      <a class="mp-tab" role="tab" id="tab-night-marsh" href="?zone=night-marsh#map" data-zone="night-marsh" aria-controls="map" aria-selected="false">Night Marsh</a>
+      <a class="mp-tab" role="tab" id="tab-outpost" href="?zone=outpost#map" data-zone="outpost" aria-controls="map" aria-selected="false">Outpost</a>
+      <a class="mp-tab" role="tab" id="tab-cryo-archive" href="?zone=cryo-archive#map" data-zone="cryo-archive" aria-controls="map" aria-selected="false">Cryo Archive</a>
+    </nav>
+  </section>
+  <div class="mp-bar panel">
+    <p class="mp-note" data-mp-note>Perimeter: стартовая зона, исследовательский комплекс колонии New Cascadia. <span class="chip chip--canon">canon</span></p>
+    <a class="mp-out" data-mp-out href="https://mapgenie.io/marathon/maps/perimeter" target="_blank" rel="noopener">открыть на MapGenie &gt;</a>
+  </div>
+  <section class="mp-stage" id="map" role="tabpanel" aria-labelledby="tab-perimeter" data-mp-stage>
+    <noscript><iframe class="mp-frame" src="https://mapgenie.io/marathon/maps/perimeter" title="Интерактивная карта Perimeter, MapGenie" loading="lazy" allow="fullscreen" referrerpolicy="strict-origin-when-cross-origin"></iframe></noscript>
+    <div class="mp-load" data-mp-load aria-live="polite">
+      <i class="mp-load__sq" aria-hidden="true"></i>
+      <p class="mp-load__t"><b data-mp-load-t>ЗАГРУЗКА КАРТЫ</b><span data-mp-load-z>PERIMETER // MAPGENIE.IO</span></p>
+      <span class="mp-load__bar" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span>
+      <p class="mp-load__x">Карту встраивает скрипт страницы. Не грузится - откройте её прямо на <a href="https://mapgenie.io/marathon/maps/perimeter" target="_blank" rel="noopener" data-mp-out>MapGenie</a>.</p>
+    </div>
+  </section>
+  <p class="mp-credit panel">Карты: MapGenie (mapgenie.io). Интерактивные карты, метки и их данные принадлежат MapGenie, архив только встраивает их. Лор и требования зон: файл <a href="zones.html">09 Зоны</a>.</p>
+  <nav class="pager panel" aria-label="Соседние файлы">
+    <a class="btn" href="sound.html">&lt; 06-C Звук</a>
+    <a class="btn btn--solid" href="zones.html">09 Зоны &gt;</a>
+  </nav>
+
+  <footer class="foot panel">
+    <img class="foot__mark" src="../assets/img/brand/wordmark-white.png" alt="Marathon" width="1000" height="318" loading="lazy">
+    <div class="foot-row">
+      <p>Терминал Марафона, v7.0. Неофициальный фанатский архив, некоммерческий проект. Bungie и Marathon - зарегистрированные товарные знаки Bungie, Inc. Логотипы и кадры взяты из официального пресс-кита Bungie, факты сверены с первоисточниками и размечены метками canon, datamine и theory.</p>
+      <ul>
+        <li><a href="../index.html?open=archive">ARCHIVE // все файлы</a></li>
+        <li><a href="../index.html?open=air">ЭФИР С ТАУ КИТА</a></li>
+        <li><a href="../index.html?open=forecast">FORECAST.LOG</a></li>
+        <li><a href="https://www.reddit.com/user/danyaev/" target="_blank" rel="noopener">Нашли ошибку? Напишите</a></li>
+      </ul>
+      <p class="kick">СЕАНС // УЗЕЛ АРХИВА НА СВЯЗИ<br>TAU CETI IV // 2893</p>
+    </div>
+  </footer>
+</main>
+
+<p class="ctoast" data-toast aria-hidden="true"><b>КУРАТОР&gt;</b><span></span></p>
+<footer class="task" aria-label="Панель задач">
+  <a class="task__start" href="../index.html" aria-label="Рабочий стол"><i></i><span>UESC</span></a>
+  <nav class="task__tabs" aria-label="Окна">
+    <a class="tab" href="../index.html"><svg viewBox="0 0 34 34" aria-hidden="true"><path d="M3 16L17 4l14 12"/><path d="M7 13v17h20V13"/></svg><span class="tab__d">DESKTOP</span><span class="tab__m">Стол</span></a>
+    <a class="tab is-open is-focus" href="#top" aria-current="page"><svg viewBox="0 0 34 34" aria-hidden="true"><path d="M3 7l9-3 10 3 9-3v23l-9 3-10-3-9 3z"/><path d="M12 4v23M22 7v23"/></svg><span class="tab__d">MAPS.EXE</span><span class="tab__m">Карты</span></a>
+    <a class="tab" href="../index.html?open=archive"><svg viewBox="0 0 34 34" aria-hidden="true"><path d="M3 9h11l3 3h14v17H3z"/><path d="M3 15h28"/></svg><span class="tab__d">ARCHIVE</span><span class="tab__m">Архив</span></a>
+    <a class="tab" href="zones.html"><svg viewBox="0 0 34 34" aria-hidden="true"><path d="M7 3h14l6 6v22H7z"/><path d="M21 3v6h6"/></svg><span class="tab__d">ZONES.DOS</span><span class="tab__m">Зоны</span></a>
+    <a class="tab" href="sound.html"><svg viewBox="0 0 34 34" aria-hidden="true"><path d="M7 3h14l6 6v22H7z"/><path d="M21 3v6h6"/><path d="M11 17h12M11 21h12M11 25h7"/></svg><span class="tab__d">SOUND.DOS</span><span class="tab__m">Звук</span></a>
+  </nav>
+  <div class="task__mq" aria-hidden="true"><span data-mq>/// УЗЕЛ 06 НА СВЯЗИ /// КАРТЫ ЗОН ОТКРЫТЫ /// КАРТЫ: MAPGENIE.IO ///</span></div>
+  <time class="task__clock" data-clock2>00:00</time>
+</footer>
+<script src="../assets/js/i18n.js"></script>
+<script src="../data/js/ai-lines.js"></script>
+<script src="../assets/js/core.js"></script>
+<script src="../assets/js/page.js"></script>
+<script src="../assets/js/pages/run.js"></script>
+</body>
+</html>

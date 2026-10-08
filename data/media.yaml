@@ -1,0 +1,457 @@
+images:
+  - file: assets/img/kit/home-vista.jpg
+    mobile: assets/img/kit/home-vista-m.jpg
+    chapter: home
+    role: hero
+    subject: Руины колонии под чужим небом с кольцевыми структурами на горизонте
+    subject_en: Colony ruins under an alien sky, ring structures on the horizon
+    alt: Панорама заброшенной колонии Tau Ceti IV на фоне кольцевой структуры в небе
+    alt_en: Panorama of an abandoned Tau Ceti IV colony against a ring structure in the sky
+    credit: "Bungie, официальный пресс-кит: Marathon Runner Shell Dev Insight"
+    source: pics/presskits/Runner-Shell-Dev-Insight-press-kit/2026_Marathon_Weaponless_Press_Kit_Compressed_005.png
+  - file: assets/img/kit/timeline-descent.jpg
+    mobile: assets/img/kit/timeline-descent-m.jpg
+    chapter: timeline
+    role: hero
+    subject: Боевой шелл спускается на базу с орбиты сквозь атмосферу
+    subject_en: A combat shell drops from orbit through the atmosphere onto a base
+    alt: Шелл десантируется с орбиты к поверхности планеты над военной базой
+    alt_en: A shell drops from orbit toward the planet's surface above a military base
+    credit: "Bungie, официальный пресс-кит: Marathon Runner Shell Dev Insight"
+    source: pics/presskits/Runner-Shell-Dev-Insight-press-kit/2026_Marathon_Runner_Blog_Press_Kit_Compressed_003.jpg
+  - file: assets/img/kit/timeline-storm.jpg
+    mobile: assets/img/kit/timeline-storm-m.jpg
+    chapter: timeline
+    role: gallery
+    subject: Грозовой разряд над промышленным сооружением колонии
+    subject_en: A lightning strike over an industrial structure of the colony
+    alt: Молния бьёт в промышленную вышку колонии под грозовым небом
+    alt_en: Lightning hits an industrial tower of the colony under a stormy sky
+    credit: "Bungie, официальный пресс-кит: Marathon December 2025"
+    source: pics/presskits/Marathon-December-2025-Press-Kit/Marathon Dec 2025 screenshots/2025_DEC_Marathon_Press_Kit_Large_013.jpg
+  - file: assets/img/kit/rampancy-ai-portrait.jpg
+    mobile: assets/img/kit/rampancy-ai-portrait-m.jpg
+    chapter: rampancy
+    role: hero
+    subject: Портрет андроида с горящими красными глазами крупным планом
+    subject_en: Close-up portrait of an android with burning red eyes
+    alt: Крупный план андроида с красными светящимися глазами
+    alt_en: Close-up of an android with glowing red eyes
+    credit: "Bungie, официальный пресс-кит: Marathon Gameplay Reveal"
+    source: pics/presskits/Marathon-Gameplay-Reveal-Press-Kit/Marathon Reveal Cinematic Short Stills/2025_Marathon__Reveal_Cinematic_LARGE_08.jpg
+  - file: assets/img/kit/rampancy-mech-duel.jpg
+    mobile: assets/img/kit/rampancy-mech-duel-m.jpg
+    chapter: rampancy
+    role: gallery
+    subject: Два шелла сходятся в бою в тесном каменном помещении
+    subject_en: Two shells clash in a cramped stone room
+    alt: Схватка двух шеллов в освещённом красным светом помещении
+    alt_en: Two shells fight in a room lit red
+    credit: "Bungie, официальный пресс-кит: Marathon Gameplay Reveal"
+    source: pics/presskits/Marathon-Gameplay-Reveal-Press-Kit/Marathon Reveal Cinematic Short Stills/2025_Marathon__Reveal_Cinematic_COMPRESSED_06.jpg
+  - file: assets/img/kit/rampancy-corridor.jpg
+    mobile: assets/img/kit/rampancy-corridor-m.jpg
+    chapter: rampancy
+    role: gallery
+    subject: Силуэт робота приближается по тёмному коридору в розовом свете
+    subject_en: A robot silhouette approaches down a dark corridor in pink light
+    alt: Робот с красными глазами идёт по неоновому коридору
+    alt_en: A red-eyed robot walks down a neon corridor
+    credit: "Bungie, официальный пресс-кит: Marathon December 2025"
+    source: pics/presskits/Marathon-December-2025-Press-Kit/Marathon Dec 2025 screenshots/2025_DEC_Marathon_Press_Kit_Large_009.jpg
+  - file: assets/img/kit/colony-cordon.jpg
+    mobile: assets/img/kit/colony-cordon-m.jpg
+    chapter: colony
+    role: hero
+    subject: Зона карантина UESC, оцепленная сигнальными лентами
+    subject_en: A UESC quarantine zone cordoned off with warning tape
+    alt: Оцепленная карантинная зона UESC с красными сигнальными огнями
+    alt_en: A cordoned UESC quarantine zone with red warning lights
+    credit: "Bungie, официальный пресс-кит: Marathon Season 1 Finale"
+    source: pics/presskits/Marathon-Season-1-finale-press-kit/2026_UESC_Press_Kit_Tick_Cordon_Area_V2_1920x1080.jpg
+  - file: assets/img/kit/colony-towers.jpg
+    mobile: assets/img/kit/colony-towers-m.jpg
+    chapter: colony
+    role: gallery
+    subject: Башня-ретранслятор UESC посреди тумана колонии
+    subject_en: A UESC relay tower in the colony fog
+    alt: Высокая башня UESC с громкоговорителями в туманной местности
+    alt_en: A tall UESC tower with loudspeakers in foggy terrain
+    credit: "Bungie, официальный пресс-кит: Marathon Season 1 Finale"
+    source: pics/presskits/Marathon-Season-1-finale-press-kit/2026_UESC_Press_Kit_Speaker_Towers_V2_3840x2160.jpg
+  - file: assets/img/kit/colony-ruins-fog.jpg
+    mobile: assets/img/kit/colony-ruins-fog-m.jpg
+    chapter: colony
+    role: gallery
+    subject: Разрушенные постройки колонии в тумане с радужным бликом
+    subject_en: Ruined colony buildings in fog with a rainbow glare
+    alt: Туманные руины жилых построек колонии с радугой на фоне
+    alt_en: Foggy ruins of colony housing with a rainbow behind them
+    credit: "Bungie, официальный пресс-кит: Marathon December 2025"
+    source: pics/presskits/Marathon-December-2025-Press-Kit/Marathon Dec 2025 screenshots/2025_DEC_Marathon_Press_Kit_Large_012.jpg
+  - file: assets/img/kit/runners-biomat-portrait.jpg
+    mobile: assets/img/kit/runners-biomat-portrait-m.jpg
+    chapter: runners
+    role: hero
+    subject: Портрет Раннера в биоматериальной оболочке со шрамами
+    subject_en: Portrait of a Runner in a scarred biomatter shell
+    alt: Портрет Раннера с татуировками и шрамами на биоматериальном теле
+    alt_en: Portrait of a Runner with tattoos and scars on a biomatter body
+    credit: "Bungie, официальный пресс-кит: Marathon Pre-Order"
+    source: pics/presskits/Marathon-pre-order-press-kit/Marathon Collectors Edition/Marathon-CE-Beauty-Thief02-1920x1080.jpg
+  - file: assets/img/kit/runners-neon-corridor.jpg
+    mobile: assets/img/kit/runners-neon-corridor-m.jpg
+    chapter: runners
+    role: gallery
+    subject: Раннер в прыжке в технической зоне с зелёной подсветкой
+    subject_en: A Runner mid-jump in a technical area with green lighting
+    alt: Раннер совершает прыжок в технической зоне с зелёным неоновым светом
+    alt_en: A Runner jumps through a technical area lit with green neon
+    credit: "Bungie, официальный пресс-кит: Marathon Runner Shell Dev Insight"
+    source: pics/presskits/Runner-Shell-Dev-Insight-press-kit/2026_Marathon_Runner_Blog_Press_Kit_Large_007.jpg
+  - file: assets/img/kit/runners-combat.jpg
+    mobile: assets/img/kit/runners-combat-m.jpg
+    chapter: runners
+    role: gallery
+    subject: Раннер в бою среди обломков техники синего цвета
+    subject_en: A Runner in combat among blue machine wreckage
+    alt: Раннер сражается среди синих обломков техники в тёмном помещении
+    alt_en: A Runner fights among blue machine wreckage in a dark room
+    credit: "Bungie, официальный пресс-кит: Marathon Runner Shell Dev Insight"
+    source: pics/presskits/Runner-Shell-Dev-Insight-press-kit/2026_Marathon_Runner_Blog_Press_Kit_Large_001.jpg
+  - file: assets/img/kit/classes-destroyer.jpg
+    mobile: assets/img/kit/classes-destroyer-m.jpg
+    chapter: classes
+    role: hero
+    subject: Шелл Destroyer целится из тяжёлого оружия
+    subject_en: A Destroyer shell aims a heavy weapon
+    alt: Шелл класса Destroyer прицеливается из крупнокалиберного оружия
+    alt_en: A Destroyer class shell takes aim with a heavy-calibre weapon
+    credit: "Bungie, официальный пресс-кит: Marathon Season 1 Ranked Rewards"
+    source: pics/presskits/Marathon-Season-1-Ranked-Rewards-59069/MAR_S1_Ranked_Rewards_Destroyer_V1_1920x1080.jpg
+  - file: assets/img/kit/classes-vandal.jpg
+    mobile: assets/img/kit/classes-vandal-m.jpg
+    chapter: classes
+    role: gallery
+    subject: Силуэт шелла Vandal карабкается по вертикальной поверхности
+    subject_en: Silhouette of a Vandal shell climbing a vertical surface
+    alt: Шелл Vandal взбирается по отвесной стене на фоне туманного неба
+    alt_en: A Vandal shell climbs a sheer wall against a foggy sky
+    credit: "Bungie, официальный пресс-кит: Marathon Brand Kit"
+    source: pics/Marathon/Vandal Shell Cinematic Stills and Wallpapers/Vandal_Vignette_01_1920x1080.jpg
+  - file: assets/img/kit/classes-recon.jpg
+    mobile: assets/img/kit/classes-recon-m.jpg
+    chapter: classes
+    role: gallery
+    subject: Шелл Recon в полный рост без оружия
+    subject_en: A Recon shell at full height, unarmed
+    alt: Шелл Recon в полный рост, пресс-кит Bungie
+    alt_en: A Recon shell at full height, Bungie press kit
+    credit: "Bungie, официальный пресс-кит: Marathon Runner Shell Dev Insight"
+    source: pics/presskits/Runner-Shell-Dev-Insight-press-kit/2026_Marathon_Weaponless_Press_Kit_Compressed_019.png
+  - file: assets/img/kit/classes-thief.jpg
+    mobile: assets/img/kit/classes-thief-m.jpg
+    chapter: classes
+    role: gallery
+    subject: Портрет шелла Thief с раскраской на лице
+    subject_en: Portrait of a Thief shell with face paint
+    alt: Портрет шелла Thief крупным планом с боевой раскраской лица
+    alt_en: Close-up portrait of a Thief shell with war paint on the face
+    credit: "Bungie, официальный пресс-кит: Marathon Pre-Order"
+    source: pics/presskits/Marathon-pre-order-press-kit/Marathon Collectors Edition/Marathon-CE-Beauty-Thief01-1920x1080.jpg
+  - file: assets/img/kit/classes-triage.jpg
+    mobile: assets/img/kit/classes-triage-m.jpg
+    chapter: classes
+    role: gallery
+    subject: Шелл Triage в полный рост с медицинскими крестами на броне
+    subject_en: A Triage shell at full height with medical crosses on the armour
+    alt: Шелл Triage в полный рост с медицинскими крестами на броне, пресс-кит Bungie
+    alt_en: A Triage shell at full height with medical crosses on the armour, Bungie press kit
+    credit: "Bungie, официальный пресс-кит: Marathon Runner Shell Dev Insight"
+    source: pics/presskits/Runner-Shell-Dev-Insight-press-kit/2026_Marathon_Weaponless_Press_Kit_Compressed_018.png
+  - file: assets/img/kit/classes-sentinel.jpg
+    mobile: assets/img/kit/classes-sentinel-m.jpg
+    chapter: classes
+    role: gallery
+    subject: Экран выбора шелла Sentinel в меню Колыбели
+    subject_en: The Sentinel shell select screen in the Cradle menu
+    alt: Интерфейс выбора шелла Sentinel в игровом меню
+    alt_en: Sentinel shell select interface in the game menu
+    credit: "Bungie, официальный пресс-кит: Marathon Season 2 Launch"
+    source: pics/presskits/Marathon-Season-2-launch-press-kit/The Cradle screenshots/Cradle-Menu_Sentinel.jpg
+  - file: assets/img/kit/arsenal-stryder.jpg
+    mobile: assets/img/kit/arsenal-stryder-m.jpg
+    chapter: arsenal
+    role: hero
+    subject: Оружие Stryder в режиме осмотра
+    subject_en: The Stryder weapon in inspect mode
+    alt: Крупный план оружия Stryder с подсветкой прицела
+    alt_en: Close-up of the Stryder weapon with its sight lit
+    credit: "Bungie, официальный пресс-кит: Marathon Season 1 Ranked Rewards"
+    source: pics/presskits/Marathon-Season-1-Ranked-Rewards-59069/MAR_S1_Ranked_Rewards_Stryder_Inspect_3840x2160.jpg
+  - file: assets/img/kit/arsenal-bully.jpg
+    mobile: assets/img/kit/arsenal-bully-m.jpg
+    chapter: arsenal
+    role: gallery
+    subject: Оружие Bully в режиме осмотра, коридор с граффити
+    subject_en: The Bully weapon in inspect mode, a corridor with graffiti
+    alt: Оружие Bully на фоне коридора с граффити
+    alt_en: The Bully weapon against a graffiti-covered corridor
+    credit: "Bungie, официальный пресс-кит: Marathon Season 1 Ranked Rewards"
+    source: pics/presskits/Marathon-Season-1-Ranked-Rewards-59069/MAR_S1_Ranked_Rewards_Bully_Inspect_1920x1080.jpg
+  - file: assets/img/kit/arsenal-repeater.jpg
+    mobile: assets/img/kit/arsenal-repeater-m.jpg
+    chapter: arsenal
+    role: gallery
+    subject: Оружие Repeater в режиме осмотра на фоне колонии
+    subject_en: The Repeater weapon in inspect mode against the colony
+    alt: Оружие Repeater на фоне построек колонии вдали
+    alt_en: The Repeater weapon with colony buildings in the distance
+    credit: "Bungie, официальный пресс-кит: Marathon Season 1 Ranked Rewards"
+    source: pics/presskits/Marathon-Season-1-Ranked-Rewards-59069/MAR_S1_Ranked_Rewards_Repeater_Inspect_1920x1080.jpg
+  - file: assets/img/kit/arsenal-loadout-grid.jpg
+    mobile: assets/img/kit/arsenal-loadout-grid-m.jpg
+    chapter: arsenal
+    role: gallery
+    subject: Коллаж из четырёх видов оружия разных расцветок
+    subject_en: A collage of four weapons in different colourways
+    alt: Коллаж из четырёх образцов оружия разных цветов
+    alt_en: A collage of four weapons in different colours
+    credit: "Bungie, официальный пресс-кит: Marathon Vault Breaker"
+    source: pics/presskits/Marathon-mid-Season-2-update-press-kit/VB_Header_Logo_1080x1080.jpg
+  - file: assets/img/kit/arsenal-firefight.jpg
+    mobile: assets/img/kit/arsenal-firefight-m.jpg
+    chapter: arsenal
+    role: gallery
+    subject: Перестрелка трёх шеллов в тесном техническом помещении
+    subject_en: Three shells in a firefight in a cramped technical room
+    alt: Три шелла ведут перестрелку в техническом помещении
+    alt_en: Three shells exchange fire in a technical room
+    credit: "Bungie, официальный пресс-кит: Marathon Cryo Archive"
+    source: pics/presskits/Cryo-Archive-press-kit/2026_Marathon_Cryo_Unlock_Press_Kit_COMPRESSED_09.jpg
+  - file: assets/img/kit/sound-towers.jpg
+    mobile: assets/img/kit/sound-towers-m.jpg
+    chapter: sound
+    role: hero
+    subject: Вышка громкой связи UESC среди туманных руин
+    subject_en: A UESC public address tower among foggy ruins
+    alt: Вышка-громкоговоритель UESC на фоне туманной местности
+    alt_en: A UESC loudspeaker tower against foggy terrain
+    credit: "Bungie, официальный пресс-кит: Marathon Season 1 Finale"
+    source: pics/presskits/Marathon-Season-1-finale-press-kit/2026_UESC_Press_Kit_Speaker_Towers_V1_3840x2160.jpg
+  - file: assets/img/kit/factions-uesc-corridor.jpg
+    mobile: assets/img/kit/factions-uesc-corridor-m.jpg
+    chapter: factions
+    role: hero
+    subject: Коридор с эмблемой UESC на стене
+    subject_en: A corridor with the UESC emblem on the wall
+    alt: Внутренний коридор базы с эмблемой UESC на стене
+    alt_en: An interior base corridor with the UESC emblem on the wall
+    credit: "Bungie, официальный пресс-кит: Marathon December 2025"
+    source: pics/presskits/Marathon-December-2025-Press-Kit/Marathon Dec 2025 screenshots/2025_DEC_Marathon_Press_Kit_Compressed_004.jpg
+  - file: assets/img/kit/factions-ad-panels.jpg
+    mobile: assets/img/kit/factions-ad-panels-m.jpg
+    chapter: factions
+    role: gallery
+    subject: Рекламные панели корпораций на стенах торгового зала
+    subject_en: Corporate ad panels on the walls of a trading hall
+    alt: Светящиеся рекламные панели корпораций в торговом помещении
+    alt_en: Glowing corporate ad panels in a trading hall
+    credit: "Bungie, официальный пресс-кит: Marathon Runner Shell Dev Insight"
+    source: pics/presskits/Runner-Shell-Dev-Insight-press-kit/2026_Marathon_Runner_Blog_Press_Kit_Large_004.jpg
+  - file: assets/img/kit/factions-vending.jpg
+    mobile: assets/img/kit/factions-vending-m.jpg
+    chapter: factions
+    role: gallery
+    subject: Торговый автомат корпорации в синей технической зоне
+    subject_en: A corporate vending machine in a blue technical area
+    alt: Фирменный торговый автомат в синей технической зоне базы
+    alt_en: A branded vending machine in a blue technical area of a base
+    credit: "Bungie, официальный пресс-кит: Marathon December 2025"
+    source: pics/presskits/Marathon-December-2025-Press-Kit/Marathon Dec 2025 screenshots/2025_DEC_Marathon_Press_Kit_Large_003.jpg
+  - file: assets/img/kit/aliens-creature.jpg
+    mobile: assets/img/kit/aliens-creature-m.jpg
+    chapter: aliens
+    role: hero
+    subject: Крупное инопланетное существо атакует шелла
+    subject_en: A large alien creature attacks a shell
+    alt: Крупное красное инопланетное существо нападает на шелла
+    alt_en: A large red alien creature lunges at a shell
+    credit: "Bungie, официальный пресс-кит: Marathon Season 2 Launch"
+    source: pics/presskits/Marathon-Season-2-launch-press-kit/Season 2 launch screenshots/2026_Marathon_S2_Launch_Press_Kit_LARGE_013.jpg
+  - file: assets/img/kit/aliens-ring-mystery.jpg
+    mobile: assets/img/kit/aliens-ring-mystery-m.jpg
+    chapter: aliens
+    role: gallery
+    subject: Существо у гигантского кольца в тумане
+    subject_en: A creature next to a giant ring in the fog
+    alt: Светящееся существо рядом с огромной кольцевой конструкцией
+    alt_en: A glowing creature beside a huge ring structure
+    credit: "Bungie, официальный пресс-кит: Marathon Server Slam"
+    source: pics/presskits/Marathon-Server-Slam-press-kit/Marathon Server Slam screenshots/2026_Marathon_Server_Slam_PressKit_Large_01.jpg
+  - file: assets/img/kit/zones-cryo-archive.jpg
+    mobile: assets/img/kit/zones-cryo-archive-m.jpg
+    chapter: zones
+    role: hero
+    subject: Неоновый коридор криохранилища от первого лица
+    subject_en: First-person view of a neon cryo vault corridor
+    alt: Вид от первого лица на неоновый коридор криохранилища
+    alt_en: First-person view down a neon corridor of the cryo vault
+    credit: "Bungie, официальный пресс-кит: Marathon Cryo Archive"
+    source: pics/presskits/Cryo-Archive-press-kit/2026_Marathon_Cryo_Unlock_Press_Kit_COMPRESSED_11.jpg
+  - file: assets/img/kit/zones-cryo-wide.jpg
+    mobile: assets/img/kit/zones-cryo-wide-m.jpg
+    chapter: zones
+    role: gallery
+    subject: Широкий план зала криохранилища с бегущими шеллами
+    subject_en: Wide shot of a cryo vault hall with shells running
+    alt: Шеллы бегут через широкий зал криохранилища
+    alt_en: Shells run through a wide hall of the cryo vault
+    credit: "Bungie, официальный пресс-кит: Marathon Cryo Archive"
+    source: pics/presskits/Cryo-Archive-press-kit/2026_Marathon_Cryo_Unlock_Press_Kit_LARGE_01.jpg
+  - file: assets/img/kit/zones-outpost.jpg
+    mobile: assets/img/kit/zones-outpost-m.jpg
+    chapter: zones
+    role: gallery
+    subject: Аванпост ночью под гигантской голубой луной
+    subject_en: An outpost at night under a giant blue moon
+    alt: Ночной аванпост колонии под огромной голубой луной
+    alt_en: A colony outpost at night under a huge blue moon
+    credit: "Bungie, официальный пресс-кит: Marathon December 2025"
+    source: pics/presskits/Marathon-December-2025-Press-Kit/Marathon Dec 2025 screenshots/2025_DEC_Marathon_Press_Kit_Large_018.jpg
+  - file: assets/img/kit/zones-dire-marsh.jpg
+    mobile: assets/img/kit/zones-dire-marsh-m.jpg
+    chapter: zones
+    role: gallery
+    subject: Бой в зарослях болота на фоне силуэтов монументов
+    subject_en: A fight in marsh thickets with monument silhouettes behind
+    alt: Шеллы сражаются в болотных зарослях на фоне древних монументов
+    alt_en: Shells fight in marsh thickets in front of ancient monuments
+    credit: "Bungie, официальный пресс-кит: Marathon December 2025"
+    source: pics/presskits/Marathon-December-2025-Press-Kit/Marathon Dec 2025 screenshots/2025_DEC_Marathon_Press_Kit_Compressed_011.jpg
+  - file: assets/img/kit/zones-night-marsh.jpg
+    mobile: assets/img/kit/zones-night-marsh-m.jpg
+    chapter: zones
+    role: gallery
+    subject: Ночное болото со светящимися растениями
+    subject_en: A night marsh with glowing plants
+    alt: Фигура в ночном болоте среди биолюминесцентных растений
+    alt_en: A figure in a night marsh among bioluminescent plants
+    credit: "Bungie, официальный пресс-кит: Marathon Season 2 Launch"
+    source: pics/presskits/Marathon-Season-2-launch-press-kit/Season 2 launch screenshots/2026_Marathon_S2_Launch_Press_Kit_LARGE_009.jpg
+  - file: assets/img/kit/zones-perimeter.jpg
+    mobile: assets/img/kit/zones-perimeter-m.jpg
+    chapter: zones
+    role: gallery
+    subject: Периметр ограждения UESC с жёлтой разметкой
+    subject_en: A UESC perimeter fence with yellow markings
+    alt: Ограждение периметра UESC с предупреждающей разметкой
+    alt_en: A UESC perimeter fence with warning markings
+    credit: "Bungie, официальный пресс-кит: Marathon Season 1 Finale"
+    source: pics/presskits/Marathon-Season-1-finale-press-kit/2026_UESC_Press_Kit_Tick_Cordon_Area_V1_1920x1080.jpg
+  - file: assets/img/kit/seasons-vault-breaker.jpg
+    mobile: assets/img/kit/seasons-vault-breaker-m.jpg
+    chapter: seasons
+    role: hero
+    subject: Ключевой арт режима Vault Breaker с отрядом шеллов
+    subject_en: Vault Breaker key art with a squad of shells
+    alt: Ключевой арт сезонного режима Vault Breaker с отрядом шеллов
+    alt_en: Key art of the seasonal Vault Breaker mode with a squad of shells
+    credit: "Bungie, официальный пресс-кит: Marathon Vault Breaker"
+    source: pics/presskits/Marathon-mid-Season-2-update-press-kit/VB_Armory_Glamour_1920x1080.jpg
+  - file: assets/img/kit/seasons-nightfall.jpg
+    mobile: assets/img/kit/seasons-nightfall-m.jpg
+    chapter: seasons
+    role: gallery
+    subject: Ключевой арт второго сезона Nightfall
+    subject_en: Key art of the second season, Nightfall
+    alt: Ключевой арт второго сезона Marathon Nightfall
+    alt_en: Key art of Marathon's second season, Nightfall
+    credit: "Bungie, официальный пресс-кит: Marathon Season 2 Launch"
+    source: pics/presskits/Marathon-Season-2-launch-press-kit/Marathon Season 2 key art and logos/S2_KeyArt_16x9_4K.png
+  - file: assets/img/kit/seasons-ordnance-heist.jpg
+    mobile: assets/img/kit/seasons-ordnance-heist-m.jpg
+    chapter: seasons
+    role: gallery
+    subject: Боевой дрон-бомбардировщик над отрядом UESC
+    subject_en: A bomber drone over a UESC squad
+    alt: Дрон-бомбардировщик атакует с воздуха отряд UESC
+    alt_en: A bomber drone attacks a UESC squad from the air
+    credit: "Bungie, официальный пресс-кит: Marathon Season 1 Finale"
+    source: pics/presskits/Marathon-Season-1-finale-press-kit/2026_UESC_Press_Kit_Bombardier_Drone_V1_3840x2160.jpg
+  - file: assets/img/kit/seasons-vault-breaker-ui.jpg
+    mobile: assets/img/kit/seasons-vault-breaker-ui-m.jpg
+    chapter: seasons
+    role: gallery
+    subject: Обновлённый интерфейс имплантов режима Vault Breaker
+    subject_en: The updated implant interface of Vault Breaker
+    alt: Экран обновлённых имплантов в режиме Vault Breaker
+    alt_en: The updated implants screen in Vault Breaker mode
+    credit: "Bungie, официальный пресс-кит: Marathon Vault Breaker"
+    source: pics/presskits/Marathon-mid-Season-2-update-press-kit/VB_Implant_Update_1920x1080.jpg
+  - file: assets/img/kit/deep-cuts-silhouette.jpg
+    mobile: assets/img/kit/deep-cuts-silhouette-m.jpg
+    chapter: deep-cuts
+    role: hero
+    subject: Силуэт в тёмном коридоре в фиолетовом свете
+    subject_en: A silhouette in a dark corridor in purple light
+    alt: Силуэт фигуры в тёмном коридоре с фиолетовой подсветкой
+    alt_en: A figure's silhouette in a dark corridor with purple lighting
+    credit: "Bungie, официальный пресс-кит: Marathon Runner Shell Dev Insight"
+    source: pics/presskits/Runner-Shell-Dev-Insight-press-kit/2026_Marathon_Runner_Blog_Press_Kit_Large_002.jpg
+  - file: assets/img/kit/resources-storm.jpg
+    mobile: assets/img/kit/resources-storm-m.jpg
+    chapter: resources
+    role: hero
+    subject: Грозовой разряд над промышленным сооружением колонии
+    subject_en: A lightning strike over an industrial structure of the colony
+    alt: Молния над промышленной постройкой колонии в сумерках
+    alt_en: Lightning over an industrial building of the colony at dusk
+    credit: "Bungie, официальный пресс-кит: Marathon December 2025"
+    source: pics/presskits/Marathon-December-2025-Press-Kit/Marathon Dec 2025 screenshots/2025_DEC_Marathon_Press_Kit_Large_013.jpg
+  - file: assets/img/kit/404-silkworm.jpg
+    mobile: assets/img/kit/404-silkworm-m.jpg
+    chapter: "404"
+    role: hero
+    subject: Плюшевая игрушка WEAVEworm с вышивкой
+    subject_en: An embroidered WEAVEworm plush toy
+    alt: Мягкая игрушка-червь WEAVEworm на диване
+    alt_en: A soft WEAVEworm plush on a sofa
+    credit: "Bungie, официальный пресс-кит: Marathon Server Slam"
+    source: pics/presskits/Marathon-Server-Slam-press-kit/Marathon Collection 001 Logo Hat and WEAVEworm Plush/Silkworm_Beauty_1920x1920.jpg
+  - file: assets/img/kit/logo-wordmark-white.png
+    chapter: logo
+    role: logo
+    subject: белый текстовый логотип Marathon (прозрачный фон)
+    subject_en: white Marathon wordmark (transparent background)
+    alt: белый текстовый логотип Marathon (прозрачный фон)
+    alt_en: white Marathon wordmark (transparent background)
+    credit: Bungie, официальный бренд-кит Marathon
+    source: /Users/a.danyaev/Downloads/Marathon (1)/Marathon logo_wordmark/Marathon_Logo_WordMark_White_TRANSPARENT.png
+  - file: assets/img/kit/logo-wordmark-green.png
+    chapter: logo
+    role: logo
+    subject: зелёный текстовый логотип Marathon (прозрачный фон)
+    subject_en: green Marathon wordmark (transparent background)
+    alt: зелёный текстовый логотип Marathon (прозрачный фон)
+    alt_en: green Marathon wordmark (transparent background)
+    credit: Bungie, официальный бренд-кит Marathon
+    source: /Users/a.danyaev/Downloads/Marathon (1)/Marathon logo_wordmark/Marathon_Logo_WordMark_Green_TRANSPARENT.png
+  - file: assets/img/kit/logo-complex-white.png
+    chapter: logo
+    role: logo
+    subject: белая полная эмблема Marathon (прозрачный фон)
+    subject_en: white full Marathon emblem (transparent background)
+    alt: белая полная эмблема Marathon (прозрачный фон)
+    alt_en: white full Marathon emblem (transparent background)
+    credit: Bungie, официальный бренд-кит Marathon
+    source: /Users/a.danyaev/Downloads/Marathon (1)/Marathon logo_complex/Marathon_Logo_Complex_White_TRANSPARENT.png
+  - file: assets/img/kit/logo-complex-green.png
+    chapter: logo
+    role: logo
+    subject: зелёная полная эмблема Marathon (прозрачный фон)
+    subject_en: green full Marathon emblem (transparent background)
+    alt: зелёная полная эмблема Marathon (прозрачный фон)
+    alt_en: green full Marathon emblem (transparent background)
+    credit: Bungie, официальный бренд-кит Marathon
+    source: /Users/a.danyaev/Downloads/Marathon (1)/Marathon logo_complex/Marathon_Logo_Complex_Green_TRANSPARENT.png

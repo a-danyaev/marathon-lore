@@ -1,471 +1,343 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="ru" class="no-js">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Factions: who you work for - Marathon World Guide</title>
-<meta name="description" content="Six corporations and groups hire Runners, and each has an AI agent handing you contracts.">
-<meta name="theme-color" content="#0a0b0a">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="MARATHON // World Guide">
-<meta property="og:title" content="Factions: who you work for - Marathon World Guide">
-<meta property="og:description" content="Six corporations and groups hire Runners, and each has an AI agent handing you contracts.">
-<meta property="og:image" content="https://images.contentstack.io/v3/assets/blt15f7b5c0d43ed112/blt4579a520aea7477a/699c18b848bd410008f09c63/Hero_Video_Fallback_Image.png?width=1200&amp;quality=80">
-<meta property="og:image:alt" content="Marathon key art: Runners on Tau Ceti IV">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Factions: who you work for - Marathon World Guide">
-<meta name="twitter:description" content="Six corporations and groups hire Runners, and each has an AI agent handing you contracts.">
-<meta name="twitter:image" content="https://images.contentstack.io/v3/assets/blt15f7b5c0d43ed112/blt4579a520aea7477a/699c18b848bd410008f09c63/Hero_Video_Fallback_Image.png?width=1200&amp;quality=80">
-<link rel="icon" href="https://www.marathonthegame.com/favicon.ico">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Файл 07 // Фракции: на кого работают Раннеры // Терминал Марафона</title>
+<meta name="description" content="Шесть нанимателей Раннеров в Marathon: CyberAcme, NuCaloric, Traxus, MIDA, Arachne и Sekiguchi. Агенты, изнанка, союзы, что даёт каждая фракция, и скрытая сеть сделок за их враждой.">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#000000">
 <link rel="canonical" href="https://a-danyaev.github.io/marathon-lore/pages/factions.html">
+<link rel="alternate" hreflang="ru" href="https://a-danyaev.github.io/marathon-lore/pages/factions.html">
+<link rel="alternate" hreflang="en" href="https://a-danyaev.github.io/marathon-lore/en/pages/factions.html">
+<link rel="alternate" hreflang="x-default" href="https://a-danyaev.github.io/marathon-lore/pages/factions.html">
+<link rel="icon" href="../assets/img/brand/favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Терминал Марафона">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:title" content="Файл 07: фракции Marathon и их агенты">
+<meta property="og:description" content="Шесть нанимателей Раннеров в Marathon: CyberAcme, NuCaloric, Traxus, MIDA, Arachne и Sekiguchi. Агенты, изнанка, союзы, что даёт каждая фракция, и скрытая сеть сделок за их враждой.">
+<meta property="og:url" content="https://a-danyaev.github.io/marathon-lore/pages/factions.html">
+<meta property="og:image" content="https://a-danyaev.github.io/marathon-lore/assets/img/brand/og-keyart.jpg">
+<meta property="og:image:alt" content="Ключевой арт Marathon от Bungie">
+<meta name="twitter:card" content="summary_large_image">
+<script>(function(){var d=document.documentElement;d.classList.replace("no-js","js");try{var q=new URLSearchParams(location.search),s=localStorage.getItem("ml_lang"),ql=q.get("lang"),nl=(navigator.languages||[navigator.language||""]).join(",").toLowerCase(),en=ql?ql!=="ru":(!s&&!q.has("shot")&&!/(^|,)(ru|uk|be|kk)/.test(nl));if(en){localStorage.setItem("ml_lang","en");var p=location.pathname,f=p.slice(p.lastIndexOf("/")+1)||"index.html";location.replace((/\/pages\/[^/]*$/.test(p)?"../en/pages/":"en/")+f+location.hash)}}catch(e){}if(new URLSearchParams(location.search).has("shot"))d.classList.add("shot");})()</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../assets/style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wdth,wght@8..144,25..151,100..1000&family=Martian+Mono:wdth,wght@75..112.5,100..800&family=Geist+Mono:wght@100..900&family=Handjet:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="../assets/css/base.css">
+<link rel="stylesheet" href="../assets/css/os.css">
+<link rel="stylesheet" href="../assets/css/page.css">
+<link rel="stylesheet" href="../assets/css/pages/factions.css">
 </head>
-<body data-lang="en">
-
-<!-- original pictogram sprite: drawn for this document, not Bungie assets -->
-<svg width="0" height="0" style="position:absolute" aria-hidden="true">
-  <defs>
-    <symbol id="i-hex" viewBox="0 0 24 24"><path d="M12 2.8l8 4.6v9.2l-8 4.6-8-4.6V7.4z"/><circle cx="12" cy="12" r="2.6"/></symbol>
-    <symbol id="f-cyac" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r=".8"/></symbol>
-    <symbol id="f-nucal" viewBox="0 0 24 24"><path d="M12 3c4 5 6.5 8 6.5 11.5a6.5 6.5 0 0 1-13 0C5.5 11 8 8 12 3z"/><path d="M9.5 14.5a2.5 2.5 0 0 0 2.5 2.5"/></symbol>
-    <symbol id="f-trax" viewBox="0 0 24 24"><path d="M12 3l5 6h-10z"/><path d="M8 11l4 5 4-5"/><path d="M5 17h14v3H5z"/></symbol>
-    <symbol id="f-mida" viewBox="0 0 24 24"><path d="M4 19L9 5l3 8 3-8 5 14"/><path d="M4 21.5h16"/></symbol>
-    <symbol id="f-arach" viewBox="0 0 24 24"><path d="M12 3v18M3 12h18M5.6 5.6l12.8 12.8M18.4 5.6L5.6 18.4"/><path d="M12 7.5l3.2 3.2-3.2 3.2-3.2-3.2z"/></symbol>
-    <symbol id="f-sekg" viewBox="0 0 24 24"><path d="M12 5v14"/><path d="M12 8C9 4.5 4 4.5 3.5 8.5 3 12 8 14 12 14"/><path d="M12 8c3-3.5 8-3.5 8.5.5.5 3.5-4.5 5.5-8.5 5.5"/><circle cx="12" cy="18.5" r="1"/></symbol>
-  </defs>
-</svg>
-
-<div class="lang-switch" role="group" aria-label="Language selection">
-  <a class="ls-label" href="../index.html">/// MARATHON // World Guide // v6.4</a>
-  <button data-setlang="en" class="active" aria-pressed="true">EN</button>
-  <button data-setlang="es" aria-pressed="false">ES</button>
-  <button data-setlang="de" aria-pressed="false">DE</button>
-  <button data-setlang="ru" aria-pressed="false">RU</button>
-  <button id="spoiler-toggle" aria-pressed="true">SPOILERS: ON</button>
-  <a id="feedback-btn" href="https://www.reddit.com/user/danyaev/" target="_blank" rel="noopener" title="Spotted an error? Contact the author on Reddit">Feedback</a>
+<body class="p-file" data-file="07" data-page="factions">
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><symbol id="f-cyac" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r=".8"/></symbol><symbol id="f-nucal" viewBox="0 0 24 24"><path d="M12 3c4 5 6.5 8 6.5 11.5a6.5 6.5 0 0 1-13 0C5.5 11 8 8 12 3z"/><path d="M9.5 14.5a2.5 2.5 0 0 0 2.5 2.5"/></symbol><symbol id="f-trax" viewBox="0 0 24 24"><path d="M12 3l5 6h-10z"/><path d="M8 11l4 5 4-5"/><path d="M5 17h14v3H5z"/></symbol><symbol id="f-mida" viewBox="0 0 24 24"><path d="M4 19L9 5l3 8 3-8 5 14"/><path d="M4 21.5h16"/></symbol><symbol id="f-arach" viewBox="0 0 24 24"><path d="M12 3v18M3 12h18M5.6 5.6l12.8 12.8M18.4 5.6L5.6 18.4"/><path d="M12 7.5l3.2 3.2-3.2 3.2-3.2-3.2z"/></symbol><symbol id="f-sekg" viewBox="0 0 24 24"><path d="M12 5v14"/><path d="M12 8C9 4.5 4 4.5 3.5 8.5 3 12 8 14 12 14"/><path d="M12 8c3-3.5 8-3.5 8.5.5.5 3.5-4.5 5.5-8.5 5.5"/><circle cx="12" cy="18.5" r="1"/></symbol></defs></svg>
+<div class="field" data-field aria-hidden="true">
+  <canvas></canvas>
+  <div class="field__lens"></div>
+  <div class="field__frame"><b data-lens-mode>ДЕШИФРОВКА</b><span data-lens-readout>X 0000 // Y 0000</span></div>
 </div>
-
-<div class="l10n" data-l="en">
-<nav>
-  <a href="../index.html">01 // Start here</a>
-  <a href="timeline.html">02 // Timeline</a>
-  <a href="rampancy.html">03 // AI & rampancy</a>
-  <a href="colony.html">04 // Death of the colony</a>
-  <a href="runners.html">05 // Runners & shells</a>
-  <a href="classes.html">06 // Classes</a>
-  <a href="arsenal.html">06-B // Arsenal</a>
-  <a href="sound.html">06-C // Sound</a>
-  <a href="factions.html" class="active" aria-current="page">07 // Factions</a>
-  <a href="aliens.html">08 // Aliens</a>
-  <a href="zones.html">09 // Zones</a>
-  <a href="seasons.html">10 // Seasons</a>
-  <a href="trilogy.html">11 // The 90s trilogy</a>
-  <a href="deep-cuts.html">12 // Deep cuts</a>
-  <a href="resources.html">13 // Resources</a>
-</nav>
-<section id="en-s6">
-  <div class="sec-label"><svg class="pic"><use href="#i-hex"/></svg>Brief 07 // Influence is power</div>
-  <h2>Factions: who you work for</h2>
-  <p>Six corporations and groups hire Runners, and each has an AI agent handing you contracts. Six very different faces of the same rotten world. CyberAcme is your gateway: six of their liaison contracts unlock everyone else. For the voice-cast nerds, the agents' actors are listed too - the full ~33-actor cast was revealed in January 2026.</p>
-
-  <div class="callout"><b>How contracts work:</b> a contract is a job you take from a faction through its agent. You complete it right there in the raid, then come back and turn it in - for reputation with that faction and for rewards. The higher your reputation climbs, the more its vendor unlocks: access to better shells, weapons and mods. That's the whole loop - take contracts, build reputation, get better gear.</div>
-
-  <figure class="art">
-    <img loading="lazy" decoding="async" src="https://images.contentstack.io/v3/assets/blt15f7b5c0d43ed112/blt0656353348a074b8/69806a3998d6ebf4e5ca3676/marathon.bungie.character.png?width=1920&quality=80&auto=webp" alt="Gantry - agent of the MIDA faction" onerror="this.parentElement.style.display='none'">
-    <figcaption><span>Official art //</span> Gantry, agent of MIDA. Source: marathonthegame.com</figcaption>
-  </figure>
-
-  <div class="f-row">
-    <div class="f-name"><svg class="pic"><use href="#f-cyac"/></svg>CyberAcme<span>agent: ONI</span><i>voice: Donnla Hughes</i><img class="f-logo" loading="lazy" decoding="async" src="https://marathonwiki.org/api/media/file/factions-69b1ca7e034785859db2cf03-1773270741417.png" alt="CyberAcme logo" onerror="this.style.display='none'"></div>
-    <div><figure class="f-art"><img loading="lazy" decoding="async" src="https://storage.ghost.io/c/30/f5/30f5b1bb-84ee-4c26-b446-fb9a5e512994/content/images/2026/06/tobias-kwan-tk-faction-agent-oni-01.jpg" alt="ONI, agent of CyberAcme (concept art)" onerror="this.parentElement.style.display='none'"><figcaption><span>Official concept art //</span> Tobias Kwan. Source: aftermath.site</figcaption></figure><p><b class="f-slogan">"Everything runs on CyberAcme. Or nothing runs at all."</b> The digital infrastructure of all humanity and the neutral broker every Runner's contracts pass through.</p>
-<p>CyberAcme doesn't fight over the planet - it sells "hardware and software for all applications" to all six sides at once and takes its cut of every contract. Its ONI (Onboard Navigational Intelligence; and yes, that's also the name of Halo's shadow intelligence agency - Bungie knows what it's doing) is a floating digitized woman's head and your first guide: her six liaison contracts unlock the other five factions. ONI is also a product - firmware baked into nearly every Runner shell. The company built most of the Marathon's own systems ("the majority of the UESC MARATHON's systems were powered by CYAC"), so Tau Ceti IV isn't a new market for it but its own legacy. Back on the original Marathon, CyberAcme was already the one running most of the ship's onboard computer systems, and today it's the neutral broker-infrastructure. That's exactly why CyberAcme is your starting faction: it owns the entire tech stack the whole concept of a Runner rests on - from the ONI firmware in the shell to the contract network itself - and her ONI onboarding walks a newcomer by the hand through the first contracts.</p>
-<p>The flip side of that businesslike facade is harder than the old "rumors": the wiki states flatly that the corporation "deals in the illegal buying and selling of personality and thought data." And the Runner contract itself hands it co-ownership of the copies of your consciousness - to get into the game, you're already sold. It recruits through the NextForm Recourse program: it buys up a candidate's debts and turns them "decorporealized" - "This debt has been purchased by CyberAcme and added to your balance."</p>
-<p>Formally CyberAcme is on nobody's side and everybody's at once: it brokers contracts for all parties and is tied into partnerships (the "Cradle" with Sekiguchi, supply deals with Traxus). Toward the UESC - cold contempt; per one press source ONI calls the destruction of the government "completely acceptable" outright, though that line isn't verified verbatim in the game.</p>
-<p><b>What it gives the Runner:</b> a gentle onboarding - shell upgrades, reduced cooldowns, expanded inventory; her six contracts are your door into the other five factions. ONI's voice signs off with the same sweetly cynical line: <em>"Congratulations, and sweet dreams."</em> <span class="chip canon">canon</span> <span class="chip datamine">datamine</span></p></div>
-  </div>
-  <div class="f-row">
-    <div class="f-name"><svg class="pic"><use href="#f-nucal"/></svg>NuCaloric<span>agent: Gaius</span><i>voice: Darin De Paul</i><img class="f-logo" loading="lazy" decoding="async" src="https://marathonwiki.org/api/media/file/factions-69b1ca7e034785859db2cf0d-1773270741419.png" alt="NuCaloric logo" onerror="this.style.display='none'"></div>
-    <div><figure class="f-art"><img loading="lazy" decoding="async" src="https://storage.ghost.io/c/30/f5/30f5b1bb-84ee-4c26-b446-fb9a5e512994/content/images/2026/06/tobias-kwan-tk-faction-agent-gaius-04.jpg" alt="Gaius, agent of NuCaloric (concept art)" onerror="this.parentElement.style.display='none'"><figcaption><span>Official concept art //</span> Tobias Kwan. Source: aftermath.site</figcaption></figure><p><b class="f-slogan">"Essentially. Everywhere."</b> The food, medicine and housing monopoly that quietly investigates what killed the colony.</p>
-<p>"Feed, clothe, and supply humanity" is a model the codex describes as a mix of social good and ruthless optimization. Founded by Gus Moraine during the 2360s famine as a philanthropist, NuCaloric grew into the largest goods supplier in the Sol system: from Biostock and biosynthetic pets to pharmaceuticals, housing modules and cosmetics. On Tau Ceti IV it pointedly avoids taking anything by force ("does not appear interested in sustained confrontation") - it prefers to gather historical data and intel through hired Runner operatives. This is the investigator faction. And one more thread to the mystery: NuCaloric is listed among the corporate sponsors of the Marathon expedition itself - the one that once carried the colonists to Tau Ceti - so the corporation is investigating a history it had a hand in shaping.</p>
-<p>The philanthropist facade rests on details best not dwelt on: their "tick milk" is made from exactly what you think it is. Founder Gus Moraine personally recorded a welcome message to the colonists, insisting on the word "sacrifice" - and it was followed straight away by an ad for the "Drinkable Cheeseburger." In the exclusive contract with the UESC, clause 616 locks in a lease of the property supplied to the colonists for at least 600 years, and the colonists aren't even a party to the deal. And by the press, Gaius knows more about the colony's death than he lets on: his motives are "slightly askew."</p>
-<p>The corporation avoids open confrontation with everyone - its combat lore admits outright that NuCal is "not yet wholly comfortable with open conflict." It once picked the planet itself as the mission target together with Traxus. Meanwhile its 600-year colony-supply contract makes it legally entangled in the fate of Tau Ceti IV - a thread to the mystery of the colony's death separate from Traxus's.</p>
-<p><b>What it gives the Runner:</b> survival items - shield charges, medkits, regenerative implants; NuCal heals where Arachne kills. And Gaius's welcome to the colonists sets the tone for the whole faction: <em>"Humanity thanks you for your sacrifice."</em> <span class="chip canon">canon</span> <span class="chip datamine">datamine</span></p></div>
-  </div>
-  <div class="f-row">
-    <div class="f-name"><svg class="pic"><use href="#f-trax"/></svg>Traxus<span>agent: Vulcan</span><i>voice: Morla Gorrondona</i><img class="f-logo" loading="lazy" decoding="async" src="https://marathonwiki.org/api/media/file/factions-69b1ca87034785859db2cf47-1773270741550.png" alt="Traxus logo" onerror="this.style.display='none'"></div>
-    <div><figure class="f-art"><img loading="lazy" decoding="async" src="https://images.steamusercontent.com/ugc/16295817170346948982/FC876E181823AAD5B03AFBBC9199A50FA11EEB5D/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true" alt="Vulcan, agent of Traxus (intro cinematic)" onerror="this.parentElement.style.display='none'"><figcaption><span>Screenshot //</span> intro cinematic. Source: Steam Workshop</figcaption></figure><p><b class="f-slogan">"Operate Beyond Scale."</b> The East India Company of the space age, which regards the colony and its technology as its own property, due for return.</p>
-<p>The richest private corporation in human history, second in influence only to the UESC ("second only to the UNIFIED EARTH SPACE COUNCIL"). Founded on Earth in 2095 as "Traxus Intelligent Systems" to "pierce the veil of the cosmos," it moved to Mars in 2145 for minerals. It acts through others and through front operations: publicly it "isn't" on Tau Ceti IV, and it uses Runners as a deniable asset to "scavenge the colony in direct opposition of UESC forces." Legally, Traxus asserts "rights of reacquisition" over all technology tied to the Marathon and the colony - meaning it considers the planet itself its own. Agent Vulcan doesn't persuade: he sits motionless on a throne with burning eyes, reciting the disclaimers under which you're a "temporary nonasset worker" with no rights at all. And its present-day war with the UESC is open corporate opposition over the right to salvage the emptied New Cascadia: both Traxus and the government consider the colony's ruins and its technology their own rightful prize, and it's exactly that salvage the corporation sends Runners to the planet for.</p>
-<p>The same house that built Traxus IV: the AI that cratered Mars in 2206 was their own fourth-generation system - the corporation simply outlived the scandal. The irony runs deeper: the Marathon's trio of shipboard AIs (Leela, Tycho, Durandal; the IX-A "Hermes" series, 2409) was physically built by Traxus, even though its rival CyberAcme administers them. And "Project Goliath" is the file whose leak froze the Traxus-UESC negotiations overnight, sending the corporation to the planet on its own (see the network box).</p>
-<p>On the surface Traxus fights the UESC over spoils and "rights of reacquisition." Secretly, it's the puppeteer: per datamine, MIDA "had been formally brought into the fold by Traxus OffWorld Industries" - meaning the anti-corporate revolution became its own asset. Plus a long-standing collusion with NuCaloric over choosing the planet, and hiring Arachne cultists for salvage runs.</p>
-<p><b>What it gives the Runner:</b> the priciest loot - weapon upgrades and mods under tight corporate control. Traxus's recruiting even courts whole nations ("Choose freedom. Let Traxus steward what you have built"), and in a live-broadcast argument with a UESC admiral it denies everything and closes on a veiled threat: <em>"Our success is your success."</em> <span class="chip canon">canon</span> <span class="chip datamine">datamine</span></p></div>
-  </div>
-  <div class="f-row">
-    <div class="f-name"><svg class="pic"><use href="#f-mida"/></svg>MIDA<span>agent: _Gantry</span><i>voice: Lee Shorten</i><img class="f-logo" loading="lazy" decoding="async" src="https://marathonwiki.org/api/media/file/factions-69b1ca7e034785859db2cf08-1773270741424.png" alt="MIDA logo" onerror="this.style.display='none'"></div>
-    <div><figure class="f-art"><img loading="lazy" decoding="async" src="https://storage.ghost.io/c/30/f5/30f5b1bb-84ee-4c26-b446-fb9a5e512994/content/images/2026/06/tobias-kwan-tk-faction-agent-gantry-01.jpg" alt="_Gantry, agent of MIDA (concept art)" onerror="this.parentElement.style.display='none'"><figcaption><span>Official concept art //</span> Tobias Kwan. Source: aftermath.site</figcaption></figure><p><b class="f-slogan">"Resist. Disrupt. Destroy."</b> Martian revolutionaries dreaming of burning down the old world - and quietly bought by Traxus.</p>
-<p>_gantry states the goal plainly: "burn away a stagnant, corrupt world" and build a new one on the far side of the revolution. This is a Martian political party reborn as an anarchist network, whose grudges are older than the Marathon itself: its roots reach back to the massacre at the Misriah food distribution center on January 4, 2345, which started the Third Martian War, and the network was hardened after the massacre of 2442. The acronym MIDA has no canonical expansion - the ARG deliberately offered mutually exclusive versions, from "Martian Independence Demands Accountability" to the joke "Mars Is Damnably Arid." Agent _gantry speaks in fragments of graffiti-like phrases and uploads malware to stay untraceable. A separate note for those who know their Bungie history: the name MIDA itself is a direct callback to the 90s trilogy, where a Martian revolutionary movement against Earth's government already appeared and was later crushed. The studio later reused the name in Destiny (the MIDA Multi-Tool rifle), and now it's back here - amounting to a nearly 30-year Bungie in-joke stretched across three games.</p>
-<p>During its three-month rule of Mars in 2466, MIDA became responsible for the deaths of roughly a tenth of the planet's population. Back during the Marathon's construction, its operatives smuggled weapons and combat robots (Battleroids) aboard, betting on raising a fresh uprising far from Earth. But the biggest twist is recent: per datamine, MIDA "had been formally brought into the fold by Traxus OffWorld Industries" - the anti-corporate network became, de facto, a megacorporation's proxy. The young wing calls the old guard "corrupt" for it.</p>
-<p>A hot war with the UESC - and a puppeteer above it: Traxus. Datamine also pins the leak of the "Project Goliath" file on MIDA, the leak that kicked off the corporate race for the planet (see the box). Plus a cynical temporary alliance with Arachne, for whom MIDA's ideology is just convenient chaos.</p>
-<p><b>What it gives the Runner:</b> sabotage tools - demolition weapons and EMP, contracts to blow up targets and upload malware across Tau Ceti IV; and, of course, your Vandal. The network has its own agents inside the security services: _gantry shares a dossier on Captain Orion and a suspicion that an unregistered military AI has been deployed - <em>"Cerberus, capable of mass violence."</em> <span class="chip canon">canon</span> <span class="chip datamine">datamine</span></p></div>
-  </div>
-  <div class="f-row">
-    <div class="f-name"><svg class="pic"><use href="#f-arach"/></svg>Arachne<span>agent: Charter</span><i>voice: Dave Fennoy</i><img class="f-logo" loading="lazy" decoding="async" src="https://marathonwiki.org/api/media/file/factions-69b1ca7e034785859db2cefe-1773270741455.png" alt="Arachne logo" onerror="this.style.display='none'"></div>
-    <div><figure class="f-art"><img loading="lazy" decoding="async" src="https://storage.ghost.io/c/30/f5/30f5b1bb-84ee-4c26-b446-fb9a5e512994/content/images/2026/06/dima-goryainov-dg-marathon-arachne-11.jpg" alt="Charter, agent of Arachne (concept art)" onerror="this.parentElement.style.display='none'"><figcaption><span>Official concept art //</span> Dima Goryainov. Source: aftermath.site</figcaption></figure><p><b class="f-slogan">"See red. Leave blue."</b> A registered death cult for which every kill is at once a ritual and a line of data.</p>
-<p>The "thermodynamics of violence": wringing the absolute maximum out of a shell and a fight. Formally Arachne is "a registered 784s(g) spiritual group" - even a death cult exists as a legal entity with religious status. The doctrine grew out of real failures of early cryotech (8% of class 1-AC test subjects developed severe psychoses): death here is "a recoverable form of death," and cryosleep a path to posthumous enlightenment; the teaching is split into Houses, Hands and Eyes. In the game the motive is compressed to a formula: death and the data you can harvest from it are one and the same.</p>
-<p>The combat acolytes, the "Severed," take a single vow: "Draw your blades only ever in service to sleep." The source of the sect's wealth is officially unknown - Charter refers to unnamed "my Patrons." And in the game the agent appears as a god-like figure with many hands, one of them holding the heart of a slain UESC soldier.</p>
-<p>Arachne is a Traxus subcontractor on salvage runs and holds a cynical temporary alliance with MIDA, whose ideology is, to the cult, merely convenient chaos. It doesn't fight over the planet as such: its war is for death and data. Charter and his cult are death-bringers pure and simple: the planet itself is of no interest to the agent, only Runners killing Runners. That's why Arachne is a PvP faction not just by mechanics but by its very lore: its contracts specifically reward hunting other players.</p>
-<p><b>What it gives the Runner:</b> pure PvP - killstreaks and hunting other Runners; per the press the reward is specific: intel on the positions of enemy squads. Charter is cold and blunt: <em>"Sow war to feed entropy."</em> <span class="chip canon">canon</span> <span class="chip datamine">datamine</span></p></div>
-  </div>
-  <div class="f-row">
-    <div class="f-name"><svg class="pic"><use href="#f-sekg"/></svg>Sekiguchi<span>agent: Nona</span><i>voice: Tracy Wiles</i><img class="f-logo" loading="lazy" decoding="async" src="https://marathonwiki.org/api/media/file/factions-69b1ca82034785859db2cf12-1773270741421.png" alt="Sekiguchi logo" onerror="this.style.display='none'"></div>
-    <div><figure class="f-art"><img loading="lazy" decoding="async" src="https://images.steamusercontent.com/ugc/10947739077656523656/A3290B91C1900AD733C82219865C0E8C07FCCE18/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true" alt="Nona, agent of Sekiguchi (intro cinematic)" onerror="this.parentElement.style.display='none'"><figcaption><span>Screenshot //</span> intro cinematic. Source: Steam Workshop</figcaption></figure><p><em>Sekiguchi has no official slogan in open sources.</em> The creators of shells and the weaver worms, for whom the whole planet is a testing ground for the Runner's body.</p>
-<p>Sekiguchi Genetics is only part of the larger "Sekiguchi Group," whose non-core divisions the sources stay silent about. The WEAVEworm technology stretches from 2198 (the EARTHworm, for waste disposal) through seven centuries of iteration to the printing of biocybernetic shells, and at its heart is an engineered "hunger": with a corrupted program the worms "will attempt to devour one another by default." Agent Nona is a white, winged, insect-like being with red eyes and many hands, nursing the worms and asking softly: "Are we not a force for good?" This is the "endurance faction": it rewards not aggression but survival in the most dangerous zones. Boil it down to one thing: Sekiguchi is the one that explains the very "how" of your immortality - its shells are grown from WEAVEworm biomass, and the neural sync and consciousness transfer into a fresh shell that bring you back after death are its handiwork too. And it treats the Runner accordingly: to Nona you're not a client but a field test subject, convenient for checking how well her shells hold up.</p>
-<p>Under Nona's soft voice is the harshest practice on the body: the press calls Sekiguchi "the most malevolent faction, pushing the limits of human biology." Printing shells rests on the "cannibalism" of its own worms. And its SIMbiont is a prototype that even its rival CyberAcme openly advises the Runner to limit: "I recommend you limit your exposure to the SIMbiont."</p>
-<p>Its main link is with CyberAcme: they build the "Cradle" shell-printing rig together (Sekiguchi the hardware, CyberAcme the software), with ONI holding direct access inside its partner's product. That same ally also undercuts it - it's CyberAcme that advises limiting Sekiguchi's SIMbiont.</p>
-<p><b>What it gives the Runner:</b> biological upgrades for endurance - less bleed-out time, shorter cooldowns; data from the deadliest zones in exchange for body upgrades. Nona is not only an engineer but a teller of parables about Death: <em>"I have consumed every piece of human literature ever recorded."</em> <span class="chip canon">canon</span></p></div>
-  </div>
-
-  <figure class="art">
-    <img loading="lazy" decoding="async" src="https://images.contentstack.io/v3/assets/blt15f7b5c0d43ed112/blt3fc4b732b8f8f3ab/69806c203ada312c13acff6a/Marathon.bungie.fps.shooter.jpg?width=1920&quality=80&auto=webp" alt="UESC soldiers preparing to attack the player" onerror="this.parentElement.style.display='none'">
-    <figcaption><span>Official screenshot //</span> UESC forces - the enemy of every Runner. Source: marathonthegame.com</figcaption>
-  </figure>
-
-  <!-- v6b:factions-network -->
-  <div class="callout"><b>The hidden inter-corporate network:</b> the factions' open hostility on Tau Ceti IV is a storefront behind which those same "enemies" are bound by deals. The Marathon's trio of shipboard AIs was physically built by Traxus (the IX-A "Hermes" series, 2409), and administered by its rival CyberAcme. The "Cradle" shell-printing rig is a joint product of CyberAcme (software) and Sekiguchi (hardware), with ONI holding direct access inside its partner's product. The planet itself was picked as the mission target by a joint NuCaloric-Traxus commission - before the Marathon ever launched. And Traxus, publicly "not present" on the planet, keeps agents inside MIDA and hires Arachne cultists as ordinary mercenaries for salvage runs.<br><br><b>The through-line is "Project Goliath."</b> One file ties the whole opening of the game into a single chain of cause and effect. The UESC commissioned Project Goliath to restore contact with the Tau Ceti IV colony; after the United Shipping hack the file leaked (datamine pins the leak on MIDA, on a single source), and once all of Goliath was out, the Traxus-UESC negotiations froze overnight - the corporation went to the planet on its own. Then the main twist: MIDA "had been formally brought into the fold by Traxus OffWorld Industries" - the anti-corporate revolution that once hacked Traxus's correspondence became that same megacorporation's asset, and the MIDA schism (radicals call the old guard "corrupt") probably runs exactly along the line of that deal. Against this backdrop CyberAcme is "above the fray" only formally: it brokers everyone's contracts and profits off each, while NuCaloric doesn't fight but quietly investigates the colony's death and knows more than it says. <span class="chip canon">canon</span> <span class="chip datamine">datamine</span> <span class="chip theory">theory</span></div>
-
-  <div class="callout"><b>So who's the enemy?</b> The UESC - Earth's government - isn't a faction but the main adversary of all Runners. Their rescue-slash-occupation force arrived aboard the <b>UESC Equanimity T-SR 151</b>, a modified Kingfisher-class salvage-and-rescue ship commanded at launch by Captain Ningal T. Enki, carrying clone crews and a dedicated rampancy-response team. Planetside forces answer to <b>Captain Orion</b> (voiced by Rich Keeble) - who, ironically, wears an artificial body just like you. He's been killed before. They printed a new one. You're here illegally, and their robots and drones shoot without warning. Boiled down, there are exactly three sources of threat in a raid: UESC forces, other Runners (that is, PvP), and Anomaly-born things.</div>
-</section>
-<div class="pager">
-  <a class="pager-prev" href="sound.html">← Previous</a>
-  <a class="pager-next" href="aliens.html">Next →</a>
+<a class="skip" href="#top">К содержимому</a>
+<header class="mbar" id="mbar">
+  <a class="mbar__logo" href="../index.html" aria-label="Терминал Марафона, рабочий стол"><i class="mbar__sq"></i><img class="mbar__mark" src="../assets/img/brand/wordmark-white.png" alt="" width="120" height="38"><span class="mbar__os">TERMINAL&nbsp;OS</span><span class="mbar__ver">v7.0</span></a>
+  <nav class="mbar__menu" aria-label="Меню"><a href="../index.html?open=archive">Архив</a><a href="factions.html" aria-current="page">Файл 07</a><a href="../index.html?open=curator">Куратор</a><a href="../index.html?open=forecast">Прогнозы</a></nav>
+  <span class="mbar__sp"></span>
+  <a class="mbar__air" href="../index.html?open=air"><i></i><span>Эфир</span><b>С ТАУ КИТА</b></a>
+  <time class="mbar__clock" data-clock>08.10.2893 00:00</time>
+</header>
+<div class="achrome" role="group" aria-label="Окно файла 07">
+  <i class="win__ico"></i><span class="win__title">FACTIONS.DOS</span><span class="win__path">/uesc/lore/07</span><span class="win__lines"></span>
+  <span class="achrome__pct">ПРОЧИТАНО <b data-readpct>0%</b></span>
+  <a class="win__btn" href="../index.html">&lt; Рабочий стол</a><a class="win__btn x" href="../index.html" aria-label="Закрыть файл и вернуться на рабочий стол">×</a>
+  <i class="achrome__bar" data-readbar></i>
 </div>
-<footer>
-  <div class="footer-logos">
-    <img loading="lazy" decoding="async" src="https://images.contentstack.io/v3/assets/blt15f7b5c0d43ed112/bltd7331a6610275af9/69677e5ff4f25c00087a9e20/footer_logo_v2.svg?width=640&quality=80" alt="Marathon" onerror="this.style.display='none'">
-    <img loading="lazy" decoding="async" src="https://images.contentstack.io/v3/assets/blt15f7b5c0d43ed112/blt8df2717a52c60cdd/6964c1f51f87f800082b54d5/bungie-logo.svg?width=256&quality=80" alt="Bungie" onerror="this.style.display='none'">
+<main id="top" class="pg">
+  <section class="s-hero" data-sec="intro" id="intro" data-field-window data-lens-zone data-field-src="../assets/img/kit/factions-uesc-corridor.jpg" data-field-focus=".55,.45" data-field-focus-m=".5,.45" data-field-wander=".55,.45,.14,.18" data-field-wander-m=".5,.4,.2,.12" data-field-label="КОРИДОР UESC // ПРЕСС-КИТ BUNGIE, DECEMBER 2025">
+    <div class="hero-main">
+      <div class="hero-top">
+        <p class="kick slab"><b>ФАЙЛ 07</b> // INFLUENCE IS POWER // 6 ФРАКЦИЙ</p>
+        <p class="kick slab"><span data-field-src-label>КОРИДОР UESC // ПРЕСС-КИТ BUNGIE, DECEMBER 2025</span></p>
+      </div>
+      <h1 class="super s-title" data-kinetic><span class="ln">Фракции</span></h1>
+    </div>
+    <div class="s-intro panel">
+      <p>Шесть корпораций и группировок нанимают Раннеров, и у каждой - свой ИИ-агент, который выдаёт тебе контракты. Начинают все с CyberAcme: шесть её ознакомительных контрактов открывают остальных. У каждого агента указан актёр озвучки; полный каст, около 33 человек, раскрыли в январе 2026-го. <span class="chip chip--canon">canon</span></p>
+      <p class="term"><b>НОВИЧКУ &gt;</b> начни с ONI из CyberAcme: шесть её ознакомительных контрактов открывают остальные пять фракций. После сброса 06.10 пороги репутации снижены, так что вход быстрее, чем был на старте.</p>
+    </div>
+  </section>
+
+  <div class="s-body">
+    <nav class="toc panel" aria-label="Разделы файла">
+      <p class="lbl">Разделы // 9</p>
+      <ol>
+        <li><a href="#contracts">07.1 <b>Контракты</b></a></li>
+        <li><a href="#cyberacme">07.2 <b>CyberAcme</b></a></li>
+        <li><a href="#nucaloric">07.3 <b>NuCaloric</b></a></li>
+        <li><a href="#traxus">07.4 <b>Traxus</b></a></li>
+        <li><a href="#mida">07.5 <b>MIDA</b></a></li>
+        <li><a href="#arachne">07.6 <b>Arachne</b></a></li>
+        <li><a href="#sekiguchi">07.7 <b>Sekiguchi</b></a></li>
+        <li><a href="#network">07.8 <b>Сеть</b></a></li>
+        <li><a href="#uesc">07.9 <b>UESC</b></a></li>
+      </ol>
+      <div class="toc__prog" aria-hidden="true"><i data-prog></i></div>
+      <p class="toc__cur" aria-live="polite" data-cur><b>КУРАТОР&gt;</b><span>Файл 07. Шесть нанимателей. Читайте по порядку.</span></p>
+    </nav>
+    <div class="s-list">
+      <article class="dossier panel" id="contracts" data-sec="contracts" aria-labelledby="contracts-t">
+        <header class="d-head">
+          <span class="d-num">07.1</span>
+          <h2 class="super d-name d-name--long" id="contracts-t" data-kinetic>Контракты</h2>
+          <div class="d-meta"><span class="lbl">Как устроена работа</span><span class="role">Петля</span></div>
+        </header>
+        <div class="d-grid">
+          <figure class="d-fig">
+          <img src="https://images.contentstack.io/v3/assets/blt15f7b5c0d43ed112/blt0656353348a074b8/69806a3998d6ebf4e5ca3676/marathon.bungie.character.png?width=1200&amp;quality=80&amp;auto=webp" alt="Gantry, агент фракции MIDA, официальный арт" loading="lazy" decoding="async" referrerpolicy="no-referrer" style="object-position:50% 25%">
+          <figcaption><span>Gantry, агент MIDA // marathonthegame.com</span></figcaption>
+        </figure>
+          <div class="d-text">
+            <p class="d-role">Контракт берут у агента фракции, выполняют в рейде и сдают после возвращения. Платят репутацией у этой фракции и наградами. С репутацией растёт ассортимент её вендора: шеллы, оружие и моды получше. Дальше по кругу, только контракты становятся сложнее. <span class="chip chip--canon">canon</span></p>
+            <div class="d-block"><h3 class="lbl">Сброс 06.10</h3><p><span class="d-patch">1.1.9.2</span>Nightfall Refresh обнулил уровни фракций вместе с уровнями Раннера, Cradle, Vault и доступом к зонам; LUX, SILK и косметика остались. Взамен требования к репутации фракций снижены, а за бой с UESC дают больше опыта: петлю проходят заново, но быстрее. <span class="chip chip--canon">canon</span></p></div>
+          </div>
+        </div>
+        <figure class="diag">
+          <svg viewBox="0 0 760 214" role="img" aria-labelledby="loop-t" class="dg">
+              <title id="loop-t">Петля контрактов: контракт у агента, рейд, сдача, репутация, вендор и снова контракт</title>
+              <g class="dg-box"><rect x="6" y="52" width="128" height="68"/><rect x="156" y="52" width="128" height="68"/><rect x="306" y="52" width="128" height="68"/><rect x="456" y="52" width="128" height="68" class="dg-hot"/><rect x="606" y="52" width="148" height="68"/></g>
+              <g class="dg-arrow"><path d="M134 86h18M146 81l6 5-6 5M284 86h18M296 81l6 5-6 5M434 86h18M446 81l6 5-6 5M584 86h18M596 81l6 5-6 5"/><path d="M680 120v52H70v-46M65 132l5-6 5 6"/></g>
+              <g class="dg-t"><text x="70" y="82">КОНТРАКТ</text><text x="220" y="82">РЕЙД</text><text x="370" y="82">СДАЧА</text><text x="520" y="82" class="dg-l">РЕПУТАЦИЯ</text><text x="680" y="82">ВЕНДОР</text></g>
+              <g class="dg-s"><text x="70" y="102">у агента</text><text x="220" y="102">выполнить</text><text x="370" y="102">вернуться</text><text x="520" y="102">уровень фракции</text><text x="680" y="102">шеллы, оружие, моды</text></g>
+              <text x="375" y="194" class="dg-s">лучшее снаряжение, контракты сложнее</text>
+              <g class="dg-red"><path d="M520 46V20"/><text x="520" y="14">06.10 СБРОС УРОВНЕЙ</text></g>
+            </svg>
+          <figcaption>Схема // петля контрактов. Оригинальная графика архива<span class="touch-only"> // листай вбок</span></figcaption>
+        </figure>
+      </article>
+      <article class="dossier panel" id="cyberacme" data-sec="cyberacme" aria-labelledby="cyberacme-t">
+        <header class="d-head">
+          <span class="d-num"><svg class="f-ico" aria-hidden="true"><use href="#f-cyac"/></svg>07.2</span>
+          <h2 class="super d-name d-name--long" id="cyberacme-t" data-kinetic>CyberAcme</h2>
+          <div class="d-meta"><img class="f-logo" src="https://marathonwiki.org/api/media/file/factions-69b1ca7e034785859db2cf03-1773270741417.png" alt="Логотип CyberAcme" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()"><span class="lbl">Агент ONI // голос: Доннла Хьюз</span><span class="role">Брокер</span></div>
+        </header>
+        <div class="d-grid">
+          <figure class="d-fig">
+          <img src="https://storage.ghost.io/c/30/f5/30f5b1bb-84ee-4c26-b446-fb9a5e512994/content/images/2026/06/tobias-kwan-tk-faction-agent-oni-01.jpg" alt="ONI, агент CyberAcme, концепт-арт" loading="lazy" decoding="async" referrerpolicy="no-referrer" style="object-position:50% 30%">
+          <figcaption><span>Концепт-арт: Tobias Kwan // aftermath.site</span></figcaption>
+        </figure>
+          <div class="d-text">
+            <p class="d-role"><b class="f-slogan">«Everything runs on CyberAcme. Or nothing runs at all.»</b> Цифровая инфраструктура всего человечества и нейтральный брокер, через которого проходят контракты всех Раннеров.</p>
+            <div class="d-block"><h3 class="lbl">Кто они</h3><p>За планету CyberAcme не воюет. Она продаёт "hardware and software for all applications" всем шести сторонам и берёт процент с каждого контракта. Её ONI (Onboard Navigational Intelligence; так же называется теневая разведка из Halo, и Bungie это знает) - парящая оцифрованная женская голова и твой первый проводник. ONI заодно и продукт: эта прошивка стоит почти в каждой оболочке Раннера. Большинство систем самого «Marathon» тоже делала CyberAcme ("the majority of the UESC MARATHON's systems were powered by CYAC"), так что на Tau Ceti IV компания пришла к своему же наследству. На оригинальном корабле она управляла большей частью бортовых компьютерных систем, сейчас работает нейтральным брокером и держит инфраструктуру. Отсюда и роль стартовой фракции: весь технический стек, на котором стоит Раннер, от прошивки ONI в оболочке до контрактной сети, принадлежит ей, и ONI-поддержка проводит новичка через первые контракты. <span class="chip chip--canon">canon</span></p></div>
+            <div class="d-block"><h3 class="lbl">Изнанка</h3><p>За деловым фасадом уже не слухи: вики прямо пишет, что корпорация "deals in the illegal buying and selling of personality and thought data". Контракт Раннера отдаёт ей совладение копиями твоего сознания, так что продан ты ещё до первого рейда. Вербует она через программу NextForm Recourse: скупает долги кандидата и делает его «декорпореализованным» - "This debt has been purchased by CyberAcme and added to your balance". <span class="chip chip--canon">canon</span></p></div>
+            <div class="d-block"><h3 class="lbl">Союзы и вражда</h3><p>Формально CyberAcme нейтральна. На деле она брокерит контракты всех сторон и завязана в партнёрства («Cradle» с Sekiguchi, поставки Traxus). UESC она холодно презирает; по одному пресс-источнику ONI называет уничтожение правительства "completely acceptable", но в игре эту реплику дословно не сверяли. <span class="chip chip--canon">canon</span> <span class="chip chip--theory">theory</span></p></div>
+            <div class="d-block"><h3 class="lbl">Что даёт Раннеру</h3><p>Мягкий онбординг: апгрейды шелла, короче кулдауны, больше инвентаря. Через её шесть контрактов открываются остальные пять фракций. Прощается ONI всегда одной и той же ласковой фразой: <em>"Congratulations, and sweet dreams"</em>. <span class="chip chip--canon">canon</span> <span class="chip chip--datamine">datamine</span></p>
+            <p><span class="d-patch">1.1.9</span>С обновлением 1.1.9 (01.09.2026) у CyberAcme открылся арморий C.A.R.R.I: Superior Shield Implant и Superior Backpack, ассортимент обновляется три раза в неделю. Тогда же подешевели награды за CyberAcme Commendations: Deluxe Backpack с 20 до 15, Deluxe Shield Implant с 12 до 10, Deluxe Key Template с 40 до 30, Superior Key Template с 75 до 50. <span class="chip chip--canon">canon</span></p>
+            <p><span class="d-patch">1.1.9.2</span>06.10.2026 ONI объявила Раннерам, что «фискальный сезон окончен»: кредиты и снаряжение ушли в оплату их долга, улучшения Cradle и фракций откатились. Этим сброс Nightfall Refresh объяснили внутри мира. <span class="chip chip--canon">canon</span></p>
+            <p class="triv">Долг здесь тот же, что CyberAcme скупает через NextForm Recourse: вайп впервые оформлен как взыскание по контракту Раннера. <span class="chip chip--theory">theory</span> <span class="tag">наша</span></p></div>
+          </div>
+        </div>
+      </article>
+      <article class="dossier panel" id="nucaloric" data-sec="nucaloric" aria-labelledby="nucaloric-t">
+        <header class="d-head">
+          <span class="d-num"><svg class="f-ico" aria-hidden="true"><use href="#f-nucal"/></svg>07.3</span>
+          <h2 class="super d-name d-name--long" id="nucaloric-t" data-kinetic>NuCaloric</h2>
+          <div class="d-meta"><img class="f-logo" src="https://marathonwiki.org/api/media/file/factions-69b1ca7e034785859db2cf0d-1773270741419.png" alt="Логотип NuCaloric" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()"><span class="lbl">Агент Gaius // голос: Дарин Де Пол</span><span class="role">Следователь</span></div>
+        </header>
+        <div class="d-grid">
+          <figure class="d-fig">
+          <img src="https://storage.ghost.io/c/30/f5/30f5b1bb-84ee-4c26-b446-fb9a5e512994/content/images/2026/06/tobias-kwan-tk-faction-agent-gaius-04.jpg" alt="Gaius, агент NuCaloric, концепт-арт" loading="lazy" decoding="async" referrerpolicy="no-referrer" style="object-position:50% 30%">
+          <figcaption><span>Концепт-арт: Tobias Kwan // aftermath.site</span></figcaption>
+        </figure>
+          <div class="d-text">
+            <p class="d-role"><b class="f-slogan">«Essentially. Everywhere.»</b> Монополист еды, медицины и жилья, который тихо расследует, что убило колонию.</p>
+            <div class="d-block"><h3 class="lbl">Кто они</h3><p>«Накормить, одеть и снабдить человечество» - модель, которую codex описывает как смесь социальной пользы и безжалостной оптимизации. Основанный Гасом Морейном на голоде 2360-х как филантроп, NuCaloric вырос в крупнейшего поставщика товаров в Солнечной системе: от Biostock и биосинтетических питомцев до фармацевтики, жилых модулей и косметики. На Tau Ceti IV он принципиально избегает силового захвата ("does not appear interested in sustained confrontation") - предпочитает собирать исторические данные и разведку руками нанятых Раннеров ("hired RUNNER operatives"). Работает она как следователь. При этом NuCaloric числится среди корпоративных спонсоров экспедиции «Marathon», которая когда-то увезла колонистов к Tau Ceti, и расследует историю, в которой сама участвовала. <span class="chip chip--canon">canon</span></p></div>
+            <div class="d-block"><h3 class="lbl">Изнанка</h3><p>У филантропа есть детали похуже. «Клещевое молоко» NuCaloric делают из того, о чём ты подумал. Основатель Гас Морейн лично записал приветствие колонистам, настояв на слове «жертва», - а сразу за ним шла реклама «Drinkable Cheeseburger». В эксклюзивном контракте с UESC пункт 616 закрепляет аренду поставленного колонистам имущества минимум на 600 лет, а сами колонисты в договоре стороной не значатся. И, судя по прессе, Gaius знает о гибели колонии больше, чем говорит: его мотивы "slightly askew". <span class="chip chip--canon">canon</span> <span class="chip chip--theory">theory</span></p></div>
+            <div class="d-block"><h3 class="lbl">Союзы и вражда</h3><p>Открытого столкновения корпорация избегает со всеми - её боевой лор прямо признаёт, что NuCal "not yet wholly comfortable with open conflict". Саму планету целью миссии она когда-то выбрала в связке с Traxus. По 600-летнему контракту на снабжение колонии NuCaloric юридически причастна к судьбе Tau Ceti IV, и эта нить к тайне гибели с Traxus уже не связана. <span class="chip chip--canon">canon</span></p></div>
+            <div class="d-block"><h3 class="lbl">Что даёт Раннеру</h3><p>Предметы на выживание: заряды щита, аптечки, регенеративные импланты. Тон фракции задаёт приветствие Gaius колонистам: <em>"Humanity thanks you for your sacrifice"</em>. <span class="chip chip--canon">canon</span> <span class="chip chip--datamine">datamine</span></p>
+            <p><span class="d-patch">1.1.9.2</span>С Nightfall Refresh (06.10.2026) у фракции появился бесплатный NuCaloric Reward Pass: награды за прогресс без покупки. <span class="chip chip--canon">canon</span></p></div>
+          </div>
+        </div>
+      </article>
+      <div class="gap" data-field-window data-field-src="../assets/img/kit/factions-ad-panels.jpg" data-field-focus=".5,.45" data-field-label="РЕКЛАМНЫЕ ПАНЕЛИ // ПРЕСС-КИТ BUNGIE, RUNNER SHELL DEV INSIGHT" aria-hidden="true"><p class="gap__l"><b>КАНАЛ 07.4</b><span>РЕКЛАМА КОРПОРАЦИЙ // ПОД ЛИНЗОЙ ЦВЕТ КАДРА</span></p></div>
+      <article class="dossier panel" id="traxus" data-sec="traxus" aria-labelledby="traxus-t">
+        <header class="d-head">
+          <span class="d-num"><svg class="f-ico" aria-hidden="true"><use href="#f-trax"/></svg>07.4</span>
+          <h2 class="super d-name" id="traxus-t" data-kinetic>Traxus</h2>
+          <div class="d-meta"><img class="f-logo" src="https://marathonwiki.org/api/media/file/factions-69b1ca87034785859db2cf47-1773270741550.png" alt="Логотип Traxus" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()"><span class="lbl">Агент Vulcan // голос: Морла Горрондона</span><span class="role">Кукловод</span></div>
+        </header>
+        <div class="d-grid">
+          <figure class="d-fig">
+          <img src="https://images.steamusercontent.com/ugc/16295817170346948982/FC876E181823AAD5B03AFBBC9199A50FA11EEB5D/?imw=637&amp;imh=358&amp;ima=fit&amp;impolicy=Letterbox&amp;imcolor=%23000000&amp;letterbox=true" alt="Vulcan, агент Traxus, кадр интро-ролика" loading="lazy" decoding="async" referrerpolicy="no-referrer" style="object-position:50% 30%">
+          <figcaption><span>Кадр интро-ролика // Steam Workshop</span></figcaption>
+        </figure>
+          <div class="d-text">
+            <p class="d-role"><b class="f-slogan">«Operate Beyond Scale.»</b> Ост-Индская компания космической эры, считающая колонию и её технологии своей собственностью, подлежащей возврату.</p>
+            <div class="d-block"><h3 class="lbl">Кто они</h3><p>Богатейшая частная корпорация в истории человечества, влиянием уступающая только UESC ("second only to the UNIFIED EARTH SPACE COUNCIL"). Основана на Земле в 2095-м как «Traxus Intelligent Systems» с целью "pierce the veil of the cosmos", в 2145-м перебралась на Марс за минералами. Действует чужими руками и через фасады: публично на Tau Ceti IV её «нет», а Раннеров она использует как отрицаемый актив, чтобы "scavenge the colony in direct opposition of UESC forces". Юридически же Traxus заявляет "rights of reacquisition" на все технологии, связанные с «Marathon» и колонией, - то есть считает саму планету своей. Агент Vulcan не уговаривает: неподвижно сидит на троне с горящими глазами и зачитывает оговорки, по которым ты - «временный небалансовый работник» (temporary nonasset worker) без единого права. С UESC Traxus сейчас открыто спорит за право салважа опустевшей New Cascadia: обе стороны считают руины колонии и её технику своим законным трофеем. Ради этого салважа корпорация и забрасывает на планету Раннеров. <span class="chip chip--canon">canon</span></p></div>
+            <div class="d-block"><h3 class="lbl">Изнанка</h3><p>Traxus IV, ИИ, обрушивший Марс в 2206-м, был их собственной системой четвёртого поколения; скандал корпорация пережила. Корабельную тройку ИИ «Marathon» (Leela, Tycho, Durandal; серия IX-A «Гермес», 2409) физически тоже произвела Traxus, хотя администрирует их конкурент CyberAcme. А «Project Goliath» - файл, из-за утечки которого переговоры Traxus с UESC встали за ночь, и корпорация пошла на планету сама (см. <a href="#network">07.8 Сеть</a>). <span class="chip chip--canon">canon</span></p></div>
+            <div class="d-block"><h3 class="lbl">Союзы и вражда</h3><p>Внешне Traxus воюет с UESC за трофеи и «права возврата». Тайно она дёргает за нитки: по датамайну MIDA "had been formally brought into the fold by Traxus OffWorld Industries", и анти-корпоративная революция стала её активом. Есть ещё давний сговор с NuCaloric о выборе планеты и наём культистов Arachne на трофейные вылазки. <span class="chip chip--datamine">datamine</span></p></div>
+            <div class="d-block"><h3 class="lbl">Что даёт Раннеру</h3><p>Самый дорогой лут - апгрейды и моды оружия под строгим корпоративным контролем. В вербовку Traxus включает даже целые страны ("Choose freedom. Let Traxus steward what you have built"), а в прямом эфирном споре с адмиралом UESC всё отрицает и заканчивает завуалированной угрозой: <em>"Our success is your success"</em>. <span class="chip chip--canon">canon</span> <span class="chip chip--datamine">datamine</span></p>
+            <p><span class="d-patch">1.1.5.4</span>В ивенте <a href="seasons.html#ordnance">Ordnance Heist</a> (18.08-01.09.2026) UESC Manifests, добытые в Perimeter, принимали сразу два арморья, Traxus и MIDA, хотя эти фракции враждуют. <span class="chip chip--canon">canon</span></p></div>
+          </div>
+        </div>
+      </article>
+      <article class="dossier panel" id="mida" data-sec="mida" aria-labelledby="mida-t">
+        <header class="d-head">
+          <span class="d-num"><svg class="f-ico" aria-hidden="true"><use href="#f-mida"/></svg>07.5</span>
+          <h2 class="super d-name" id="mida-t" data-kinetic>MIDA</h2>
+          <div class="d-meta"><img class="f-logo" src="https://marathonwiki.org/api/media/file/factions-69b1ca7e034785859db2cf08-1773270741424.png" alt="Логотип MIDA" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()"><span class="lbl">Агент _gantry // голос: Ли Шортен</span><span class="role">Революция</span></div>
+        </header>
+        <div class="d-grid">
+          <figure class="d-fig">
+          <img src="https://storage.ghost.io/c/30/f5/30f5b1bb-84ee-4c26-b446-fb9a5e512994/content/images/2026/06/tobias-kwan-tk-faction-agent-gantry-01.jpg" alt="Агент MIDA _gantry, концепт-арт" loading="lazy" decoding="async" referrerpolicy="no-referrer" style="object-position:50% 30%">
+          <figcaption><span>Концепт-арт: Tobias Kwan // aftermath.site</span></figcaption>
+        </figure>
+          <div class="d-text">
+            <p class="d-role"><b class="f-slogan">«Resist. Disrupt. Destroy.»</b> Марсианские революционеры, мечтающие сжечь старый мир, - и тихо купленные Traxus.</p>
+            <div class="d-block"><h3 class="lbl">Кто они</h3><p>Цель _gantry формулирует прямо: "burn away a stagnant, corrupt world" и построить новый по ту сторону революции. Это марсианская политическая партия, переродившаяся в анархистскую сеть, чьи счёты старше самого «Marathon»: корни уходят в резню у распределительного центра еды в Мисриа (Misriah) 4 января 2345 года, с которой началась Третья марсианская война, а сеть закалилась после резни 2442-го. У самой аббревиатуры MIDA нет канонической расшифровки - ARG намеренно давала взаимоисключающие варианты, от «Martian Independence Demands Accountability» до шутки «Mars Is Damnably Arid». Агент _gantry говорит обрывками фраз-граффити и заливает малварь, чтобы его не отследили. Имя MIDA взято из трилогии 90-х: там марсианское революционное движение против земного правительства уже было, и его позднее подавили. Потом Bungie взяла имя для Destiny (винтовка MIDA Multi-Tool) и теперь вернула сюда. Внутренней шутке студии почти 30 лет, за это время она прошла через три игры. <span class="chip chip--canon">canon</span></p></div>
+            <div class="d-block"><h3 class="lbl">Изнанка</h3><p>За три месяца своей власти над Марсом в 2466-м MIDA стала ответственна за гибель примерно десятой части населения планеты. Ещё на стройке «Marathon» её оперативники тайком пронесли на борт оружие и боевых роботов (Battleroids) в расчёте поднять новое восстание вдали от Земли. Свежее из датамайна: MIDA "had been formally brought into the fold by Traxus OffWorld Industries", и анти-корпоративная сеть де-факто работает на мегакорпорацию. Молодое крыло за это зовёт старую гвардию "corrupt". <span class="chip chip--canon">canon</span> <span class="chip chip--datamine">datamine</span></p></div>
+            <div class="d-block"><h3 class="lbl">Союзы и вражда</h3><p>С UESC идёт открытая война, а сверху MIDA держит Traxus. Датамайн приписывает MIDA и утечку файла «Project Goliath», с которой началась гонка корпораций за планету (см. <a href="#network">07.8 Сеть</a>). С Arachne у сети временный циничный союз: культу идеология MIDA нужна как удобный хаос. <span class="chip chip--canon">canon</span> <span class="chip chip--datamine">datamine</span></p></div>
+            <div class="d-block"><h3 class="lbl">Что даёт Раннеру</h3><p>Инструменты саботажа - подрывное оружие и EMP, контракты на подрыв объектов и заливку малвари по всей Tau Ceti IV; отсюда же твой Vandal. У сети есть своя агентура в силовых структурах: _gantry делится досье на капитана Orion и подозрением в развёртывании незарегистрированного военного ИИ - <em>"Cerberus, capable of mass violence"</em>. <span class="chip chip--canon">canon</span> <span class="chip chip--datamine">datamine</span></p>
+            <p><span class="d-patch">1.1.5.4</span>В <a href="seasons.html#ordnance">Ordnance Heist</a> арморий MIDA принимал UESC Manifests наравне с армориями Traxus: удобная витрина для сделки, о которой выше пишет датамайн. <span class="chip chip--canon">canon</span></p></div>
+          </div>
+        </div>
+      </article>
+      <div class="gap" data-field-window data-field-src="../assets/img/kit/factions-vending.jpg" data-field-focus=".5,.5" data-field-label="ТОРГОВЫЙ АВТОМАТ // ПРЕСС-КИТ BUNGIE, DECEMBER 2025" aria-hidden="true"><p class="gap__l"><b>КАНАЛ 07.6</b><span>ВИТРИНА ВЕНДОРА // ПОД ЛИНЗОЙ ЦВЕТ КАДРА</span></p></div>
+      <article class="dossier panel" id="arachne" data-sec="arachne" aria-labelledby="arachne-t">
+        <header class="d-head">
+          <span class="d-num"><svg class="f-ico" aria-hidden="true"><use href="#f-arach"/></svg>07.6</span>
+          <h2 class="super d-name" id="arachne-t" data-kinetic>Arachne</h2>
+          <div class="d-meta"><img class="f-logo" src="https://marathonwiki.org/api/media/file/factions-69b1ca7e034785859db2cefe-1773270741455.png" alt="Логотип Arachne" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()"><span class="lbl">Агент Charter // голос: Дэйв Феннуа</span><span class="role">Культ смерти</span></div>
+        </header>
+        <div class="d-grid">
+          <figure class="d-fig">
+          <img src="https://storage.ghost.io/c/30/f5/30f5b1bb-84ee-4c26-b446-fb9a5e512994/content/images/2026/06/dima-goryainov-dg-marathon-arachne-11.jpg" alt="Charter, агент Arachne, концепт-арт" loading="lazy" decoding="async" referrerpolicy="no-referrer" style="object-position:50% 30%">
+          <figcaption><span>Концепт-арт: Dima Goryainov // aftermath.site</span></figcaption>
+        </figure>
+          <div class="d-text">
+            <p class="d-role"><b class="f-slogan">«See red. Leave blue.»</b> Зарегистрированный культ смерти, для которого каждое убийство - одновременно ритуал и строка данных.</p>
+            <div class="d-block"><h3 class="lbl">Кто они</h3><p>«Термодинамика насилия»: выжать из шелла и боя абсолютный максимум. Формально Arachne - "a registered 784s(g) spiritual group", у культа смерти есть юрлицо и религиозный статус. Доктрина выросла из реальных провалов ранней криотехнологии (8% испытуемых класса 1-AC получали тяжёлые психозы): смерть здесь - "a recoverable form of death", а криосон - путь к посмертному просветлению; учение делится на Дома, Руки и Глаза. Мотив в игре сжат до формулы: смерть и данные, которые из неё можно собрать, - одно целое. <span class="chip chip--canon">canon</span></p></div>
+            <div class="d-block"><h3 class="lbl">Изнанка</h3><p>Боевые послушники «Отсечённые» приносят единственный обет: "Draw your blades only ever in service to sleep". Источник богатства секты официально неизвестен - Charter ссылается на неведомых "my Patrons". А в самой игре агент предстаёт богоподобной фигурой со множеством рук, в одной из которых - сердце убитого солдата UESC. <span class="chip chip--canon">canon</span></p></div>
+            <div class="d-block"><h3 class="lbl">Союзы и вражда</h3><p>На трофейных вылазках Arachne работает субподрядчиком Traxus, с MIDA держит временный союз ради хаоса. Сама планета культу безразлична, воюет он за смерть и данные. Charter и его культ - «дарящие смерть», и интересны им Раннеры, которые убивают Раннеров. PvP-фракцией Arachne делает и механика, и лор: контракты платят за охоту на других игроков. <span class="chip chip--canon">canon</span></p></div>
+            <div class="d-block"><h3 class="lbl">Что даёт Раннеру</h3><p>Чистый PvP - киллстрики и охота на других Раннеров; по прессе награда специфична: развед-инфо о позициях вражеских отрядов. Charter холоден и прям: <em>"Sow war to feed entropy"</em>. <span class="chip chip--canon">canon</span> <span class="chip chip--datamine">datamine</span></p></div>
+          </div>
+        </div>
+      </article>
+      <article class="dossier panel" id="sekiguchi" data-sec="sekiguchi" aria-labelledby="sekiguchi-t">
+        <header class="d-head">
+          <span class="d-num"><svg class="f-ico" aria-hidden="true"><use href="#f-sekg"/></svg>07.7</span>
+          <h2 class="super d-name d-name--long" id="sekiguchi-t" data-kinetic>Sekiguchi</h2>
+          <div class="d-meta"><img class="f-logo" src="https://marathonwiki.org/api/media/file/factions-69b1ca82034785859db2cf12-1773270741421.png" alt="Логотип Sekiguchi" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()"><span class="lbl">Агент Nona // голос: Трейси Уайлс</span><span class="role">Биоинженеры</span></div>
+        </header>
+        <div class="d-grid">
+          <figure class="d-fig">
+          <img src="https://images.steamusercontent.com/ugc/10947739077656523656/A3290B91C1900AD733C82219865C0E8C07FCCE18/?imw=637&amp;imh=358&amp;ima=fit&amp;impolicy=Letterbox&amp;imcolor=%23000000&amp;letterbox=true" alt="Nona, агент Sekiguchi, кадр интро-ролика" loading="lazy" decoding="async" referrerpolicy="no-referrer" style="object-position:50% 30%">
+          <figcaption><span>Кадр интро-ролика // Steam Workshop</span></figcaption>
+        </figure>
+          <div class="d-text">
+            <p class="d-role"><em>Официального слогана у Sekiguchi в открытых источниках нет.</em> Создатели шеллов и червей-ткачей, для которых вся планета - полигон для тела Раннера.</p>
+            <div class="d-block"><h3 class="lbl">Кто они</h3><p>Sekiguchi Genetics - лишь часть большего «Sekiguchi Group», о непрофильных направлениях которого источники молчат. Технология червей WEAVEworm тянется с 2198 года (EARTHworm для утилизации мусора) через семь веков итераций к печати биокибернетических оболочек, и в основе её - спроектированный «голод»: при повреждённой программе черви "will attempt to devour one another by default". Агент Nona - белое крылатое насекомоподобное существо с красными глазами и множеством рук, которое нянчит червей и мягким голосом спрашивает: "Are we not a force for good?". Это «фракция на выносливость»: платит за выживание в самых опасных зонах, агрессия ей ни к чему. Механика твоего бессмертия тоже от Sekiguchi. Шеллы выращены из биоматы WEAVEworm, а нейросинк и перенос сознания в свежую оболочку, благодаря которым ты возвращаешься после смерти, разработала она же. Для Nona Раннер - полевой подопытный, на нём удобно проверять живучесть оболочек. <span class="chip chip--canon">canon</span></p></div>
+            <div class="d-block"><h3 class="lbl">Изнанка</h3><p>Под мягким голосом Nona - самая жёсткая практика над телом: пресса зовёт Sekiguchi «самой злонамеренной фракцией, толкающей пределы человеческой биологии». Печать оболочек держится на «каннибализме» её же червей. А её SIMbiont - прототип, который конкурент CyberAcme открыто советует Раннеру ограничить: "I recommend you limit your exposure to the SIMbiont". <span class="chip chip--canon">canon</span></p></div>
+            <div class="d-block"><h3 class="lbl">Союзы и вражда</h3><p>Главный узел - с CyberAcme: аппарат печати оболочек «Cradle» они делают вместе (Sekiguchi - железо, CyberAcme - софт), причём ONI имеет прямой доступ внутрь продукта партнёра. И тот же партнёр советует Раннерам ограничить SIMbiont Sekiguchi. <span class="chip chip--canon">canon</span></p></div>
+            <div class="d-block"><h3 class="lbl">Что даёт Раннеру</h3><p>Биологические улучшения за выносливость - меньше времени на кровотечение, короче кулдауны; данные из опаснейших зон в обмен на апгрейды тела. Ещё Nona рассказывает притчи о Смерти: <em>"I have consumed every piece of human literature ever recorded"</em>. <span class="chip chip--canon">canon</span></p></div>
+          </div>
+        </div>
+      </article>
+      <article class="dossier panel" id="network" data-sec="network" aria-labelledby="network-t">
+        <header class="d-head">
+          <span class="d-num">07.8</span>
+          <h2 class="super d-name" id="network-t" data-kinetic>Сеть</h2>
+          <div class="d-meta"><span class="lbl">Скрытая межкорпоративная сеть</span><span class="role">Витрина и сделки</span></div>
+        </header>
+        <div class="d-grid">
+          <figure class="d-fig">
+          <img src="../assets/img/kit/factions-ad-panels.jpg" srcset="../assets/img/kit/factions-ad-panels-m.jpg 960w, ../assets/img/kit/factions-ad-panels.jpg 1920w" sizes="(max-width: 820px) 100vw, 60vw" alt="Светящиеся рекламные панели корпораций в торговом помещении" loading="lazy" decoding="async" style="object-position:50% 50%">
+          <figcaption><span>Рекламные панели // пресс-кит Bungie, Runner Shell Dev Insight</span></figcaption>
+        </figure>
+          <div class="d-text">
+            <p class="d-role">За открытой враждой фракций на Tau Ceti IV стоят сделки между теми же «врагами». Корабельную тройку ИИ «Marathon» физически произвела Traxus (серия IX-A «Гермес», 2409), а администрирует их конкурент CyberAcme. Аппарат печати оболочек «Cradle» - совместный продукт CyberAcme (софт) и Sekiguchi (железо), причём ONI имеет прямой доступ внутрь продукта партнёра. Саму планету целью миссии выбрала объединённая комиссия NuCaloric и Traxus - ещё до старта «Marathon». А Traxus, публично «не присутствующая» на планете, содержит агентуру внутри MIDA и нанимает культистов Arachne как обычных наёмников для трофейных вылазок. <span class="chip chip--canon">canon</span></p>
+            <div class="d-block"><h3 class="lbl">Сквозная нить: Project Goliath</h3><p>Начало игры держится на одном файле. UESC заказал Project Goliath, чтобы восстановить связь с колонией Tau Ceti IV; после взлома United Shipping файл утёк (датамайн приписывает утечку MIDA, одним источником), и когда весь Goliath оказался снаружи, переговоры Traxus с UESC встали за ночь - корпорация пошла на планету сама. Дальше по датамайну: MIDA "had been formally brought into the fold by Traxus OffWorld Industries" - анти-корпоративная революция, когда-то взломавшая переписку Traxus, стала активом той же мегакорпорации. Раскол MIDA (радикалы зовут старых "corrupt") идёт, вероятно, ровно по линии этой сделки. CyberAcme стоит «над схваткой» только формально: брокерит контракты всех и наживается на каждом, а NuCaloric не воюет, но тихо расследует гибель колонии и знает больше, чем говорит. <span class="chip chip--canon">canon</span> <span class="chip chip--datamine">datamine</span> <span class="chip chip--theory">theory</span></p></div>
+          </div>
+        </div>
+        <figure class="diag">
+          <svg viewBox="0 0 760 388" role="img" aria-labelledby="net-t" class="dg">
+              <title id="net-t">Схема связей фракций: Traxus в центре, связана с NuCaloric, MIDA, Arachne и ИИ корабля; CyberAcme связана с Sekiguchi и ИИ корабля</title>
+              <g class="dg-edge"><path d="M95 76V300"/><path d="M380 76v92"/><path d="M380 212v88"/><path d="M170 66L305 314"/></g>
+              <g class="dg-edge dg-dm"><path d="M455 178L590 62"/><path d="M455 200L590 318"/><path d="M675 76v224"/></g>
+              <g class="dg-box"><rect x="20" y="32" width="150" height="44"/><rect x="20" y="300" width="150" height="44"/><rect x="305" y="32" width="150" height="44"/><rect x="305" y="168" width="150" height="44" class="dg-hot"/><rect x="590" y="32" width="150" height="44"/><rect x="590" y="300" width="150" height="44"/><rect x="305" y="300" width="150" height="44" class="dg-ghost"/></g>
+              <g class="dg-t"><text x="95" y="59">CYBERACME</text><text x="95" y="327">SEKIGUCHI</text><text x="380" y="59">NUCALORIC</text><text x="380" y="195" class="dg-l">TRAXUS</text><text x="665" y="59">MIDA</text><text x="665" y="327">ARACHNE</text><text x="380" y="327">ИИ «МАРАФОНА»</text></g>
+              <g class="dg-s dg-lab"><text x="104" y="190" text-anchor="start">CRADLE: софт + железо</text><text x="390" y="126" text-anchor="start">выбор планеты</text><text x="390" y="262" text-anchor="start">произвела, IX-A 2409</text><text x="196" y="236" text-anchor="start">администрирует</text><text x="520" y="104" text-anchor="start">«brought into the fold»</text><text x="532" y="268" text-anchor="start">наём на вылазки</text><text x="684" y="190" text-anchor="start">союз</text></g>
+              <g class="dg-key"><path d="M20 374h26"/><text x="54" y="378">canon</text><path d="M130 374h26" class="dg-dmk"/><text x="164" y="378">datamine</text></g>
+            </svg>
+          <figcaption>Схема // кто с кем связан за витриной. Оригинальная графика архива<span class="touch-only"> // листай вбок</span></figcaption>
+        </figure>
+      </article>
+      <article class="dossier panel" id="uesc" data-sec="uesc" aria-labelledby="uesc-t">
+        <header class="d-head">
+          <span class="d-num">07.9</span>
+          <h2 class="super d-name" id="uesc-t" data-kinetic>UESC</h2>
+          <div class="d-meta"><span class="lbl">Не фракция // главный противник</span><span class="role">А кто враг?</span></div>
+        </header>
+        <div class="d-grid">
+          <figure class="d-fig">
+          <img src="https://images.contentstack.io/v3/assets/blt15f7b5c0d43ed112/blt3fc4b732b8f8f3ab/69806c203ada312c13acff6a/Marathon.bungie.fps.shooter.jpg?width=1200&amp;quality=80&amp;auto=webp" alt="Солдаты UESC готовятся атаковать игрока, официальный скриншот" loading="lazy" decoding="async" referrerpolicy="no-referrer" style="object-position:50% 50%">
+          <figcaption><span>Силы UESC // marathonthegame.com</span></figcaption>
+        </figure>
+          <div class="d-text">
+            <p class="d-role">UESC, правительство Земли, в список фракций не входит. Это главный противник всех Раннеров. Их спасательно-оккупационный корпус прибыл на корабле <b>UESC Equanimity T-SR 151</b> - модифицированном спасателе класса Kingfisher под командованием капитана Нингал Т. Энки, с экипажами из клонов и отдельной командой реагирования на рампанси. Силами на планете командует <b>капитан Orion</b> (озвучка - Рич Кибл), который сам носит искусственное тело, как и ты. Его убивали. Напечатали нового. Ты здесь нелегально, и их роботы с дронами стреляют без предупреждения. Всего в рейде по тебе стреляют три стороны: силы UESC, другие Раннеры (PvP) и твари Аномалии. <span class="chip chip--canon">canon</span></p>
+          </div>
+        </div>
+      </article>
+      <section class="sources panel" aria-labelledby="src-t">
+        <h2 class="lbl" id="src-t">Источники</h2>
+        <ol>
+          <li><span>Bungie, <a href="https://www.marathonthegame.com/" target="_blank" rel="noopener">marathonthegame.com</a>: слоганы фракций, официальный арт Gantry, скриншот сил UESC.</span></li>
+          <li><span>Кодекс и описания фракций, логотипы: <a href="https://marathonwiki.org/" target="_blank" rel="noopener">marathonwiki.org</a>; цитаты сверены по внутриигровым текстам.</span></li>
+          <li><span>Aftermath, <a href="https://aftermath.site/" target="_blank" rel="noopener">aftermath.site</a>: концепт-арт агентов, художники Tobias Kwan и Dima Goryainov.</span></li>
+          <li><span>Steam Workshop: кадры интро-роликов Vulcan и Nona.</span></li>
+          <li><span>Update 1.1.9, 01.09.2026: арморий C.A.R.R.I и скидки CyberAcme Commendations, по <a href="https://patchbot.io/games/marathon" target="_blank" rel="noopener">patchbot.io</a> и <a href="https://dailyexfil.com/patches.html" target="_blank" rel="noopener">dailyexfil.com</a>.</span></li>
+          <li><span>Bungie, <a href="https://www.bungie.net/7/en/News/Article/marathon_update_1_1_9_2" target="_blank" rel="noopener">Marathon Update 1.1.9.2 «Nightfall Refresh»</a>, 06.10.2026: сброс уровней фракций, сниженные требования репутации, NuCaloric Reward Pass.</span></li>
+          <li><span>Marathon_Team, <a href="https://steamcommunity.com/app/3065800" target="_blank" rel="noopener">анонс в Steam</a> 06.10.2026: «фискальный сезон окончен» от ONI.</span></li>
+          <li><span>Runner Terminal, <a href="https://www.runner-terminal.com/articles/marathon-ordnance-heist-guide" target="_blank" rel="noopener">гайд по Ordnance Heist</a>: Manifests и армории MIDA и Traxus.</span></li>
+        </ol>
+      </section>
+      <nav class="pager panel" aria-label="Соседние файлы">
+        <a class="btn" href="sound.html">&lt; 06-C Звук</a>
+        <a class="btn btn--solid" href="aliens.html">08 Пришельцы &gt;</a>
+      </nav>
+    </div>
   </div>
-  <p>UESC BRIEFING DOCUMENT v6.4 // TAU CETI IV // 2893</p>
-  <p>Hover over underlined terms for definitions. Click the terminals - they expand.</p>
-  <p>Pictograms in this document are original artwork; the acid-green palette (#C2FE0C) follows the community-documented brand color. Official logos and key art load from the marathonthegame.com CDN. Bungie and Marathon are registered trademarks of Bungie, Inc. Unofficial fan document.</p>
+
+  <footer class="foot panel">
+    <img class="foot__mark" src="../assets/img/brand/wordmark-white.png" alt="Marathon" width="1000" height="318" loading="lazy">
+    <div class="foot-row">
+      <p>Терминал Марафона, v7.0. Неофициальный фанатский архив, некоммерческий проект. Bungie и Marathon - зарегистрированные товарные знаки Bungie, Inc. Логотипы и кадры взяты из официального пресс-кита Bungie, факты сверены с первоисточниками и размечены метками canon, datamine и theory.</p>
+      <ul>
+        <li><a href="../index.html?open=archive">ARCHIVE // все файлы</a></li>
+        <li><a href="../index.html?open=air">ЭФИР С ТАУ КИТА</a></li>
+        <li><a href="../index.html?open=forecast">FORECAST.LOG</a></li>
+        <li><a href="https://www.reddit.com/user/danyaev/" target="_blank" rel="noopener">Нашли ошибку? Напишите</a></li>
+      </ul>
+      <p class="kick">СЕАНС // УЗЕЛ АРХИВА НА СВЯЗИ<br>TAU CETI IV // 2893</p>
+    </div>
+  </footer>
+</main>
+
+<p class="ctoast" data-toast aria-hidden="true"><b>КУРАТОР&gt;</b><span></span></p>
+<footer class="task" aria-label="Панель задач">
+  <a class="task__start" href="../index.html" aria-label="Рабочий стол"><i></i><span>UESC</span></a>
+  <nav class="task__tabs" aria-label="Окна">
+    <a class="tab" href="../index.html"><svg viewBox="0 0 34 34" aria-hidden="true"><path d="M3 16L17 4l14 12"/><path d="M7 13v17h20V13"/></svg><span class="tab__d">DESKTOP</span><span class="tab__m">Стол</span></a>
+    <a class="tab is-open is-focus" href="#top" aria-current="page"><svg viewBox="0 0 34 34" aria-hidden="true"><path d="M7 3h14l6 6v22H7z"/><path d="M21 3v6h6"/></svg><span class="tab__d">FACTIONS.DOS</span><span class="tab__m">Файл 07</span></a>
+    <a class="tab" href="../index.html?open=archive"><svg viewBox="0 0 34 34" aria-hidden="true"><path d="M3 9h11l3 3h14v17H3z"/><path d="M3 15h28"/></svg><span class="tab__d">ARCHIVE</span><span class="tab__m">Архив</span></a>
+    <a class="tab" href="../index.html?open=air"><svg viewBox="0 0 34 34" aria-hidden="true"><path d="M17 20v11M11 31h12"/><path d="M12 15a7 7 0 0 1 10 0M8 11a12 12 0 0 1 18 0M4 7a17 17 0 0 1 26 0"/></svg><span class="tab__d">ЭФИР</span><span class="tab__m">Эфир</span></a>
+    <a class="tab" href="../index.html?open=curator"><svg viewBox="0 0 34 34" aria-hidden="true"><path d="M3 6h28v20H3z"/><path d="M8 12l4 4-4 4M15 20h7"/></svg><span class="tab__d">CURATOR</span><span class="tab__m">Куратор</span></a>
+  </nav>
+  <div class="task__mq" aria-hidden="true"><span data-mq>/// УЗЕЛ 06 НА СВЯЗИ /// ФАЙЛ 07 ОТКРЫТ ///</span></div>
+  <time class="task__clock" data-clock2>00:00</time>
 </footer>
-</div>
-
-<div class="l10n" data-l="es">
-<nav>
-  <a href="../index.html">01 // Empieza aquí</a>
-  <a href="timeline.html">02 // Cronología</a>
-  <a href="rampancy.html">03 // IA y rampancia</a>
-  <a href="colony.html">04 // Muerte de la colonia</a>
-  <a href="runners.html">05 // Runners y shells</a>
-  <a href="classes.html">06 // Clases</a>
-  <a href="arsenal.html">06-B // Arsenal</a>
-  <a href="sound.html">06-C // Sonido</a>
-  <a href="factions.html" class="active" aria-current="page">07 // Facciones</a>
-  <a href="aliens.html">08 // Alienígenas</a>
-  <a href="zones.html">09 // Zonas</a>
-  <a href="seasons.html">10 // Temporadas</a>
-  <a href="trilogy.html">11 // La trilogía de los 90</a>
-  <a href="deep-cuts.html">12 // Rarezas ocultas</a>
-  <a href="resources.html">13 // Recursos</a>
-</nav>
-<section id="es-s6">
-  <div class="sec-label"><svg class="pic"><use href="#i-hex"/></svg>Brief 07 // Influence is power</div>
-  <h2>Facciones: para quién trabajas</h2>
-  <p>Seis corporaciones y grupos contratan Runners, y cada uno tiene un agente de IA que te entrega los contratos. Seis caras muy distintas de un mismo mundo podrido. CyberAcme es tu puerta de entrada: seis de sus contratos de enlace desbloquean a todos los demás. Para los frikis del reparto de voces, también se listan los actores de los agentes - el elenco completo de ~33 actores se reveló en enero de 2026.</p>
-
-  <div class="callout"><b>Cómo funcionan los contratos:</b> un contrato es un encargo que aceptas de una facción a través de su agente. Lo completas directamente en la incursión y luego vuelves a entregarlo, a cambio de reputación con esa facción y de recompensas. Cuanto mayor es tu reputación, más se desbloquea en su vendedor: acceso a mejores shells, armas y mods. Así se sostiene todo el bucle: aceptas contratos, subes de reputación, consigues mejor equipo.</div>
-
-  <figure class="art">
-    <img loading="lazy" decoding="async" src="https://images.contentstack.io/v3/assets/blt15f7b5c0d43ed112/blt0656353348a074b8/69806a3998d6ebf4e5ca3676/marathon.bungie.character.png?width=1920&quality=80&auto=webp" alt="Gantry, agente de la facción MIDA" onerror="this.parentElement.style.display='none'">
-    <figcaption><span>Arte oficial //</span> Gantry, agente de MIDA. Fuente: marathonthegame.com</figcaption>
-  </figure>
-
-  <div class="f-row">
-    <div class="f-name"><svg class="pic"><use href="#f-cyac"/></svg>CyberAcme<span>agente: ONI</span><i>voz: Donnla Hughes</i><img class="f-logo" loading="lazy" decoding="async" src="https://marathonwiki.org/api/media/file/factions-69b1ca7e034785859db2cf03-1773270741417.png" alt="logo de CyberAcme" onerror="this.style.display='none'"></div>
-    <div><figure class="f-art"><img loading="lazy" decoding="async" src="https://storage.ghost.io/c/30/f5/30f5b1bb-84ee-4c26-b446-fb9a5e512994/content/images/2026/06/tobias-kwan-tk-faction-agent-oni-01.jpg" alt="ONI, agente de CyberAcme (arte conceptual)" onerror="this.parentElement.style.display='none'"><figcaption><span>Arte conceptual oficial //</span> Tobias Kwan. Fuente: aftermath.site</figcaption></figure><p><b class="f-slogan">"Everything runs on CyberAcme. Or nothing runs at all."</b> La infraestructura digital de toda la humanidad y el intermediario neutral por el que pasan los contratos de todo Runner.</p>
-<p>CyberAcme no lucha por el planeta - vende "hardware y software para todas las aplicaciones" a los seis bandos a la vez y se lleva su comisión de cada contrato. Su ONI (Onboard Navigational Intelligence; y sí, ese es también el nombre de la agencia de inteligencia en la sombra de Halo - Bungie sabe lo que hace) es una cabeza femenina digitalizada y flotante, tu primera guía: sus seis contratos de enlace desbloquean a las otras cinco facciones. ONI es también un producto - firmware integrado en casi todos los shells de Runner. La corporación construyó la mayoría de los sistemas propios del Marathon ("the majority of the UESC MARATHON's systems were powered by CYAC"), así que Tau Ceti IV no es un mercado nuevo para ella, sino su propio legado. Ya en el Marathon original, CyberAcme era quien manejaba la mayor parte de los sistemas informáticos de a bordo, y hoy es el broker-infraestructura neutral. Por eso precisamente CyberAcme es tu facción inicial: posee todo el stack tecnológico sobre el que se sostiene el propio concepto de Runner, desde el firmware de ONI en el shell hasta la propia red de contratos, y su acompañamiento como ONI lleva de la mano al recién llegado a través de los primeros contratos.</p>
-<p>El reverso de esa fachada empresarial es más duro que los viejos "rumores": la wiki afirma sin rodeos que la corporación "deals in the illegal buying and selling of personality and thought data" - trafica ilegalmente con datos de personalidad y pensamiento. Y el propio contrato de Runner le cede la copropiedad de las copias de tu conciencia: para entrar en el juego, ya estás vendido. Recluta a través del programa NextForm Recourse: compra las deudas de un candidato y lo vuelve "decorporalizado" - "This debt has been purchased by CyberAcme and added to your balance."</p>
-<p>Formalmente CyberAcme no está del lado de nadie y de todos a la vez: intermedia los contratos de todas las partes y está atada a alianzas (el "Cradle" con Sekiguchi, acuerdos de suministro con Traxus). Hacia la UESC - desprecio frío; según una fuente de prensa, ONI llama a la destrucción del gobierno "completely acceptable" sin rodeos, aunque esa frase no está verificada palabra por palabra en el juego.</p>
-<p><b>Lo que le da al Runner:</b> una incorporación suave - mejoras de shell, tiempos de reutilización reducidos, inventario ampliado; sus seis contratos son tu puerta a las otras cinco facciones. La voz de ONI se despide siempre con la misma línea, dulcemente cínica: <em>"Congratulations, and sweet dreams."</em> <span class="chip canon">canon</span> <span class="chip datamine">datamine</span></p></div>
-  </div>
-  <div class="f-row">
-    <div class="f-name"><svg class="pic"><use href="#f-nucal"/></svg>NuCaloric<span>agente: Gaius</span><i>voz: Darin De Paul</i><img class="f-logo" loading="lazy" decoding="async" src="https://marathonwiki.org/api/media/file/factions-69b1ca7e034785859db2cf0d-1773270741419.png" alt="logo de NuCaloric" onerror="this.style.display='none'"></div>
-    <div><figure class="f-art"><img loading="lazy" decoding="async" src="https://storage.ghost.io/c/30/f5/30f5b1bb-84ee-4c26-b446-fb9a5e512994/content/images/2026/06/tobias-kwan-tk-faction-agent-gaius-04.jpg" alt="Gaius, agente de NuCaloric (arte conceptual)" onerror="this.parentElement.style.display='none'"><figcaption><span>Arte conceptual oficial //</span> Tobias Kwan. Fuente: aftermath.site</figcaption></figure><p><b class="f-slogan">"Essentially. Everywhere."</b> El monopolio de la comida, la medicina y la vivienda que investiga discretamente qué mató a la colonia.</p>
-<p>"Alimentar, vestir y abastecer a la humanidad" es un modelo que el códex describe como una mezcla de bien social y optimización despiadada. Fundada por Gus Moraine durante la hambruna de la década de 2360 como un filántropo, NuCaloric creció hasta convertirse en el mayor proveedor de bienes del Sistema Solar: desde Biostock y mascotas biosintéticas hasta fármacos, módulos de vivienda y cosméticos. En Tau Ceti IV evita deliberadamente tomar nada por la fuerza ("does not appear interested in sustained confrontation") - prefiere reunir datos históricos e inteligencia a través de operativos Runner contratados. Esta es la facción investigadora. Y un hilo más hacia el misterio: NuCaloric figura entre los patrocinadores corporativos de la propia expedición Marathon, la que en su día llevó a los colonos a Tau Ceti, así que la corporación investiga una historia en la que ella misma tuvo parte.</p>
-<p>La fachada filantrópica descansa sobre detalles que es mejor no examinar de cerca: su "leche de garrapata" se hace exactamente de lo que estás pensando. El fundador Gus Moraine grabó personalmente un mensaje de bienvenida a los colonos, insistiendo en la palabra "sacrificio" - seguido de inmediato por un anuncio de la "Drinkable Cheeseburger". En el contrato exclusivo con la UESC, la cláusula 616 fija un arrendamiento de la propiedad suministrada a los colonos por al menos 600 años, y los colonos ni siquiera son parte del trato. Y según la prensa, Gaius sabe más sobre la muerte de la colonia de lo que deja ver: sus motivos son "slightly askew" - un poco torcidos.</p>
-<p>La corporación evita la confrontación abierta con todos - su lore de combate admite sin rodeos que NuCal "not yet wholly comfortable with open conflict" - todavía no se siente del todo cómoda con el conflicto abierto. En su día escogió el planeta como objetivo de la misión junto con Traxus. Mientras tanto, su contrato de suministro a la colonia por 600 años la deja legalmente enredada en el destino de Tau Ceti IV - un hilo hacia el misterio de la muerte de la colonia, distinto del de Traxus.</p>
-<p><b>Lo que le da al Runner:</b> objetos de supervivencia - cargas de escudo, botiquines, implantes regenerativos; NuCal cura donde Arachne mata. Y la bienvenida de Gaius a los colonos marca el tono de toda la facción: <em>"Humanity thanks you for your sacrifice."</em> <span class="chip canon">canon</span> <span class="chip datamine">datamine</span></p></div>
-  </div>
-  <div class="f-row">
-    <div class="f-name"><svg class="pic"><use href="#f-trax"/></svg>Traxus<span>agente: Vulcan</span><i>voz: Morla Gorrondona</i><img class="f-logo" loading="lazy" decoding="async" src="https://marathonwiki.org/api/media/file/factions-69b1ca87034785859db2cf47-1773270741550.png" alt="logo de Traxus" onerror="this.style.display='none'"></div>
-    <div><figure class="f-art"><img loading="lazy" decoding="async" src="https://images.steamusercontent.com/ugc/16295817170346948982/FC876E181823AAD5B03AFBBC9199A50FA11EEB5D/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true" alt="Vulcan, agente de Traxus (cinemática de introducción)" onerror="this.parentElement.style.display='none'"><figcaption><span>Captura //</span> cinemática de introducción. Fuente: Steam Workshop</figcaption></figure><p><b class="f-slogan">"Operate Beyond Scale."</b> La Compañía de las Indias Orientales de la era espacial, que considera la colonia y su tecnología como propiedad suya, pendiente de devolución.</p>
-<p>La corporación privada más rica de la historia humana, segunda en influencia solo por detrás de la UESC ("second only to the UNIFIED EARTH SPACE COUNCIL"). Fundada en la Tierra en 2095 como "Traxus Intelligent Systems" para "pierce the veil of the cosmos" - perforar el velo del cosmos -, se trasladó a Marte en 2145 en busca de minerales. Actúa a través de terceros y operaciones de fachada: públicamente "no está" en Tau Ceti IV, y usa a los Runners como activo desmentible para "scavenge the colony in direct opposition of UESC forces". Legalmente, Traxus reclama "rights of reacquisition" - derechos de readquisición - sobre toda la tecnología ligada al Marathon y a la colonia: es decir, considera el propio planeta como suyo. El agente Vulcan no persuade: permanece inmóvil en un trono con los ojos ardiendo, recitando las cláusulas de exención bajo las que eres un "temporary nonasset worker" sin ningún derecho. Y su guerra actual con la UESC es una oposición corporativa abierta por el derecho a saquear la vaciada New Cascadia: tanto Traxus como el gobierno consideran las ruinas de la colonia y su tecnología su botín legítimo, y es precisamente por ese saqueo por lo que la corporación envía Runners al planeta.</p>
-<p>La misma casa que construyó Traxus IV: la IA que dejó Marte en cráteres en 2206 era su propio sistema de cuarta generación - la corporación simplemente sobrevivió al escándalo. La ironía es más profunda: el trío de IA de a bordo del Marathon (Leela, Tycho, Durandal; la serie IX-A "Hermes", 2409) fue construido físicamente por Traxus, aunque sea su rival CyberAcme quien las administra. Y "Project Goliath" es el archivo cuya filtración congeló de la noche a la mañana las negociaciones entre Traxus y la UESC, enviando a la corporación al planeta por su cuenta (ver el recuadro de la red).</p>
-<p>En la superficie, Traxus lucha contra la UESC por el botín y por "rights of reacquisition". En secreto, es el titiritero: según el datamine, MIDA "had been formally brought into the fold by Traxus OffWorld Industries" - fue formalmente incorporada al redil de Traxus OffWorld Industries -, es decir, la revolución anticorporativa se convirtió en activo propio. A eso se suma una connivencia de largo recorrido con NuCaloric a la hora de elegir el planeta, y la contratación de cultistas de Arachne para tareas de saqueo.</p>
-<p><b>Lo que le da al Runner:</b> el botín más caro - mejoras de armas y mods bajo estricto control corporativo. El reclutamiento de Traxus corteja incluso a naciones enteras ("Choose freedom. Let Traxus steward what you have built"), y en una discusión retransmitida en directo con un almirante de la UESC lo niega todo y cierra con una amenaza velada: <em>"Our success is your success."</em> <span class="chip canon">canon</span> <span class="chip datamine">datamine</span></p></div>
-  </div>
-  <div class="f-row">
-    <div class="f-name"><svg class="pic"><use href="#f-mida"/></svg>MIDA<span>agente: _Gantry</span><i>voz: Lee Shorten</i><img class="f-logo" loading="lazy" decoding="async" src="https://marathonwiki.org/api/media/file/factions-69b1ca7e034785859db2cf08-1773270741424.png" alt="logo de MIDA" onerror="this.style.display='none'"></div>
-    <div><figure class="f-art"><img loading="lazy" decoding="async" src="https://storage.ghost.io/c/30/f5/30f5b1bb-84ee-4c26-b446-fb9a5e512994/content/images/2026/06/tobias-kwan-tk-faction-agent-gantry-01.jpg" alt="_Gantry, agente de MIDA (arte conceptual)" onerror="this.parentElement.style.display='none'"><figcaption><span>Arte conceptual oficial //</span> Tobias Kwan. Fuente: aftermath.site</figcaption></figure><p><b class="f-slogan">"Resist. Disrupt. Destroy."</b> Revolucionarios marcianos que sueñan con quemar el viejo mundo - y discretamente comprados por Traxus.</p>
-<p>_gantry plantea el objetivo sin rodeos: "burn away a stagnant, corrupt world" - quemar un mundo estancado y corrupto - y construir uno nuevo al otro lado de la revolución. Es un partido político marciano renacido como red anarquista, con rencores más viejos que el propio Marathon: sus raíces se remontan a la masacre en el centro de distribución de alimentos de Misriah del 4 de enero de 2345, que desató la Tercera Guerra Marciana, y la red se endureció tras la masacre de 2442. El acrónimo MIDA no tiene una expansión canónica - el ARG ofreció deliberadamente versiones mutuamente excluyentes, desde "Martian Independence Demands Accountability" hasta la broma "Mars Is Damnably Arid". El agente _gantry habla en fragmentos de frases tipo grafiti y sube malware para no dejar rastro. Una nota aparte para quienes conocen la historia de Bungie: el propio nombre MIDA es una referencia directa a la trilogía de los 90, donde ya apareció un movimiento revolucionario marciano contra el gobierno terrestre, más tarde aplastado. El estudio reutilizó luego el nombre en Destiny (el rifle MIDA Multi-Tool), y ahora lo ha traído de vuelta aquí, lo que viene a ser un chiste interno de Bungie de casi 30 años, estirado a lo largo de tres juegos.</p>
-<p>Durante sus tres meses de gobierno de Marte en 2466, MIDA se hizo responsable de la muerte de aproximadamente una décima parte de la población del planeta. Ya durante la construcción del Marathon, sus operativos metieron de contrabando armas y robots de combate (Battleroids) a bordo, apostando por levantar un nuevo alzamiento lejos de la Tierra. Pero el giro más grande es reciente: según el datamine, MIDA "had been formally brought into the fold by Traxus OffWorld Industries" - fue incorporada formalmente al redil de Traxus OffWorld Industries -, es decir, la red anticorporativa se convirtió, de facto, en el testaferro de una megacorporación. El ala joven llama "corrupta" a la vieja guardia por ello.</p>
-<p>Una guerra caliente con la UESC - y un titiritero por encima: Traxus. El datamine también atribuye a MIDA la filtración del archivo "Project Goliath", la que desató la carrera corporativa por el planeta (ver el recuadro). A eso se suma una alianza cínica y temporal con Arachne, para quien la ideología de MIDA no es más que caos conveniente.</p>
-<p><b>Lo que le da al Runner:</b> herramientas de sabotaje - armas de demolición y PEM, contratos para volar objetivos y subir malware por todo Tau Ceti IV; y, por supuesto, tu Vandal. La red tiene sus propios agentes dentro de los servicios de seguridad: _gantry comparte un dosier sobre el capitán Orion y la sospecha de que se ha desplegado una IA militar no registrada - <em>"Cerberus, capable of mass violence."</em> <span class="chip canon">canon</span> <span class="chip datamine">datamine</span></p></div>
-  </div>
-  <div class="f-row">
-    <div class="f-name"><svg class="pic"><use href="#f-arach"/></svg>Arachne<span>agente: Charter</span><i>voz: Dave Fennoy</i><img class="f-logo" loading="lazy" decoding="async" src="https://marathonwiki.org/api/media/file/factions-69b1ca7e034785859db2cefe-1773270741455.png" alt="logo de Arachne" onerror="this.style.display='none'"></div>
-    <div><figure class="f-art"><img loading="lazy" decoding="async" src="https://storage.ghost.io/c/30/f5/30f5b1bb-84ee-4c26-b446-fb9a5e512994/content/images/2026/06/dima-goryainov-dg-marathon-arachne-11.jpg" alt="Charter, agente de Arachne (arte conceptual)" onerror="this.parentElement.style.display='none'"><figcaption><span>Arte conceptual oficial //</span> Dima Goryainov. Fuente: aftermath.site</figcaption></figure><p><b class="f-slogan">"See red. Leave blue."</b> Un culto a la muerte registrado para el que cada muerte es a la vez un ritual y una línea de datos.</p>
-<p>La "termodinámica de la violencia": exprimir el máximo absoluto de un shell y de un combate. Formalmente Arachne es "a registered 784s(g) spiritual group" - hasta un culto a la muerte existe como entidad legal con estatus religioso. La doctrina nació de fallos reales de la críotecnología temprana (el 8% de los sujetos de prueba de clase 1-AC desarrolló psicosis graves): la muerte aquí es "a recoverable form of death" - una forma recuperable de muerte -, y el criosueño un camino hacia la iluminación póstuma; la enseñanza se divide en Casas, Manos y Ojos. En el juego, el motivo se comprime en una fórmula: la muerte y los datos que se pueden cosechar de ella son una y la misma cosa.</p>
-<p>Los acólitos de combate, los "Severed" - los Segados -, hacen un único voto: "Draw your blades only ever in service to sleep." El origen de la riqueza de la secta es oficialmente desconocido - Charter se refiere a unos innominados "my Patrons". Y en el juego el agente aparece como una figura similar a un dios con muchas manos, una de ellas sosteniendo el corazón de un soldado de la UESC caído.</p>
-<p>Arachne es subcontratista de Traxus en tareas de saqueo y mantiene una alianza cínica y temporal con MIDA, cuya ideología, para el culto, no es más que caos conveniente. No lucha por el planeta como tal: su guerra es por la muerte y los datos. Charter y su culto son, sin más, portadores de muerte: al agente el planeta en sí le da igual, solo le interesan los Runners matando a otros Runners. Por eso Arachne es una facción PvP no solo por su mecánica, sino por el propio lore: sus contratos recompensan justamente la caza de otros jugadores.</p>
-<p><b>Lo que le da al Runner:</b> PvP puro - rachas de bajas y caza de otros Runners; según la prensa, la recompensa es concreta: inteligencia sobre las posiciones de los escuadrones enemigos. Charter es frío y directo: <em>"Sow war to feed entropy."</em> <span class="chip canon">canon</span> <span class="chip datamine">datamine</span></p></div>
-  </div>
-  <div class="f-row">
-    <div class="f-name"><svg class="pic"><use href="#f-sekg"/></svg>Sekiguchi<span>agente: Nona</span><i>voz: Tracy Wiles</i><img class="f-logo" loading="lazy" decoding="async" src="https://marathonwiki.org/api/media/file/factions-69b1ca82034785859db2cf12-1773270741421.png" alt="logo de Sekiguchi" onerror="this.style.display='none'"></div>
-    <div><figure class="f-art"><img loading="lazy" decoding="async" src="https://images.steamusercontent.com/ugc/10947739077656523656/A3290B91C1900AD733C82219865C0E8C07FCCE18/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true" alt="Nona, agente de Sekiguchi (cinemática de introducción)" onerror="this.parentElement.style.display='none'"><figcaption><span>Captura //</span> cinemática de introducción. Fuente: Steam Workshop</figcaption></figure><p><em>Sekiguchi no tiene un eslogan oficial en fuentes abiertas.</em> Los creadores de los shells y de los gusanos tejedores, para quienes todo el planeta es un campo de pruebas para el cuerpo del Runner.</p>
-<p>Sekiguchi Genetics es solo una parte del más amplio "Sekiguchi Group", cuyas divisiones no esenciales las fuentes callan. La tecnología WEAVEworm se extiende desde 2198 (el EARTHworm, para gestión de residuos) a través de siete siglos de iteración hasta la impresión de shells biocibernéticos, y en su centro hay un "hambre" diseñada: con un programa corrupto los gusanos "will attempt to devour one another by default" - por defecto, intentarán devorarse entre sí. La agente Nona es un ser blanco, alado e insectoide, de ojos rojos y muchas manos, que cuida a los gusanos y pregunta con voz suave: "Are we not a force for good?". Esta es la "facción de resistencia": no premia la agresión, sino la supervivencia en las zonas más peligrosas. Resumido en una sola idea: es Sekiguchi quien explica el propio "cómo" de tu inmortalidad - sus shells se cultivan a partir de biomasa de WEAVEworm, y la sincronización neuronal y la transferencia de conciencia a un shell nuevo, gracias a las cuales vuelves tras morir, también son obra suya. Y trata al Runner en consecuencia: para Nona no eres un cliente, sino un sujeto de pruebas de campo, útil para comprobar la resistencia de sus shells.</p>
-<p>Bajo la voz suave de Nona está la práctica más dura sobre el cuerpo: la prensa llama a Sekiguchi "the most malevolent faction, pushing the limits of human biology" - la facción más malévola, que empuja los límites de la biología humana. Imprimir shells descansa sobre el "canibalismo" de sus propios gusanos. Y su SIMbiont es un prototipo que hasta su rival CyberAcme aconseja abiertamente al Runner limitar: "I recommend you limit your exposure to the SIMbiont."</p>
-<p>Su vínculo principal es con CyberAcme: juntas construyen el sistema de impresión de shells "Cradle" (Sekiguchi el hardware, CyberAcme el software), con ONI manteniendo acceso directo dentro del producto de su socia. Esa misma aliada también la socava - es CyberAcme quien aconseja limitar el SIMbiont de Sekiguchi.</p>
-<p><b>Lo que le da al Runner:</b> mejoras biológicas de resistencia - menos tiempo de desangrado, tiempos de reutilización más cortos; datos de las zonas más letales a cambio de mejoras corporales. Nona no es solo una ingeniera, sino narradora de parábolas sobre la Muerte: <em>"I have consumed every piece of human literature ever recorded."</em> <span class="chip canon">canon</span></p></div>
-  </div>
-
-  <figure class="art">
-    <img loading="lazy" decoding="async" src="https://images.contentstack.io/v3/assets/blt15f7b5c0d43ed112/blt3fc4b732b8f8f3ab/69806c203ada312c13acff6a/Marathon.bungie.fps.shooter.jpg?width=1920&quality=80&auto=webp" alt="Soldados de la UESC preparándose para atacar al jugador" onerror="this.parentElement.style.display='none'">
-    <figcaption><span>Captura oficial //</span> Fuerzas de la UESC: el enemigo de todo Runner. Fuente: marathonthegame.com</figcaption>
-  </figure>
-
-  <!-- v6b:factions-network -->
-  <div class="callout"><b>La red intercorporativa oculta:</b> la hostilidad abierta entre las facciones en Tau Ceti IV es una fachada tras la que esos mismos "enemigos" están atados por acuerdos. El trío de IA de a bordo del Marathon fue construido físicamente por Traxus (la serie IX-A "Hermes", 2409), y lo administra su rival CyberAcme. El sistema de impresión de shells "Cradle" es un producto conjunto de CyberAcme (software) y Sekiguchi (hardware), con ONI manteniendo acceso directo dentro del producto de su socia. El propio planeta fue escogido como objetivo de la misión por una comisión conjunta de NuCaloric y Traxus - antes incluso de que el Marathon zarpara. Y Traxus, públicamente "no presente" en el planeta, mantiene agentes dentro de MIDA y contrata a cultistas de Arachne como simples mercenarios para tareas de saqueo.<br><br><b>El hilo conductor es "Project Goliath".</b> Un solo archivo ata toda la apertura del juego en una única cadena de causa y efecto. La UESC encargó el Project Goliath para restablecer el contacto con la colonia de Tau Ceti IV; tras el hackeo de United Shipping el archivo se filtró (el datamine atribuye la filtración a MIDA, según una única fuente), y una vez que todo el Goliath salió a la luz, las negociaciones entre Traxus y la UESC se congelaron de la noche a la mañana - la corporación fue al planeta por su cuenta. Luego llega el giro principal: MIDA "had been formally brought into the fold by Traxus OffWorld Industries" - fue incorporada formalmente al redil de Traxus OffWorld Industries -, la revolución anticorporativa que en su día hackeó la correspondencia de Traxus se convirtió en activo de esa misma megacorporación, y el cisma de MIDA (los radicales llaman "corrupta" a la vieja guardia por ello) probablemente sigue exactamente la línea de ese trato. En este contexto, CyberAcme está "por encima de la refriega" solo formalmente: intermedia los contratos de todos y se lucra de cada uno, mientras NuCaloric no lucha, sino que investiga discretamente la muerte de la colonia y sabe más de lo que dice. <span class="chip canon">canon</span> <span class="chip datamine">datamine</span> <span class="chip theory">teoría</span></div>
-
-  <div class="callout"><b>¿Y quién es el enemigo?</b> La UESC - el gobierno de la Tierra - no es una facción sino el adversario principal de todos los Runners. Su fuerza de rescate y ocupación llegó a bordo de la <b>UESC Equanimity T-SR 151</b>, una nave de salvamento y rescate modificada de clase Kingfisher, comandada en el lanzamiento por la capitana Ningal T. Enki, con tripulaciones de clones y un equipo dedicado de respuesta a la rampancia. Las fuerzas en el planeta responden ante el <b>capitán Orion</b> (voz de Rich Keeble) - que, irónicamente, lleva un cuerpo artificial igual que tú. Ya lo han matado antes. Imprimieron uno nuevo. Estás aquí ilegalmente, y sus robots y drones disparan sin avisar. Resumiendo, hay exactamente tres fuentes de amenaza en una incursión: las fuerzas de la UESC, otros Runners (es decir, PvP) y las criaturas nacidas de la Anomalía.</div>
-</section>
-<div class="pager">
-  <a class="pager-prev" href="sound.html">← Anterior</a>
-  <a class="pager-next" href="aliens.html">Siguiente →</a>
-</div>
-<footer>
-  <div class="footer-logos">
-    <img loading="lazy" decoding="async" src="https://images.contentstack.io/v3/assets/blt15f7b5c0d43ed112/bltd7331a6610275af9/69677e5ff4f25c00087a9e20/footer_logo_v2.svg?width=640&quality=80" alt="Marathon" onerror="this.style.display='none'">
-    <img loading="lazy" decoding="async" src="https://images.contentstack.io/v3/assets/blt15f7b5c0d43ed112/blt8df2717a52c60cdd/6964c1f51f87f800082b54d5/bungie-logo.svg?width=256&quality=80" alt="Bungie" onerror="this.style.display='none'">
-  </div>
-  <p>UESC BRIEFING DOCUMENT v6.4 // TAU CETI IV // 2893</p>
-  <p>Pasa el cursor sobre los términos subrayados para ver su definición. Haz clic en los terminales - se despliegan.</p>
-  <p>Los pictogramas de este documento son obra original; la paleta verde ácido (#C2FE0C) sigue el color de marca documentado por la comunidad. Los logos oficiales y el arte se cargan desde el CDN de marathonthegame.com. Bungie and Marathon are registered trademarks of Bungie, Inc. Documento fan no oficial.</p>
-</footer>
-</div>
-
-<div class="l10n" data-l="de">
-<nav>
-  <a href="../index.html">01 // Der Einstieg</a>
-  <a href="timeline.html">02 // Chronik</a>
-  <a href="rampancy.html">03 // KI & Rampancy</a>
-  <a href="colony.html">04 // Tod der Kolonie</a>
-  <a href="runners.html">05 // Runner & Shells</a>
-  <a href="classes.html">06 // Klassen</a>
-  <a href="arsenal.html">06-B // Arsenal</a>
-  <a href="sound.html">06-C // Sound</a>
-  <a href="factions.html" class="active" aria-current="page">07 // Fraktionen</a>
-  <a href="aliens.html">08 // Aliens</a>
-  <a href="zones.html">09 // Zonen</a>
-  <a href="seasons.html">10 // Seasons</a>
-  <a href="trilogy.html">11 // Die 90er-Trilogie</a>
-  <a href="deep-cuts.html">12 // Für Eingeweihte</a>
-  <a href="resources.html">13 // Ressourcen</a>
-</nav>
-<section id="de-s6">
-  <div class="sec-label"><svg class="pic"><use href="#i-hex"/></svg>Brief 07 // Influence is power</div>
-  <h2>Fraktionen: für wen du arbeitest</h2>
-  <p>Sechs Konzerne und Gruppierungen heuern Runner an, und jede hat einen KI-Agenten, der dir Verträge aushändigt. Sechs sehr unterschiedliche Gesichter derselben verrotteten Welt. CyberAcme ist deine Eingangstür: Sechs ihrer Einführungsverträge schalten alle anderen frei. Für die Synchron-Nerds sind auch die Sprecher der Agenten aufgeführt - der vollständige Cast mit ~33 Sprechern wurde im Januar 2026 enthüllt.</p>
-
-  <div class="callout"><b>Wie Verträge funktionieren:</b> Ein Vertrag ist ein Auftrag, den du von einer Fraktion über ihren Agenten annimmst. Du erledigst ihn direkt im Raid und kehrst dann zurück, um ihn abzugeben - für Ansehen bei dieser Fraktion und für Belohnungen. Je höher dein Ansehen steigt, desto mehr schaltet ihr Händler frei: Zugang zu besseren Shells, Waffen und Mods. So hält sich die ganze Schleife - Verträge annehmen, Ansehen aufbauen, besseres Gear bekommen.</div>
-
-  <figure class="art">
-    <img loading="lazy" decoding="async" src="https://images.contentstack.io/v3/assets/blt15f7b5c0d43ed112/blt0656353348a074b8/69806a3998d6ebf4e5ca3676/marathon.bungie.character.png?width=1920&quality=80&auto=webp" alt="Gantry, Agent der Fraktion MIDA" onerror="this.parentElement.style.display='none'">
-    <figcaption><span>Offizielles Artwork //</span> Gantry, Agent von MIDA. Quelle: marathonthegame.com</figcaption>
-  </figure>
-
-  <div class="f-row">
-    <div class="f-name"><svg class="pic"><use href="#f-cyac"/></svg>CyberAcme<span>Agent: ONI</span><i>Stimme: Donnla Hughes</i><img class="f-logo" loading="lazy" decoding="async" src="https://marathonwiki.org/api/media/file/factions-69b1ca7e034785859db2cf03-1773270741417.png" alt="CyberAcme-Logo" onerror="this.style.display='none'"></div>
-    <div><figure class="f-art"><img loading="lazy" decoding="async" src="https://storage.ghost.io/c/30/f5/30f5b1bb-84ee-4c26-b446-fb9a5e512994/content/images/2026/06/tobias-kwan-tk-faction-agent-oni-01.jpg" alt="ONI, Agent von CyberAcme (Konzept-Art)" onerror="this.parentElement.style.display='none'"><figcaption><span>Offizielles Konzept-Art //</span> Tobias Kwan. Quelle: aftermath.site</figcaption></figure><p><b class="f-slogan">"Everything runs on CyberAcme. Or nothing runs at all."</b> Die digitale Infrastruktur der gesamten Menschheit und der neutrale Makler, durch den die Verträge jedes Runners laufen.</p>
-<p>CyberAcme kämpft nicht um den Planeten - der Konzern verkauft "Hardware und Software für alle Anwendungen" an alle sechs Seiten gleichzeitig und kassiert seinen Anteil an jedem Vertrag. Seine ONI (Onboard Navigational Intelligence; und ja, das ist auch der Name von Halos Schattengeheimdienst - Bungie weiß, was es tut) ist ein schwebender, digitalisierter Frauenkopf und deine erste Führerin: ihre sechs Einführungsverträge schalten die anderen fünf Fraktionen frei. ONI ist außerdem ein Produkt - Firmware, die in fast jedem Runner-Shell eingebacken ist. Der Konzern baute die meisten der eigenen Systeme der Marathon ("the majority of the UESC MARATHON's systems were powered by CYAC"), Tau Ceti IV ist für ihn also kein neuer Markt, sondern sein eigenes Erbe. Schon auf dem ursprünglichen Marathon war es CyberAcme, die den Großteil der Bordcomputersysteme betrieb, und heute ist sie der neutrale Makler-Infrastruktur. Genau deshalb ist CyberAcme deine Startfraktion: Sie besitzt den gesamten Tech-Stack, auf dem das ganze Konzept des Runners überhaupt beruht - von der ONI-Firmware im Shell bis zum Vertragsnetzwerk selbst -, und ihre ONI-Begleitung führt Neulinge an der Hand durch die ersten Verträge.</p>
-<p>Die Kehrseite dieser geschäftsmäßigen Fassade ist härter als die alten "Gerüchte": Das Wiki stellt unverblümt fest, der Konzern "deals in the illegal buying and selling of personality and thought data" - handelt illegal mit Persönlichkeits- und Gedankendaten. Und der Runner-Vertrag selbst überträgt ihm das Miteigentum an den Kopien deines Bewusstseins - um überhaupt ins Spiel zu kommen, bist du bereits verkauft. Rekrutiert wird über das NextForm-Recourse-Programm: Es kauft die Schulden eines Kandidaten auf und macht ihn "entkörperlicht" - "This debt has been purchased by CyberAcme and added to your balance."</p>
-<p>Formal steht CyberAcme auf niemandes Seite und auf allen zugleich: der Konzern vermittelt die Verträge aller Parteien und ist in Partnerschaften verstrickt (das "Cradle" mit Sekiguchi, Lieferverträge mit Traxus). Gegenüber der UESC - kalte Verachtung; laut einer Pressequelle nennt ONI die Zerschlagung der Regierung rundheraus "completely acceptable", auch wenn diese Zeile im Spiel nicht wortwörtlich verifiziert ist.</p>
-<p><b>Was es dem Runner gibt:</b> ein sanftes Onboarding - Shell-Upgrades, verkürzte Abklingzeiten, erweitertes Inventar; ihre sechs Verträge sind deine Tür zu den anderen fünf Fraktionen. ONIs Stimme verabschiedet sich stets mit derselben süßlich-zynischen Zeile: <em>"Congratulations, and sweet dreams."</em> <span class="chip canon">Kanon</span> <span class="chip datamine">Datamine</span></p></div>
-  </div>
-  <div class="f-row">
-    <div class="f-name"><svg class="pic"><use href="#f-nucal"/></svg>NuCaloric<span>Agent: Gaius</span><i>Stimme: Darin De Paul</i><img class="f-logo" loading="lazy" decoding="async" src="https://marathonwiki.org/api/media/file/factions-69b1ca7e034785859db2cf0d-1773270741419.png" alt="NuCaloric-Logo" onerror="this.style.display='none'"></div>
-    <div><figure class="f-art"><img loading="lazy" decoding="async" src="https://storage.ghost.io/c/30/f5/30f5b1bb-84ee-4c26-b446-fb9a5e512994/content/images/2026/06/tobias-kwan-tk-faction-agent-gaius-04.jpg" alt="Gaius, Agent von NuCaloric (Konzept-Art)" onerror="this.parentElement.style.display='none'"><figcaption><span>Offizielles Konzept-Art //</span> Tobias Kwan. Quelle: aftermath.site</figcaption></figure><p><b class="f-slogan">"Essentially. Everywhere."</b> Das Nahrungs-, Medizin- und Wohnraummonopol, das still und leise untersucht, was die Kolonie getötet hat.</p>
-<p>"Feed, clothe, and supply humanity" - die Menschheit ernähren, kleiden und versorgen - ist ein Modell, das der Kodex als Mischung aus sozialem Gutem und schonungsloser Optimierung beschreibt. Von Gus Moraine während der Hungersnot der 2360er als Philanthrop gegründet, wuchs NuCaloric zum größten Warenlieferanten im Sol-System heran: von Biostock und biosynthetischen Haustieren bis zu Pharmazeutika, Wohnmodulen und Kosmetik. Auf Tau Ceti IV vermeidet der Konzern demonstrativ, sich irgendetwas mit Gewalt zu nehmen ("does not appear interested in sustained confrontation") - er sammelt lieber historische Daten und Informationen über angeheuerte Runner-Operatives. Das ist die Ermittler-Fraktion. Und noch ein Faden zum Rätsel: NuCaloric wird unter den Konzernsponsoren der Marathon-Expedition selbst geführt - jener, die einst die Kolonisten nach Tau Ceti brachte -, der Konzern ermittelt also in einer Geschichte, an der er selbst mitgewirkt hat.</p>
-<p>Die philanthropische Fassade ruht auf Details, über die man besser nicht nachdenkt: ihre "Zeckenmilch" wird aus genau dem gemacht, woran du gerade denkst. Gründer Gus Moraine nahm persönlich eine Willkommensbotschaft an die Kolonisten auf, in der er auf dem Wort "Opfer" bestand - direkt gefolgt von einer Werbung für den "Drinkable Cheeseburger". Im Exklusivvertrag mit der UESC schreibt Klausel 616 eine Pacht der an die Kolonisten gelieferten Immobilie für mindestens 600 Jahre fest, und die Kolonisten sind nicht einmal Vertragspartei. Und laut Presse weiß Gaius mehr über den Tod der Kolonie, als er zugibt: seine Motive sind "slightly askew" - leicht schief.</p>
-<p>Der Konzern vermeidet offene Konfrontation mit allen - seine Kampf-Lore gibt unumwunden zu, dass NuCal "not yet wholly comfortable with open conflict" ist, sich mit offenem Konflikt also noch nicht ganz wohlfühlt. Einst wählte er zusammen mit Traxus den Planeten selbst als Missionsziel. Sein 600-jähriger Kolonie-Liefervertrag verstrickt ihn zugleich rechtlich in das Schicksal von Tau Ceti IV - ein Faden zum Rätsel des Kolonietods, getrennt von dem von Traxus.</p>
-<p><b>Was es dem Runner gibt:</b> Überlebensgegenstände - Schildladungen, Medkits, regenerative Implantate; NuCal heilt, wo Arachne tötet. Und Gaius' Willkommensgruß an die Kolonisten gibt den Ton der ganzen Fraktion vor: <em>"Humanity thanks you for your sacrifice."</em> <span class="chip canon">Kanon</span> <span class="chip datamine">Datamine</span></p></div>
-  </div>
-  <div class="f-row">
-    <div class="f-name"><svg class="pic"><use href="#f-trax"/></svg>Traxus<span>Agent: Vulcan</span><i>Stimme: Morla Gorrondona</i><img class="f-logo" loading="lazy" decoding="async" src="https://marathonwiki.org/api/media/file/factions-69b1ca87034785859db2cf47-1773270741550.png" alt="Traxus-Logo" onerror="this.style.display='none'"></div>
-    <div><figure class="f-art"><img loading="lazy" decoding="async" src="https://images.steamusercontent.com/ugc/16295817170346948982/FC876E181823AAD5B03AFBBC9199A50FA11EEB5D/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true" alt="Vulcan, Agent von Traxus (Intro-Cinematic)" onerror="this.parentElement.style.display='none'"><figcaption><span>Screenshot //</span> Intro-Cinematic. Quelle: Steam Workshop</figcaption></figure><p><b class="f-slogan">"Operate Beyond Scale."</b> Die Ostindien-Kompanie des Weltraumzeitalters, die die Kolonie und ihre Technologie als eigenes Eigentum betrachtet, das zur Rückgabe fällig ist.</p>
-<p>Die reichste Privatgesellschaft der Menschheitsgeschichte, an Einfluss nur von der UESC übertroffen ("second only to the UNIFIED EARTH SPACE COUNCIL"). 2095 auf der Erde als "Traxus Intelligent Systems" gegründet, um "pierce the veil of the cosmos" - den Schleier des Kosmos zu durchdringen -, zog sie 2145 wegen der Bodenschätze zum Mars. Sie handelt durch Dritte und Tarnoperationen: öffentlich "ist" sie nicht auf Tau Ceti IV, und sie nutzt Runner als dementierbares Aktivum, um "scavenge the colony in direct opposition of UESC forces". Rechtlich beansprucht Traxus "rights of reacquisition" - Wiedererlangungsrechte - auf jede Technologie, die mit der Marathon und der Kolonie verbunden ist: das heißt, sie betrachtet den Planeten selbst als ihr Eigentum. Agent Vulcan überzeugt nicht: Er sitzt regungslos auf einem Thron mit brennenden Augen und verliest die Haftungsausschlüsse, unter denen du ein "temporary nonasset worker" ohne jedes Recht bist. Und ihr heutiger Krieg mit der UESC ist offene Konzernopposition um das Recht, die verlassene New Cascadia zu bergen: Sowohl Traxus als auch die Regierung betrachten die Ruinen der Kolonie und ihre Technik als ihre rechtmäßige Beute, und genau wegen dieser Bergung schickt der Konzern Runner auf den Planeten.</p>
-<p>Dasselbe Haus, das Traxus IV baute: Die KI, die 2206 den Mars in Krater legte, war ihr eigenes System der vierten Generation - der Konzern hat den Skandal einfach überlebt. Die Ironie reicht tiefer: Das Trio der Bordcomputer der Marathon (Leela, Tycho, Durandal; die IX-A-"Hermes"-Serie, 2409) wurde physisch von Traxus gebaut, auch wenn ihr Rivale CyberAcme sie verwaltet. Und "Project Goliath" ist die Akte, deren Leck über Nacht die Verhandlungen zwischen Traxus und der UESC einfrieren ließ und den Konzern auf eigene Faust zum Planeten schickte (siehe den Netzwerk-Kasten).</p>
-<p>An der Oberfläche kämpft Traxus mit der UESC um Beute und "rights of reacquisition". Im Geheimen ist er der Strippenzieher: Laut Datamine wurde MIDA "formally brought into the fold by Traxus OffWorld Industries" - formell in den Schoß von Traxus OffWorld Industries aufgenommen -, das heißt, die antikorporative Revolution wurde zu seinem eigenen Aktivum. Dazu kommt eine langjährige Kollusion mit NuCaloric bei der Wahl des Planeten und die Anheuerung von Arachne-Kultisten für Bergungsläufe.</p>
-<p><b>Was es dem Runner gibt:</b> die teuerste Beute - Waffen-Upgrades und Mods unter strenger Konzernkontrolle. Traxus' Anwerbung umwirbt sogar ganze Nationen ("Choose freedom. Let Traxus steward what you have built"), und in einem live übertragenen Streit mit einem UESC-Admiral bestreitet der Konzern alles und schließt mit einer verschleierten Drohung: <em>"Our success is your success."</em> <span class="chip canon">Kanon</span> <span class="chip datamine">Datamine</span></p></div>
-  </div>
-  <div class="f-row">
-    <div class="f-name"><svg class="pic"><use href="#f-mida"/></svg>MIDA<span>Agent: _Gantry</span><i>Stimme: Lee Shorten</i><img class="f-logo" loading="lazy" decoding="async" src="https://marathonwiki.org/api/media/file/factions-69b1ca7e034785859db2cf08-1773270741424.png" alt="MIDA-Logo" onerror="this.style.display='none'"></div>
-    <div><figure class="f-art"><img loading="lazy" decoding="async" src="https://storage.ghost.io/c/30/f5/30f5b1bb-84ee-4c26-b446-fb9a5e512994/content/images/2026/06/tobias-kwan-tk-faction-agent-gantry-01.jpg" alt="_Gantry, Agent von MIDA (Konzept-Art)" onerror="this.parentElement.style.display='none'"><figcaption><span>Offizielles Konzept-Art //</span> Tobias Kwan. Quelle: aftermath.site</figcaption></figure><p><b class="f-slogan">"Resist. Disrupt. Destroy."</b> Marsianische Revolutionäre, die davon träumen, die alte Welt niederzubrennen - und heimlich von Traxus aufgekauft.</p>
-<p>_gantry formuliert das Ziel unverblümt: "burn away a stagnant, corrupt world" - eine stagnierende, korrupte Welt niederbrennen - und jenseits der Revolution eine neue aufbauen. Das ist eine marsianische politische Partei, wiedergeboren als anarchistisches Netzwerk, dessen Groll älter ist als die Marathon selbst: seine Wurzeln reichen zurück bis zum Massaker am Misriah-Lebensmittelverteilzentrum am 4. Januar 2345, das den Dritten Marskrieg auslöste, und das Netzwerk härtete sich nach dem Massaker von 2442. Das Akronym MIDA hat keine kanonische Auflösung - das ARG bot absichtlich sich gegenseitig ausschließende Versionen an, von "Martian Independence Demands Accountability" bis zum Witz "Mars Is Damnably Arid". Agent _gantry spricht in Fetzen graffitiartiger Sätze und lädt Malware hoch, um unauffindbar zu bleiben. Eine eigene Anmerkung für alle, die Bungies Geschichte kennen: Der Name MIDA selbst ist eine direkte Anspielung auf die 90er-Trilogie, in der eine marsianische Revolutionsbewegung gegen die Erdregierung bereits auftauchte und später niedergeschlagen wurde. Das Studio verwendete den Namen später in Destiny wieder (das Gewehr MIDA Multi-Tool), und jetzt ist er zurück - macht einen fast 30 Jahre alten Bungie-Insiderwitz, der sich über drei Spiele zieht.</p>
-<p>Während seiner dreimonatigen Herrschaft über den Mars 2466 wurde MIDA verantwortlich für den Tod von etwa einem Zehntel der Planetenbevölkerung. Schon während des Baus der Marathon schmuggelten seine Operatives Waffen und Kampfroboter (Battleroids) an Bord, in der Wette, weit weg von der Erde einen neuen Aufstand anzuzetteln. Aber die größte Wendung ist jüngeren Datums: Laut Datamine wurde MIDA "formally brought into the fold by Traxus OffWorld Industries" - formell in den Schoß von Traxus OffWorld Industries aufgenommen -, das anti-korporative Netzwerk wurde de facto zum Strohmann eines Megakonzerns. Der junge Flügel nennt die alte Garde deswegen "korrupt".</p>
-<p>Ein heißer Krieg mit der UESC - und ein Strippenzieher darüber: Traxus. Datamine schreibt auch das Leck der Akte "Project Goliath" MIDA zu, das Leck, das das konzerneigene Wettrennen um den Planeten auslöste (siehe den Kasten). Dazu kommt ein zynisches, befristetes Bündnis mit Arachne, für die MIDAs Ideologie nur praktisches Chaos ist.</p>
-<p><b>Was es dem Runner gibt:</b> Sabotagewerkzeuge - Sprengwaffen und EMP, Verträge, um Ziele zu sprengen und Malware in ganz Tau Ceti IV hochzuladen; und natürlich deinen Vandal. Das Netzwerk hat eigene Agenten innerhalb der Sicherheitsdienste: _gantry teilt ein Dossier über Captain Orion und den Verdacht, dass eine nicht registrierte militärische KI im Einsatz ist - <em>"Cerberus, capable of mass violence."</em> <span class="chip canon">Kanon</span> <span class="chip datamine">Datamine</span></p></div>
-  </div>
-  <div class="f-row">
-    <div class="f-name"><svg class="pic"><use href="#f-arach"/></svg>Arachne<span>Agent: Charter</span><i>Stimme: Dave Fennoy</i><img class="f-logo" loading="lazy" decoding="async" src="https://marathonwiki.org/api/media/file/factions-69b1ca7e034785859db2cefe-1773270741455.png" alt="Arachne-Logo" onerror="this.style.display='none'"></div>
-    <div><figure class="f-art"><img loading="lazy" decoding="async" src="https://storage.ghost.io/c/30/f5/30f5b1bb-84ee-4c26-b446-fb9a5e512994/content/images/2026/06/dima-goryainov-dg-marathon-arachne-11.jpg" alt="Charter, Agent von Arachne (Konzept-Art)" onerror="this.parentElement.style.display='none'"><figcaption><span>Offizielles Konzept-Art //</span> Dima Goryainov. Quelle: aftermath.site</figcaption></figure><p><b class="f-slogan">"See red. Leave blue."</b> Ein registrierter Todeskult, für den jeder Kill zugleich Ritual und Datenzeile ist.</p>
-<p>Die "Thermodynamik der Gewalt": einem Shell und einem Kampf das absolute Maximum abzuringen. Formal ist Arachne "a registered 784s(g) spiritual group" - selbst ein Todeskult existiert als juristische Person mit religiösem Status. Die Doktrin entstand aus echten Fehlschlägen der frühen Kryotechnik (8% der Testsubjekte der Klasse 1-AC entwickelten schwere Psychosen): Der Tod ist hier "a recoverable form of death" - eine reversible Form des Todes -, und der Kryoschlaf ein Weg zur postumen Erleuchtung; die Lehre gliedert sich in Häuser, Hände und Augen. Im Spiel wird das Motiv zu einer Formel verdichtet: Der Tod und die Daten, die man aus ihm gewinnen kann, sind ein und dasselbe.</p>
-<p>Die Kampf-Akolythen, die "Severed" - die Abgetrennten -, legen ein einziges Gelübde ab: "Draw your blades only ever in service to sleep." Die Quelle des Reichtums der Sekte ist offiziell unbekannt - Charter spricht von unbenannten "my Patrons". Und im Spiel erscheint der Agent als gottgleiche Gestalt mit vielen Händen, von denen eine das Herz eines getöteten UESC-Soldaten hält.</p>
-<p>Arachne ist Subunternehmer von Traxus bei Bergungsläufen und unterhält ein zynisches, befristetes Bündnis mit MIDA, dessen Ideologie dem Kult nur als praktisches Chaos gilt. Der Kult kämpft nicht um den Planeten als solchen: sein Krieg gilt Tod und Daten. Charter und sein Kult sind schlicht Todbringer: Der Planet selbst interessiert den Agenten nicht, nur Runner, die Runner töten. Deshalb ist Arachne nicht nur mechanisch, sondern auch vom Lore her eine PvP-Fraktion: Ihre Verträge belohnen gezielt die Jagd auf andere Spieler.</p>
-<p><b>Was es dem Runner gibt:</b> reines PvP - Killstreaks und die Jagd auf andere Runner; laut Presse ist die Belohnung konkret: Informationen über die Positionen feindlicher Trupps. Charter ist kalt und unverblümt: <em>"Sow war to feed entropy."</em> <span class="chip canon">Kanon</span> <span class="chip datamine">Datamine</span></p></div>
-  </div>
-  <div class="f-row">
-    <div class="f-name"><svg class="pic"><use href="#f-sekg"/></svg>Sekiguchi<span>Agent: Nona</span><i>Stimme: Tracy Wiles</i><img class="f-logo" loading="lazy" decoding="async" src="https://marathonwiki.org/api/media/file/factions-69b1ca82034785859db2cf12-1773270741421.png" alt="Sekiguchi-Logo" onerror="this.style.display='none'"></div>
-    <div><figure class="f-art"><img loading="lazy" decoding="async" src="https://images.steamusercontent.com/ugc/10947739077656523656/A3290B91C1900AD733C82219865C0E8C07FCCE18/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true" alt="Nona, Agent von Sekiguchi (Intro-Cinematic)" onerror="this.parentElement.style.display='none'"><figcaption><span>Screenshot //</span> Intro-Cinematic. Quelle: Steam Workshop</figcaption></figure><p><em>Sekiguchi hat in offenen Quellen keinen offiziellen Slogan.</em> Die Schöpfer der Shells und der Weberwürmer, für die der ganze Planet ein Testgelände für den Körper des Runners ist.</p>
-<p>Sekiguchi Genetics ist nur ein Teil der größeren "Sekiguchi Group", über deren Nebensparten die Quellen schweigen. Die WEAVEworm-Technologie reicht von 2198 (dem EARTHworm, zur Abfallentsorgung) über sieben Jahrhunderte Weiterentwicklung bis zum Drucken biokybernetischer Shells, und in ihrem Kern steckt ein konstruierter "Hunger": Bei einem korrumpierten Programm "will attempt to devour one another by default" - die Würmer werden standardmäßig versuchen, einander zu verschlingen. Agentin Nona ist ein weißes, geflügeltes, insektenhaftes Wesen mit roten Augen und vielen Händen, das die Würmer umsorgt und mit sanfter Stimme fragt: "Are we not a force for good?" Das ist die "Ausdauer-Fraktion": sie belohnt nicht Aggression, sondern das Überleben in den gefährlichsten Zonen. Auf einen Punkt gebracht: Sekiguchi ist es, die das eigentliche "Wie" deiner Unsterblichkeit erklärt - ihre Shells werden aus WEAVEworm-Biomasse gezüchtet, und auch der Neuro-Sync und die Bewusstseinsübertragung in einen frischen Shell, dank derer du nach dem Tod zurückkehrst, sind ihr Werk. Und entsprechend behandelt sie den Runner: Für Nona bist du kein Kunde, sondern ein Feldtestobjekt, an dem sich bequem prüfen lässt, wie widerstandsfähig ihre Shells sind.</p>
-<p>Unter Nonas sanfter Stimme liegt die härteste Praxis am Körper: Die Presse nennt Sekiguchi "the most malevolent faction, pushing the limits of human biology" - die bösartigste Fraktion, die die Grenzen der menschlichen Biologie austestet. Das Drucken von Shells beruht auf dem "Kannibalismus" der eigenen Würmer. Und ihr SIMbiont ist ein Prototyp, dessen Einsatz sogar ihr Rivale CyberAcme dem Runner offen zu begrenzen rät: "I recommend you limit your exposure to the SIMbiont."</p>
-<p>Ihre Hauptverbindung besteht zu CyberAcme: gemeinsam bauen sie die Shell-Druck-Anlage "Cradle" (Sekiguchi die Hardware, CyberAcme die Software), wobei ONI direkten Zugriff innerhalb des Produkts ihrer Partnerin behält. Dieselbe Verbündete untergräbt sie zugleich - CyberAcme ist es, die rät, Sekiguchis SIMbiont zu begrenzen.</p>
-<p><b>Was es dem Runner gibt:</b> biologische Ausdauer-Upgrades - kürzere Verblutungszeit, kürzere Abklingzeiten; Daten aus den tödlichsten Zonen im Tausch gegen Körper-Upgrades. Nona ist nicht nur Ingenieurin, sondern Erzählerin von Parabeln über den Tod: <em>"I have consumed every piece of human literature ever recorded."</em> <span class="chip canon">Kanon</span></p></div>
-  </div>
-
-  <figure class="art">
-    <img loading="lazy" decoding="async" src="https://images.contentstack.io/v3/assets/blt15f7b5c0d43ed112/blt3fc4b732b8f8f3ab/69806c203ada312c13acff6a/Marathon.bungie.fps.shooter.jpg?width=1920&quality=80&auto=webp" alt="UESC-Soldaten bereiten einen Angriff auf den Spieler vor" onerror="this.parentElement.style.display='none'">
-    <figcaption><span>Offizieller Screenshot //</span> UESC-Truppen - der Feind jedes Runners. Quelle: marathonthegame.com</figcaption>
-  </figure>
-
-  <!-- v6b:factions-network -->
-  <div class="callout"><b>Das verborgene Konzern-Netzwerk:</b> die offene Feindschaft der Fraktionen auf Tau Ceti IV ist eine Fassade, hinter der genau diese "Feinde" durch Abkommen aneinandergebunden sind. Das Trio der Bordcomputer der Marathon wurde physisch von Traxus gebaut (die IX-A-"Hermes"-Serie, 2409) und wird von ihrem Rivalen CyberAcme verwaltet. Die Shell-Druck-Anlage "Cradle" ist ein gemeinsames Produkt von CyberAcme (Software) und Sekiguchi (Hardware), wobei ONI direkten Zugriff innerhalb des Produkts der Partnerin behält. Der Planet selbst wurde von einer gemeinsamen Kommission aus NuCaloric und Traxus als Missionsziel ausgewählt - noch bevor die Marathon überhaupt gestartet war. Und Traxus, öffentlich "nicht präsent" auf dem Planeten, hält Agenten innerhalb von MIDA und heuert Arachne-Kultisten als gewöhnliche Söldner für Bergungsläufe an.<br><br><b>Der rote Faden ist "Project Goliath".</b> Eine einzige Akte verknüpft die gesamte Eröffnung des Spiels zu einer einzigen Kette aus Ursache und Wirkung. Die UESC beauftragte Project Goliath, um den Kontakt zur Kolonie auf Tau Ceti IV wiederherzustellen; nach dem Hack von United Shipping sickerte die Akte durch (Datamine schreibt das Leck MIDA zu, laut einer einzigen Quelle), und als der gesamte Goliath-Bestand draußen war, froren die Verhandlungen zwischen Traxus und der UESC über Nacht ein - der Konzern ging auf eigene Faust zum Planeten. Dann die zentrale Wendung: MIDA wurde "formally brought into the fold by Traxus OffWorld Industries" - formell in den Schoß von Traxus OffWorld Industries aufgenommen -, die antikorporative Revolution, die einst Traxus' Korrespondenz gehackt hatte, wurde zum Aktivum genau dieses Megakonzerns, und die Spaltung von MIDA (die Radikalen nennen die alte Garde deswegen "korrupt") verläuft vermutlich genau entlang der Linie dieses Deals. Vor diesem Hintergrund steht CyberAcme nur formal "über den Dingen": der Konzern vermittelt die Verträge aller und profitiert von jedem, während NuCaloric nicht kämpft, sondern still den Tod der Kolonie untersucht und mehr weiß, als er sagt. <span class="chip canon">Kanon</span> <span class="chip datamine">Datamine</span> <span class="chip theory">Theorie</span></div>
-
-  <div class="callout"><b>Und wer ist der Feind?</b> Die UESC - die Regierung der Erde - ist keine Fraktion, sondern der Hauptgegner aller Runner. Ihr Rettungs- und Besatzungskorps traf an Bord der <b>UESC Equanimity T-SR 151</b> ein, eines modifizierten Bergungs- und Rettungsschiffs der Kingfisher-Klasse, beim Start kommandiert von Captain Ningal T. Enki, mit Klon-Crews und einem eigenen Team zur Reaktion auf Rampancy. Die Truppen auf dem Planeten unterstehen <b>Captain Orion</b> (gesprochen von Rich Keeble) - der ironischerweise selbst einen künstlichen Körper trägt, genau wie du. Man hat ihn schon getötet. Sie haben einen neuen gedruckt. Du bist illegal hier, und ihre Roboter und Drohnen schießen ohne Vorwarnung. Zusammengefasst gibt es in einem Raid genau drei Bedrohungsquellen: UESC-Truppen, andere Runner (also PvP) und Wesen, die aus der Anomalie stammen.</div>
-</section>
-<div class="pager">
-  <a class="pager-prev" href="sound.html">← Zurück</a>
-  <a class="pager-next" href="aliens.html">Weiter →</a>
-</div>
-<footer>
-  <div class="footer-logos">
-    <img loading="lazy" decoding="async" src="https://images.contentstack.io/v3/assets/blt15f7b5c0d43ed112/bltd7331a6610275af9/69677e5ff4f25c00087a9e20/footer_logo_v2.svg?width=640&quality=80" alt="Marathon" onerror="this.style.display='none'">
-    <img loading="lazy" decoding="async" src="https://images.contentstack.io/v3/assets/blt15f7b5c0d43ed112/blt8df2717a52c60cdd/6964c1f51f87f800082b54d5/bungie-logo.svg?width=256&quality=80" alt="Bungie" onerror="this.style.display='none'">
-  </div>
-  <p>UESC BRIEFING DOCUMENT v6.4 // TAU CETI IV // 2893</p>
-  <p>Fahre mit dem Cursor über unterstrichene Begriffe für Definitionen. Klicke auf die Terminals - sie klappen auf.</p>
-  <p>Die Piktogramme in diesem Dokument sind Originalgrafiken; die säuregrüne Palette (#C2FE0C) folgt der von der Community dokumentierten Markenfarbe. Offizielle Logos und Key Art werden vom CDN von marathonthegame.com geladen. Bungie and Marathon are registered trademarks of Bungie, Inc. Inoffizielles Fan-Dokument.</p>
-</footer>
-</div>
-
-<div class="l10n" data-l="ru">
-<nav>
-  <a href="../index.html">01 // С чего начать</a>
-  <a href="timeline.html">02 // Таймлайн</a>
-  <a href="rampancy.html">03 // ИИ и рампанси</a>
-  <a href="colony.html">04 // Гибель колонии</a>
-  <a href="runners.html">05 // Раннеры и шеллы</a>
-  <a href="classes.html">06 // Классы</a>
-  <a href="arsenal.html">06-B // Арсенал</a>
-  <a href="sound.html">06-C // Звук</a>
-  <a href="factions.html" class="active" aria-current="page">07 // Фракции</a>
-  <a href="aliens.html">08 // Инопланетяне</a>
-  <a href="zones.html">09 // Локации</a>
-  <a href="seasons.html">10 // Сезоны</a>
-  <a href="trilogy.html">11 // Трилогия 90-х</a>
-  <a href="deep-cuts.html">12 // Глубокие пасхалки</a>
-  <a href="resources.html">13 // Ресурсы</a>
-</nav>
-<section id="ru-s6">
-  <div class="sec-label"><svg class="pic"><use href="#i-hex"/></svg>Brief 07 // Influence is power</div>
-  <h2>Фракции: на кого ты работаешь</h2>
-  <p>Шесть корпораций и группировок нанимают Раннеров, и у каждой - свой ИИ-агент, который выдаёт тебе контракты. Шесть очень разных лиц одного прогнившего мира. CyberAcme - твоя входная дверь: шесть их ознакомительных контрактов открывают всех остальных. Для гиков озвучки указаны и актёры агентов - полный каст на ~33 актёра раскрыли в январе 2026-го.</p>
-
-  <div class="callout"><b>Как работают контракты:</b> контракт - это задание, которое ты берёшь у фракции через её агента. Выполняешь его прямо в рейде, а потом возвращаешься и сдаёшь - за репутацию у этой фракции и за награды. Чем выше репутация, тем больше открывается у её вендора: доступ к лучшим шеллам, оружию и модам. Так и держится вся петля - берёшь контракты, растёшь в репутации, получаешь доступ к лучшему снаряжению.</div>
-
-  <figure class="art">
-    <img loading="lazy" decoding="async" src="https://images.contentstack.io/v3/assets/blt15f7b5c0d43ed112/blt0656353348a074b8/69806a3998d6ebf4e5ca3676/marathon.bungie.character.png?width=1920&quality=80&auto=webp" alt="Gantry - агент фракции MIDA" onerror="this.parentElement.style.display='none'">
-    <figcaption><span>Official art //</span> Gantry, агент MIDA. Источник: marathonthegame.com</figcaption>
-  </figure>
-
-  <div class="f-row">
-    <div class="f-name"><svg class="pic"><use href="#f-cyac"/></svg>CyberAcme<span>агент: ONI</span><i>голос: Доннла Хьюз</i><img class="f-logo" loading="lazy" decoding="async" src="https://marathonwiki.org/api/media/file/factions-69b1ca7e034785859db2cf03-1773270741417.png" alt="логотип CyberAcme" onerror="this.style.display='none'"></div>
-    <div><figure class="f-art"><img loading="lazy" decoding="async" src="https://storage.ghost.io/c/30/f5/30f5b1bb-84ee-4c26-b446-fb9a5e512994/content/images/2026/06/tobias-kwan-tk-faction-agent-oni-01.jpg" alt="ONI, агент CyberAcme (концепт-арт)" onerror="this.parentElement.style.display='none'"><figcaption><span>Официальный концепт-арт //</span> Tobias Kwan. Источник: aftermath.site</figcaption></figure><p><b class="f-slogan">«Everything runs on CyberAcme. Or nothing runs at all.»</b> Цифровая инфраструктура всего человечества и нейтральный брокер, через которого проходят контракты всех Раннеров.</p>
-<p>CyberAcme не воюет за планету - она продаёт "hardware and software for all applications" всем шести сторонам сразу и берёт свой процент с каждого контракта. Её ONI (Onboard Navigational Intelligence; и да, так же зовётся теневая разведка из Halo - Bungie знает, что делает) - парящая оцифрованная женская голова и твой первый проводник: шесть её ознакомительных контрактов открывают остальные пять фракций. Аббревиатура ONI - ещё и продукт, прошивка почти в каждой оболочке Раннера. Компания построила большинство систем самого «Марафона» ("the majority of the UESC MARATHON's systems were powered by CYAC"), так что Tau Ceti IV для неё - не новый рынок, а собственное наследие. Ещё на оригинальном «Марафоне» именно CyberAcme управляла большей частью бортовых компьютерных систем, и сегодня она нейтральный брокер-инфраструктура. Именно поэтому CyberAcme и стала твоей стартовой фракцией: она владеет всем техническим стеком, на котором вообще держится сам концепт Раннера - от прошивки ONI в оболочке до контрактной сети, - а её ONI-поддержка ведёт новичка за руку через первые контракты.</p>
-<p>Изнанка деловитого фасада твёрже прежних «слухов»: вики прямо фиксирует, что корпорация "deals in the illegal buying and selling of personality and thought data". А сам контракт Раннера отдаёт ей совладение копиями твоего сознания - чтобы попасть в игру, ты уже продан. Вербует она через программу NextForm Recourse: скупает долги кандидата и превращает его в «декорпореализованного» - "This debt has been purchased by CyberAcme and added to your balance".</p>
-<p>Формально CyberAcme ни с кем - и одновременно со всеми: она брокерит контракты всех сторон и завязана в партнёрства («Cradle» с Sekiguchi, поставки Traxus). К UESC - холодное презрение; по одному пресс-источнику ONI прямо называет уничтожение правительства "completely acceptable", хотя в игре эта реплика дословно не сверена.</p>
-<p><b>Что даёт Раннеру:</b> мягкий онбординг - апгрейды шелла, снижение кулдаунов, расширение инвентаря; её шесть контрактов и есть твоя дверь в остальные пять фракций. Голос ONI закрывает всё той же ласково-циничной формулой: <em>"Congratulations, and sweet dreams"</em>. <span class="chip canon">канон</span> <span class="chip datamine">датамайн</span></p></div>
-  </div>
-  <div class="f-row">
-    <div class="f-name"><svg class="pic"><use href="#f-nucal"/></svg>NuCaloric<span>агент: Gaius</span><i>голос: Дарин Де Пол</i><img class="f-logo" loading="lazy" decoding="async" src="https://marathonwiki.org/api/media/file/factions-69b1ca7e034785859db2cf0d-1773270741419.png" alt="логотип NuCaloric" onerror="this.style.display='none'"></div>
-    <div><figure class="f-art"><img loading="lazy" decoding="async" src="https://storage.ghost.io/c/30/f5/30f5b1bb-84ee-4c26-b446-fb9a5e512994/content/images/2026/06/tobias-kwan-tk-faction-agent-gaius-04.jpg" alt="Gaius, агент NuCaloric (концепт-арт)" onerror="this.parentElement.style.display='none'"><figcaption><span>Официальный концепт-арт //</span> Tobias Kwan. Источник: aftermath.site</figcaption></figure><p><b class="f-slogan">«Essentially. Everywhere.»</b> Монополист еды, медицины и жилья, который тихо расследует, что убило колонию.</p>
-<p>«Накормить, одеть и снабдить человечество» - модель, которую codex описывает как смесь социальной пользы и безжалостной оптимизации. Основанный Гасом Морейном на голоде 2360-х как филантроп, NuCaloric вырос в крупнейшего поставщика товаров в Солнечной системе: от Biostock и биосинтетических питомцев до фармацевтики, жилых модулей и косметики. На Tau Ceti IV он принципиально избегает силового захвата ("does not appear interested in sustained confrontation") - предпочитает собирать исторические данные и разведку руками нанятых Раннеров ("hired RUNNER operatives"). Это фракция-следователь. И ещё одна нить к тайне: NuCaloric числится среди корпоративных спонсоров самой экспедиции «Марафон» - той, что когда-то увезла колонистов к Tau Ceti, - так что корпорация расследует историю, к которой сама же и приложила руку.</p>
-<p>Фасад филантропа держится на деталях, о которых лучше не думать: их «клещевое молоко» делается ровно из того, о чём ты подумал. Основатель Гас Морейн лично записал приветствие колонистам, настояв на слове «жертва», - а сразу за ним шла реклама «Drinkable Cheeseburger». В эксклюзивном контракте с UESC пункт 616 закрепляет аренду поставленного колонистам имущества минимум на 600 лет, а сами колонисты стороной договора не являются вовсе. И, судя по прессе, Gaius знает о гибели колонии больше, чем говорит: его мотивы "slightly askew".</p>
-<p>Открытого столкновения корпорация избегает со всеми - её боевой лор прямо признаёт, что NuCal "not yet wholly comfortable with open conflict". Саму планету целью миссии она когда-то выбрала в связке с Traxus. При этом её 600-летний контракт на снабжение колонии делает её юридически причастной к судьбе Tau Ceti IV - отдельная от Traxus нить к тайне гибели.</p>
-<p><b>Что даёт Раннеру:</b> предметы на выживание - заряды щита, аптечки, регенеративные импланты; NuCal лечит там, где Arachne убивает. А приветствие колонистам от Gaius задаёт тон всей фракции: <em>"Humanity thanks you for your sacrifice"</em>. <span class="chip canon">канон</span> <span class="chip datamine">датамайн</span></p></div>
-  </div>
-  <div class="f-row">
-    <div class="f-name"><svg class="pic"><use href="#f-trax"/></svg>Traxus<span>агент: Vulcan</span><i>голос: Морла Горрондона</i><img class="f-logo" loading="lazy" decoding="async" src="https://marathonwiki.org/api/media/file/factions-69b1ca87034785859db2cf47-1773270741550.png" alt="логотип Traxus" onerror="this.style.display='none'"></div>
-    <div><figure class="f-art"><img loading="lazy" decoding="async" src="https://images.steamusercontent.com/ugc/16295817170346948982/FC876E181823AAD5B03AFBBC9199A50FA11EEB5D/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true" alt="Vulcan, агент Traxus (интро-ролик)" onerror="this.parentElement.style.display='none'"><figcaption><span>Скриншот //</span> интро-ролик. Источник: Steam Workshop</figcaption></figure><p><b class="f-slogan">«Operate Beyond Scale.»</b> Ост-Индская компания космической эры, считающая колонию и её технологии своей собственностью, подлежащей возврату.</p>
-<p>Богатейшая частная корпорация в истории человечества, влиянием уступающая только UESC ("second only to the UNIFIED EARTH SPACE COUNCIL"). Основана на Земле в 2095-м как «Traxus Intelligent Systems» с целью "pierce the veil of the cosmos", в 2145-м перебралась на Марс за минералами. Действует чужими руками и через фасады: публично на Tau Ceti IV её «нет», а Раннеров она использует как отрицаемый актив, чтобы "scavenge the colony in direct opposition of UESC forces". Юридически же Traxus заявляет "rights of reacquisition" на все технологии, связанные с «Марафоном» и колонией, - то есть считает саму планету своей. Агент Vulcan не уговаривает: неподвижно сидит на троне с горящими глазами и зачитывает оговорки, по которым ты - «временный небалансовый работник» (temporary nonasset worker) без единого права. А сегодняшняя её война с UESC - открытая корпоративная оппозиция за право салважа опустевшей New Cascadia: и Traxus, и правительство считают руины колонии и её технику своим законным трофеем, и именно за этот салваж корпорация и забрасывает на планету Раннеров.</p>
-<p>Тот самый дом, что построил Traxus IV: ИИ, обрушивший Марс в 2206-м, был их собственной системой четвёртого поколения - корпорация просто пережила скандал. Ещё глубже ирония: корабельную тройку ИИ «Марафона» (Leela, Tycho, Durandal; серия IX-A «Гермес», 2409) физически произвела именно Traxus, хотя администрирует их конкурент CyberAcme. А «Project Goliath» - файл, из-за утечки которого переговоры Traxus с UESC встали за ночь, и корпорация пошла на планету сама (см. врезку про сеть).</p>
-<p>Внешне Traxus воюет с UESC за трофеи и «права возврата». Тайно - она кукловод: по датамайну MIDA "had been formally brought into the fold by Traxus OffWorld Industries", то есть анти-корпоративная революция стала её же активом. Плюс давний сговор с NuCaloric о выборе планеты и наём культистов Arachne на трофейные вылазки.</p>
-<p><b>Что даёт Раннеру:</b> самый дорогой лут - апгрейды и моды оружия под строгим корпоративным контролем. В вербовку Traxus включает даже целые страны ("Choose freedom. Let Traxus steward what you have built"), а в прямом эфирном споре с адмиралом UESC всё отрицает и заканчивает завуалированной угрозой: <em>"Our success is your success"</em>. <span class="chip canon">канон</span> <span class="chip datamine">датамайн</span></p></div>
-  </div>
-  <div class="f-row">
-    <div class="f-name"><svg class="pic"><use href="#f-mida"/></svg>MIDA<span>агент: _Gantry</span><i>голос: Ли Шортен</i><img class="f-logo" loading="lazy" decoding="async" src="https://marathonwiki.org/api/media/file/factions-69b1ca7e034785859db2cf08-1773270741424.png" alt="логотип MIDA" onerror="this.style.display='none'"></div>
-    <div><figure class="f-art"><img loading="lazy" decoding="async" src="https://storage.ghost.io/c/30/f5/30f5b1bb-84ee-4c26-b446-fb9a5e512994/content/images/2026/06/tobias-kwan-tk-faction-agent-gantry-01.jpg" alt="_Gantry, агент MIDA (концепт-арт)" onerror="this.parentElement.style.display='none'"><figcaption><span>Официальный концепт-арт //</span> Tobias Kwan. Источник: aftermath.site</figcaption></figure><p><b class="f-slogan">«Resist. Disrupt. Destroy.»</b> Марсианские революционеры, мечтающие сжечь старый мир, - и тихо купленные Traxus.</p>
-<p>Цель _gantry формулирует прямо: "burn away a stagnant, corrupt world" и построить новый по ту сторону революции. Это марсианская политическая партия, переродившаяся в анархистскую сеть, чьи счёты старше самого «Марафона»: корни уходят в резню у распределительного центра еды в Мисриа (Misriah) 4 января 2345 года, с которой началась Третья марсианская война, а сеть закалилась после резни 2442-го. У самой аббревиатуры MIDA нет канонической расшифровки - ARG намеренно давала взаимоисключающие варианты, от «Martian Independence Demands Accountability» до шутки «Mars Is Damnably Arid». Агент _gantry говорит обрывками фраз-граффити и заливает малварь, чтобы его не отследили. Отдельно для тех, кто знает историю Bungie: само имя MIDA - прямая отсылка к трилогии 90-х, где марсианское революционное движение против земного правительства уже фигурировало и было позднее подавлено. Позже студия переиспользовала имя в Destiny (винтовка MIDA Multi-Tool), а теперь вернула сюда - выходит почти 30-летняя внутренняя шутка Bungie, протянутая через три игры.</p>
-<p>За три месяца своей власти над Марсом в 2466-м MIDA стала ответственна за гибель примерно десятой части населения планеты. Ещё на стройке «Марафона» её оперативники тайком пронесли на борт оружие и боевых роботов (Battleroids) в расчёте поднять новое восстание вдали от Земли. Но главная изнанка - свежая: по датамайну MIDA "had been formally brought into the fold by Traxus OffWorld Industries", то есть анти-корпоративная сеть де-факто стала прокси мегакорпорации. Молодое крыло за это зовёт старую гвардию "corrupt".</p>
-<p>Горячая война с UESC - и кукловод сверху: Traxus. Датамайн приписывает MIDA и утечку файла «Project Goliath», с которой началась гонка корпораций за планету (см. врезку). Плюс циничный временный союз с Arachne, для которой идеология MIDA - лишь удобный хаос.</p>
-<p><b>Что даёт Раннеру:</b> инструменты саботажа - подрывное оружие и EMP, контракты на подрыв объектов и заливку малвари по всей Tau Ceti IV; и, конечно, твой Vandal. У сети есть своя агентура в силовых структурах: _gantry делится досье на капитана Orion и подозрением в развёртывании незарегистрированного военного ИИ - <em>"Cerberus, capable of mass violence"</em>. <span class="chip canon">канон</span> <span class="chip datamine">датамайн</span></p></div>
-  </div>
-  <div class="f-row">
-    <div class="f-name"><svg class="pic"><use href="#f-arach"/></svg>Arachne<span>агент: Charter</span><i>голос: Дэйв Феннуа</i><img class="f-logo" loading="lazy" decoding="async" src="https://marathonwiki.org/api/media/file/factions-69b1ca7e034785859db2cefe-1773270741455.png" alt="логотип Arachne" onerror="this.style.display='none'"></div>
-    <div><figure class="f-art"><img loading="lazy" decoding="async" src="https://storage.ghost.io/c/30/f5/30f5b1bb-84ee-4c26-b446-fb9a5e512994/content/images/2026/06/dima-goryainov-dg-marathon-arachne-11.jpg" alt="Charter, агент Arachne (концепт-арт)" onerror="this.parentElement.style.display='none'"><figcaption><span>Официальный концепт-арт //</span> Dima Goryainov. Источник: aftermath.site</figcaption></figure><p><b class="f-slogan">«See red. Leave blue.»</b> Зарегистрированный культ смерти, для которого каждое убийство - одновременно ритуал и строка данных.</p>
-<p>«Термодинамика насилия»: выжать из шелла и боя абсолютный максимум. Формально Arachne - "a registered 784s(g) spiritual group", то есть даже культ смерти существует как юрлицо с религиозным статусом. Доктрина выросла из реальных провалов ранней криотехнологии (8% испытуемых класса 1-AC получали тяжёлые психозы): смерть здесь - "a recoverable form of death", а криосон - путь к посмертному просветлению; учение делится на Дома, Руки и Глаза. Мотив в игре сжат до формулы: смерть и данные, которые из неё можно собрать, - одно целое.</p>
-<p>Боевые послушники «Отсечённые» приносят единственный обет: "Draw your blades only ever in service to sleep". Источник богатства секты официально неизвестен - Charter ссылается на неведомых "my Patrons". А в самой игре агент предстаёт богоподобной фигурой со множеством рук, в одной из которых - сердце убитого солдата UESC.</p>
-<p>Arachne - субподрядчик Traxus на трофейных вылазках и держит циничный временный союз с MIDA, чья идеология для культа - лишь удобный хаос. За планету как таковую она не воюет: её война - за смерть и данные. Charter и его культ - «дарящие смерть»: сама планета агенту безразлична, ему интересны только Раннеры, убивающие Раннеров. Поэтому Arachne - PvP-фракция не только по механике, но и по самому лору: её контракты вознаграждают именно охоту на других игроков.</p>
-<p><b>Что даёт Раннеру:</b> чистый PvP - киллстрики и охота на других Раннеров; по прессе награда специфична: развед-инфо о позициях вражеских отрядов. Charter холоден и прям: <em>"Sow war to feed entropy"</em>. <span class="chip canon">канон</span> <span class="chip datamine">датамайн</span></p></div>
-  </div>
-  <div class="f-row">
-    <div class="f-name"><svg class="pic"><use href="#f-sekg"/></svg>Sekiguchi<span>агент: Nona</span><i>голос: Трейси Уайлс</i><img class="f-logo" loading="lazy" decoding="async" src="https://marathonwiki.org/api/media/file/factions-69b1ca82034785859db2cf12-1773270741421.png" alt="логотип Sekiguchi" onerror="this.style.display='none'"></div>
-    <div><figure class="f-art"><img loading="lazy" decoding="async" src="https://images.steamusercontent.com/ugc/10947739077656523656/A3290B91C1900AD733C82219865C0E8C07FCCE18/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true" alt="Nona, агент Sekiguchi (интро-ролик)" onerror="this.parentElement.style.display='none'"><figcaption><span>Скриншот //</span> интро-ролик. Источник: Steam Workshop</figcaption></figure><p><em>Официального слогана у Sekiguchi в открытых источниках нет.</em> Создатели шеллов и червей-ткачей, для которых вся планета - полигон для тела Раннера.</p>
-<p>Sekiguchi Genetics - лишь часть большего «Sekiguchi Group», о непрофильных направлениях которого источники молчат. Технология червей WEAVEworm тянется с 2198 года (EARTHworm для утилизации мусора) через семь веков итераций к печати биокибернетических оболочек, и в основе её - спроектированный «голод»: при повреждённой программе черви "will attempt to devour one another by default". Агент Nona - белое крылатое насекомоподобное существо с красными глазами и множеством рук, которое нянчит червей и мягким голосом спрашивает: "Are we not a force for good?". Это «фракция на выносливость»: она награждает не агрессию, а выживание в самых опасных зонах. Если свести к одному: именно Sekiguchi объясняет само «как» твоего бессмертия - её шеллы выращены из биоматы WEAVEworm, а нейросинк и перенос сознания в свежую оболочку, из-за которых ты и возвращаешься после смерти, - тоже её рук дело. И относится она к Раннеру соответствующе: для Nona ты не клиент, а полевой подопытный, на котором удобно проверять живучесть её оболочек.</p>
-<p>Под мягким голосом Nona - самая жёсткая практика над телом: пресса зовёт Sekiguchi «самой злонамеренной фракцией, толкающей пределы человеческой биологии». Печать оболочек держится на «каннибализме» её же червей. А её SIMbiont - прототип, который конкурент CyberAcme открыто советует Раннеру ограничить: "I recommend you limit your exposure to the SIMbiont".</p>
-<p>Главный узел - с CyberAcme: аппарат печати оболочек «Cradle» они делают вместе (Sekiguchi - железо, CyberAcme - софт), причём ONI имеет прямой доступ внутрь продукта партнёра. Тот же союзник её и подрывает - именно CyberAcme советует ограничить SIMbiont Sekiguchi.</p>
-<p><b>Что даёт Раннеру:</b> биологические улучшения за выносливость - меньше времени на кровотечение, короче кулдауны; данные из опаснейших зон в обмен на апгрейды тела. Nona не только инженер, но и рассказчица притч о Смерти: <em>"I have consumed every piece of human literature ever recorded"</em>. <span class="chip canon">канон</span></p></div>
-  </div>
-
-  <figure class="art">
-    <img loading="lazy" decoding="async" src="https://images.contentstack.io/v3/assets/blt15f7b5c0d43ed112/blt3fc4b732b8f8f3ab/69806c203ada312c13acff6a/Marathon.bungie.fps.shooter.jpg?width=1920&quality=80&auto=webp" alt="Солдаты UESC готовятся атаковать игрока" onerror="this.parentElement.style.display='none'">
-    <figcaption><span>Official screenshot //</span> Силы UESC - главный враг всех Раннеров. Источник: marathonthegame.com</figcaption>
-  </figure>
-
-  <!-- v6b:factions-network -->
-  <div class="callout"><b>Скрытая межкорпоративная сеть:</b> открытая вражда фракций на Tau Ceti IV - это витрина, за которой те же самые «враги» связаны сделками. Корабельную тройку ИИ «Марафона» физически произвела Traxus (серия IX-A «Гермес», 2409), а администрирует их конкурент CyberAcme. Аппарат печати оболочек «Cradle» - совместный продукт CyberAcme (софт) и Sekiguchi (железо), причём ONI имеет прямой доступ внутрь продукта партнёра. Саму планету целью миссии выбрала объединённая комиссия NuCaloric и Traxus - ещё до старта «Марафона». А Traxus, публично «не присутствующая» на планете, содержит агентуру внутри MIDA и нанимает культистов Arachne как обычных наёмников для трофейных вылазок.<br><br><b>Сквозная нить - «Project Goliath».</b> Один файл связывает всё начало игры в единую причинную цепь. UESC заказал Project Goliath, чтобы восстановить связь с колонией Tau Ceti IV; после взлома United Shipping файл утёк (датамайн приписывает утечку MIDA, одним источником), и когда весь Goliath оказался снаружи, переговоры Traxus с UESC встали за ночь - корпорация пошла на планету сама. А дальше главный твист: MIDA "had been formally brought into the fold by Traxus OffWorld Industries" - анти-корпоративная революция, когда-то взломавшая переписку Traxus, стала активом той же мегакорпорации, и раскол MIDA (радикалы зовут старых "corrupt") идёт, вероятно, ровно по линии этой сделки. На этом фоне CyberAcme «над схваткой» лишь формально: она брокерит контракты всех и наживается на каждом, а NuCaloric не воюет, но тихо расследует гибель колонии и знает больше, чем говорит. <span class="chip canon">канон</span> <span class="chip datamine">датамайн</span> <span class="chip theory">теория</span></div>
-
-  <div class="callout"><b>А кто враг?</b> UESC - правительство Земли - не фракция, а главный противник всех Раннеров. Их спасательно-оккупационный корпус прибыл на корабле <b>UESC Equanimity T-SR 151</b> - модифицированном спасателе класса Kingfisher под командованием капитана Нингал Т. Энки, с экипажами из клонов и отдельной командой реагирования на рампанси. Силами на планете командует <b>капитан Orion</b> (озвучка - Рич Кибл), который, по иронии, сам носит искусственное тело, как и ты. Его убивали. Напечатали нового. Ты здесь нелегально, и их роботы с дронами стреляют без предупреждения. Если свести всё воедино, источников угрозы в рейде ровно три: силы UESC, другие Раннеры (то есть PvP) и твари Аномалии.</div>
-</section>
-<div class="pager">
-  <a class="pager-prev" href="sound.html">← Назад</a>
-  <a class="pager-next" href="aliens.html">Далее →</a>
-</div>
-<footer>
-  <div class="footer-logos">
-    <img loading="lazy" decoding="async" src="https://images.contentstack.io/v3/assets/blt15f7b5c0d43ed112/bltd7331a6610275af9/69677e5ff4f25c00087a9e20/footer_logo_v2.svg?width=640&quality=80" alt="Marathon" onerror="this.style.display='none'">
-    <img loading="lazy" decoding="async" src="https://images.contentstack.io/v3/assets/blt15f7b5c0d43ed112/blt8df2717a52c60cdd/6964c1f51f87f800082b54d5/bungie-logo.svg?width=256&quality=80" alt="Bungie" onerror="this.style.display='none'">
-  </div>
-  <p>UESC BRIEFING DOCUMENT v6.4 // TAU CETI IV // 2893</p>
-  <p>Наведи курсор на подчёркнутые термины - всплывёт определение. Кликай по терминалам - они раскрываются.</p>
-  <p>Пиктограммы в документе - оригинальная графика; кислотная палитра (#C2FE0C) следует задокументированному сообществом фирменному цвету. Официальные логотипы и арты загружаются с CDN marathonthegame.com. Bungie and Marathon are registered trademarks of Bungie, Inc. Неофициальный фанатский документ.</p>
-</footer>
-</div>
-
-<script>window.PAGE={slug:"factions",titles:{"en": "Factions: who you work for - Marathon World Guide", "es": "Facciones: para quién trabajas - Marathon World Guide", "de": "Fraktionen: für wen du arbeitest - Marathon World Guide", "ru": "Фракции: на кого ты работаешь - Marathon World Guide"}}</script>
-<script src="../assets/app.js"></script>
-<!-- v6.4:refs -->
+<script src="../assets/js/i18n.js"></script>
+<script src="../data/js/ai-lines.js"></script>
+<script src="../assets/js/pages/factions.js"></script>
+<script src="../assets/js/core.js"></script>
+<script src="../assets/js/page.js"></script>
 </body>
 </html>

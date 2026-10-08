@@ -1,0 +1,84 @@
+/* timeline.css - file 02 only: era plates, lore rail, live-game lane, date chain, term tooltips. Loaded after page.css. */
+.pg .s-title{font-size:clamp(48px,10.4vw,200px)}
+.era-col{border-right:1px solid var(--line);background:#000;min-width:0}
+.era{position:sticky;top:calc(var(--bar) + var(--chrome) + 64px);padding:34px 28px 40px;display:grid;gap:18px;align-content:start}
+.era>.lbl{color:var(--muted)}
+.era__y{display:grid;justify-items:start;font-family:var(--f-head);font-stretch:151%;font-weight:600;font-size:clamp(52px,6.4vw,104px);line-height:.84;letter-spacing:-.02em}
+.era__y i{font:500 10.5px/1 var(--f-label);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);padding:12px 0 10px}
+.era__y--sum b:last-child{color:var(--sig)}
+.era__span{position:relative;height:9px;border:1px solid var(--line-2)}
+.era__span i{position:absolute;top:0;bottom:0;left:calc(var(--a) * 100%);width:calc(var(--b) * 100%);background:var(--sig)}
+.era__span::before,.era__span::after{position:absolute;top:14px;font:400 9px/1 var(--f-data);color:var(--muted)}
+.era__span::before{content:"2070";left:0}
+.era__span::after{content:"2893";right:0}
+.era__n{margin-top:14px;font:400 12.5px/1.55 var(--f-data);color:var(--text-2);max-width:30ch}
+.era-col--live .era__y b{-webkit-text-stroke:1.5px var(--sig);color:transparent}
+
+.tl{list-style:none;border-left:1px solid var(--line-2);margin-left:5px}
+.tl__i{position:relative;padding:0 0 30px 30px}
+.tl__i:last-child{padding-bottom:4px}
+.tl__i::before{content:"";position:absolute;left:-6px;top:7px;width:11px;height:11px;background:var(--sig)}
+.tl__i--minor::before{left:-4px;top:9px;width:7px;height:7px;background:#000;box-shadow:inset 0 0 0 1px var(--fg)}
+.tl__i--danger::before{background:var(--fg)}
+.tl__y{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:baseline;margin-bottom:10px}
+.tl__y b{font-family:var(--f-head);font-stretch:140%;font-weight:600;font-size:30px;line-height:.95;letter-spacing:-.01em}
+.tl__y span{font:500 10.5px/1.35 var(--f-label);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.tl__i--danger .tl__y span{color:var(--fg)}
+.tl__i>p:not(.tl__y){font-size:16px;line-height:1.6;max-width:66ch}
+.tl__i--minor .tl__y b{font-size:22px}
+.tl__i--minor>p:not(.tl__y){color:var(--text-2);font-size:15px}
+.tl a:not(.btn){border-bottom:1px solid var(--line-2)}
+.tl a:not(.btn):hover{background:var(--sig);color:#000}
+
+.tl--live{border-left:1px dashed var(--sig);margin-top:6px}
+.tl__i--live::before{left:-6px;top:8px;width:11px;height:11px;transform:rotate(45deg);background:var(--sig)}
+.tl__i--live.is-plan::before{background:#000;box-shadow:inset 0 0 0 1px var(--sig)}
+.tl__i--live .tl__y b{font-family:var(--f-data);font-stretch:normal;font-weight:500;font-size:24px;letter-spacing:0}
+.tl__i--live .tl__y span{color:var(--fg)}
+.tl__st{font:500 9px/1 var(--f-label);font-style:normal;letter-spacing:.08em;text-transform:uppercase;padding:4px 6px;background:var(--sig);color:#000}
+.tl__i--live.is-plan .tl__st{background:none;color:var(--sig);border:1px solid var(--sig)}
+.tl__i--live.is-plan>p:not(.tl__y){color:var(--text-2)}
+.tl__now{position:relative;margin:0 0 30px -1px;padding:8px 0 8px 30px;border-top:1px solid var(--sig);font:500 10px/1 var(--f-label);letter-spacing:.1em;text-transform:uppercase;color:var(--sig)}
+.tl__now::before{content:"";position:absolute;left:-4px;top:-5px;width:9px;height:9px;background:var(--sig);animation:blink 1.2s steps(1) infinite}
+
+.chain{list-style:none;display:grid;grid-template-columns:repeat(8,minmax(0,1fr));border:1px solid var(--line)}
+.chain li{display:grid;gap:8px;align-content:start;padding:12px 10px 14px;border-right:1px solid var(--line)}
+.chain li:last-child{border-right:0;background:var(--sig);color:#000}
+.chain b{font-family:var(--f-head);font-stretch:130%;font-weight:600;font-size:21px;line-height:1}
+.chain span{font:400 9px/1.35 var(--f-label);letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.chain li:last-child span{color:#000}
+
+.s-intro .tl-legend{display:flex;flex-wrap:wrap;gap:8px 18px;font:500 9.5px/1.3 var(--f-label);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.tl-legend span{display:inline-flex;align-items:center;gap:8px}
+.k{display:inline-block;width:9px;height:9px;background:var(--sig)}
+.k--minor{width:7px;height:7px;background:#000;box-shadow:inset 0 0 0 1px var(--fg)}
+.k--danger{background:var(--fg)}
+.k--live{transform:rotate(45deg)}
+
+.term[data-def]{border-bottom:1px dashed var(--muted);cursor:help;position:relative;outline-offset:3px}
+.term[data-def]::after{content:attr(data-def);position:absolute;left:0;top:calc(100% + 8px);z-index:6;width:min(340px,70vw);padding:10px 12px;background:#000;border:1px solid var(--sig);font:400 12.5px/1.5 var(--f-data);color:var(--fg);opacity:0;visibility:hidden;pointer-events:none;transition:opacity var(--dur)}
+.term[data-def]:hover::after,.term[data-def]:focus::after{opacity:1;visibility:visible}
+.credit{color:var(--muted);font-size:.9em}
+.ctoast span{min-width:0;overflow-wrap:anywhere}
+.credit a{border-bottom:1px solid var(--line-2)}
+
+
+@media (max-width:820px){
+  .pg .s-title{font-size:10.2vw}
+  .era-col{border-right:0;border-bottom:1px solid var(--line)}
+  .era{position:static;padding:20px var(--pad) 22px;gap:12px}
+  .era__y{display:flex;align-items:baseline;gap:12px;font-size:clamp(40px,12vw,64px);font-stretch:125%}
+  .era__y i{padding:0}
+  .era__n{margin-top:12px}
+  .tl__i{padding-left:22px}
+  .tl__y b{font-size:25px}
+  .tl__i--live .tl__y b{font-size:20px}
+  .tl__i--live .tl__y span{order:2;flex-basis:100%}
+  .chain{grid-template-columns:repeat(4,minmax(0,1fr))}
+  .chain li:nth-child(4){border-right:0}
+  .chain li:nth-child(-n+4){border-bottom:1px solid var(--line)}
+  .chain b{font-size:18px}
+  .term[data-def]:focus::after{position:fixed;left:10px;right:10px;top:auto;bottom:calc(var(--task) + var(--sa-b) + 10px);width:auto;z-index:60}
+  .term[data-def]:hover:not(:focus)::after{opacity:0;visibility:hidden}
+}
+@media (prefers-reduced-motion:reduce){.tl__now::before{animation:none}}

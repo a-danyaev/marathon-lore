@@ -1,0 +1,70 @@
+/* rampancy.css - file 03 only: stage grid, quote plates, terminal box, eleven-AI diagram, curator stage list. Loaded after page.css. */
+.pg .s-title{font-size:clamp(56px,12.4vw,230px)}
+.s-intro a.ilink,.d-text a:not(.btn){border-bottom:1px solid var(--line-2)}
+.s-intro a.ilink:hover,.d-text a:not(.btn):hover{background:var(--sig);color:#000}
+.d-text .d-p{font-size:16px;line-height:1.6;max-width:66ch}
+
+.stg-grid{list-style:none;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));border:1px solid var(--line)}
+.stg{display:grid;gap:10px;align-content:start;padding:20px 20px 22px;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
+.stg:nth-child(2n){border-right:0}
+.stg:nth-child(n+3){border-bottom:0}
+.stg__n{font:500 10.5px/1 var(--f-label);letter-spacing:.08em;color:var(--sig)}
+.stg__t{font-family:var(--f-head);font-stretch:140%;font-weight:600;font-size:24px;line-height:1;text-transform:uppercase}
+.stg p:last-child{font-size:15px;line-height:1.55;color:var(--text-2)}
+.stg--anger .stg__t{color:var(--accent)}
+.stg--meta{background:repeating-linear-gradient(135deg,transparent 0 9px,rgba(192,254,4,.06) 9px 10px)}
+.stg--meta .stg__t{color:transparent;-webkit-text-stroke:1px var(--fg)}
+
+.qplate{border-right:1px solid var(--line);background:#000;min-width:0}
+.qplate__in{position:sticky;top:calc(var(--bar) + var(--chrome) + 64px);padding:34px 28px 40px;display:grid;gap:18px}
+.qplate .lbl{color:var(--muted)}
+.qplate__q{font-family:var(--f-head);font-stretch:130%;font-weight:600;font-size:clamp(30px,3.2vw,50px);line-height:.95;letter-spacing:-.01em;text-transform:uppercase;color:var(--sig)}
+.qplate__n{font:400 12.5px/1.55 var(--f-data);color:var(--text-2);max-width:32ch}
+.qplate--live .qplate__q{color:var(--fg);font-size:clamp(28px,2.8vw,44px)}
+.qplate--live .qplate__n b{color:var(--sig);font-weight:500}
+
+.tbox{border:1px solid var(--line-2);background:#050505}
+.tbox__bar{display:flex;gap:12px;align-items:center;padding:8px 12px;background:var(--sig);color:#000;font:500 9.5px/1.2 var(--f-label);letter-spacing:.08em;text-transform:uppercase}
+.tbox__bar b{font-weight:600}
+.tbox__body{display:grid;gap:12px;padding:18px 18px 20px;font:400 14px/1.6 var(--f-data);color:var(--text-2)}
+.tbox__sig{color:var(--sig)}
+
+.dossier--wide .d-grid{grid-template-columns:minmax(0,1fr)}
+.dossier--wide .d-text{padding-left:var(--pad)}
+.diagram-fig{display:grid;gap:10px;border:1px solid var(--line)}
+.diagram-wrap{overflow-x:auto;padding:16px;background:#000}
+.diagram-wrap svg{display:block;width:100%;min-width:640px;height:auto;max-width:1080px}
+.diagram-fig figcaption{padding:10px 14px;border-top:1px solid var(--line);font:500 9.5px/1.5 var(--f-label);letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.d-block--alert{border-top-color:var(--accent)}
+.d-block--alert>.lbl{color:var(--accent)}
+
+.legend{font:400 12.5px/1.8 var(--f-data);color:var(--muted);border-top:1px solid var(--line);padding-top:18px}
+
+.cs{list-style:none;border-top:1px solid var(--line)}
+.cs a{display:grid;grid-template-columns:44px minmax(0,11em) minmax(0,1fr) auto;gap:16px;align-items:baseline;padding:14px 4px;border-bottom:1px solid var(--line);transition:background var(--dur),color var(--dur)}
+.cs b{font-family:var(--f-head);font-stretch:140%;font-weight:600;font-size:26px;line-height:1;color:var(--sig)}
+.cs__name{font:500 11px/1.3 var(--f-label);letter-spacing:.08em;text-transform:uppercase}
+.cs__d{font-size:15px;line-height:1.5;color:var(--text-2)}
+.cs i{font:500 9px/1 var(--f-label);font-style:normal;letter-spacing:.08em;text-transform:uppercase;padding:5px 7px;border:1px solid var(--line-2)}
+.cs a:hover{background:var(--sig);color:#000}
+.cs a:hover b,.cs a:hover .cs__d{color:#000}
+.cs a:hover i{border-color:#000}
+.cs__foot{font-size:14.5px;line-height:1.55;color:var(--text-2);max-width:66ch}
+
+.credit{color:var(--muted);font-size:.9em}
+.ctoast span{min-width:0;overflow-wrap:anywhere}
+
+@media (max-width:820px){
+  .pg .s-title{font-size:12.6vw}
+  .stg-grid{grid-template-columns:1fr}
+  .stg{border-right:0}
+  .stg:nth-child(n+3){border-bottom:1px solid var(--line)}
+  .stg:last-child{border-bottom:0}
+  .qplate{border-right:0;border-bottom:1px solid var(--line)}
+  .qplate__in{position:static;padding:22px var(--pad) 24px;gap:12px}
+  .qplate__q{font-size:clamp(26px,8vw,40px)}
+  .diagram-wrap{padding:10px}
+  .cs a{grid-template-columns:34px minmax(0,1fr) auto;gap:6px 12px}
+  .cs__d{grid-column:2/-1}
+  .cs b{font-size:22px}
+}

@@ -1,0 +1,57 @@
+meta:
+  data_version: '7.0'
+  captured: '2026-10-08'
+  lang: ru
+  fields: 'id; opened - дата записи прогноза; resolves_by - событие или дата, после которого прогноз проверяется;
+    status - open | confirmed | busted | partial; chip - чья это гипотеза (theory = догадка прессы или комьюнити,
+    ours = гипотеза этого гайда); basis - на чём держится; verdict - заполняется после проверки, со ссылкой.'
+entries:
+- id: pfhor-return
+  opened: '2026-10-08'
+  resolves_by: март 2027
+  resolves_by_en: March 2027
+  status: open
+  chip: theory
+  claim: Новые инопланетные противники марта 2027 - эволюционировавшие Pfhor.
+  claim_en: The new alien enemies of March 2027 are evolved Pfhor.
+  basis: Bungie обещает «new alien combatants»; Kotaku связывает их с Pfhor. В трилогии Pfhor - главные захватчики Marathon.
+  basis_en: Bungie promises "new alien combatants"; Kotaku links them to the Pfhor. In the trilogy the Pfhor are the main invaders of the Marathon.
+  src: https://comicbookco.com/gaming/bungie-marathon-roadmap-player-count-collapse/
+  verdict: null
+- id: bishop-melee-only
+  opened: '2026-10-08'
+  resolves_by: Symbiosis, 08.12.2026
+  resolves_by_en: Symbiosis, 8 December 2026
+  status: open
+  chip: ours
+  claim: Bishop - первый шелл, чья основная способность не наносит урона на дистанции.
+  claim_en: Bishop is the first shell whose main ability deals no damage at range.
+  basis: Bungie описывает его через скорость, внезапность и взрывной урон в ближнем бою.
+  basis_en: Bungie describes it through speed, surprise and burst damage in melee.
+  src: https://www.polygon.com/bungie-marathon-symbiosis-changes-pve-new-modes/
+  verdict: null
+- id: tick-queen-weaveworm
+  opened: '2026-10-08'
+  resolves_by: Symbiosis, 08.12.2026
+  resolves_by_en: Symbiosis, 8 December 2026
+  status: open
+  chip: ours
+  claim: Tick Queen, босс расширенного Perimeter, связана с WEAVEworm - теми же червями, что ткут тела Раннеров.
+  claim_en: The Tick Queen, boss of the expanded Perimeter, is linked to WEAVEworm, the same worms that weave Runner bodies.
+  basis: Тики уже живут на поверхности Tau Ceti IV, а биоматерия Раннеров выращена WEAVEworm (глава 05). Матка тиков могла бы связать одно с другим.
+  basis_en: Ticks already live on the surface of Tau Ceti IV, and Runner biomatter is grown by WEAVEworm (chapter 05). A tick queen would connect the two.
+  src: https://ground.news/article/bungie-releases-marathon-roadmap-detailing-new-game-modes-and-more
+  verdict: null
+- id: season-3-name
+  opened: '2026-07-16'
+  resolves_by: 22.09.2026
+  resolves_by_en: 22 September 2026
+  status: busted
+  chip: canon
+  claim: Season 3 стартует 22 сентября 2026 с переделанным Perimeter и новым шеллом.
+  claim_en: Season 3 starts on 22 September 2026 with a reworked Perimeter and a new shell.
+  basis: Официальный анонс Bungie в июле.
+  basis_en: Bungie's official announcement in July.
+  src: https://www.shanethegamer.com/news/marathon-season-3-confirmed-for-september-22-with-perimeter-overhaul-new-runner-shell/
+  verdict: Не сбылось в этом виде - 24.09 Bungie отказалась от сезонов; Perimeter и новый шелл (Bishop) уехали в Symbiosis 08.12. https://www.polygon.com/bungie-marathon-symbiosis-changes-pve-new-modes/
+  verdict_en: Did not happen in that form. On 24 September Bungie dropped seasons; Perimeter and the new shell (Bishop) moved to Symbiosis on 8 December. https://www.polygon.com/bungie-marathon-symbiosis-changes-pve-new-modes/

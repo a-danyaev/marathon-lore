@@ -1,0 +1,54 @@
+/* run.css - MAPS.EXE «Карты зон»: zone tabs and a full-height MapGenie frame. Loaded after base/os/page.css by pages/run.html only. */
+.maps{--mp-tabs:52px;--mp-bar:40px;padding-bottom:0}
+
+.mp-head{display:flex;align-items:stretch;border-bottom:1px solid var(--line-2);min-height:var(--mp-tabs)}
+.mp-h1{flex:none;display:flex;align-items:center;padding:0 22px 0 var(--pad);border-right:1px solid var(--line-2);font:600 17px/1 var(--f-head);font-stretch:151%;letter-spacing:-.01em;text-transform:uppercase;white-space:nowrap}
+.mp-tabs{flex:1;display:flex;overflow-x:auto;scrollbar-width:none;scroll-snap-type:x proximity}
+.mp-tabs::-webkit-scrollbar{display:none}
+.mp-tab{flex:1 0 auto;scroll-snap-align:start;display:flex;align-items:center;justify-content:center;min-height:var(--mp-tabs);padding:0 20px;border-right:1px solid var(--line);font:600 15px/1 var(--f-head);font-stretch:125%;text-transform:uppercase;letter-spacing:-.01em;white-space:nowrap;color:var(--fg);transition:background var(--dur),color var(--dur)}
+.mp-tab:hover,.mp-tab[aria-selected="true"]{background:var(--sig);color:#000}
+.mp-tab[aria-selected="true"]{box-shadow:inset 0 -4px 0 #000}
+
+.mp-bar{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:var(--mp-bar);padding:0 var(--pad);border-bottom:1px solid var(--line)}
+.mp-note{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font:400 13px/1.4 var(--f-data);color:var(--text-2)}
+.mp-note .chip{margin-left:4px;vertical-align:.1em}
+.mp-out{flex:none;font:500 10px/1 var(--f-label);letter-spacing:.08em;text-transform:uppercase;color:var(--sig);padding:6px 8px;border:1px solid var(--sig);transition:background var(--dur),color var(--dur)}
+.mp-out:hover{background:var(--sig);color:#000}
+
+.mp-stage{position:relative;height:calc(100svh - var(--bar) - var(--chrome) - var(--task) - var(--mp-tabs) - var(--mp-bar) - 2px);min-height:360px;background:#000;border-bottom:1px solid var(--line-2);overflow:hidden}
+.mp-frame{position:absolute;inset:0;width:100%;height:100%;border:0;background:#0b0b0b}
+.mp-frame[hidden]{display:none}
+
+.mp-load{position:absolute;inset:0;z-index:2;display:grid;place-content:center;justify-items:center;gap:16px;padding:24px;background:#000;text-align:center}
+.mp-load[hidden],.no-js .mp-load{display:none}
+.mp-load__sq{width:20px;height:20px;background:var(--sig);animation:mp-sq 1.6s var(--ease) infinite alternate}
+@keyframes mp-sq{from{transform:translateX(-90px)}to{transform:translateX(90px)}}
+.mp-load__t{display:grid;gap:8px}
+.mp-load__t b{font:600 22px/1 var(--f-head);font-stretch:151%;text-transform:uppercase;letter-spacing:-.01em}
+.mp-load__t span{font:500 10px/1 var(--f-label);letter-spacing:.1em;color:var(--muted)}
+.mp-load__bar{display:grid;grid-template-columns:repeat(12,14px);gap:3px;height:8px}
+.mp-load__bar i{background:#1c1c1c;animation:mp-cell 2.4s steps(1) infinite}
+.mp-load__bar i:nth-child(n){animation-delay:calc(var(--i,0) * .2s)}
+.mp-load__bar i:nth-child(2){--i:1}.mp-load__bar i:nth-child(3){--i:2}.mp-load__bar i:nth-child(4){--i:3}.mp-load__bar i:nth-child(5){--i:4}.mp-load__bar i:nth-child(6){--i:5}.mp-load__bar i:nth-child(7){--i:6}.mp-load__bar i:nth-child(8){--i:7}.mp-load__bar i:nth-child(9){--i:8}.mp-load__bar i:nth-child(10){--i:9}.mp-load__bar i:nth-child(11){--i:10}.mp-load__bar i:nth-child(12){--i:11}
+@keyframes mp-cell{0%{background:#1c1c1c}50%{background:var(--sig)}}
+.mp-load__x{max-width:44ch;font:400 12.5px/1.5 var(--f-data);color:var(--text-2)}
+.mp-load__x a{color:var(--sig);border-bottom:1px solid var(--sig)}
+.mp-load.is-slow .mp-load__t b{color:var(--accent)}
+.mp-load.is-slow .mp-load__sq,.mp-load.is-slow .mp-load__bar i{animation:none}
+
+.mp-credit{padding:14px var(--pad);border-bottom:1px solid var(--line-2);font:400 12px/1.5 var(--f-data);color:var(--muted)}
+.mp-credit a{color:var(--fg);border-bottom:1px solid var(--line-2)}
+.mp-credit a:hover{background:var(--sig);color:#000}
+
+@media (max-width:820px){
+  .maps{--mp-tabs:48px;--mp-bar:46px}
+  .mp-h1{position:absolute!important;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0 0 0 0);border:0}
+  .mp-tab{padding:0 16px;font-size:14px}
+  .mp-bar{gap:10px}
+  .mp-note{white-space:normal;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;font-size:11.5px;line-height:1.35}
+  .mp-note .chip{display:none}
+  .mp-out{font-size:9px;padding:6px}
+  .mp-stage{min-height:300px}
+}
+@media (prefers-reduced-motion:reduce){.mp-load__sq,.mp-load__bar i{animation:none}}
+.shot .mp-load__sq,.shot .mp-load__bar i{animation:none}

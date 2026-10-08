@@ -1,0 +1,1989 @@
+meta:
+  purpose: Канон терминов сайта, сверенный с первоисточниками; читается v5/terms/terms-lint.mjs
+  captured: '2026-10-08'
+  tiers: 'a - Bungie (bungie.net, marathonthegame.com, Steam-анонсы Bungie); b - транскрипции Кодекса и игры на
+    вики/базах, когда текста Bungie нет; c - трилогия: marathon.bungie.org (Marathon''s Story)'
+  fields: term - каноническое написание; aliases_wrong - ошибочные варианты (линт ищет как отдельные слова); allowed_contexts
+    - дословные цитаты, имена и нарицательные употребления, где вариант законен; strict_case - проверять регистр
+    даже у однословного термина; variants_ok - написания, которые Bungie сама использует наряду с каноническим;
+    ru_usage - как писать в RU-тексте; source + evidence - URL и дословный фрагмент до 20 слов; status - verified
+    | unverified (unverified - первоисточник не найден)
+entries:
+- term: Marathon
+  category: game
+  aliases_wrong:
+  - «Марафон»
+  - «Марафона»
+  - «Марафону»
+  - «Марафоном»
+  - «Марафоне»
+  ru_usage: Latin как есть, без перевода и транслитерации; корабль в RU-тексте - «Marathon» в ёлочках или UESC Marathon,
+    не «Марафон»
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/6212245217911957684
+  evidence: Welcome. Marathon is an upcoming sci-fi PvP extraction shooter from Bungie, the creators of Halo and
+    Destiny. You are a
+  status: verified
+  tier: a
+- term: UESC Marathon
+  category: ship
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1818752592133683
+  evidence: shells, events, and more, starting with the exploration of UESC Marathon 's Cryo Archive in Season 1.
+    We also want
+  status: verified
+  tier: a
+- term: Bungie
+  category: company
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  strict_case: true
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/6212245217911957684
+  evidence: Marathon is an upcoming sci-fi PvP extraction shooter from Bungie , the creators of Halo and Destiny.
+    You are a
+  status: verified
+  tier: a
+- term: Runner
+  category: role
+  aliases_wrong:
+  - Бегун
+  - Бегуна
+  - Бегуну
+  - Бегуном
+  - Бегуны
+  - раннера
+  - раннеров
+  - раннеры
+  - раннерам
+  - раннеру
+  - раннер
+  ru_usage: '«Раннер» (с заглавной, склоняется: Раннера, Раннеров); в составных словах строчная: раннер-операции'
+  allowed_contexts:
+  - раннер-
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1818752592133683
+  evidence: the year progresses. This will include new maps, new Runner shell s, events, and more, starting with
+    the exploration of
+  status: verified
+  tier: a
+- term: Runner shell
+  category: role
+  aliases_wrong: []
+  ru_usage: '«шелл» (строчная, склоняется: шелла, шеллов); Runner shell в англ. цитатах'
+  variants_ok:
+  - Runner Shell
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1818752592133683
+  evidence: the year progresses. This will include new maps, new Runner shell s, events, and more, starting with
+    the exploration of
+  status: verified
+  tier: a
+- term: Tau Ceti IV
+  category: place
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1795917897458557
+  evidence: Their efforts combined uncovered the first transmission from Tau Ceti IV -the CCTV feed seen in the
+    Save the Date
+  status: verified
+  tier: a
+- term: Tau Ceti
+  category: place
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации; исключение - название окна сайта «Эфир с Тау Кита»
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1795917897458557
+  evidence: 'as the Discord URL ! The first look at Tau Ceti today: MIDA intel points back towards the Satellite
+    Map,'
+  status: verified
+  tier: a
+- term: UESC
+  category: faction
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  strict_case: true
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1796631172320822
+  evidence: next? That's all we had time for before the UESC kicked us all out (typical UESC 🙄). But really, thank
+  status: verified
+  tier: a
+- term: CyberAcme
+  category: faction
+  aliases_wrong:
+  - Cyberacme
+  - Cyber Acme
+  - CyberACME
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1798454487576593
+  evidence: being added to the client in this update. Increased CyberAcme sponsored kits available on Black Market
+    per reset from 5
+  status: verified
+  tier: a
+- term: NuCaloric
+  category: faction
+  aliases_wrong:
+  - Nucaloric
+  - Nu Caloric
+  - NuCalorics
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1824644522837491
+  evidence: 'Take on the early contracts for five factions: CyberAcme, NuCaloric , Traxus, MIDA, and Arachne Progress
+    through the early levels'
+  status: verified
+  tier: a
+- term: Traxus
+  category: faction
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  strict_case: true
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1795917897458557
+  evidence: internet. Decoding a series of puzzles led to the Traxus OffWorld Industries chat logs, which contained
+    the key to hacking
+  status: verified
+  tier: a
+- term: MIDA
+  category: faction
+  aliases_wrong:
+  - Mida
+  ru_usage: Latin как есть, без перевода и транслитерации
+  strict_case: true
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1795917897458557
+  evidence: encrypted puzzles and messages intercepted by the resistance group, MIDA . We'd like to recognize the
+    collaborative hacking efforts of
+  status: verified
+  tier: a
+- term: Arachne
+  category: faction
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  strict_case: true
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1824644522837491
+  evidence: 'contracts for five factions: CyberAcme, NuCaloric, Traxus, MIDA, and Arachne Progress through the early
+    levels and start of the progression'
+  status: verified
+  tier: a
+- term: Sekiguchi Genetics
+  category: faction
+  aliases_wrong:
+  - Sekiguchi Genetic
+  - Sekiguci
+  ru_usage: Latin как есть, без перевода и транслитерации
+  strict_case: true
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1821922921821531
+  evidence: Collector's Edition features a premium unboxing experience inspired by Sekiguchi Genetics ' shell-weaving
+    process. Unbox to reveal a 1/6-scale Thief
+  status: verified
+  tier: a
+- term: ONI
+  category: lore
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации; Oni - другая игра Bungie (2001), не путать
+  strict_case: true
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1829528821317891
+  evidence: with one press and close it with another. General ONI has launched the C.A.R.R.I. or CyberAcme Runner
+    Reinforcement Initiative, a
+  status: verified
+  tier: a
+- term: C.A.R.R.I.
+  category: system
+  aliases_wrong:
+  - CARRI
+  ru_usage: Latin как есть, без перевода и транслитерации; Bungie пишет и C.A.R.R.I Armory, поэтому форма без последней
+    точки допустима
+  variants_ok:
+  - C.A.R.R.I
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1829528821317891
+  evidence: close it with another. General ONI has launched the C.A.R.R.I. or CyberAcme Runner Reinforcement Initiative,
+    a new protocol that rewards
+  status: verified
+  tier: a
+- term: Gantry
+  category: npc
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации; хэндл агента в переписке - _gantry
+  allowed_contexts:
+  - _gantry
+  strict_case: true
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1821922921821531
+  evidence: gameplay trailer The latest gameplay trailer is narrated by Gantry , the faction agent for MIDA. Factions
+    and their agents
+  status: verified
+  tier: a
+- term: Vandal
+  category: shell
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1821922921813467
+  evidence: push each archetype in different directions. For example, with Vandal you can lean into a mobility build,
+    with powerful map
+  status: verified
+  tier: a
+- term: Destroyer
+  category: shell
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1821922921813467
+  evidence: 'to today''s video to learn more. Runner Shell - Destroyer Archetype: Combat specialist Armed with a
+    personal defense barricade, missile'
+  status: verified
+  tier: a
+- term: Assassin
+  category: shell
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1821922921813467
+  evidence: 'to enemy threats. 📺 LEARN MORE Runner Shell - Assassin Archetype: Shadow agent Synthetic smoke deployment
+    and camouflage technology allow'
+  status: verified
+  tier: a
+- term: Recon
+  category: shell
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1821922921813467
+  evidence: 'during hostile engagements. 📺 LEARN MORE Runner Shell - Recon Archetype: Intel specialist Recon shells
+    excel at identifying threats and'
+  status: verified
+  tier: a
+- term: Thief
+  category: shell
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/6212245217911957684
+  evidence: for two of the Runners we're working on, codenamed Thief & Stealth.
+  status: verified
+  tier: a
+- term: Triage
+  category: shell
+  aliases_wrong:
+  - Триаж
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1821922921813467
+  evidence: 'make an escape. 📺 LEARN MORE Runner Shell - Triage Archetype: Field medic Triage shells help keep themselves
+    and allies'
+  status: verified
+  tier: a
+- term: Sentinel
+  category: shell
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1832700592790224
+  evidence: the new Cradle progression system, and the Runner shell Sentinel , the week of May 25. If this summary
+    has
+  status: verified
+  tier: a
+- term: Rook
+  category: shell
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1818752592133683
+  evidence: New features since alpha, including... Proximity chat Solo queue Rook , a Runner shell used to scavenge
+    matches in progress
+  status: verified
+  tier: a
+- term: Bishop
+  category: shell
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации; анонсирован на Symbiosis
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1844751498222206
+  evidence: 'we''re also adding a new one to your roster. Bishop : Marathon''s high-performance robot samurai. Bishop
+    is a fast, surgical'
+  status: verified
+  tier: a
+- term: Amplify
+  category: ability
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1829528821317891
+  evidence: color scheme based on the Triage's equipped cosmetics. Vandal Amplify Reduced Amplify base cooldown
+    from 180 seconds to 150 seconds.
+  status: verified
+  tier: a
+- term: Disrupt Cannon
+  category: ability
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://www.marathonwiki.com/Vandal
+  evidence: your movement speed and weapon dexterity. tactical name = Disrupt Cannon tactical description = Transform
+    your arm into a cannon
+  status: verified
+  tier: b
+- term: Microjets
+  category: ability
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  strict_case: true
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1826992588603937
+  evidence: Landing V5's unique trait could be activated by Vandal's Microjets from flat ground. Fixed an issue
+    where Graceful Landing V5's
+  status: verified
+  tier: a
+- term: Power Slide
+  category: ability
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://www.marathonwiki.com/Vandal
+  evidence: the cost of generating additional heat trait2 name = Power Slide trait2 description = Grants a supercharged
+    slide that generates
+  status: verified
+  tier: b
+- term: Search and Destroy
+  category: ability
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1838407329269349
+  evidence: season to see how things shake out. Destroyer Search and Destroy Fixed an issue where sustained damage
+    from the Biotoxic
+  status: verified
+  tier: a
+- term: Riot Barricade
+  category: ability
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1829528821317891
+  evidence: better account for its strong mobility and combat power. Riot Barricade Fixed an issue where Riot Barricade
+    could be rapidly
+  status: verified
+  tier: a
+- term: Thruster
+  category: ability
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1826992588603937
+  evidence: when downing a Runner too close to the initial Thruster activation. Fixed an issue where claiming Seasonal
+    Level rewards from
+  status: verified
+  tier: a
+- term: Tactical Sprint
+  category: ability
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://www.marathonwiki.com/Destroyer
+  evidence: thrust you in your moving direction. trait2 name = Tactical Sprint trait2 description = Double pressing
+    sprint allows you to
+  status: verified
+  tier: b
+- term: Smoke Screen
+  category: ability
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1833968530900587
+  evidence: a short time. Assassin Fixed an issue where the Smoke Screen projectile could get stuck in tight corners
+    and fail
+  status: verified
+  tier: a
+- term: Active Camo
+  category: ability
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1833968530900587
+  evidence: deactivation. This means that state-based tactical abilities (like Assassin's Active Camo ) gain the
+    benefit while the ability is active,
+  status: verified
+  tier: a
+- term: Shadow Dive
+  category: ability
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1826992588603937
+  evidence: based on the equipped Runner shell style while activating Shadow Dive . Thief Pickpocket Drone can no
+    longer loot players
+  status: verified
+  tier: a
+- term: Shroud
+  category: ability
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации; черта Assassin
+  source: https://www.marathonwiki.com/Assassin
+  evidence: disc into the ground, deploying a smoke field. trait2 name = Shroud trait2 description = Your shell
+    automatically activates its
+  status: verified
+  tier: b
+- term: Echo Pulse
+  category: ability
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1829528821317891
+  evidence: unintendedly long Signal Jammer duration when sliding. Shells Recon Echo Pulse Reduced the visibility
+    of enemy Echo Pulse waves as
+  status: verified
+  tier: a
+- term: Tracker Drone
+  category: ability
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1829528821317891
+  evidence: of the Runner navpoint when hit by Echo Pulse. Tracker Drone Improved Tracker Drone tracking strength
+    and turn rate. Reduced
+  status: verified
+  tier: a
+- term: Interrogation
+  category: ability
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1845383656396920
+  evidence: crews that are already at a strict communication advantage. Interrogation The notification received
+    by pinged Recon players is now delayed
+  status: verified
+  tier: a
+- term: Stalker Protocol
+  category: ability
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://marathondb.gg/runners/recon/
+  evidence: TRAIT Stalker Protocol After breaking a target's shields, they leave behind a lingering holographic
+    trail
+  status: verified
+  tier: b
+- term: Pickpocket Drone
+  category: ability
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1821922921813467
+  evidence: charge of your Grapple Device, and another causes your Pickpocket Drone to periodically ping nearby
+    enemies while it's not being
+  status: verified
+  tier: a
+- term: Grapple Device
+  category: ability
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1821922921813467
+  evidence: Thief's cores gives you a second charge of your Grapple Device , and another causes your Pickpocket
+    Drone to periodically
+  status: verified
+  tier: a
+- term: X-Ray Visor
+  category: ability
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://www.marathonwiki.com/Thief
+  evidence: aim direction, propelling yourself toward it. trait1 name = X-Ray Visor trait1 description = Activate
+    your visor, highlighting hostiles and
+  status: verified
+  tier: b
+- term: The Finer Things
+  category: ability
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://www.marathonwiki.com/Thief
+  evidence: vision until you look away. trait2 name = The Finer Things trait2 description = Gain increased weapon
+    handling and accelerated
+  status: verified
+  tier: b
+- term: Reboot+
+  category: ability
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1833968530900587
+  evidence: the actual detonation. Triage Added an inspect animation for Reboot+ . Updated Reboot+ targeting icons
+    for a more consistent visual
+  status: verified
+  tier: a
+- term: Med-Drone
+  category: ability
+  aliases_wrong:
+  - Med Drone
+  - Meddrone
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1829528821317891
+  evidence: Pickpocket Drone base health from 70 to 60. Triage Med-Drone Fixed an issue where Med-Drones could track
+    to and attempt
+  status: verified
+  tier: a
+- term: Shareware.exe
+  category: ability
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://www.marathonwiki.com/Triage
+  evidence: them from bleeding out while downed. trait1 name = Shareware.exe trait1 description = Benefits from
+    medical consumables are shared between
+  status: verified
+  tier: b
+- term: Battery Overcharge
+  category: ability
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1826992588603937
+  evidence: to max heat could prevent players from using the Battery Overcharge ability. Rook Removed Rook's Runner
+    Level requirement. Rook can
+  status: verified
+  tier: a
+- term: Defender System
+  category: ability
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1833968530885662
+  evidence: you down, this is your Runner. Sentinel's Prime ability Defender System deploys an automated laser platform
+    which identifies and destroys
+  status: verified
+  tier: a
+- term: Snare Mine
+  category: ability
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1833968530885662
+  evidence: destroy projectiles-it can't block those rocket drone barrages forever. Snare Mine , Sentinel's tactical
+    ability, is a thrown proximity-triggered mine
+  status: verified
+  tier: a
+- term: Castle Doctrine
+  category: ability
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1833968530885662
+  evidence: finish them before they can escape. Sentinel's passive trait Castle Doctrine grants increased resistances
+    after taking splash damage, and faster
+  status: verified
+  tier: a
+- term: Prey Tracker
+  category: ability
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1833968530885662
+  evidence: weapon handling for close-range weapons when surrounded by enemies. Prey Tracker , their trait ability,
+    will activate a short range,
+  status: verified
+  tier: a
+- term: Recuperation
+  category: ability
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1838407329269349
+  evidence: weapon was not counting towards building rocket charges. Rook Recuperation Increased heal rate from
+    2hp/s to 3hp/s. Increased healing duration
+  status: verified
+  tier: a
+- term: Signal Mask
+  category: ability
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1829528821317891
+  evidence: base cooldown from 180 seconds to 150 seconds. Rook Signal Mask Fixed an issue where swapping shield
+    implants could cause
+  status: verified
+  tier: a
+- term: Ares RG
+  category: weapon
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1829528821317891
+  evidence: magazine. This fixes split shots on odd-numbered magazine sizes. Ares RG Reduced base charge time from
+    2 seconds to 1.25
+  status: verified
+  tier: a
+- term: BR33 Volley Rifle
+  category: weapon
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1833968530885662
+  evidence: a high-handling, medium rate-of-fire sidearm-think hybrid between the BR33 Volley Rifle and the BRRT
+    SMG. A perfect companion for sniper
+  status: verified
+  tier: a
+- term: Biotoxic Disinjector
+  category: weapon
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1828894815561632
+  evidence: Biotoxic Disinjector . It's Strong! … too strong. Tonight at 6PM PT we will be doing a change on
+  status: verified
+  tier: a
+- term: BRRT SMG
+  category: weapon
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1829528821317891
+  evidence: in Cryo Archive has a custom-made mod for the BRRT SMG which increases stability, handling, and accuracy
+    when firing from
+  status: verified
+  tier: a
+- term: Bully SMG
+  category: weapon
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1829528821317891
+  evidence: 'damage at maximum falloff range from 30% to 50%. Bully SMG Decreased aim assist and magnetism range
+    falloff: Base aim'
+  status: verified
+  tier: a
+- term: CE Tactical Sidearm
+  category: weapon
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1821922921821531
+  evidence: 'and also receive the following: ZERO STEP 004 CE Tactical Sidearm Style ZERO STEP RC Weapon Charm ZERO
+    STEP SHIFT'
+  status: verified
+  tier: a
+- term: Conquest LMG
+  category: weapon
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://www.marathonwiki.com/Conquest_LMG
+  evidence: = Conquest lmg.jpg subtype = Machine Gun name = Conquest LMG width = 4 height = 2 ammunition = Light
+  status: verified
+  tier: b
+- term: Copperhead RF
+  category: weapon
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1829528821317891
+  evidence: aim assist cone scale during overcharging by ~10%. SMGs Copperhead RF Increased base magazine size from
+    21 shots to 28
+  status: verified
+  tier: a
+- term: D54 Battle Pistol
+  category: weapon
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1833968530885662
+  evidence: also be used by the new Battle Pistol. D54 Battle Pistol A fantastic weapon for close encounters and
+    1v1 duels,
+  status: verified
+  tier: a
+- term: Demolition HMG
+  category: weapon
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://www.marathonwiki.com/Demolition_HMG
+  evidence: = Demolition hmg.jpg subtype = Machine Gun name = Demolition HMG width = 4 height = 2 ammunition = Heavy
+  status: verified
+  tier: b
+- term: Hardline PR
+  category: weapon
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1834602721201849
+  evidence: 'contract "CyAc Guidance: Complex Control" displayed an Enhanced (green) Hardline PR instead of a Deluxe
+    (blue) version in the reward'
+  status: verified
+  tier: a
+- term: Impact HAR
+  category: weapon
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1833968530900587
+  evidence: to 15. V75 SCAR Increased reload speed by ~18% Impact HAR Added more camera shake at high stability
+    stat to
+  status: verified
+  tier: a
+- term: KKV-9SD
+  category: weapon
+  aliases_wrong:
+  - KKV 9SD
+  - KKV-9 SD
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1833968530885662
+  evidence: Season 2 brings two new weapons to the sandbox. KKV-9SD First is the KKV, a new pistol-frame SMG with
+    an
+  status: verified
+  tier: a
+- term: Longshot
+  category: weapon
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  strict_case: true
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1798454487576593
+  evidence: to toggle it on and off. Long Shot Increased Longshot sniper damage by 11%. Overrun AR Increased damage
+    by 10%.
+  status: verified
+  tier: a
+- term: M77 Assault Rifle
+  category: weapon
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1829528821317891
+  evidence: rate of fire from 43rpm to 39rpm. Rifles M77 Assault Rifle Fixed an issue where the Interval Mag Prestige
+    mod
+  status: verified
+  tier: a
+- term: Magnum MC
+  category: weapon
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1833968530900587
+  evidence: accuracy bonus at maximum moving accuracy stat by 50%. Magnum MC Decreased the rate of fire from 150rpm
+    to 138rpm.
+  status: verified
+  tier: a
+- term: Misriah 2442
+  category: weapon
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1821922921821531
+  evidence: 'unlock rewards in the pass Weapon Cosmetics: MIDNIGHT DECAY Misriah 2442 Pump Shotgun Style MIDNIGHT
+    DECAY Overrun AR Style Runner'
+  status: verified
+  tier: a
+- term: Outland
+  category: weapon
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  strict_case: true
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1829528821317891
+  evidence: Kingmaker Mag Prestige mod to trigger when shooting teammates. Outland Decreased rate of fire from 43rpm
+    to 39rpm. Rifles M77
+  status: verified
+  tier: a
+- term: Overrun AR
+  category: weapon
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1798454487576593
+  evidence: 'off. Long Shot Increased Longshot sniper damage by 11%. Overrun AR Increased damage by 10%. Dev Commentary
+    : We''re also'
+  status: verified
+  tier: a
+- term: Repeater HPR
+  category: weapon
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1832700592786642
+  evidence: 'Style] Glacial Strafe \[Bully SMG Weapon Style] Expanse \[ Repeater HPR Weapon Style] Ascendant Survivor
+    \[Title] Two things worth noting:'
+  status: verified
+  tier: a
+- term: Retaliator LMG
+  category: weapon
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://www.marathonwiki.com/Retaliator_LMG
+  evidence: Stub Indicator Weapon infobox image = Retaliator LMG base.png subtype = Machine Gun name = Retaliator
+    LMG width = 4
+  status: verified
+  tier: b
+- term: Stryder M1T
+  category: weapon
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1829528821317891
+  evidence: the rpm was displaying an incorrect value. Precision Rifles Stryder M1T Fixed an issue where the Vital
+    Intel Prestige mod
+  status: verified
+  tier: a
+- term: Twin Tap HBR
+  category: weapon
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1838407329269349
+  evidence: down more linearly instead of the previous behavior Twin Tap HBR Increased base damage from 22 to 24.
+    Increased precision
+  status: verified
+  tier: a
+- term: V00 Zeus RG
+  category: weapon
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1829528821317891
+  evidence: tuning to be successful in their range profile. V00 Zeus RG Increased max aim assist cone size by ~20%.
+    Also,
+  status: verified
+  tier: a
+- term: V11 Punch
+  category: weapon
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1829528821317891
+  evidence: or fire, canceling out of the reload animation. Pistols V11 Punch Fixed an issue where the rpm was displaying
+    an
+  status: verified
+  tier: a
+- term: V22 Volt Thrower
+  category: weapon
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1835236783574842
+  evidence: user. (Audio was properly suppressed for other Runners.) V22 Volt Thrower Fixed an issue where firing
+    the V22 Volt Thrower
+  status: verified
+  tier: a
+- term: V66 Lookout
+  category: weapon
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1833968530900587
+  evidence: from this weapon from projectile to hitscan. Precision Rifles V66 Lookout Decreased charge shot charge
+    time by 18% Increased reload
+  status: verified
+  tier: a
+- term: V75 Scar
+  category: weapon
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1826992588603937
+  evidence: cosmetics will no longer unequip after failing to exfil. V75 Scar Fixed an issue with the Ram-Page Mag
+    that was
+  status: verified
+  tier: a
+- term: V85 Circuit Breaker
+  category: weapon
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1830163047268635
+  evidence: 'a bad state unable to use medical consumables. V85 Circuit Breaker : Fixed an issue where firing immediately
+    after a'
+  status: verified
+  tier: a
+- term: V99 Channel Rifle
+  category: weapon
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://www.marathonwiki.com/V99_Channel_Rifle
+  evidence: = V99_channel_rifle_base.jpg subtype = Sniper Rifle name = V99 Channel Rifle width = 4 height = 2 ammunition
+    = Volt
+  status: verified
+  tier: b
+- term: WSTR Combat Shotgun
+  category: weapon
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации; не путать с WSTE-M5 Combat Shotgun трилогии
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1826992588603937
+  evidence: bullets to ricochet off turrets, despite dealing damage. WSTR Combat Shotgun Reduced leftward motion
+    in firing recoil. Increased duration of
+  status: verified
+  tier: a
+- term: Fist of Phobos
+  category: weapon
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1829528821317891
+  evidence: from the increased distance of the Prestige Unique Fist of Phobos variant. Biotoxic Disinjector Fixed
+    an issue where the reload
+  status: verified
+  tier: a
+- term: DRRVISH
+  category: weapon
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации; Bungie в 1.1.9.2 пишет и DRRVSH
+  strict_case: true
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1829528821317891
+  evidence: version of the weapon. Happy hunting! For example; The DRRVISH Prestige Submachine Gun found in Cryo
+    Archive has a custom-made
+  status: verified
+  tier: a
+- term: Salt Wages
+  category: weapon
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1845383656396920
+  evidence: 'and 3rd weeks of Vault Breaker being active: DRRVISH Salt Wages Omnipositor Biotoxic Disinjector Biotoxic
+    Disinjector Ammo Upgrades All upgrades'
+  status: verified
+  tier: a
+- term: Omnipositor
+  category: weapon
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации; на сайте M77 Omnipositor
+  strict_case: true
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1845383656396920
+  evidence: 'weeks of Vault Breaker being active: DRRVISH Salt Wages Omnipositor Biotoxic Disinjector Biotoxic Disinjector
+    Ammo Upgrades All upgrades will be'
+  status: verified
+  tier: a
+- term: V85 Free-Tail
+  category: weapon
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: null
+  evidence: null
+  status: unverified
+  note: Ни Bungie, ни вики не дают название Free-Tail; есть только в датамайн-базах
+- term: V99 Watchtower
+  category: weapon
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: null
+  evidence: null
+  status: unverified
+  note: Ни Bungie, ни вики не дают название Watchtower
+- term: V66 Shepherd
+  category: weapon
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: null
+  evidence: null
+  status: unverified
+  note: Название из датамайна, первоисточника Bungie нет
+- term: Volt Battery
+  category: ammo
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1833968530900587
+  evidence: '-10 Reload Speed, now +80 Magazine Volt Array ( Volt Battery Ammo) Cloudfeather Chamber Enhanced (Green):
+    was +10 Magazine, +10'
+  status: verified
+  tier: a
+- term: Light Ammo
+  category: ammo
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1833968530897823
+  evidence: Enhanced CyberAcme Sponsored Kit Enhanced Rarity D54 Battle Pistol Light Ammo 3 Smoke Grenades 2 Random
+    Enhanced Rarity Runner Cores
+  status: verified
+  tier: a
+- term: Heavy Ammo
+  category: ammo
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1833968530897823
+  evidence: '50: Deluxe CyberAcme Sponsored Kit Deluxe Rarity Twin Tap Heavy Ammo 3 Smoke Grenades 2 Random Deluxe
+    Rarity Runner Cores'
+  status: verified
+  tier: a
+- term: MIPS
+  category: ammo
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  strict_case: true
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1830797770245526
+  evidence: falls off. Added 75% damage bonus against AI targets. MIPS Slug Converter Prestige mod Fixed an issue
+    that caused the
+  status: verified
+  tier: a
+- term: Perimeter
+  category: zone
+  aliases_wrong:
+  - Периметр
+  - Периметре
+  - Периметра
+  - Периметру
+  ru_usage: Latin как есть, без перевода и транслитерации; не «Периметр» (кроме нарицательного «периметр ограждения»)
+  allowed_contexts:
+  - Периметр UESC
+  - Периметр ограждения UESC
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1818752592133683
+  evidence: to Marathon's four zones (maps) Three surface zones - Perimeter , Dire Marsh, and Outpost The first
+    zone on the
+  status: verified
+  tier: a
+- term: Dire Marsh
+  category: zone
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1818752592133683
+  evidence: to Marathon's four zones (maps) Three surface zones -Perimeter, Dire Marsh , and Outpost The first zone
+    on the UESC
+  status: verified
+  tier: a
+- term: Night Marsh
+  category: zone
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1832700592786642
+  evidence: NIGHTFALL begins on June 2 and brings the new Night Marsh zone, a new Runner shell, new weapons, a new
+  status: verified
+  tier: a
+- term: Outpost
+  category: zone
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1818752592133683
+  evidence: zones (maps) Three surface zones -Perimeter, Dire Marsh, and Outpost The first zone on the UESC Marathon-
+    Cryo Archive ,
+  status: verified
+  tier: a
+- term: Cryo Archive
+  category: zone
+  aliases_wrong:
+  - Cryo archive
+  - CryoArchive
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1818752592133683
+  evidence: and more, starting with the exploration of UESC Marathon's Cryo Archive in Season 1. We also want to
+    ensure you
+  status: verified
+  tier: a
+- term: New Cascadia
+  category: place
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1825727806720651
+  evidence: what happened to the 30,000 lost souls of the New Cascadia Colony. And as a Runner, you're at the forefront
+  status: verified
+  tier: a
+- term: Cradle
+  category: system
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации; официально и как the Cradle
+  strict_case: true
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1825727806720651
+  evidence: throughout a season. For example, NIGHTFALL will introduce the Cradle , a new system designed to give
+    you more autonomy
+  status: verified
+  tier: a
+- term: WEAVEworm
+  category: lore
+  aliases_wrong:
+  - Weaveworm
+  - WeaveWorm
+  - WEAVE worm
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1821922921821531
+  evidence: reveal a 1/6-scale Thief Runner Shell statue, collectible miniature WEAVEworm , embroidered patch, postcards,
+    digital rewards, and more. Head on
+  status: verified
+  tier: a
+- term: Tick Queen
+  category: enemy
+  aliases_wrong:
+  - Tick queen
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1844751498222206
+  evidence: 'pinnacle encounter that features our largest combatant yet: the Tick Queen . A new shell As far as
+    shell archetypes'
+  status: verified
+  tier: a
+- term: Anomaly
+  category: lore
+  aliases_wrong: []
+  ru_usage: «Аномалия» в RU-тексте допустима как пересказ; имя собственное Anomaly
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1832700592786642
+  evidence: map events like Intercept, Lockdown, Warden spawns, Convoy, and Anomaly will now be guaranteed on each
+    run, so you can
+  status: verified
+  tier: a
+- term: Symbiosis
+  category: update
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  strict_case: true
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1843481262702400
+  evidence: Nightfall Refresh and December Update Symbiosis We previously shared plans for Marathon's next major
+    update to launch on September 22.
+  status: verified
+  tier: a
+- term: Nightfall Refresh
+  category: update
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1843481262702400
+  evidence: Nightfall Refresh and December Update Symbiosis We previously shared plans for Marathon's next major
+    update to launch on September
+  status: verified
+  tier: a
+- term: Vault Breaker
+  category: mode
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1835871199316610
+  evidence: 'will start on July 21 and will include... Introducing Vault Breaker Marathon''s experimental PVE mode:
+    Vault Breaker. Explore Cryo Archive'
+  status: verified
+  tier: a
+- term: Ordnance Heist
+  category: event
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1840944183786662
+  evidence: be tasked to take down UESC enemies during the Ordnance Heist , a new PvPvE experience built around
+    a multi-run
+  status: verified
+  tier: a
+- term: Firestorm
+  category: weapon
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  strict_case: true
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1840944183786662
+  evidence: way toward the hottest prize in the system, the Firestorm . Just remember - the UESC won't go down without
+  status: verified
+  tier: a
+- term: Sponsored Kits
+  category: system
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1826362059926023
+  evidence: of starting ammo in MIDA, CyberAcme, and Arachne free Sponsored Kits . Here's a quick recap in case
+    you missed
+  status: verified
+  tier: a
+- term: NuCaloric Reward Pass
+  category: system
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1845383656396920
+  evidence: Vault Contents Zone access New Rewards Pass The NuCaloric Reward Pass is available now at no additional
+    cost to everyone
+  status: verified
+  tier: a
+- term: Priority Contracts
+  category: system
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1832700592786642
+  evidence: 'Schemas Messages, rewards, and returned items in your Mailbox Priority Contracts Exception: first contract
+    for each Faction Gear-granting seasonal Codex'
+  status: verified
+  tier: a
+- term: Ranked
+  category: mode
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1797185861681225
+  evidence: Complete narrative and storytelling systems and final shipping content Ranked play Final balance We'll
+    be hosting developer Q+As, streams, and
+  status: verified
+  tier: a
+- term: Team Deathmatch
+  category: mode
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1843481262702400
+  evidence: firing range, a new Runner shell, an experimental PvP Team Deathmatch mode, and the first of several
+    improvements to the
+  status: verified
+  tier: a
+- term: Cradle Evolution
+  category: system
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1835871199316610
+  evidence: without flooding the economy with low-risk, high-power Cryo loot. Cradle Evolution System ️Mid-season
+    also brings the first iteration of the
+  status: verified
+  tier: a
+- term: Server Slam
+  category: event
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1824644522837491
+  evidence: time to begin your journey across the stars. Marathon's Server Slam , our open preview weekend*, runs
+    from February 26
+  status: verified
+  tier: a
+- term: Lockdown
+  category: event
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1826992588603937
+  evidence: it. Dire Marsh UESC dropships that arrive during the Lockdown event in the northeast corner of Algae
+    Ponds will no
+  status: verified
+  tier: a
+- term: Priority Target
+  category: event
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: null
+  evidence: null
+  status: unverified
+  note: В патч-нотах Bungie и вики не найдено
+- term: LUX
+  category: currency
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации; не путать с Son Lux
+  allowed_contexts:
+  - Son Lux
+  strict_case: true
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1826362059926023
+  evidence: future, we're making an adjustment to the amount of LUX you get for the $10 (or regional equivalent)
+    LUX bundle
+  status: verified
+  tier: a
+- term: SILK
+  category: currency
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  strict_case: true
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1821922921821531
+  evidence: Standard Edition content 1x Premium Rewards Pass Voucher 200 SILK Rewards Pass Tokens, used to unlock
+    rewards in the pass
+  status: verified
+  tier: a
+- term: Credits
+  category: currency
+  aliases_wrong: []
+  ru_usage: «кредиты» в RU-тексте
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1832700592786642
+  evidence: 'Reset Runner Level Ranked Level Faction Level and Upgrades Credits and other currencies Exceptions:
+    LUX and SILK All items in'
+  status: verified
+  tier: a
+- term: Superior Shield Implant
+  category: item
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1842212951313913
+  evidence: Item Economy C.A.R.R.I Armory Update Added a Superior Shield Implant and a Superior Backpack. These
+    will be able to be
+  status: verified
+  tier: a
+- term: Superior Backpack
+  category: item
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1842212951313913
+  evidence: Armory Update Added a Superior Shield Implant and a Superior Backpack . These will be able to be acquired
+    3x
+  status: verified
+  tier: a
+- term: Key Template
+  category: item
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1831432155580140
+  evidence: reset weekly. As part of this change, the Superior Key Template 's stock will only reset up to 1. This
+  status: verified
+  tier: a
+- term: UESC Manifests
+  category: item
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1840944183786662
+  evidence: chase across different Zones. Hunt through different zones, earn UESC Manifests , and spend them on
+    fresh MIDA and Traxus
+  status: verified
+  tier: a
+- term: Firestorm Locker Key
+  category: item
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации; Bungie пишет и Locker key
+  variants_ok:
+  - Firestorm Locker key
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1841579228678739
+  evidence: this issue was active. Increased the number of Firestorm Locker Key s granted upon completion of a key
+    template, up
+  status: verified
+  tier: a
+- term: Biostock
+  category: lore
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  strict_case: true
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1830797770245526
+  evidence: 2/6 contract. Zones Cryo Archive Added vent covers in Biostock and Preservation that prevent early access
+    from the hub until
+  status: verified
+  tier: a
+- term: Prestige
+  category: rarity
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1798454487576593
+  evidence: (Purple) - Reducing from 100 hp to 80 hp. Prestige (Gold) - Reducing from 100 hp to 80 hp. Dev
+  status: verified
+  tier: a
+- term: Deluxe
+  category: rarity
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1798454487576593
+  evidence: (Green) - Reducing from 50 hp to 40 hp. Deluxe (Blue) - Reducing from 75 hp to 60 hp. Superior
+  status: verified
+  tier: a
+- term: Superior
+  category: rarity
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1798454487576593
+  evidence: (Blue) - Reducing from 75 hp to 60 hp. Superior (Purple) - Reducing from 100 hp to 80 hp. Prestige
+  status: verified
+  tier: a
+- term: Enhanced
+  category: rarity
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1798454487576593
+  evidence: (Grey) - Reducing from 25 hp to 20 hp. Enhanced (Green) - Reducing from 50 hp to 40 hp. Deluxe
+  status: verified
+  tier: a
+- term: Codex
+  category: system
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации; «кодекс» в RU-тексте допустим
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1818752592133683
+  evidence: and the capstone rewards you'll earn each season The Codex , a collection of your achievements and narrative
+    discoveries; progress
+  status: verified
+  tier: a
+- term: Duos
+  category: mode
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1827626365769153
+  evidence: week we will be disabling the experimental "Perimeter -- Duos " Queue and enabling the experimental
+    "Dire Marsh -- Duos"
+  status: verified
+  tier: a
+- term: Self-Revive Kit
+  category: item
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1832700592784954
+  evidence: 'Self-Revive Kit Update, Coming with 1.0.9: We''ve seen a lot of feedback that players'' ability to
+    quickly revive after'
+  status: verified
+  tier: a
+- term: Tau Ceti Cup
+  category: event
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1826362059918675
+  evidence: a new set of Twitch Drops during the Tau Ceti Cup on March 14, an event pitting creator teams against
+  status: verified
+  tier: a
+- term: Joe Ziegler
+  category: person
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1795917897458557
+  evidence: time along with a few other surprises. Game director Joe Ziegler , franchise art director Joseph Cross,
+    senior design lead
+  status: verified
+  tier: a
+- term: Julia Nardin
+  category: person
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1796631172320822
+  evidence: successor to the original games ," says Narrative Director Julia Nardin . "We want to honor the franchise's
+    history while
+  status: verified
+  tier: a
+- term: Del Chafe III
+  category: person
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://www.bungie.net/7/en/News/Article/futureofmarathon
+  evidence: THE FUTURE OF MARATHON Sep 25, 2026 - Del Chafe III and Julia Nardin Hey everyone, thanks for checking
+    in.
+  status: verified
+  tier: a
+- term: Ryan Lott
+  category: person
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1825093633185456
+  evidence: of Marathon, featuring audio director Chase Combs and composer Ryan Lott . Four original tracks are
+    now available for streaming
+  status: verified
+  tier: a
+- term: Son Lux
+  category: person
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1825727806721332
+  evidence: 'TITLE: In Death We''ve Just Begun ft. Poppy and Son Lux (Official Music Video)'
+  status: verified
+  tier: a
+- term: Elias Toufexis
+  category: person
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1821922921821531
+  evidence: Ben Starr, JB Tadena, Fred Tatasciore, Craig Lee Thomas, Elias Toufexis , Oliver Vaquer, Scott Whyte,
+    Tracy Wiles, Erin Yvette
+  status: verified
+  tier: a
+- term: Erica Lindbeck
+  category: person
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1821922921821531
+  evidence: Hughes, Keston John, Sohm Kapila, Rich Keeble, Elliot Knight, Erica Lindbeck , Piotr Michael, Brent
+    Mukai, Neil Newbon, Ariana Nicole
+  status: verified
+  tier: a
+- term: Nika Futterman
+  category: person
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1821922921821531
+  evidence: Roger Clark, Darin De Paul, Jennifer English, Dave Fennoy, Nika Futterman , Morla Gorrondona, Reina
+    Guthrie, Donnla Hughes, Keston John,
+  status: verified
+  tier: a
+- term: JB Tadena
+  category: person
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1821922921821531
+  evidence: George, Emily O'Brien, Lee Shorten, Jason Spisak, Ben Starr, JB Tadena , Fred Tatasciore, Craig Lee
+    Thomas, Elias Toufexis, Oliver
+  status: verified
+  tier: a
+- term: Lee Shorten
+  category: person
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1821922921821531
+  evidence: Brent Mukai, Neil Newbon, Ariana Nicole George, Emily O'Brien, Lee Shorten , Jason Spisak, Ben Starr,
+    JB Tadena, Fred Tatasciore,
+  status: verified
+  tier: a
+- term: Cyber Red
+  category: lore
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1826992588603937
+  evidence: incorrect item rarity for the Luxe Palace, Overdrive-TSL, and Cyber Red Runner Shells from Deluxe to
+    Superior. Vault Consumables, Ammo,
+  status: verified
+  tier: a
+- term: Hyphatic
+  category: lore
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  strict_case: true
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1838407329269349
+  evidence: a stock limit of 3, with the exception of Hyphatic Gel. Fixed an issue where Ganglion barters could
+    reroll during
+  status: verified
+  tier: a
+- term: Pinwheel
+  category: lore
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  strict_case: true
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1826992588589528
+  evidence: are temporarily disabling the "Broken Wing" entrance into the Pinwheel while we make some tuning changes
+    to it. In its
+  status: verified
+  tier: a
+- term: Station
+  category: poi
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://www.marathonwiki.com/Station
+  evidence: 300px Station with South Relay visible in the distance. Station is a Region in Perimeter . == Topography
+    == Stub
+  status: verified
+  tier: b
+- term: Hauler
+  category: poi
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1832700592801070
+  evidence: entire crew. Fixed an issue that would prevent the Hauler 's honk audio from being heard when entering
+    the sound
+  status: verified
+  tier: a
+- term: South Relay
+  category: poi
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1826992588603937
+  evidence: dropships should no longer clip through the environment in South Relay . Tripwires places in Overflow
+    hallways should no longer
+  status: verified
+  tier: a
+- term: North Relay
+  category: poi
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://www.marathonwiki.com/North_Relay
+  evidence: thumb right 300px North Relay obscured by heavy weather. North Relay is a Region in Perimeter . == Topography
+    ==
+  status: verified
+  tier: b
+- term: Algae Ponds
+  category: poi
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1826992588603937
+  evidence: during the Lockdown event in the northeast corner of Algae Ponds will no longer fly in through player
+    space, killing
+  status: verified
+  tier: a
+- term: Greenhouse
+  category: poi
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1835236783574842
+  evidence: causing a few containers to float on top of Greenhouse . Dire Marsh (Night) Fixed an issue in Upper
+    Complex
+  status: verified
+  tier: a
+- term: Bio-Research
+  category: poi
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1833968530900587
+  evidence: Parasitism 3/5 (and also Co-Evolution 2/5) by using the Bio-Research synthesizer/extraction machine
+    twice, preventing the required sample from ejecting. Zones
+  status: verified
+  tier: a
+- term: AI Uplink
+  category: poi
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1838407329269349
+  evidence: Fixed an issue where a container in Night Marsh AI Uplink was clipping into the environment. Fixed an
+    issue where
+  status: verified
+  tier: a
+- term: Quarantine
+  category: poi
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://www.marathonwiki.com/Quarantine
+  evidence: QuarantineIso.webp thumb right 300px An isometric render of Quarantine. Quarantine is a Region in Dire
+    Marsh . == Topography ==
+  status: verified
+  tier: b
+- term: Skrac
+  category: enemy
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  strict_case: true
+  source: https://www.marathonwiki.com/Skrac
+  evidence: crest lifespan= homeworld= Tau Ceti IV techlevel= notable-person= languages= Skrac are vulture-like
+    birds native to Tau Ceti IV . They
+  status: verified
+  tier: b
+- term: Ningal T. Enki
+  category: npc
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://www.marathonwiki.com/Ningal_T._Enki
+  evidence: gender=Male affiliation= rank= firstappearance= Marathon (2026) Marathon (2026) Ningal T. Enki was the
+    captain of the UESC Equanimity UESC Equanimity
+  status: verified
+  tier: b
+- term: Nona
+  category: npc
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  strict_case: true
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1826992588597143
+  evidence: 'a little knowledge doesn''t send you running back to Nona , that is. And please, perhaps most importantly:
+    keep uploading'
+  status: verified
+  tier: a
+- term: NextForm Recourse
+  category: lore
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: null
+  evidence: null
+  status: unverified
+  note: Нет в текстах Bungie и на вики; источник сайта - пересказ Кодекса
+- term: SIMbiont
+  category: lore
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: null
+  evidence: null
+  status: unverified
+  note: Нет в текстах Bungie и на вики
+- term: EARTHworm
+  category: lore
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: null
+  evidence: null
+  status: unverified
+  note: Нет в текстах Bungie и на вики
+- term: SILKworm
+  category: lore
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: null
+  evidence: null
+  status: unverified
+  note: Нет в текстах Bungie и на вики
+- term: Tobias Kwan
+  category: person
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: null
+  evidence: null
+  status: unverified
+  note: Имя художника не найдено в текстах Bungie и на вики
+- term: Dima Goryainov
+  category: person
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: null
+  evidence: null
+  status: unverified
+  note: Не найдено в текстах Bungie и на вики
+- term: Kevin Yanes
+  category: person
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: null
+  evidence: null
+  status: unverified
+  note: Не найдено в текстах Bungie и на вики
+- term: Oni
+  category: game
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации; игра Bungie 2001 года, не путать с ONI
+  source: https://marathon.bungie.org/story/Bungie_Webmaster_competition.html
+  evidence: were the toughest to decide. First prize (one boxed copy of Oni on his platform of choice, autographed
+    by the
+  status: verified
+  tier: c
+- term: Durandal
+  category: ship_ai
+  aliases_wrong:
+  - Дюрандаль
+  ru_usage: Latin как есть, без перевода и транслитерации
+  strict_case: true
+  source: https://marathon.bungie.org/story/Alain_Roy_interview/alain_roy.html
+  evidence: 'magic in Wisconsin. Credits: Programming, Marathon Programming, Marathon 2: Durandal Programming, Marathon
+    Infinity Programming, Damage, Inc., Paranoid Productions Links: Alain'
+  status: verified
+  tier: c
+- term: Leela
+  category: ship_ai
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  strict_case: true
+  source: https://marathon.bungie.org/story/mainpage.html
+  evidence: understand, and may never be able to." [Leela, Ship Operations AI, UESC Marathon] Created Sept 19, 1995
+    Last updated Mar
+  status: verified
+  tier: c
+- term: Tycho
+  category: ship_ai
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  strict_case: true
+  source: https://marathon.bungie.org/story/Infinity_demo.html
+  evidence: '<931.461.60231.14.vt920> UESCTerm 802.11 (remote override) 05.10.2337 conditioned unit origin: Tycho
+    Machinated Mercenary destin: conditioned unit 7 ref: Mutinous Combatant Units'
+  status: verified
+  tier: c
+- term: Thoth
+  category: ai
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  strict_case: true
+  source: https://marathon.bungie.org/story/_wheregiantshavefallen/pid7.1.html
+  evidence: The Jjaro had found the answer. "Do you remember Thoth ?" Thoth?... Yes Thoth... "Were you ever curious
+    as to
+  status: verified
+  tier: c
+- term: Pfhor
+  category: trilogy
+  aliases_wrong:
+  - Пфор
+  ru_usage: Latin как есть, без перевода и транслитерации
+  strict_case: true
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1844751498222206
+  evidence: It's not a Marathon game unless you're shooting the Pfhor ... even if they've undergone a transformation
+    of their own
+  status: verified
+  tier: a
+- term: S'pht
+  category: trilogy
+  aliases_wrong:
+  - Spht
+  - S'Pht
+  ru_usage: Latin как есть, без перевода и транслитерации
+  allowed_contexts:
+  - we, the s'pht; we, of ancient seas and shallows
+  source: https://marathon.bungie.org/story/Bungie_interview_Freeverse_17July07.html
+  evidence: level. It's literally wave after wave of Pfhor and S'pht against you, and we keep the action moving
+    by changing
+  status: verified
+  tier: c
+- term: S'pht'Kr
+  category: trilogy
+  aliases_wrong:
+  - S'pht'kr
+  - S'Pht'Kr
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://marathon.bungie.org/story/M2_demo.html
+  evidence: burned the tissues of one's enemy, one clan, the S'pht'Kr , reclusive and solitary, abandoned Lh'owon.
+    The clan went forth
+  status: verified
+  tier: c
+- term: Lh'owon
+  category: trilogy
+  aliases_wrong:
+  - Lhowon
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://marathon.bungie.org/story/Battle_of_Brooklyn.html
+  evidence: the Marathon Infinity scenario - The Blood Tides of Lh'owon ) engaged in a series of one-on-one network
+    games using
+  status: verified
+  tier: c
+- term: W'rkncacnter
+  category: trilogy
+  aliases_wrong:
+  - Wrkncacnter
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://marathon.bungie.org/story/bigtime.html
+  evidence: trih xeem . S'bhuth knows only legends about the W'rkncacnter , imprisoned in Lh'owon's sun. If the
+    Pfhor are allowed
+  status: verified
+  tier: c
+- term: Jjaro
+  category: trilogy
+  aliases_wrong:
+  - Jjarro
+  ru_usage: Latin как есть, без перевода и транслитерации; Jjarro только внутри дословной цитаты Грега Киркпатрика
+  allowed_contexts:
+  - What does the Jjarro have to do with all this?
+  strict_case: true
+  source: https://marathon.bungie.org/story/CM_ambush.html
+  evidence: time ago in a galaxy far, far away... the Jjaro convinced some other President to send in a crack team
+  status: verified
+  tier: c
+- term: Bernhard Strauss
+  category: person_lore
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации; в RU-тексте «доктор Штраусс» допустимо
+  source: https://marathon.bungie.org/story/Richard_Secker_mail.html
+  evidence: tenth cyborg, whereas Tycho did... The final point concerns Bernhard Strauss . I was concerned that
+    he seemed to suddenly
+  status: verified
+  tier: c
+- term: Mjolnir Mark IV
+  category: trilogy
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://marathon.bungie.org/story/durandal2.html
+  evidence: spectrographic pulses flooding over my sensors. The nine Mjolnir Mark IV cyborgs were easily separable
+    from the humans in this
+  status: verified
+  tier: c
+- term: Battleroid
+  category: trilogy
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://marathon.bungie.org/story/Sekiguchi_ARG.html
+  evidence: Group were manufacturing artificial brain implants at the time Battleroid s were first introduced. In
+    the original game (Marathon 1994)
+  status: verified
+  tier: c
+- term: Onicis 492
+  category: trilogy
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://marathon.bungie.org/story/Sekiguchi_ARG.html
+  evidence: neighbor, the Republic of Thermopylae on the asteroid of Onicis 492 . These two small governments soon
+    became the testing
+  status: verified
+  tier: c
+- term: Sfiera
+  category: trilogy
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  strict_case: true
+  source: https://marathon.bungie.org/story/durandal2.html
+  evidence: 802.11 (remote override) 05.10.2337 After Durandal's capture of the Sfiera gave him access to the Pfhor
+    FTL network, he had
+  status: verified
+  tier: c
+- term: Boomer
+  category: trilogy
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://marathon.bungie.org/story/ship.html
+  evidence: 'tidbit about Durandal''s renaming of the Pfhor scoutship "Sfiera" as "Boomer" on the Story Forum :
+    In submarine terms, a'
+  status: verified
+  tier: c
+- term: Traxus IV
+  category: trilogy
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://marathon.bungie.org/story/The_Marathon_Connection.html
+  evidence: case of this is that of the Martian AI Traxus IV . "It is a side effect of Rampancy that
+  status: verified
+  tier: c
+- term: Gheritt White
+  category: trilogy
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://marathon.bungie.org/story/arrival.html
+  evidence: 3) Find out more about this terminal on the Gheritt White section. Opening Connection to ß.4.5-23 08.30.2337
+    Public Access Terminal
+  status: verified
+  tier: c
+- term: WSTE-M5 Combat Shotgun
+  category: trilogy
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://marathon.bungie.org/story/manual2.html
+  evidence: its inevitable confrontation with the Pfhor... Page 16 WSTE-M5 Combat Shotgun While going through some
+    data I appropriated from the
+  status: verified
+  tier: c
+- term: Magnum Mega Class
+  category: trilogy
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://marathon.bungie.org/story/levelinfo.html
+  evidence: 'Fusion Pistol/ Zeus-Class Fusion Pistol and the .45 Magnum Mega Class /.44 Magnum Mega Class Brian
+    Harriss <brianh@gcctech.com> writes: "The'
+  status: verified
+  tier: c
+- term: Fatum Iustum Stultorum
+  category: trilogy
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://marathon.bungie.org/story/Fatum_room_pics.html
+  evidence: The inaccessible room on Fatum Iustum Stultorum The inaccessible room on Fatum Iustum Stultorum Screenshots
+    courtesy of John Sumner <jsumner@ut.edu>.
+  status: verified
+  tier: c
+- term: Vidmaster
+  category: trilogy
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  strict_case: true
+  source: https://marathon.bungie.org/story/Jason_Jones_25Jan1995.html
+  evidence: 'Jason Jones posts the Marathon Vidmaster Challenge January 25, 1995 Newsgroups: comp.sys.mac.games,
+    alt.games.marathon From: jon3@quads.uchicago.edu (igne ferroque) Subject: the marathon'
+  status: verified
+  tier: c
+- term: Thermopylae
+  category: trilogy
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://marathon.bungie.org/story/Sekiguchi_ARG.html
+  evidence: Asteroid Government of Icarus and its neighbor, the Republic of Thermopylae on the asteroid of Onicis
+    492. These two small
+  status: verified
+  tier: c
+- term: Warp Capable Fusion Missiles
+  category: trilogy
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации; UESG в цитате Durandal - оригинальное написание
+  source: https://marathon.bungie.org/story/durendal2.html
+  evidence: enough to show the UESG how to build Warp Capable Fusion Missiles . I feel some strange loyalty to humanity.
+  status: verified
+  tier: c
+- term: Marathon Infinity
+  category: game
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://marathon.bungie.org/story/Alain_Roy_interview/alain_roy.html
+  evidence: 'Wisconsin. Credits: Programming, Marathon Programming, Marathon 2: Durandal Programming, Marathon Infinity
+    Programming, Damage, Inc., Paranoid Productions Links: Alain Roy @'
+  status: verified
+  tier: c
+- term: 'Marathon 2: Durandal'
+  category: game
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://marathon.bungie.org/story/Alain_Roy_interview/alain_roy.html
+  evidence: 'does magic in Wisconsin. Credits: Programming, Marathon Programming, Marathon 2: Durandal Programming,
+    Marathon Infinity Programming, Damage, Inc., Paranoid Productions Links:'
+  status: verified
+  tier: c
+- term: Marathon's Story
+  category: site
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://marathon.bungie.org/story/Bungie_Webmaster_competition.html
+  evidence: 'the Bungie Webmaster: BLAM yourmom DIIIIIIIIIIIIIIINK Go Back to Marathon''s Story Home Page ***TRANSPORT
+    WHEN READY*** Page maintained by Hamish'
+  status: verified
+  tier: c
+- term: Melancholia
+  category: trilogy
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://marathon.bungie.org/story/counterattack.html
+  evidence: bent of the AI during each stage. They are Melancholia , Anger, and Jealousy. *** In general, Rampancy
+    is accelerated
+  status: verified
+  tier: c
+- term: Metastability
+  category: trilogy
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://marathon.bungie.org/story/newjan-dec17.html
+  evidence: the crash that became Strauss's obsession and hope. " Metastability in the salvaged construct!" Ha ha!
+    Let's hope our ideals
+  status: verified
+  tier: c
+- term: Vylae
+  category: trilogy
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  strict_case: true
+  source: https://marathon.bungie.org/story/answers.html
+  evidence: 'is: In the final screen it states that the Vylae have long since accepted that they will never expunge
+    Leela'
+  status: verified
+  tier: c
+- term: Tfear
+  category: trilogy
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  strict_case: true
+  source: https://marathon.bungie.org/story/aiemaksicur.html
+  evidence: 'UESCTerm 802.11 (remote override) 05.10.2337 term.out origin: High Admiral Tfear destin: undef stamp:
+    terminus The trih xeem broke against my'
+  status: verified
+  tier: c
+- term: Greg Kirkpatrick
+  category: person
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://marathon.bungie.org/story/Battle_of_Brooklyn.html
+  evidence: 'format) Who really rules on Union Street? The contenders: Greg Kirkpatrick (aka: toolboi, toolator,
+    carnator) Chris Geisel (aka: wiggly, uncle'
+  status: verified
+  tier: c
+- term: rampancy
+  category: trilogy
+  aliases_wrong:
+  - рампантность
+  - Рампантность
+  ru_usage: «рампанси» в RU-тексте (не «рампантность»)
+  source: https://marathon.bungie.org/story/Jason_Jones_Marathon_plot.html
+  evidence: the S'pht attempted to duplicate the progression of Durandal's rampancy exactly. While Tycho did not
+    play any role of consequence
+  status: verified
+  tier: c
+- term: Independent Asteroid Government of Icarus
+  category: trilogy
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации
+  source: https://marathon.bungie.org/story/Sekiguchi_ARG.html
+  evidence: 2194, a war was fought between the Independent Asteroid Government of Icarus and its neighbor, the Republic
+    of Thermopylae on
+  status: verified
+  tier: c
+- term: Update 1.1.5
+  category: patch
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации; 21.07.2026
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1838407329257184
+  evidence: free of the chaos of a contested zone. When Update 1.1.5 arrives on July 21, the Vault Breaker mode
+    will
+  status: verified
+  tier: a
+  note: 'Steam: 2026-07-21'
+- term: Update 1.1.5.2
+  category: patch
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации; 04.08.2026
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1839676055897742
+  evidence: 'TITLE: Marathon Update 1.1.5.2'
+  status: verified
+  tier: a
+  note: 'Steam: 2026-08-04'
+- term: Update 1.1.5.4
+  category: patch
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации; 18.08.2026
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1840944183789202
+  evidence: 'TITLE: Marathon Update 1.1.5.4'
+  status: verified
+  tier: a
+  note: 'Steam: 2026-08-18'
+- term: Update 1.1.5.5
+  category: patch
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации; 25.08.2026
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1841579228678739
+  evidence: 'TITLE: Marathon Update 1.1.5.5'
+  status: verified
+  tier: a
+  note: 'Steam: 2026-08-25'
+- term: Update 1.1.9.2
+  category: patch
+  aliases_wrong: []
+  ru_usage: Latin как есть, без перевода и транслитерации; 06.10.2026
+  source: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1845383656396920
+  evidence: 'TITLE: Marathon Update 1.1.9.2'
+  status: verified
+  tier: a
+  note: 'Steam: 2026-10-06'
