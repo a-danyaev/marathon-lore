@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="ru" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Файл 06 // Классы: модели шеллов Marathon // Терминал Марафона</title>
+<meta name="description" content="Досье всех шеллов Marathon: Vandal, Destroyer, Assassin, Recon, Thief, Triage, Sentinel, Rook и Bishop. Роль, сильные и слабые стороны, как играть, лор с метками canon, datamine и theory.">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#000000">
+<link rel="canonical" href="https://a-danyaev.github.io/marathon-lore/ru/pages/classes.html">
+<link rel="alternate" hreflang="ru" href="https://a-danyaev.github.io/marathon-lore/ru/pages/classes.html">
+<link rel="alternate" hreflang="en" href="https://a-danyaev.github.io/marathon-lore/pages/classes.html">
+<link rel="alternate" hreflang="x-default" href="https://a-danyaev.github.io/marathon-lore/pages/classes.html">
+<link rel="icon" href="../../assets/img/brand/favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Терминал Марафона">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:title" content="Файл 06: классы и модели шеллов Marathon">
+<meta property="og:description" content="Досье всех шеллов Marathon: Vandal, Destroyer, Assassin, Recon, Thief, Triage, Sentinel, Rook и Bishop. Роль, сильные и слабые стороны, как играть, лор с метками canon, datamine и theory.">
+<meta property="og:url" content="https://a-danyaev.github.io/marathon-lore/ru/pages/classes.html">
+<meta property="og:image" content="https://a-danyaev.github.io/marathon-lore/assets/img/brand/og-keyart.jpg">
+<meta property="og:image:alt" content="Ключевой арт Marathon от Bungie">
+<meta name="twitter:card" content="summary_large_image">
+<script>(function(){var d=document.documentElement;d.classList.replace("no-js","js");if(new URLSearchParams(location.search).has("shot"))d.classList.add("shot");})()</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wdth,wght@8..144,25..151,100..1000&family=Martian+Mono:wdth,wght@75..112.5,100..800&family=Geist+Mono:wght@100..900&family=Handjet:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="../../assets/css/base.css">
+<link rel="stylesheet" href="../../assets/css/os.css">
+<link rel="stylesheet" href="../../assets/css/page.css">
+</head>
+<body class="p-file" data-file="06" data-page="classes">
+<div class="field" data-field aria-hidden="true">
+  <canvas></canvas>
+  <div class="field__lens"></div>
+  <div class="field__frame"><b data-lens-mode>ДЕШИФРОВКА</b><span data-lens-readout>X 0000 // Y 0000</span></div>
+</div>
+<a class="skip" href="#top">К содержимому</a>
+<header class="mbar" id="mbar">
+  <a class="mbar__logo" href="../index.html" aria-label="Терминал Марафона, рабочий стол"><i class="mbar__sq"></i><img class="mbar__mark" src="../../assets/img/brand/wordmark-white.png" alt="" width="120" height="38"><span class="mbar__os">TERMINAL&nbsp;OS</span><span class="mbar__ver">v7.0</span></a>
+  <nav class="mbar__menu" aria-label="Меню"><a href="../index.html?open=archive">Архив</a><a href="classes.html" aria-current="page">Файл 06</a><a href="../index.html?open=curator">Куратор</a><a href="../index.html?open=forecast">Прогнозы</a></nav>
+  <span class="mbar__sp"></span>
+  <a class="mbar__air" href="../index.html?open=air"><i></i><span>Эфир</span><b>С ТАУ КИТА</b></a>
+  <time class="mbar__clock" data-clock>08.10.2893 00:00</time>
+</header>
+<div class="achrome" role="group" aria-label="Окно файла 06">
+  <i class="win__ico"></i><span class="win__title">CLASSES.DOS</span><span class="win__path">/uesc/lore/06</span><span class="win__lines"></span>
+  <span class="achrome__pct">ПРОЧИТАНО <b data-readpct>0%</b></span>
+  <a class="win__btn" href="../index.html">&lt; Рабочий стол</a><a class="win__btn x" href="../index.html" aria-label="Закрыть файл и вернуться на рабочий стол">×</a>
+  <i class="achrome__bar" data-readbar></i>
+</div>
+<main id="top" class="pg">
+  <section class="s-hero" data-sec="intro" id="intro" data-field-window data-lens-zone data-field-src="../../assets/img/press/vandal-02.jpg" data-field-focus=".72,.4" data-field-focus-m=".62,.45" data-field-wander=".76,.42,.12,.25" data-field-wander-m=".55,.35,.22,.12" data-field-label="VANDAL // СИНЕМАТИК BUNGIE">
+    <div class="hero-main">
+      <div class="hero-top">
+        <p class="kick slab"><b>ФАЙЛ 06</b> // DEATH DEALERS // 9 МОДЕЛЕЙ</p>
+        <p class="kick slab"><span data-field-src-label>VANDAL // СИНЕМАТИК BUNGIE</span></p>
+      </div>
+      <h1 class="super s-title" data-kinetic><span class="ln">Шеллы</span></h1>
+    </div>
+    <div class="s-intro panel">
+      <p>Официальный слоган Bungie про шеллы: «Powerful. Configurable. Expendable», то есть мощные, настраиваемые, расходные. Каждый игровой класс в лоре - отдельная <b>модель шелла</b> со своей биографией. А внешность, голос и характер задаёт <b>серия личности</b>: одно «лицо», отпечатанное на тысячах одинаковых тел. Поэтому все Vandal в игре выглядят одинаково: массовый продукт. Nona, агент их создателя Sekiguchi, называет каждый шелл «чудом биосинтетической инженерии» и сладко добавляет, что твоим предшественникам повезло меньше. <span class="chip chip--canon">canon</span></p>
+      <p class="term"><b>НОВИЧКУ &gt;</b> для первых рейдов бери универсальный, прощающий шелл, который вывозит за счёт живучести и самолечения и не требует ювелирного тайминга способностей. Ближе всего Destroyer: крепкий, самовосстанавливающийся, «наводи и стреляй». Recon хорош тем, что помогает читать карту и врагов. Vandal и Assassin со скрытностью и рывками оставь на потом, а Rook не трогай вовсе. Первые часы уходят на карты, звук и точки эвакуации, микроменеджмент способностей подождёт. Когда освоишься, пересаживайся на любой шелл.</p>
+    </div>
+  </section>
+
+  <div class="s-body">
+    <nav class="toc panel" aria-label="Досье шеллов">
+      <p class="lbl">Досье // 9 моделей</p>
+      <ol>
+        <li><a href="#vandal">06.1 <b>Vandal</b></a></li>
+        <li><a href="#destroyer">06.2 <b>Destroyer</b></a></li>
+        <li><a href="#assassin">06.3 <b>Assassin</b></a></li>
+        <li><a href="#recon">06.4 <b>Recon</b></a></li>
+        <li><a href="#thief">06.5 <b>Thief</b></a></li>
+        <li><a href="#triage">06.6 <b>Triage</b></a></li>
+        <li><a href="#sentinel">06.7 <b>Sentinel</b></a></li>
+        <li><a href="#rook">06.8 <b>Rook</b></a></li>
+        <li><a href="#bishop">06.9 <b>Bishop</b></a></li>
+      </ol>
+      <div class="toc__prog" aria-hidden="true"><i data-prog></i></div>
+      <p class="toc__cur" aria-live="polite" data-cur><b>КУРАТОР&gt;</b><span>Файл 06. Модели шеллов. Читайте по порядку.</span></p>
+    </nav>
+    <div class="s-list">
+    <article class="dossier panel" id="vandal" data-sec="vandal" aria-labelledby="vandal-t">
+      <header class="d-head">
+        <span class="d-num">06.1</span>
+        <h2 class="super d-name" id="vandal-t" data-kinetic>Vandal</h2>
+        <div class="d-meta"><span class="lbl">Серия Glitch</span><span class="role">Боевой анархист</span></div>
+      </header>
+      <div class="d-grid">
+        <figure class="d-fig">
+          <img src="../../assets/img/press/vandal-02.jpg" alt="Vandal целится в камеру, кадр синематика Bungie" loading="lazy" decoding="async" style="object-position:50% 40%">
+          <figcaption><span>Кадр синематика // пресс-кит Bungie</span></figcaption>
+        </figure>
+        <div class="d-text">
+          <p class="d-role">Быстрый диверсант-дуэлянт для тех, кто любит агрессию и постоянное движение. Vandal живёт за счёт скорости: разгон Amplify резко ускоряет шелл, позволяя влететь во фланг, дожать раненого и так же быстро уйти. Урон у наручной Disrupt Cannon вторичен. Её дело - сбить противника с позиции: оттолкнуть, сломать прицел, у края карты уронить с уступа. Vandal играет от инициативы, размен в лоб ему не идёт.</p>
+          <div class="d-pm">
+            <div><h3 class="lbl">Сильные стороны</h3><ul class="plus"><li>Исключительная мобильность и контроль дистанции</li><li>Disrupt сбрасывает врага с позиции и с уступов</li><li>Идеален для флангов и добиваний</li></ul></div>
+            <div><h3 class="lbl">Слабые стороны</h3><ul class="minus"><li>Хрупкий, плохо переживает прямой размен</li><li>Слабое самолечение и ближний бой</li><li>Требует точного тайминга и позиционирования</li></ul></div>
+          </div>
+          <div class="d-block"><h3 class="lbl">Как играть</h3><p>Не стой на месте: разгоняйся, заходи сбоку и с тыла, бей Disrupt по врагу на краю площадки или чтобы разорвать дистанцию. Выбирай одиночные цели и уходи до подхода их команды.</p></div>
+          <div class="d-block"><h3 class="lbl">Лор</h3><p>Единое лицо серии Glitch было фишкой: власти не могли отследить конкретных диссидентов. Гардероб собран на контркультуре кварталов Куинси и Palace Mons, и уличный стиль Glitch до сих пор в моде у марсианской молодёжи как символ сопротивления.</p><p>По внутриигровому Runners' Guide, Amplify вырос из взлома, и «фичей Vandal» гайд его не считает: технику разгона первыми открыли шелл-атлеты, «джейлбрейкнув» механику движения шелла, а MIDA превратила её в оружие и запустила «современную волну» разгонных способностей, которыми теперь пользуются Раннеры любой фракции. Сами Vandal «двигаются на скоростях, которые сломали бы биосинтетические кости другому шеллу». Disrupt Cannon на предплечье - переделанная энергопушка, разобранная и вживлённая в кибер-руку: сбивает противника с позиции, а то и роняет с уступа. <span class="chip chip--canon">canon</span></p></div>
+          <div class="d-block"><h3 class="lbl">Детали</h3><p class="triv">Прежнее имя серии - «Vandal (Formerly Glitch)»: на ре-релизе 2025-го шелл светили под старым названием. <span class="chip chip--datamine">datamine</span></p><p class="triv">Дебютный налёт лор подаёт газетным заголовком «A Dozen Lunatics Bumrush UESC Mobile Armory»; вербовку в MIDA он, по точной цитате источника, поднял на «7500%», те самые ×75. Девиз серии - «нелегальный раннинг, сделанный модным»: «легче исчезнуть, когда вокруг твоей эстетики поднимается целая субкультура». Флейвор Disrupt Cannon - «Nothing better than a trick up your sleeve». Озвучка Vandal - Erica Lindbeck. <span class="chip chip--canon">canon</span></p></div>
+        </div>
+      </div>
+    </article>
+    <div class="gap" data-field-window data-field-src="../../assets/img/press/s2-003.jpg" data-field-focus=".5,.5" data-field-focus-m=".62,.5" data-field-label="SEASON 2 // ПРЕСС-КИТ BUNGIE" aria-hidden="true"><p class="gap__l"><b>КАНАЛ 06.2</b><span>SEASON 2 // ПОД ЛИНЗОЙ ЦВЕТ КАДРА</span></p></div>
+    <article class="dossier panel" id="destroyer" data-sec="destroyer" aria-labelledby="destroyer-t">
+      <header class="d-head">
+        <span class="d-num">06.2</span>
+        <h2 class="super d-name" id="destroyer-t" data-kinetic>Destroyer</h2>
+        <div class="d-meta"><span class="lbl">Серия Locus</span><span class="role">Штурмовик</span></div>
+      </header>
+      <div class="d-grid">
+        <figure class="d-fig">
+          <img src="https://marathon.wiki.gallery/images/a/a5/Destroyer_runner_card.jpg" alt="Шелл Destroyer, официальная карточка Раннера" loading="lazy" decoding="async" referrerpolicy="no-referrer" style="object-position:50% 25%">
+          <figcaption><span>Карточка Раннера // marathonwiki.com</span></figcaption>
+        </figure>
+        <div class="d-text">
+          <p class="d-role">Тяжёлый штурмовик и самый прощающий шелл для новичка: живучий, самовосстанавливающийся, работает по принципу «наводи и стреляй». Prime-модуль Search and Destroy - наплечная самонаводящаяся артиллерия: держи врага в прицеле, и каждое третье попадание вызывает залп микроракет в ту же точку, превращая ровную стрельбу в тяжёлый урон. Тактический Riot Barricade разворачивает заслон, за которым можно передохнуть, перезарядиться или запереть проход. Destroyer держит фронт и продавливает позиции грубой силой.</p>
+          <div class="d-pm">
+            <div><h3 class="lbl">Сильные стороны</h3><ul class="plus"><li>Высокая живучесть и самовосстановление</li><li>Сильный устойчивый урон, ракетные залпы за точную стрельбу</li><li>Барьер даёт укрытие и держит проход</li></ul></div>
+            <div><h3 class="lbl">Слабые стороны</h3><ul class="minus"><li>Медленный и малоподвижный, тяжело перестраивается</li><li>Заметный, легко читается</li><li>Prime долго перезаряжается, скрытности нет</li></ul></div>
+          </div>
+          <div class="d-block"><h3 class="lbl">Как играть</h3><p>Занимай переднюю линию, ставь барьер в узких проходах и веди огонь непрерывно, чтобы срабатывали ракетные залпы. Самолечение позволяет агрессивно разменивать урон: дожимай, не отступай.</p></div>
+          <div class="d-block"><h3 class="lbl">Лор</h3><p>Destroyer - продукт UESC Combat Science Labs; после поправки «Consequence of Violence» (2879) военное применение официально запрещено, но в частной охране корпорации гоняют его до сих пор. Личностная серия Locus обучена на боевом опыте солдат UESC и даёт носителю ровное спокойствие и уверенность в бою независимо от уровня угрозы. <span class="chip chip--canon">canon</span></p><p>Жестокость была не единственной причиной снять Destroyer с вооружения. Prime-модуль Search and Destroy, «наплечная самонаводящаяся артиллерия», где каждый третий попавший патрон вызывает залп микроракет прямо в точку удара, оказался «слишком эффективным», а у солдат при долгом использовании нейро-HUD-целеуказания фиксировали «психическую дестабилизацию». По чёрным каналам Раннеры добираются до модели минимум с 2872 года. <span class="chip chip--canon">canon</span></p></div>
+          <div class="d-block"><h3 class="lbl">Детали</h3><p class="triv">Прежнее имя серии - «Destroyer (Formerly Locus)». <span class="chip chip--datamine">datamine</span></p><p class="triv">Личность Locus смоделирована с «полевых командиров». Озвучивает Destroyer JB Tadena; в лончевом синематике агрессивный Destroyer вынужден мирить рассорившихся Triage и Thief. <span class="chip chip--canon">canon</span></p><p class="triv">Ходят слухи, что официальная причина снятия прикрывала «нечто более страшное», а сама UESC тайком гоняет Destroyer против Раннеров по всей Солнечной. <span class="chip chip--theory">theory</span></p></div>
+        </div>
+      </div>
+    </article>
+    <article class="dossier panel" id="assassin" data-sec="assassin" aria-labelledby="assassin-t">
+      <header class="d-head">
+        <span class="d-num">06.3</span>
+        <h2 class="super d-name" id="assassin-t" data-kinetic>Assassin</h2>
+        <div class="d-meta"><span class="lbl">Серия Void</span><span class="role">Невидимка</span></div>
+      </header>
+      <div class="d-grid">
+        <figure class="d-fig">
+          <img src="https://marathon.wiki.gallery/images/6/63/Assassin_runner_card.jpg" alt="Шелл Assassin, официальная карточка Раннера" loading="lazy" decoding="async" referrerpolicy="no-referrer" style="object-position:50% 25%">
+          <figcaption><span>Карточка Раннера // marathonwiki.com</span></figcaption>
+        </figure>
+        <div class="d-text">
+          <p class="d-role">Инфильтратор-невидимка для терпеливых охотников. Отдельной кнопки у Active Camo нет: шелл уходит в невидимость, когда входит в собственный дым от Prime-модуля Smoke Screen. Рывок Shadow Dive помогает влететь в схватку или выскользнуть из неё. Его задача - подойти незамеченным, снять одиночную цель и исчезнуть. Открытые перестрелки Assassin проигрывает.</p>
+          <div class="d-pm">
+            <div><h3 class="lbl">Сильные стороны</h3><ul class="plus"><li>Невидимость через дым для засад и отходов</li><li>Мощный первый удар по одиночной цели</li><li>Дым и рывок дают контроль над схваткой</li></ul></div>
+            <div><h3 class="lbl">Слабые стороны</h3><ul class="minus"><li>Хрупкий, проигрывает в затяжном бою</li><li>Невидимость рвётся при агрессивных действиях</li><li>Высокий скилл-порог, наказывает за раскрытие</li></ul></div>
+          </div>
+          <div class="d-block"><h3 class="lbl">Как играть</h3><p>Ставь дым и ныряй в него, чтобы уйти в невидимость, обходи врага с фланга и бей первым по изолированной цели. Не задерживайся в открытую: Shadow Dive используй для входа и отхода.</p></div>
+          <div class="d-block"><h3 class="lbl">Лор</h3><p>UESC официально не признаёт разработку скрытной технологии Assassin, но в среде Раннеров её возводят к прототипам UESC Spec Ops. Void считается первой «личностной» серией шелла: по легенде она названа в честь безымянного Раннера, потерявшего рассудок на первых испытаниях активного камуфляжа, слитого с нейропереносом. <span class="chip chip--canon">canon</span></p><p>По внутриигровому гайду техника Assassin держится на связке: Active Camo - пассивный триггер: нано-триггеры в корпусе включают его, когда шелл входит в собственный дым; сам Smoke Screen идёт из «карманных синт-эмиттерных дисков», изначально сделанных для служб экстренного реагирования. Серию Void, по гайду, нашли «в архивном нейрокоде и официально не выпускали», списав с одного из первых погибших испытателей, того, «кто довёл до совершенства технологию, которая его же и уничтожила». <span class="chip chip--canon">canon</span></p><p>Формулировка слуха о переносе сознания жёстче гайдовой: он давал «почти полную потерю памяти, а следом полную потерю себя». Отсылку к засекреченным «UESC/SEKGEN files» источники дословно не воспроизводят, деталь не подтверждена. <span class="chip chip--theory">theory</span></p></div>
+          <div class="d-block"><h3 class="lbl">Детали</h3><p class="triv">Прежнее имя серии - «Assassin (Formerly Void)». <span class="chip chip--datamine">datamine</span></p><p class="triv">Девиз серии - «невидимый клинок бьёт первым». Void озвучивает Elias Toufexis, он же голос Rook. В синематике на вопрос Blackbird «Do you ever wonder what happened to these people?» Void сухо роняет «It's not my business» (к какому ролику относится реплика, источники расходятся). <span class="chip chip--canon">canon</span></p></div>
+        </div>
+      </div>
+    </article>
+    <div class="gap" data-field-window data-field-src="../../assets/img/press/uesc-bombardier.jpg" data-field-focus=".5,.4" data-field-focus-m=".62,.45" data-field-label="UESC BOMBARDIER // ПРЕСС-КИТ BUNGIE" aria-hidden="true"><p class="gap__l"><b>КАНАЛ 06.4</b><span>ОРБИТА UESC // ПОД ЛИНЗОЙ ЦВЕТ КАДРА</span></p></div>
+    <article class="dossier panel" id="recon" data-sec="recon" aria-labelledby="recon-t">
+      <header class="d-head">
+        <span class="d-num">06.4</span>
+        <h2 class="super d-name" id="recon-t" data-kinetic>Recon</h2>
+        <div class="d-meta"><span class="lbl">Серия Blackbird</span><span class="role">Разведчик</span></div>
+      </header>
+      <div class="d-grid">
+        <figure class="d-fig">
+          <img src="../../assets/img/kit/classes-recon.jpg" srcset="../../assets/img/kit/classes-recon-m.jpg 960w, ../../assets/img/kit/classes-recon.jpg 1920w" sizes="(max-width:820px) 100vw, 42vw" width="1920" height="1080" alt="Шелл Recon в полный рост, пресс-кит Bungie" loading="lazy" decoding="async">
+          <figcaption><span>Recon // пресс-кит Bungie</span></figcaption>
+        </figure>
+        <div class="d-text">
+          <p class="d-role">Скаут-разведчик. Выигрывает информацией, стрельба у него на втором месте. Prime-модуль Echo Pulse посылает волну-пинг, подсвечивающую врагов вокруг, а тактический Tracker Drone - «живая граната», которая выискивает угрозу, преследует её и детонирует, выкуривая засевших. Recon помогает всей команде читать карту и заранее видеть противника, а новичку быстрее выучить локации и повадки врагов.</p>
+          <div class="d-pm">
+            <div><h3 class="lbl">Сильные стороны</h3><ul class="plus"><li>Лучшая разведка, пинг подсвечивает врагов</li><li>Дрон выискивает и выкуривает засевших</li><li>Помогает команде и новичку читать карту</li></ul></div>
+            <div><h3 class="lbl">Слабые стороны</h3><ul class="minus"><li>Слабый прямой урон и ближний бой</li><li>Беспомощен в честной дуэли</li><li>Ценность зависит от того, использует ли команда его разведданные</li></ul></div>
+          </div>
+          <div class="d-block"><h3 class="lbl">Как играть</h3><p>Пингуй перед заходом в новую зону, пускай дрона, чтобы вскрыть кемперов, и играй от команды: ты нужен ей ради разведданных, размен оставь другим. Не лезь в дуэли, держись за спинами.</p><p><span class="d-patch">1.1.9.2</span>С обновлением Nightfall Refresh (06.10.2026) Echo Pulse у Recon ослаблен в PvP. Точных цифр в доступных нам заметках нет; пинг по-прежнему главный инструмент шелла, но рассчитывай на него осторожнее в дуэлях с раннерами. <span class="chip chip--canon">canon</span></p></div>
+          <div class="d-block"><h3 class="lbl">Лор</h3><p>Recon - ещё один трофей боевой инициативы UESC: официальное применение свернули, когда поток разведданных начал повреждать нейронную целостность носителя. Серия Blackbird создавалась, чтобы поддерживать устойчивость психики солдат под огнём, а Раннеры взломали в ней скрытый протокол «command:follow», зашитый во все боевые личностные матрицы UESC Combat Science Labs. <span class="chip chip--canon">canon</span></p><p>Гайд уточняет механизм «повреждения разума»: поток входящих разведданных «мог расстроить нейронную целостность сознания, помещённого внутрь», из-за чего UESC и закрыла программу. А джейлбрейк зашитого «command:follow» поставил неудобный вопрос, остаётся ли Раннер вообще автономен, это и подтолкнуло UESC свернуть публичные раннер-операции. Личность Blackbird при этом задумана как «командное присутствие» с упором на прямоту, чтобы разведданные доходили без искажений. <span class="chip chip--canon">canon</span></p></div>
+          <div class="d-block"><h3 class="lbl">Детали</h3><p class="triv">Прежнее имя серии - «Recon (Formerly Blackbird)». <span class="chip chip--datamine">datamine</span></p><p class="triv">Tracker Drone гайд описывает как «живую гранату», из которой убрали всякую биологию и разумность и оставили только оценку угрозы и жажду сдетонировать. Помимо известных способностей у серии заявлены черты Interrogation и Stalker Protocol. Озвучка - Nika Futterman. <span class="chip chip--canon">canon</span></p></div>
+        </div>
+      </div>
+    </article>
+    <article class="dossier panel" id="thief" data-sec="thief" aria-labelledby="thief-t">
+      <header class="d-head">
+        <span class="d-num">06.5</span>
+        <h2 class="super d-name" id="thief-t" data-kinetic>Thief</h2>
+        <div class="d-meta"><span class="lbl">Серия Icon</span><span class="role">Вор-добытчик</span></div>
+      </header>
+      <div class="d-grid">
+        <figure class="d-fig">
+          <img src="https://marathon.wiki.gallery/images/2/2e/Thief_runner_card.jpg" alt="Шелл Thief, официальная карточка Раннера" loading="lazy" decoding="async" referrerpolicy="no-referrer" style="object-position:50% 25%">
+          <figcaption><span>Карточка Раннера // marathonwiki.com</span></figcaption>
+        </figure>
+        <div class="d-text">
+          <p class="d-role">Вор-добытчик, заточенный под экономику рейда и мобильность. Grapple Device - антигравитационная маглок-тарелка на тросе, притягивающая шелл к цели: ей выходят на высоту, быстро сближаются и уходят от боя. Pickpocket Drone обчищает цель, X-Ray Visor просвечивает стены, показывая лут и врагов. Thief побеждает тем, что быстрее всех собирает ценное и уходит с добычей; фронтальный бой не его.</p>
+          <div class="d-pm">
+            <div><h3 class="lbl">Сильные стороны</h3><ul class="plus"><li>Самый быстрый сбор лута</li><li>Крюк даёт мобильность, заходы на высоту и отход</li><li>Визор и дрон вскрывают лут и врагов</li></ul></div>
+            <div><h3 class="lbl">Слабые стороны</h3><ul class="minus"><li>Слаб во фронтальном бою, ниже живучесть</li><li>Сила в позиционировании и добыче, урон невысокий</li><li>Жадность до лута легко наказывается</li></ul></div>
+          </div>
+          <div class="d-block"><h3 class="lbl">Как играть</h3><p>Крюком забирайся на высоту и к тайникам, просвечивай визором зоны перед заходом, собирай лут быстро и эвакуируйся. В перестрелках не жадничай: Thief силён добычей и отходом, размен ему проигрышен.</p></div>
+          <div class="d-block"><h3 class="lbl">Лор</h3><p>По слухам, первый Thief был внутренней разработкой Sekiguchi для рейда против конкурента: нанятый Раннер шелл не вернул, и через несколько месяцев спецификации утекли на чёрные рынки. Серия Icon полностью афтермаркетная: её скопировали с лица и голоса бывшего ведущего Shell Science Director Sekiguchi, д-ра Йоки Самуры, поэтому у Thief узнаваемый публичный образ вместо анонимности. <span class="chip chip--canon">canon</span></p><p>Утечка Thief потянула громкое дело: в конце 2885-го UESC начала расследование против SEKGEN, как раз на фоне утечки данных TRAX. Серия Icon держится на парадоксе: «показуха и анонимность - две противоположные черты, которые Thief-ы ценят одновременно». Лицо д-ра Йоки Самуры даёт правопорядку «нулевое понимание настоящей личности и мотивов» и одновременно превращает шелл в узнаваемый бренд; сам шелл прямо описан как «спроектированный на заказ, чтобы забрать приз». <span class="chip chip--canon">canon</span></p></div>
+          <div class="d-block"><h3 class="lbl">Детали</h3><p class="triv">Прежнее имя серии - «Thief (Formerly Icon)». <span class="chip chip--datamine">datamine</span></p><p class="triv">Способности серии носят «воровские» имена: Grapple Device, Pickpocket Drone, X-Ray Visor и The Finer Things. Grapple Device - «маглок-антиграв-тарелка» на армированном флекс-тросе, притягивающая шелл к цели; гайд зовёт его «ещё одним примером раннерской находчивости». <span class="chip chip--canon">canon</span></p></div>
+        </div>
+      </div>
+    </article>
+    <div class="gap" data-field-window data-field-src="../../assets/img/press/triage-10.jpg" data-field-focus=".5,.4" data-field-focus-m=".6,.5" data-field-label="TRIAGE // СИНЕМАТИК BUNGIE" aria-hidden="true"><p class="gap__l"><b>КАНАЛ 06.6</b><span>TRIAGE // ПОД ЛИНЗОЙ ЦВЕТ КАДРА</span></p></div>
+    <article class="dossier panel" id="triage" data-sec="triage" aria-labelledby="triage-t">
+      <header class="d-head">
+        <span class="d-num">06.6</span>
+        <h2 class="super d-name" id="triage-t" data-kinetic>Triage</h2>
+        <div class="d-meta"><span class="lbl">Серия Aux</span><span class="role">Полевой медик</span></div>
+      </header>
+      <div class="d-grid">
+        <figure class="d-fig">
+          <img src="../../assets/img/kit/classes-triage.jpg" srcset="../../assets/img/kit/classes-triage-m.jpg 960w, ../../assets/img/kit/classes-triage.jpg 1920w" sizes="(max-width:820px) 100vw, 42vw" width="1920" height="1080" alt="Шелл Triage в полный рост с медицинскими крестами на броне, пресс-кит Bungie" loading="lazy" decoding="async">
+          <figcaption><span>Triage // пресс-кит Bungie</span></figcaption>
+        </figure>
+        <div class="d-text">
+          <p class="d-role">Полевой медик и опора команды. Prime-модуль Reboot+ - «идеальное лечебное оружие»: целишься в павшего напарника, и он поднимается издалека; целишься во врага, и бьёшь ЭМИ. Тактический Med-Drone лечит союзников прямо в бою. При подъёме напарника через Mercy Kit шелл ненадолго накрывает плащом, прикрывая рискованное воскрешение. Triage держит отряд на ногах. Полевое воскрешение силы UESC ненавидят больше всего остального.</p>
+          <div class="d-pm">
+            <div><h3 class="lbl">Сильные стороны</h3><ul class="plus"><li>Дистанционные подъёмы и лечение держат отряд в бою</li><li>ЭМИ давит щиты и технику врага</li><li>Сильное самовосстановление, плащ прикрывает воскрешение</li></ul></div>
+            <div><h3 class="lbl">Слабые стороны</h3><ul class="minus"><li>Слабый личный урон, низкая мобильность</li><li>Приоритетная цель для врага</li><li>Малоэффективен в одиночку, без команды</li></ul></div>
+          </div>
+          <div class="d-block"><h3 class="lbl">Как играть</h3><p>Держись рядом с командой, но в укрытии: приоритет - поднимать павших и лечить дроном. Используй окно плаща, чтобы безопасно воскресить, и бей ЭМИ по врагам под щитом. В одиночку не геройствуй.</p></div>
+          <div class="d-block"><h3 class="lbl">Лор</h3><p>TRAXUS собрала Triage для марсианских шахт: рабочих-шеллов косила текучка из-за смертельных условий, и медик должен был держать их в строю. Личностная серия Aux разрабатывалась вместе с UESC и Sekiguchi Genetics ещё до официального дебюта; Раннеры добрались до неё раньше рынка и перекрутили спокойный «медицинский» голос под агрессию боя. По данным вики (со ссылкой на игру), модели Triage массово гоняли в корпоративной холодной войне на Tau Ceti IV в 2893-м. <span class="chip chip--canon">canon</span> <em class="credit">(спасибо <a href="https://www.reddit.com/user/URTISK/" target="_blank" rel="noopener">u/URTISK</a> за наводку)</em></p><p>Prime-модуль Reboot+ в гайде - «идеальное лечебное оружие»: через «дефиб-актуаторы» он либо поднимает павшего напарника, либо бьёт ЭМИ по врагу, смотря куда целишь; изначально это снаряжение служб экстренного реагирования, которое Раннеры переделали в «спасательный круг и оружие для враждебных зон». Дизайн-философия шелла - медик, который «не может положиться на других, потому что другие полагаются на него»; стандартный голос Aux даёт «успокаивающую манеру у постели больного», а Раннеры добавили к ней боевую агрессию. <span class="chip chip--canon">canon</span></p></div>
+          <div class="d-block"><h3 class="lbl">Детали</h3><p class="triv">Синематик «In Death We've Just Begun» поставили Harmony Korine и Sam Goldwater; музыка - Ryan Lott (Son Lux), вокал и текст - Poppy. В кадре не один Triage: это трио Triage + Thief + Destroyer, которое доходит до эндгейм-локации Cryo Archive на корабле Marathon, где на них нападает некая сущность; Thief убегает с лутом, Triage тащит Destroyer. Озвучка - Elliot Knight. <span class="chip chip--canon">canon</span></p></div>
+        </div>
+      </div>
+    </article>
+    <article class="dossier panel" id="sentinel" data-sec="sentinel" aria-labelledby="sentinel-t">
+      <header class="d-head">
+        <span class="d-num">06.7</span>
+        <h2 class="super d-name" id="sentinel-t" data-kinetic>Sentinel</h2>
+        <div class="d-meta"><span class="lbl">Серия Rampart // Season 2</span><span class="role">Инженер-защитник</span></div>
+      </header>
+      <div class="d-grid">
+        <figure class="d-fig">
+          <img src="https://marathon.wiki.gallery/images/e/e4/Sentinel_runner_card.png" alt="Шелл Sentinel, официальная карточка Раннера" loading="lazy" decoding="async" referrerpolicy="no-referrer" style="object-position:50% 25%">
+          <figcaption><span>Карточка Раннера // marathonwiki.com</span></figcaption>
+        </figure>
+        <div class="d-text">
+          <p class="d-role">Инженер-защитник для удержания позиций и контроля территории, новинка 2-го сезона. Prime - Defender System: разворачиваемая платформа, сбивающая гранаты и ракеты на подлёте и стабилизирующая оружие союзников рядом; пули она не держит, зато гасит взрывные угрозы и даже разведдронов. Тактический Snare Mine - мина с датчиком приближения, обездвиживающая всех в радиусе. Пассивка Castle Doctrine укрепляет шелл, когда враги подходят вплотную. Sentinel силён там, где нужно закрепиться и заставить противника лезть на подготовленную оборону.</p>
+          <div class="d-pm">
+            <div><h3 class="lbl">Сильные стороны</h3><ul class="plus"><li>Гасит гранаты, ракеты и разведдронов, стабилизирует прицел союзников</li><li>Мина запирает проходы и подходы</li><li>Castle Doctrine держит ближний бой, идеален для удержания точек</li></ul></div>
+            <div><h3 class="lbl">Слабые стороны</h3><ul class="minus"><li>Статичен, слаб при вынужденных прорывах и быстрых ротациях</li><li>Платформа не защищает от пуль</li><li>Оборона требует времени на установку</li></ul></div>
+          </div>
+          <div class="d-block"><h3 class="lbl">Как играть</h3><p>Ставь платформу на объектах и точках эвакуации, чтобы гасить взрывчатку и усиливать команду, минируй подходы и держи ближнюю дистанцию под Castle Doctrine. Дай врагу самому прийти на твою позицию.</p></div>
+          <div class="d-block"><h3 class="lbl">Лор</h3><p>Первое зафиксированное появление Sentinel - осада Trenchway Holdout под Антарктидой: экипаж радикальных учёных в угнанных шеллах UESC три месяца держал оборону, Central Security Agency потеряла 27 агентов и в итоге обрушила тоннели. После утечки тактик Trenchway в среду Раннеров Sentinel стал стандартом для разведки и вылазок. Личностная серия GADGE (Rampart) в Sol официально считается нелегальной кражей личности: её скомпилировали из ворованных нейромоделей учёных-механиков Intelligent Design Labs. <span class="chip chip--canon">canon</span></p><p>Defender System сбивает всё взрывное (гранаты, ракеты), пули платформа пропускает; изначально военная, она «настроена против раннерского боезапаса» и со временем научилась контрить шелл-угрозы вроде destroyer-овского Search and Destroy и разведдронов. Тактический Snare Mine - «ручное детонирующее устройство с датчиком приближения», разбрасывающее суб-боеприпасы, чтобы обездвижить всех в радиусе; по происхождению это шахтная взрывчатка, ужатая до противопехотного формата. <span class="chip chip--canon">canon</span></p></div>
+          <div class="d-block"><h3 class="lbl">Детали</h3><p class="triv">Sentinel, вероятно, первый шелл, показанный публике: по вики он открывал оригинальный Announcement Trailer (деталь на одном источнике-стабе, проверка неполная), хотя как класс вышел только во 2-м сезоне (2 июня 2026). На корабле Marathon как лут находят повреждённый шлем Sentinel с боевыми записями UESC. <span class="chip chip--canon">canon</span></p></div>
+        </div>
+      </div>
+    </article>
+    <div class="gap" data-field-window data-field-src="../../assets/img/press/s2-006.jpg" data-field-focus=".5,.5" data-field-focus-m=".55,.5" data-field-label="SEASON 2 // ПРЕСС-КИТ BUNGIE" aria-hidden="true"><p class="gap__l"><b>КАНАЛ 06.8</b><span>NIGHT MARSH // ПОД ЛИНЗОЙ ЦВЕТ КАДРА</span></p></div>
+    <article class="dossier panel" id="rook" data-sec="rook" aria-labelledby="rook-t">
+      <header class="d-head">
+        <span class="d-num">06.8</span>
+        <h2 class="super d-name" id="rook-t" data-kinetic>Rook</h2>
+        <div class="d-meta"><span class="lbl">Без серии // робо-фрейм</span><span class="role">Мусорщик</span></div>
+      </header>
+      <div class="d-grid">
+        <figure class="d-fig">
+          <img src="https://marathon.wiki.gallery/images/1/1b/Rook_runner_card.jpg" alt="Шелл Rook, официальная карточка Раннера" loading="lazy" decoding="async" referrerpolicy="no-referrer" style="object-position:50% 25%">
+          <figcaption><span>Карточка Раннера // marathonwiki.com</span></figcaption>
+        </figure>
+        <div class="d-text">
+          <p class="d-role">Режим отчаяния для опытных, с обычным классом общего мало: одиночный десант в уже идущий матч со случайным хламом вместо снаряжения, при заблокированных контрактах и без косметики. Prime-модуль Recuperation просто дёргает заводскую аварийную ремсистему фрейма, чтобы протянуть чуть дольше, а тактический Signal Mask - голо-маска, обманывающая автономных боевых роботов UESC: они принимают Rook за своего, пока он не откроет огонь или не сорвётся в спринт. Расчёт на то, что умелый переиграет затаренных. Новичку Rook противопоказан.</p>
+          <div class="d-pm">
+            <div><h3 class="lbl">Сильные стороны</h3><ul class="plus"><li>Signal Mask проводит мимо роботов UESC</li><li>Recuperation даёт запас живучести</li><li>Чистый вызов на скилл, терять нечего</li></ul></div>
+            <div><h3 class="lbl">Слабые стороны</h3><ul class="minus"><li>Ни статов, ни имплантов, случайный лоадаут</li><li>Один против троих, контракты на паузе</li><li>Крайне наказывающий режим, не для новичка</li></ul></div>
+          </div>
+          <div class="d-block"><h3 class="lbl">Как играть</h3><p>Избегай открытых боёв один против троих, под маской проходи зоны с роботами UESC, подбирай снаряжение получше с земли и выбирай изолированные цели. Вывозят навык и знание карты, лоадаут тут решает мало.</p></div>
+          <div class="d-block"><h3 class="lbl">Лор</h3><p>Rook - угнанный базовый робо-фрейм без биоматериала, на каких UESC и корпорации ворочают ручной труд; Раннеры ставят на него временный нейросинхронизатор и занимают тело до нейродеградации. Ни имплантов, ни ядер: полного функционала биокибернетического шелла Rook не достигает никогда. Теглайн «Lunar work release» намекает на происхождение из лунного каторжного труда. <span class="chip chip--canon">canon</span></p><p>Способности Rook - целиком раннерская самоделка. Recuperation просто дёргает встроенную ещё на заводе аварийную ремсистему фрейма (её ставят, чтобы технику можно было использовать после производственных ЧП), позволяя протянуть на мусорке чуть дольше. А Signal Mask - «чистый back-channel-хак, собранный где-то на орбите Tau Ceti в ответ на мобильные военные преступления UESC»: голо-маска обманывает сенсоры автономных боевых роботов UESC (ARS), и те принимают Rook за своего, пока он не откроет огонь или не сорвётся в спринт. Кто её написал, неизвестно: спеки просто «сбросили в локальный бэкчэннел, и они разлетелись как пожар». <span class="chip chip--canon">canon</span></p></div>
+          <div class="d-block"><h3 class="lbl">Детали</h3><p class="triv">Внутриигровое описание Rook - стена предупреждений, в конце которой стоит «GOOD LUCK»: соло, урезанный лоадаут, контракты на паузе, доступ в зоны ограничен, нужен 3-й уровень сезона. Косметики у Rook нет вообще, а все табличные статы равны нулю, единственный такой класс. Голос Rook - Elias Toufexis, тот же актёр, что озвучивает Assassin (Void). <span class="chip chip--canon">canon</span></p></div>
+        </div>
+      </div>
+    </article>
+    <div class="gap" data-field-window data-field-src="../../assets/img/press/dec25-001.jpg" data-field-focus=".5,.45" data-field-focus-m=".5,.5" data-field-label="TAU CETI IV // ПРЕСС-КИТ BUNGIE" aria-hidden="true"><p class="gap__l"><b>КАНАЛ 06.9</b><span>ДОСЬЕ BISHOP ЕЩЁ ЗАКРЫТО // ПОД ЛИНЗОЙ ЦВЕТ КАДРА</span></p></div>
+    <article class="dossier panel d-soon" id="bishop" data-sec="bishop" aria-labelledby="bishop-t">
+      <header class="d-head">
+        <span class="d-num">06.9</span>
+        <h2 class="super d-name" id="bishop-t" data-kinetic>Bishop</h2>
+        <div class="d-meta"><span class="lbl">Symbiosis // 08.12.2026</span><span class="role">Скоро 08.12</span></div>
+      </header>
+      <div class="d-grid">
+        <div class="d-fig" role="img" aria-label="Изображений Bishop пока нет">
+          <div class="nosig" aria-hidden="true"></div>
+          <div class="nosig-l"><span class="kick">Канал 06.9</span><b>НЕТ СИГНАЛА</b><span class="kick">Досье откроется 08.12</span></div>
+        </div>
+        <div class="d-text">
+          <p class="d-role">«High-performance robot samurai» - так Bungie представляет новый шелл. Быстрый хирургичный охотник-убийца: скорость, внезапный заход и взрывной урон в ближнем бою. <span class="chip chip--canon">canon</span></p>
+          <div class="d-block"><h3 class="lbl">Что известно</h3><p>Выходит вместе с бесплатным обновлением Symbiosis 8 декабря 2026, тем же, что приносит первый постоянный PvE и расширенный Perimeter. Способности, серия личности и озвучка пока не объявлены. <span class="chip chip--canon">canon</span></p><p>Изначально новый шелл обещали к Season 3 на 22 сентября; 24 сентября Bungie отказалась от жёсткого цикла сезонов и перенесла его в Symbiosis. <span class="chip chip--canon">canon</span></p></div>
+          <div class="d-block"><h3 class="lbl">Ставка архива</h3><p>Bishop станет первым шеллом, чья основная способность не наносит урона на дистанции. <span class="chip chip--theory">theory</span> <span class="tag">наша</span></p><p class="triv"><a href="../index.html?open=forecast">Прогноз в FORECAST.LOG</a>, проверка 08.12.2026.</p></div>
+        </div>
+      </div>
+    </article>
+
+      <section class="note panel" aria-labelledby="note-t">
+        <h2 class="lbl" id="note-t">Сноска архива // юридическая деталь</h2>
+        <p>Запрет Destroyer в 2879-м и поправка «Consequence of Violence» описывают одно событие: полицейский юнит оказался настолько жесток, что шеллы запретили к военному применению во всей системе. Каждый шелл, который сегодня десантируется на Tau Ceti, пережил собственный запрет.</p>
+      </section>
+      <section class="sources panel" aria-labelledby="src-t">
+        <h2 class="lbl" id="src-t">Источники</h2>
+        <ol>
+          <li><span>Bungie, <a href="https://www.marathonthegame.com/" target="_blank" rel="noopener">marathonthegame.com</a>: слоган шеллов и ключевой арт «Death Dealers».</span></li>
+          <li><span>Внутриигровой Runners' Guide и описания способностей, цитаты сверены по <a href="https://marathonwiki.com/" target="_blank" rel="noopener">marathonwiki.com</a>; там же официальные карточки Раннеров из пресс-кита Bungie.</span></li>
+          <li><span>Bungie, <a href="https://www.bungie.net/7/en/News/Article/marathon_update_1_1_9_2" target="_blank" rel="noopener">Marathon Update 1.1.9.2 «Nightfall Refresh»</a>, 06.10.2026: ослабление Echo Pulse у Recon в PvP.</span></li>
+          <li><span>Polygon, <a href="https://www.polygon.com/bungie-marathon-symbiosis-changes-pve-new-modes/" target="_blank" rel="noopener">роадмап Symbiosis</a>: Bishop и дата 08.12.2026.</span></li>
+          <li><span>Официальный пресс-кит Bungie: кадры синематиков Vandal, Recon и Triage, скриншоты Season 2 и финала Season 1.</span></li>
+          <li><span>Наводка по лору Triage: <a href="https://www.reddit.com/user/URTISK/" target="_blank" rel="noopener">u/URTISK</a>.</span></li>
+        </ol>
+      </section>
+      <nav class="pager panel" aria-label="Соседние файлы">
+        <a class="btn" href="runners.html">&lt; 05 Раннеры</a>
+        <a class="btn btn--solid" href="arsenal.html">06-B Арсенал &gt;</a>
+      </nav>
+    </div>
+  </div>
+
+  <footer class="foot panel">
+    <img class="foot__mark" src="../../assets/img/brand/wordmark-white.png" alt="Marathon" width="1000" height="318" loading="lazy">
+    <div class="foot-row">
+      <p>Терминал Марафона, v7.0. Неофициальный фанатский архив, некоммерческий проект. Bungie и Marathon - зарегистрированные товарные знаки Bungie, Inc. Логотипы и кадры взяты из официального пресс-кита Bungie, факты сверены с первоисточниками и размечены метками canon, datamine и theory.</p>
+      <ul>
+        <li><a href="../index.html?open=archive">ARCHIVE // все файлы</a></li>
+        <li><a href="../index.html?open=air">ЭФИР С ТАУ КИТА</a></li>
+        <li><a href="../index.html?open=forecast">FORECAST.LOG</a></li>
+        <li><a href="https://www.reddit.com/user/danyaev/" target="_blank" rel="noopener">Нашли ошибку? Напишите</a></li>
+      </ul>
+      <p class="kick">СЕАНС // УЗЕЛ АРХИВА НА СВЯЗИ<br>TAU CETI IV // 2893</p>
+    </div>
+  </footer>
+</main>
+
+<p class="ctoast" data-toast aria-hidden="true"><b>КУРАТОР&gt;</b><span></span></p>
+<footer class="task" aria-label="Панель задач">
+  <a class="task__start" href="../index.html" aria-label="Рабочий стол"><i></i><span>UESC</span></a>
+  <nav class="task__tabs" aria-label="Окна">
+    <a class="tab" href="../index.html"><svg viewBox="0 0 34 34" aria-hidden="true"><path d="M3 16L17 4l14 12"/><path d="M7 13v17h20V13"/></svg><span class="tab__d">DESKTOP</span><span class="tab__m">Стол</span></a>
+    <a class="tab is-open is-focus" href="#top" aria-current="page"><svg viewBox="0 0 34 34" aria-hidden="true"><path d="M7 3h14l6 6v22H7z"/><path d="M21 3v6h6"/></svg><span class="tab__d">CLASSES.DOS</span><span class="tab__m">Файл 06</span></a>
+    <a class="tab" href="../index.html?open=archive"><svg viewBox="0 0 34 34" aria-hidden="true"><path d="M3 9h11l3 3h14v17H3z"/><path d="M3 15h28"/></svg><span class="tab__d">ARCHIVE</span><span class="tab__m">Архив</span></a>
+    <a class="tab" href="../index.html?open=air"><svg viewBox="0 0 34 34" aria-hidden="true"><path d="M17 20v11M11 31h12"/><path d="M12 15a7 7 0 0 1 10 0M8 11a12 12 0 0 1 18 0M4 7a17 17 0 0 1 26 0"/></svg><span class="tab__d">ЭФИР</span><span class="tab__m">Эфир</span></a>
+    <a class="tab" href="../index.html?open=curator"><svg viewBox="0 0 34 34" aria-hidden="true"><path d="M3 6h28v20H3z"/><path d="M8 12l4 4-4 4M15 20h7"/></svg><span class="tab__d">CURATOR</span><span class="tab__m">Куратор</span></a>
+  </nav>
+  <div class="task__mq" aria-hidden="true"><span data-mq>/// УЗЕЛ 06 НА СВЯЗИ /// ФАЙЛ 06 ОТКРЫТ ///</span></div>
+  <time class="task__clock" data-clock2>00:00</time>
+</footer>
+<script src="../../assets/js/i18n.js"></script>
+<script src="../../data/js/ai-lines.js"></script>
+<script src="../../assets/js/core.js"></script>
+<script src="../../assets/js/page.js"></script>
+</body>
+</html>

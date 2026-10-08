@@ -2,7 +2,7 @@
 
 An unofficial fan archive for **Marathon** (Bungie, 2026), built as a terminal you jack into: a UESC desktop with draggable windows, an ASCII signal field that resolves into the original frame under your cursor, and fourteen lore files on the fall of Tau Ceti IV, Runners and shells, the six factions, AI rampancy, the arsenal, the zones and the 1990s trilogy.
 
-Live: https://a-danyaev.github.io/marathon-lore/ (Russian) and https://a-danyaev.github.io/marathon-lore/en/ (English).
+Live: https://a-danyaev.github.io/marathon-lore/ (English, the default) and https://a-danyaev.github.io/marathon-lore/ru/ (Russian).
 
 ## What's inside
 
@@ -10,7 +10,7 @@ Live: https://a-danyaev.github.io/marathon-lore/ (Russian) and https://a-danyaev
 - **Fourteen chapters** - timeline, rampancy, colony, runners, shells, arsenal, sound, factions, aliens, zones, seasons, trilogy, deep cuts, resources.
 - **Ship log** - every patch, event and roadmap change since launch, with sources.
 - **Zone maps** - interactive MapGenie maps for every zone, embedded.
-- **Two languages** - Russian and English, switch in the top bar.
+- **Two languages** - English by default, Russian under `/ru/`; switch in the top bar, the site remembers the choice.
 - **Honest sourcing** - lore claims are tagged `canon` / `datamine` / `theory`; names and terms are checked against Bungie's own texts (`data/glossary.yaml` lists the source for each).
 
 ## Under the hood

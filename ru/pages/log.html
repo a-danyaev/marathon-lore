@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="ru" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Бортовой журнал // Терминал Марафона</title>
+<meta name="description" content="Все обновления Marathon с релиза: записи журнала, плановые даты с отсчётом и журнал прогнозов с вердиктами.">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#000000">
+<link rel="canonical" href="https://a-danyaev.github.io/marathon-lore/ru/pages/log.html">
+<link rel="alternate" hreflang="ru" href="https://a-danyaev.github.io/marathon-lore/ru/pages/log.html">
+<link rel="alternate" hreflang="en" href="https://a-danyaev.github.io/marathon-lore/pages/log.html">
+<link rel="alternate" hreflang="x-default" href="https://a-danyaev.github.io/marathon-lore/pages/log.html">
+<link rel="icon" href="../../assets/img/brand/favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Терминал Марафона">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:title" content="Бортовой журнал Терминала Марафона">
+<meta property="og:description" content="Все обновления Marathon с релиза: записи журнала, плановые даты с отсчётом и журнал прогнозов с вердиктами.">
+<meta property="og:url" content="https://a-danyaev.github.io/marathon-lore/ru/pages/log.html">
+<meta property="og:image" content="https://a-danyaev.github.io/marathon-lore/assets/img/brand/og-keyart.jpg">
+<meta property="og:image:alt" content="Ключевой арт Marathon от Bungie">
+<meta name="twitter:card" content="summary_large_image">
+<script>(function(){var d=document.documentElement;d.classList.replace("no-js","js");if(new URLSearchParams(location.search).has("shot"))d.classList.add("shot");})()</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wdth,wght@8..144,25..151,100..1000&family=Martian+Mono:wdth,wght@75..112.5,100..800&family=Geist+Mono:wght@100..900&family=Handjet:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="../../assets/css/base.css">
+<link rel="stylesheet" href="../../assets/css/os.css">
+<link rel="stylesheet" href="../../assets/css/page.css">
+<link rel="stylesheet" href="../../assets/css/pages/log.css">
+</head>
+<body class="p-file p-log" data-file="LOG" data-page="log">
+<div class="field" data-field aria-hidden="true">
+  <canvas></canvas>
+  <div class="field__lens"></div>
+  <div class="field__frame"><b data-lens-mode>ДЕШИФРОВКА</b><span data-lens-readout>X 0000 // Y 0000</span></div>
+</div>
+<a class="skip" href="#top">К содержимому</a>
+<header class="mbar" id="mbar">
+  <a class="mbar__logo" href="../index.html" aria-label="Терминал Марафона, рабочий стол"><i class="mbar__sq"></i><img class="mbar__mark" src="../../assets/img/brand/wordmark-white.png" alt="" width="120" height="38"><span class="mbar__os">TERMINAL&nbsp;OS</span><span class="mbar__ver">v7.0</span></a>
+  <nav class="mbar__menu" aria-label="Меню"><a href="../index.html?open=archive">Архив</a><a href="#top" aria-current="page">Журнал</a><a href="../index.html?open=curator">Куратор</a><a href="../index.html?open=forecast">Прогнозы</a></nav>
+  <span class="mbar__sp"></span>
+  <a class="mbar__air" href="../index.html?open=air"><i></i><span>Эфир</span><b>С ТАУ КИТА</b></a>
+  <time class="mbar__clock" data-clock>08.10.2893 00:00</time>
+</header>
+<div class="achrome" role="group" aria-label="Окно бортового журнала">
+  <i class="win__ico"></i><span class="win__title">SHIP.LOG</span><span class="win__path">/uesc/sys/log</span><span class="win__lines"></span>
+  <span class="achrome__pct">ПРОЧИТАНО <b data-readpct>0%</b></span>
+  <a class="win__btn" href="../index.html">&lt; Рабочий стол</a><a class="win__btn x" href="../index.html" aria-label="Закрыть журнал и вернуться на рабочий стол">×</a>
+  <i class="achrome__bar" data-readbar></i>
+</div>
+<main id="top" class="pg">
+  <section class="s-hero" data-sec="intro" id="intro" data-field-window data-lens-zone data-field-src="../../assets/img/kit/seasons-nightfall.jpg" data-field-focus=".55,.42" data-field-focus-m=".55,.45" data-field-label="SEASON 2 NIGHTFALL // ПРЕСС-КИТ BUNGIE">
+    <div class="hero-main">
+      <div class="hero-top">
+        <p class="kick slab"><b>SHIP.LOG</b> // БОРТОВОЙ ЖУРНАЛ // ЖИВАЯ ИГРА // МАРТ 2026 - МАРТ 2027</p>
+        <p class="kick slab"><span data-field-src-label>SEASON 2 NIGHTFALL // ПРЕСС-КИТ BUNGIE</span></p>
+      </div>
+      <h1 class="super s-title" data-kinetic><span class="ln">Журнал</span></h1>
+    </div>
+    <div class="s-intro panel">
+      <p>Каждое обновление Marathon с релиза 5 марта 2026 года: сезоны, патчи, ивенты, правки баланса и решения студии. Свежие записи сверху, плановые идут с отсчётом. Факт и ссылка в каждой записи взяты из источника как есть, реплика рядом от КУРАТОРА. <span class="chip chip--canon">canon</span></p>
+      <div class="lg-next" data-next aria-live="off">
+        <p class="lbl">Следующая запись</p>
+        <p class="lg-next__t" data-next-t>Symbiosis, 08.12.2026</p>
+        <p class="lg-next__c" data-next-c aria-hidden="true"><b>--</b><small>Д</small><b>--</b><small>Ч</small><b>--</b><small>М</small></p>
+      </div>
+      <p class="term"><b>НОВИЧКУ &gt;</b> нажми тип записи или шелл над лентой, чтобы оставить только нужное. Метка «ТВОЙ ШЕЛЛ» появится, если шелл выбран в сводке на рабочем столе.</p>
+    </div>
+  </section>
+
+  <div class="s-body">
+    <nav class="toc panel" aria-label="Разделы журнала">
+      <p class="lbl">Разделы // LOG</p>
+      <ol>
+        <li><a href="#log">L.1 <b>Журнал</b></a></li>
+        <li><a href="#forecast">L.2 <b>Прогнозы</b></a></li>
+        <li><a href="#src">L.3 <b>Источники</b></a></li>
+      </ol>
+      <div class="toc__prog" aria-hidden="true"><i data-prog></i></div>
+      <p class="toc__cur" aria-live="polite" data-cur><b>КУРАТОР&gt;</b><span>Бортовой журнал. Каждое обновление игры, свежее сверху.</span></p>
+    </nav>
+    <div class="s-list">
+      <article class="dossier panel" id="log" data-sec="log" aria-labelledby="log-t">
+        <header class="d-head">
+          <span class="d-num">L.1</span>
+          <h2 class="super d-name" id="log-t" data-kinetic>Журнал</h2>
+          <div class="d-meta"><span class="lbl" data-lg-stat>Записи из data/changelog.yaml</span><span class="role">Свежее сверху</span></div>
+        </header>
+        <div class="lg-filters" data-lg-filters hidden>
+          <div class="lg-fset" role="group" aria-labelledby="lg-fk"><span class="lbl" id="lg-fk">Тип</span><div class="lg-fbtns" data-fkind></div></div>
+          <div class="lg-fset" role="group" aria-labelledby="lg-fs"><span class="lbl" id="lg-fs">Шелл</span><div class="lg-fbtns" data-fshell></div></div>
+          <p class="lg-count lbl" data-lg-count aria-live="polite"></p>
+        </div>
+        <div class="lg" data-lg>
+          <p class="lg-nojs">Журнал собирается в браузере из файла данных. Без JavaScript все записи лежат в исходниках: <a href="../../data/changelog.yaml">changelog.yaml</a> (обновления) и <a href="../../data/predictions.yaml">predictions.yaml</a> (прогнозы).</p>
+        </div>
+      </article>
+      <div class="gap" data-field-window data-field-src="../../assets/img/kit/seasons-ordnance-heist.jpg" data-field-focus=".5,.5" data-field-label="ORDNANCE HEIST // ПРЕСС-КИТ BUNGIE" aria-hidden="true"><p class="gap__l"><b>КАНАЛ L.2</b><span>ПОД ЛИНЗОЙ ЦВЕТ КАДРА</span></p></div>
+      <article class="dossier panel" id="forecast" data-sec="forecast" aria-labelledby="forecast-t">
+        <header class="d-head">
+          <span class="d-num">L.2</span>
+          <h2 class="super d-name" id="forecast-t" data-kinetic>Прогнозы</h2>
+          <div class="d-meta"><span class="lbl" data-fc-stat>Записи из data/predictions.yaml</span><span class="role">С датой проверки</span></div>
+        </header>
+        <div class="lg-fc-intro">
+          <p>Здесь гипотезы о будущих обновлениях, у каждой дата записи и событие, после которого её проверят. Закрытые прогнозы не стираются, вердикт пишется рядом со ссылкой. Метка «наша» означает гипотезу этого архива. <span class="chip chip--theory">theory</span></p>
+        </div>
+        <ol class="lg-fc" data-lg-fc></ol>
+      </article>
+      <section class="note panel lg-foot" aria-labelledby="lg-foot-t">
+        <h2 class="lbl" id="lg-foot-t">Пополнение</h2>
+        <div>
+          <p>Журнал пополняется после каждого обновления игры.</p>
+          <p class="lg-foot__d">СНИМОК ДАННЫХ: <time datetime="2026-10-08">08.10.2026</time> // <span data-lg-total>15 ЗАПИСЕЙ</span> // <span data-fc-total>4 ПРОГНОЗА</span></p>
+        </div>
+      </section>
+      <section class="sources panel" id="src" data-sec="src" aria-labelledby="src-t">
+        <h2 class="lbl" id="src-t">Источники</h2>
+        <ol>
+          <li><span>У каждой записи своя ссылка на первоисточник, она стоит в строке «Источник».</span></li>
+          <li><span>Bungie, <a href="https://www.bungie.net/7/en/News/Marathon" target="_blank" rel="noopener">новости Marathon</a>: патчноуты, dev update, <a href="https://www.bungie.net/7/en/News/Article/marathon_update_1_1_9_2" target="_blank" rel="noopener">1.1.9.2 «Nightfall Refresh»</a>.</span></li>
+          <li><span>Роадмап 24.09 и Symbiosis: <a href="https://www.polygon.com/bungie-marathon-symbiosis-changes-pve-new-modes/" target="_blank" rel="noopener">Polygon</a>; март 2027: <a href="https://cq-esports.com/news/bungie-outlines-marathon-overhaul-after-six-months-of-player-losses" target="_blank" rel="noopener">CQ Esports</a>.</span></li>
+          <li><span>Реплики КУРАТОРА написаны для этого архива и к фактам не относятся.</span></li>
+        </ol>
+      </section>
+      <nav class="pager panel" aria-label="Соседние файлы">
+        <a class="btn" href="seasons.html">&lt; 10 Сезоны</a>
+        <a class="btn btn--solid" href="../index.html?open=air">Эфир с Тау Кита &gt;</a>
+      </nav>
+    </div>
+  </div>
+
+  <footer class="foot panel">
+    <img class="foot__mark" src="../../assets/img/brand/wordmark-white.png" alt="Marathon" width="1000" height="318" loading="lazy">
+    <div class="foot-row">
+      <p>Терминал Марафона, v7.0. Неофициальный фанатский архив, некоммерческий проект. Bungie и Marathon - зарегистрированные товарные знаки Bungie, Inc. Логотипы и кадры взяты из официального пресс-кита Bungie, факты сверены с первоисточниками и размечены метками canon, datamine и theory.</p>
+      <ul>
+        <li><a href="../index.html?open=archive">ARCHIVE // все файлы</a></li>
+        <li><a href="../index.html?open=air">ЭФИР С ТАУ КИТА</a></li>
+        <li><a href="../index.html?open=forecast">FORECAST.LOG</a></li>
+        <li><a href="https://www.reddit.com/user/danyaev/" target="_blank" rel="noopener">Нашли ошибку? Напишите</a></li>
+      </ul>
+      <p class="kick">СЕАНС // УЗЕЛ АРХИВА НА СВЯЗИ<br>TAU CETI IV // 2893</p>
+    </div>
+  </footer>
+</main>
+
+<p class="ctoast" data-toast aria-hidden="true"><b>КУРАТОР&gt;</b><span></span></p>
+<footer class="task" aria-label="Панель задач">
+  <a class="task__start" href="../index.html" aria-label="Рабочий стол"><i></i><span>UESC</span></a>
+  <nav class="task__tabs" aria-label="Окна">
+    <a class="tab" href="../index.html"><svg viewBox="0 0 34 34" aria-hidden="true"><path d="M3 16L17 4l14 12"/><path d="M7 13v17h20V13"/></svg><span class="tab__d">DESKTOP</span><span class="tab__m">Стол</span></a>
+    <a class="tab is-open is-focus" href="#top" aria-current="page"><svg viewBox="0 0 34 34" aria-hidden="true"><path d="M7 3h14l6 6v22H7z"/><path d="M11 10h12M11 15h12M11 20h12M11 25h7"/></svg><span class="tab__d">SHIP.LOG</span><span class="tab__m">Журнал</span></a>
+    <a class="tab" href="../index.html?open=archive"><svg viewBox="0 0 34 34" aria-hidden="true"><path d="M3 9h11l3 3h14v17H3z"/><path d="M3 15h28"/></svg><span class="tab__d">ARCHIVE</span><span class="tab__m">Архив</span></a>
+    <a class="tab" href="../index.html?open=air"><svg viewBox="0 0 34 34" aria-hidden="true"><path d="M17 20v11M11 31h12"/><path d="M12 15a7 7 0 0 1 10 0M8 11a12 12 0 0 1 18 0M4 7a17 17 0 0 1 26 0"/></svg><span class="tab__d">ЭФИР</span><span class="tab__m">Эфир</span></a>
+    <a class="tab" href="../index.html?open=curator"><svg viewBox="0 0 34 34" aria-hidden="true"><path d="M3 6h28v20H3z"/><path d="M8 12l4 4-4 4M15 20h7"/></svg><span class="tab__d">CURATOR</span><span class="tab__m">Куратор</span></a>
+  </nav>
+  <div class="task__mq" aria-hidden="true"><span data-mq>/// УЗЕЛ 06 НА СВЯЗИ /// ЖУРНАЛ ОТКРЫТ ///</span></div>
+  <time class="task__clock" data-clock2>00:00</time>
+</footer>
+<script src="../../assets/js/i18n.js"></script>
+<script src="../../data/js/ai-lines.js"></script>
+<script src="../../data/js/changelog.js"></script>
+<script src="../../data/js/predictions.js"></script>
+<script src="../../assets/js/pages/log.js"></script>
+<script src="../../assets/js/core.js"></script>
+<script src="../../assets/js/page.js"></script>
+</body>
+</html>

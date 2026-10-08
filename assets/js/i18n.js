@@ -1,5 +1,5 @@
 /* i18n.js - shared UI strings for both site languages, loaded first on every page (before data/js and core.js).
- *   Language comes from <html lang>: "en" -> en, anything else -> ru. RU pages live at the repo root, EN pages mirror them under en/.
+ *   Language comes from <html lang>: "ru" -> ru, anything else -> en. EN pages live at the repo root, RU pages mirror them under ru/.
  *   window.ML_I18N = { lang, t(key, vars), pl(key, n), pick({ru, en}), dm(iso), dmy(iso), my(iso), clock(date) }.
  *   t: "{name}" placeholders are filled from vars. pl: plural forms, ru has three (1, 2-4, 5+), en has two (1, other).
  *   Dates: ru 08.10 / 08.10.2026 / 10.26; en 08 OCT / 08 OCT 2026 / OCT 2026. Page translators use the same formats in static HTML.
@@ -7,7 +7,7 @@
  */
 (() => {
 "use strict";
-const LANG = document.documentElement.lang === "en" ? "en" : "ru";
+const LANG = /^ru/i.test(document.documentElement.lang || "") ? "ru" : "en";
 const DICT = {
   ru: {
     "lang.label": "Язык сайта",

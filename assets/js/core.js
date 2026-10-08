@@ -2,7 +2,7 @@
  *
  * Architecture (v7, static, no build step):
  *   css: base.css (tokens, type, chips) + os.css (OS chrome, field, desk windows) + page.css (chapter pages).
- *   js:  i18n.js   UI strings ru/en (window.ML_I18N), loaded first; lang comes from <html lang>, EN pages mirror RU under en/.
+ *   js:  i18n.js   UI strings ru/en (window.ML_I18N), loaded first; lang comes from <html lang>, EN pages at the root, RU pages mirror them under ru/.
  *        core.js   boot, window.ML namespace, chapters registry, visited pages (localStorage ml_read),
  *                  headline glitch (decode-in, hover, idle bursts in brand colours), clock, cursor frame, reduced motion, lazy field loader.
  *        field.js  dither field (WebGL2, 2D canvas fallback, CSS poster fallback) + colour lens. Lazy: core injects it.
@@ -11,7 +11,8 @@
  *        page.js   chapter page: TOC spy, kinetic titles, figure lens, curator lines per section.
  *   data: data/*.yaml -> v5/build_data.py -> data/js/*.js (window.ML_CHANGELOG + ML_CHANGELOG_META, ML_PREDICTIONS, ML_AI_LINES).
  *   field images: [data-field-window] carries data-field-src (+ focus/inv/label); swapping an image is one attribute.
- *   language switch: core injects RU | EN into #mbar, the counterpart URL adds or drops the en/ segment, the choice is kept in localStorage ml_lang; RU pages redirect once to en/ for a non-Russian browser with no stored choice (inline head script), and old ?lang= links are honoured.
+ *   language switch: EN is the default for everybody. core injects RU | EN into #mbar, the counterpart URL adds or drops the ru/ segment, the choice is kept in localStorage ml_lang;
+ *                    an EN page redirects once to its ru/ counterpart only when ml_lang is "ru" or the URL carries ?lang=ru (inline head script, old v6.4 links); RU pages never redirect.
  *   page identity: <body data-file="06"> marks the chapter as visited (ARCHIVE shows read N of total).
  *   url flags: ?shot=1 freezes animations for screenshots,
  *              ?today=YYYY-MM-DD shifts the ЭФИР clock for testing.
@@ -45,7 +46,7 @@ const session = {
 const SCRIPT = D.currentScript;
 const ROOT = new URL("../../", SCRIPT ? SCRIPT.src : location.href);
 const LANG = I.lang;
-const HOME = LANG === "en" ? new URL("en/", ROOT) : ROOT;
+const HOME = LANG === "ru" ? new URL("ru/", ROOT) : ROOT;
 const CH_TEXT = I.t("chapters");
 const CHAPTERS = [
   ["01", "index.html"], ["02", "pages/timeline.html"], ["03", "pages/rampancy.html"], ["04", "pages/colony.html"],
@@ -214,10 +215,12 @@ function lazyField() {
 }
 
 function counterpart(lang) {
-  if (D.body.classList.contains("p-404")) return new URL(lang === "en" ? "en/404.html" : "404.html", ROOT).href;
+  if (D.body.classList.contains("p-404")) return new URL(lang === "ru" ? "ru/404.html" : "404.html", ROOT).href;
   const base = ROOT.pathname, path = location.pathname;
-  const rel = (path.startsWith(base) ? path.slice(base.length) : path.replace(/^\//, "")).replace(/^en\//, "");
-  return new URL((lang === "en" ? "en/" : "") + rel, ROOT).href + location.search + location.hash;
+  const rel = (path.startsWith(base) ? path.slice(base.length) : path.replace(/^\//, "")).replace(/^ru(\/|$)/, "");
+  const q = new URLSearchParams(location.search); q.delete("lang");
+  const qs = q.toString();
+  return new URL((lang === "ru" ? "ru/" : "") + rel, ROOT).href + (qs ? "?" + qs : "") + location.hash;
 }
 function langSwitch() {
   const bar = $("#mbar");
